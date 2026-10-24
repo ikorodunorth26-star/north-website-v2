@@ -1,17 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { MaxWidthWrapper, cn, ThemeProvider, InternetStatus } from "@/lib";
+import { MaxWidthWrapper, cn, ThemeProvider, InternetStatus, Satoshi } from "@/lib";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import { Footer, Header } from "@/components/reususables";
 
-const appName = "TeensYouths";
-const appColor = "#ffffff";
+const appName = "Ikorodu North LCDA";
+const appColor = "#173d32";
 
 export const metadata: Metadata = {
 	title: `${appName} `,
-	description: "Designed to help you connect with the right person in a halal way.",
+	description: "Official digital home of Ikorodu North Local Council Development Area.",
 	manifest: "/manifest",
 };
 
@@ -27,15 +27,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html
 			lang="en"
+			className={Satoshi.variable}
 			suppressHydrationWarning>
-			<body className={cn("m-auto min-h-screen bg-background bg-center bg-no-repeat scroll-smooth antialiased")}>
+			<body className={cn("m-auto min-h-screen bg-background bg-center bg-no-repeat font-sans antialiased scroll-smooth")}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="light"
 					enableSystem
 					disableTransitionOnChange>
 					<NextTopLoader
-						color="#000000"
+						color="#c39828"
 						showSpinner={false}
 						easing="ease"
 					/>
