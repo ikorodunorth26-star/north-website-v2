@@ -24,7 +24,7 @@ const HomeStoryCard = ({ title, description, image, href, category, date, varian
 				sizes="(min-width: 1024px) 420px, 80vw"
 			/>
 			<div className="flex min-h-0 flex-1 flex-col px-3 pb-3 pt-4">
-				<h3 className="line-clamp-2 h-12 text-lg font-medium leading-6 tracking-[-0.2px] text-council-green">
+				<h3 className="line-clamp-2 h-14 text-xl font-semibold leading-7 tracking-[-0.2px] text-council-green">
 					<Link href={href} className="transition-colors hover:text-council-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
 						{title}
 					</Link>

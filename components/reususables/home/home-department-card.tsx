@@ -21,7 +21,7 @@ const HomeDepartmentCard = ({ department }: HomeDepartmentCardProps) => {
 			<div className="inline-flex size-14 items-center justify-center rounded-2xl bg-council-lime/55 text-council-green transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
 				<Icon className="size-6" aria-hidden="true" />
 			</div>
-			<h3 className="mt-7 text-2xl font-medium leading-[30px] tracking-[-0.48px] text-council-green lg:text-[25px] lg:leading-[32px] lg:tracking-[-0.5px] xl:text-[27px] xl:leading-[34px] xl:tracking-[-0.54px]">{department.title}</h3>
+			<h3 className="mt-7 text-[26px] font-semibold leading-8 tracking-[-0.48px] text-council-green lg:text-[28px] lg:leading-[34px] lg:tracking-[-0.5px] xl:text-[30px] xl:leading-[36px] xl:tracking-[-0.54px]">{department.title}</h3>
 			<p className="mt-4 text-sm leading-6 text-council-subtle lg:text-[15px] lg:leading-[24px]">{department.description}</p>
 			<p className="mt-7 inline-flex w-fit rounded-full bg-council-lime/35 px-4 py-2 text-sm font-medium leading-5 text-council-green">{department.responsibleLead}</p>
 			<StoryLink href={department.href} className="mt-7">

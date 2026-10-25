@@ -6,13 +6,13 @@ import { LocalImage } from "@/components/reususables/site";
 
 const HomeWardCard = ({ ward }: { ward: HomeWard }) => {
 	return (
-		<article className="group relative h-[420px] w-[236px] shrink-0 snap-start overflow-hidden rounded-[20px] bg-council-green shadow-soft transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0 lg:w-auto">
+		<article className="group relative h-[340px] w-full min-w-0 overflow-hidden rounded-[20px] bg-council-green shadow-soft transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:h-[380px] lg:h-[420px]">
 			<LocalImage
 				src={ward.image.src}
 				alt={ward.image.alt}
 				className="absolute inset-0"
 				imageClassName="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
-				sizes="(min-width: 1024px) 20vw, 236px"
+				sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
 			/>
 			<div className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.82)_0%,hsl(var(--brand-dark)/0.4)_32%,transparent_58%)]" aria-hidden="true" />
 			{ward.tag ? (
