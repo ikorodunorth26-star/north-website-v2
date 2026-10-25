@@ -35,7 +35,7 @@ const HomeEditorialSlide = ({ headline, description, cta, href, image, imageClas
 					imageClassName={cn("object-cover object-[center_28%]", imageClassName)}
 					sizes="(min-width: 1024px) 50vw, 100vw"
 				/>
-				<div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.94)_0%,hsl(var(--brand-dark)/0.72)_24%,hsl(var(--brand-dark)/0.34)_52%,hsl(var(--brand-dark)/0.14)_100%)] lg:bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.72)_0%,hsl(var(--brand-dark)/0.28)_36%,transparent_70%)]" aria-hidden="true" />
+				<div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.94)_0%,hsl(var(--brand-dark)/0.78)_38%,hsl(var(--brand-dark)/0.46)_66%,hsl(var(--brand-dark)/0.22)_100%)] lg:bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.86)_0%,hsl(var(--brand-dark)/0.5)_46%,hsl(var(--brand-dark)/0.18)_74%,transparent_100%)]" aria-hidden="true" />
 				<div
 					aria-hidden="true"
 					className="pointer-events-none absolute inset-0 opacity-25 mix-blend-soft-light [background-size:420px_420px] lg:hidden"
