@@ -9,19 +9,19 @@ const HomeHero = () => {
 	const { hero } = homeContent;
 
 	return (
-		<section className="relative min-h-svh overflow-hidden bg-council-green text-white lg:min-h-[800px]" aria-labelledby="home-hero-title">
+		<section className="relative isolate min-h-svh overflow-hidden bg-council-green text-white lg:min-h-[800px]" aria-labelledby="home-hero-title">
 			<LocalImage
 				src={figmaAssets.home.lagosAerial.src}
 				alt=""
 				className="absolute inset-0 bg-council-green"
-				imageClassName="object-cover object-center brightness-[0.62] lg:object-[78%_center] lg:brightness-[0.6]"
+				imageClassName="object-cover object-center contrast-110 grayscale lg:object-[78%_center] lg:brightness-[0.6] lg:contrast-100 lg:grayscale-0"
 				sizes="100vw"
 				priority
 			/>
 			<div className="absolute inset-0 hidden bg-gradient-to-r from-council-dark via-council-dark/75 to-council-dark/25 lg:block" aria-hidden="true" />
 			<div className="absolute inset-0 hidden bg-[linear-gradient(100deg,hsl(var(--brand-dark))_0%,hsl(var(--brand-dark)/0.84)_36%,hsl(var(--brand-dark)/0.42)_72%,hsl(var(--brand-dark)/0.18)_100%)] lg:block" aria-hidden="true" />
 			<div
-				className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.94)_0%,hsl(var(--brand-dark)/0.72)_24%,hsl(var(--brand-dark)/0.34)_52%,transparent_78%)] lg:hidden"
+				className="absolute inset-0 mix-blend-multiply bg-[linear-gradient(to_top,#12362e_0%,#1a433a_12%,#2a564c_26%,#3f6b60_40%,#5c877c_54%,#7c9e94_68%,#96b0a7_84%,#a3b6af_100%)] lg:hidden"
 				aria-hidden="true"
 			/>
 			<div
