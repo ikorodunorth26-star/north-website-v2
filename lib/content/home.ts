@@ -247,7 +247,7 @@ export const homeContent = {
 			cta: "Explore departments",
 			href: "/government/departments",
 			image: figmaAssets.home.heroCountyComplex,
-			imageClassName: "object-[24%_center]",
+			imageClassName: "lg:object-[24%_center]",
 		},
 		{
 			headline: "Progress You\nCan See",
@@ -255,7 +255,7 @@ export const homeContent = {
 			cta: "View our projects",
 			href: "/projects",
 			image: figmaAssets.home.heroSecretariat,
-			imageClassName: "object-[68%_center]",
+			imageClassName: "lg:object-[68%_center]",
 		},
 	],
 	projects: {

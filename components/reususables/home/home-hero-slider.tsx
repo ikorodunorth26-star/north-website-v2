@@ -35,6 +35,7 @@ const HomeHeroSlider = () => {
 							<HomeEditorialSlide
 								{...slide}
 								activeIndex={slideIndex}
+								typing={index === slideIndex}
 								onSelect={showSlide}
 								onPrev={() => showSlide(slideIndex - 1)}
 								onNext={() => showSlide(slideIndex + 1)}
