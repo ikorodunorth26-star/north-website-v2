@@ -19,7 +19,7 @@ Match these when a new page repeats the same elements.
 
 - Bust crop, not the full figure. `object-cover object-top`, `scale-[1.12]`, `-translate-x-[11%]` so the face is centered.
 - Keep the cap off the top edge: the image box is `top-10 lg:top-14`, anchored to the bottom.
-- The portrait, name, and role together match the height of the white quote card. The image flexes; the name stays under it.
+- The portrait, name, and role together match the height of the white quote card from `lg`. The image flexes; the name stays under it. Below that, the frame is shorter: `h-[380px]`, then `sm:h-[440px]`.
 - City photo plus `bg-council-green/45` sits behind the cutout.
 
 ## Chairman type
