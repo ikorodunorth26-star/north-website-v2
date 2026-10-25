@@ -26,8 +26,8 @@ const titleClassName = "whitespace-pre-line text-[36px] font-medium leading-[42p
 
 const HomeEditorialSlide = ({ headline, description, cta, href, image, imageClassName, activeIndex, typing = false, onSelect, onPrev, onNext }: HomeEditorialSlideProps) => {
 	return (
-		<article className="relative h-svh overflow-hidden bg-council-green text-white lg:grid lg:h-[800px] lg:grid-cols-2">
-			<div className="absolute inset-0 lg:relative lg:order-2">
+		<article className="relative h-svh overflow-hidden bg-council-green text-white lg:h-[800px]">
+			<div className="absolute inset-0 lg:left-1/2">
 				<LocalImage
 					src={image.src}
 					alt={image.alt}
@@ -41,7 +41,7 @@ const HomeEditorialSlide = ({ headline, description, cta, href, image, imageClas
 					className="pointer-events-none absolute inset-0 opacity-25 mix-blend-soft-light [background-size:420px_420px] lg:hidden"
 					style={{ backgroundImage: `url(${figmaAssets.home.heroTexture.src})` }}
 				/>
-				<div className="absolute bottom-8 right-5 z-10 hidden items-center gap-3 lg:bottom-10 lg:right-8 lg:flex">
+				<div className="absolute bottom-8 right-5 z-10 hidden items-center gap-3 lg:bottom-10 lg:right-[max(2.5rem,calc(50vw-39rem))] lg:flex min-[1408px]:right-[calc(50vw-41.5rem)]">
 					<button
 						type="button"
 						className="inline-flex size-12 items-center justify-center rounded-full border border-white/40 bg-[#10261f]/35 text-white backdrop-blur-sm transition-colors hover:bg-[#10261f]/60 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-white"
@@ -59,13 +59,15 @@ const HomeEditorialSlide = ({ headline, description, cta, href, image, imageClas
 				</div>
 			</div>
 
-			<div className="relative z-10 flex h-full flex-col lg:order-1 lg:bg-council-green">
+			<div className="pointer-events-none absolute inset-y-0 left-0 hidden w-1/2 bg-council-green lg:block" aria-hidden="true">
 				<div
-					aria-hidden="true"
-					className="pointer-events-none absolute inset-0 hidden opacity-25 mix-blend-soft-light [background-size:520px_520px] lg:block"
+					className="absolute inset-0 opacity-25 mix-blend-soft-light [background-size:520px_520px]"
 					style={{ backgroundImage: `url(${figmaAssets.home.heroTexture.src})` }}
 				/>
-				<div className="relative z-10 mt-auto px-5 pb-6 pt-28 md:px-10 lg:px-14 lg:pb-10 lg:pt-28 xl:px-20">
+			</div>
+
+			<div className="pointer-events-none relative z-10 mx-auto flex h-full w-full max-w-council flex-col px-5 pb-6 pt-28 md:px-10 lg:pb-10 lg:pt-28 min-[1408px]:px-0">
+				<div className="pointer-events-auto mt-auto lg:w-1/2 lg:pr-10">
 					{typing ? <TypewriterText as="h2" text={headline} className={titleClassName} /> : <h2 className={titleClassName}>{headline}</h2>}
 					<p className="mt-4 max-w-[22rem] text-base font-medium leading-6 text-white/90 sm:max-w-[34rem] lg:mt-5 lg:text-base lg:leading-7">{description}</p>
 					<Link

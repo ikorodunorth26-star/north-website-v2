@@ -38,7 +38,7 @@ export default {
 				"council-display": ["3.25rem", { lineHeight: "3.625rem", letterSpacing: "-0.02em" }],
 			},
 			maxWidth: {
-				council: "80rem",
+				council: "83rem",
 			},
 			animation: {
 				"blur-in": "blur-in 1s ease-out",

@@ -7,7 +7,7 @@ const HomeChairmanSection = () => {
 
 	return (
 		<section className="bg-[#f8f7f2] py-16 lg:py-24" aria-labelledby="home-chairman-heading">
-			<div className="mx-auto grid w-full max-w-council items-stretch gap-8 px-5 md:px-10 lg:grid-cols-[531px_1fr] lg:gap-6 min-[1360px]:px-0">
+			<div className="mx-auto grid w-full max-w-council items-stretch gap-8 px-5 md:px-10 lg:grid-cols-[531px_1fr] lg:gap-6 min-[1408px]:px-0">
 				<div className="flex h-full flex-col">
 					<div className="relative h-[380px] overflow-hidden rounded-[32px] bg-council-green shadow-soft sm:h-[440px] lg:h-auto lg:min-h-0 lg:flex-1">
 						<LocalImage

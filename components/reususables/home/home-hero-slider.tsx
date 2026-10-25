@@ -47,7 +47,7 @@ const HomeHeroSlider = () => {
 
 			{index === 0 ? (
 				<div className="pointer-events-none absolute inset-x-0 bottom-8 z-30 lg:bottom-10">
-					<div className="mx-auto flex w-full max-w-council items-end justify-between px-5 md:px-10 min-[1360px]:px-0">
+					<div className="mx-auto flex w-full max-w-council items-end justify-between px-5 md:px-10 min-[1408px]:px-0">
 						<div className="pointer-events-auto flex items-center gap-1.5" role="tablist" aria-label="Hero slides">
 							{Array.from({ length: slideCount }, (_, itemIndex) => (
 								<button

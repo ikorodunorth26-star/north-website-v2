@@ -10,7 +10,7 @@ const HomeTeamSection = () => {
 
 	return (
 		<section className="bg-[#f1efe4] py-16 lg:py-24" aria-labelledby="home-team-heading">
-			<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1360px]:px-0">
+			<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 				<div className="relative overflow-hidden rounded-[40px] bg-council-green p-6 sm:p-8 lg:p-[72px]">
 					<div
 						className="absolute inset-0 opacity-[0.07] mix-blend-soft-light [background-size:520px_520px]"

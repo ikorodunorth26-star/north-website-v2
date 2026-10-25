@@ -9,7 +9,7 @@ const HomeAnnouncementsSection = () => {
 
 	return (
 		<section className="overflow-x-clip bg-[#f1efe4] py-16 lg:py-24" aria-labelledby="home-announcements-heading">
-			<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1360px]:px-0">
+			<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 				<HomeSectionHeading id="home-announcements-heading" title={announcements.title} description={announcements.description} ctaLabel={announcements.cta} ctaHref="/news" titleClassName="font-bold" />
 				<div className="mt-10">
 					<HomeCarousel bleed autoSlide label="latest announcements">

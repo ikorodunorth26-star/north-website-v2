@@ -25,9 +25,10 @@ const Header = () => {
 	const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
 	return (
-		<header className="fixed inset-x-0 top-5 z-50 px-5 motion-safe:animate-slide-down motion-reduce:animate-none lg:top-6 lg:px-14">
+		<header className="fixed inset-x-0 top-5 z-50 motion-safe:animate-slide-down motion-reduce:animate-none lg:top-6">
+			<div className="relative mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 			<nav
-				className="relative mx-auto flex h-16 w-full max-w-[1328px] items-center justify-between rounded-[40px] border border-white/10 bg-council-nav/90 pl-2.5 pr-[18px] backdrop-blur-[15px] lg:h-[76px] lg:bg-council-nav/80 lg:pl-4 lg:pr-10 lg:shadow-nav"
+				className="flex h-16 w-full items-center justify-between rounded-[40px] border border-white/10 bg-council-nav/90 pl-2.5 pr-[18px] backdrop-blur-[15px] lg:h-[76px] lg:bg-council-nav/80 lg:pl-4 lg:pr-10 lg:shadow-nav"
 				aria-label="Primary navigation">
 				<Link href="/" className="flex min-w-0 items-center gap-2.5 lg:gap-3" onClick={() => setMenuOpen(false)}>
 					<Image
@@ -77,7 +78,7 @@ const Header = () => {
 			{menuOpen ? (
 				<div
 					id="mobile-navigation"
-					className="absolute inset-x-5 top-[76px] rounded-[28px] border border-white/10 bg-council-nav/95 p-2 shadow-nav backdrop-blur-[15px] lg:hidden">
+					className="absolute inset-x-5 top-[76px] rounded-[28px] border border-white/10 bg-council-nav/95 p-2 shadow-nav backdrop-blur-[15px] md:inset-x-10 lg:hidden">
 					<div className="flex flex-col py-1">
 						{navigationLinks.map((link) => (
 							<Link
@@ -104,6 +105,7 @@ const Header = () => {
 					</div>
 				</div>
 			) : null}
+			</div>
 		</header>
 	);
 };

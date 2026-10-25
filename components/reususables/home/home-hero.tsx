@@ -30,7 +30,7 @@ const HomeHero = () => {
 				style={{ backgroundImage: `url(${figmaAssets.home.heroTexture.src})` }}
 			/>
 
-			<div className="pointer-events-none absolute bottom-0 right-6 hidden h-[600px] w-[440px] lg:block xl:right-[calc(50vw-588px)] xl:h-[694px] xl:w-[598px]">
+			<div className="pointer-events-none absolute bottom-0 right-6 hidden h-[600px] w-[440px] lg:block xl:right-[calc(50vw-612px)] xl:h-[694px] xl:w-[598px]">
 				<LocalImage
 					src={figmaAssets.home.mayorPortrait.src}
 					alt={figmaAssets.home.mayorPortrait.alt}
@@ -41,7 +41,7 @@ const HomeHero = () => {
 				/>
 			</div>
 
-			<div className="relative z-10 mx-auto flex min-h-svh w-full max-w-council flex-col px-5 pb-8 pt-28 md:px-10 lg:min-h-[800px] lg:pb-10 lg:pt-[116px] min-[1360px]:px-0">
+			<div className="relative z-10 mx-auto flex min-h-svh w-full max-w-council flex-col px-5 pb-8 pt-28 md:px-10 lg:min-h-[800px] lg:pb-10 lg:pt-[116px] min-[1408px]:px-0">
 				<div className="mt-auto max-w-[360px] md:max-w-[650px] lg:max-w-[500px] xl:max-w-[650px]">
 					<TypewriterText
 						id="home-hero-title"

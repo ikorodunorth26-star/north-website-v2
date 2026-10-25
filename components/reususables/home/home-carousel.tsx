@@ -132,11 +132,11 @@ const HomeCarousel = ({ children, label, footerAction, bleed = false, autoSlide 
 		<div ref={anchorRef}>
 			<div
 				ref={emblaRef}
-				className={cn("overflow-hidden", !bleed && "-mx-5 md:-mx-10 min-[1360px]:mx-0")}
+				className={cn("overflow-hidden", !bleed && "-mx-5 md:-mx-10 min-[1408px]:mx-0")}
 				style={bleed ? { width: bleedWidth } : undefined}
 				aria-label={label}
 				aria-roledescription="carousel">
-				<div className={cn("flex touch-pan-y cursor-grab pb-2 pt-1 active:cursor-grabbing", bleed ? "gap-3 pr-6 lg:gap-4" : "gap-6 px-5 md:px-10 lg:gap-8 min-[1360px]:px-0")}>
+				<div className={cn("flex touch-pan-y cursor-grab pb-2 pt-1 active:cursor-grabbing", bleed ? "gap-3 pr-6 lg:gap-4" : "gap-6 px-5 md:px-10 lg:gap-8 min-[1408px]:px-0")}>
 					{Children.map(children, (child, index) => (
 						<motion.div
 							className="min-w-0 shrink-0 grow-0"
