@@ -44,8 +44,8 @@ const NewsroomSection = ({ featuredArticle, articles }: NewsroomSectionProps) =>
 				.includes(searchValue.trim().toLowerCase()));
 
 	return (
-		<section className="bg-background px-5 py-14 md:px-10 lg:px-10 lg:py-16 xl:px-20">
-			<div className="mx-auto flex w-full max-w-council flex-col gap-9">
+		<section className="bg-background py-14 lg:py-16">
+			<div className="mx-auto flex w-full max-w-council flex-col gap-9 px-5 md:px-10 min-[1408px]:px-0">
 				<NewsToolbar
 					categories={newsCategories}
 					activeCategory={activeCategory}

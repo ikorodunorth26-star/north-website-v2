@@ -10,7 +10,7 @@ type PageIntroProps = {
 
 const PageIntro = ({ label, title, description, className }: PageIntroProps) => {
 	return (
-		<section className={cn("relative isolate min-h-[500px] overflow-hidden bg-council-green px-5 md:px-10 lg:min-h-[596px] lg:px-10 xl:px-20", className)}>
+		<section className={cn("relative isolate min-h-[500px] overflow-hidden bg-council-green lg:min-h-[596px]", className)}>
 			<div
 				aria-hidden="true"
 				className="absolute inset-0 opacity-[0.18] mix-blend-soft-light"
@@ -20,7 +20,7 @@ const PageIntro = ({ label, title, description, className }: PageIntroProps) => 
 				aria-hidden="true"
 				className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#2a6857]/40 via-[#245947]/20 to-transparent"
 			/>
-			<div className="relative z-10 mx-auto flex min-h-[500px] w-full max-w-council flex-col pb-14 pt-[255px] lg:min-h-[596px] lg:pt-[234px]">
+			<div className="relative z-10 mx-auto flex min-h-[500px] w-full max-w-council flex-col px-5 pb-14 pt-[255px] md:px-10 lg:min-h-[596px] lg:pt-[234px] min-[1408px]:px-0">
 				<div className="inline-flex w-fit items-center rounded-[32px] bg-gradient-to-b from-council-lime to-[#f0f6d5] px-5 py-2.5 lg:px-6 lg:py-3.5">
 					<span className="text-sm font-medium leading-[19px] text-council-green lg:text-[15px] lg:leading-5">{label}</span>
 				</div>

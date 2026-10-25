@@ -1,13 +1,20 @@
+import { MapPin } from "lucide-react";
+
 import type { NewsArticle } from "@/lib/content/news";
 import { getArticleHref } from "@/lib/content/news";
 
 import { InteractiveCard, LocalImage, StoryLink } from "../site";
 
 type FeaturedNewsCardProps = {
-	article: NewsArticle;
+	article: Pick<NewsArticle, "category" | "title" | "summary" | "image"> & { slug?: string };
+	href?: string;
+	cta?: string;
+	location?: string;
 };
 
-const FeaturedNewsCard = ({ article }: FeaturedNewsCardProps) => {
+const FeaturedNewsCard = ({ article, href, cta = "Read full story", location }: FeaturedNewsCardProps) => {
+	const storyHref = href ?? (article.slug ? getArticleHref(article.slug) : "/news");
+
 	return (
 		<InteractiveCard className="grid gap-6 lg:min-h-[484px] lg:grid-cols-[minmax(0,56%)_minmax(0,1fr)]">
 			<LocalImage
@@ -24,7 +31,13 @@ const FeaturedNewsCard = ({ article }: FeaturedNewsCardProps) => {
 					{article.title}
 				</h2>
 				<p className="text-[15px] font-medium leading-[22px] text-council-subtle lg:text-base lg:leading-6">{article.summary}</p>
-				<StoryLink href={getArticleHref(article.slug)}>Read full story</StoryLink>
+				{location ? (
+					<p className="flex items-center gap-2 text-sm font-medium leading-5 text-council-green">
+						<MapPin className="size-4 shrink-0" aria-hidden="true" />
+						<span>{location}</span>
+					</p>
+				) : null}
+				<StoryLink href={storyHref}>{cta}</StoryLink>
 			</div>
 		</InteractiveCard>
 	);

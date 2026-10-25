@@ -9,11 +9,12 @@ type CategoryFilterProps = {
 	categories: readonly CategoryOption[];
 	activeCategory: string;
 	onCategoryChange: (category: string) => void;
+	label?: string;
 };
 
-const CategoryFilter = ({ categories, activeCategory, onCategoryChange }: CategoryFilterProps) => {
+const CategoryFilter = ({ categories, activeCategory, onCategoryChange, label = "Filter news by category" }: CategoryFilterProps) => {
 	return (
-		<div className="flex gap-2 overflow-x-auto md:gap-2.5" role="group" aria-label="Filter news by category">
+		<div className="flex w-full min-w-0 flex-wrap gap-2 md:gap-2.5" role="group" aria-label={label}>
 			{categories.map((category) => {
 				const active = category.value === activeCategory;
 				return (

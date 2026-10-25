@@ -3,3 +3,4 @@ export * from "./custom-ui";
 export * from "./site";
 export * from "./news";
 export * from "./home";
+export * from "./projects";

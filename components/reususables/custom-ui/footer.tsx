@@ -4,6 +4,7 @@ import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 
 import { CouncilWordmark, TypewriterText } from "@/components/reususables/site";
 import { figmaAssets } from "@/lib/content/figma-assets";
+import { councilFacebookUrl } from "@/lib/content/projects";
 import { getCurrentYear } from "@/lib/helper";
 
 const exploreLinks = [
@@ -23,9 +24,9 @@ const legalLinks = [
 
 const Footer = () => {
 	return (
-		<footer className="relative isolate overflow-hidden bg-council-dark px-5 text-council-cream md:px-10 lg:px-10 xl:px-20">
+		<footer className="relative isolate overflow-hidden bg-council-dark text-council-cream">
 			<div aria-hidden="true" className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#1f5243]/45 via-[#173f35]/20 to-transparent" />
-			<div className="relative z-10 mx-auto w-full max-w-council pb-8 pt-16 lg:pb-6 lg:pt-16">
+			<div className="relative z-10 mx-auto w-full max-w-council px-5 pb-8 pt-16 md:px-10 lg:pb-6 lg:pt-16 min-[1408px]:px-0">
 				<div className="flex flex-col gap-8 pb-10 lg:flex-row lg:items-end lg:justify-between lg:pb-16">
 					<div className="max-w-[760px]">
 						<TypewriterText
@@ -81,6 +82,11 @@ const Footer = () => {
 								<Link href="mailto:info@ikorodunorth.gov.ng" className="transition-colors hover:text-white">
 									info@ikorodunorth.gov.ng
 								</Link>
+							</p>
+							<p>
+								<a href={councilFacebookUrl} className="transition-colors hover:text-white" rel="noopener noreferrer" target="_blank">
+									Facebook
+								</a>
 							</p>
 							<p>
 								<Link href="mailto:admin@ikorodunorth.gov.ng" className="transition-colors hover:text-white">

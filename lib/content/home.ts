@@ -1,4 +1,5 @@
 import { figmaAssets, type FigmaAsset } from "./figma-assets";
+import { projects } from "./projects";
 
 export type HomeProject = {
 	title: string;
@@ -41,56 +42,14 @@ export type HomeTeamMember = {
 	href: string;
 };
 
-export const homeProjects: HomeProject[] = [
-	{
-		title: "Solar-Powered Water Project",
-		description: "Mayor Ameen Apanisile inspected the solar-powered water project, which aims to bring clean, sustainable water to residents of Ikorodu North.",
-		date: "January 2026",
-		category: "Infrastructure",
-		image: figmaAssets.news.solarPoweredWaterProject,
-		href: "/news/solar-powered-water-project",
-	},
-	{
-		title: "Youth Engagement with NANS, LASUSTECH",
-		description: "The council partnered with student leaders from NANS at LASUSTECH on youth development in Ikorodu North.",
-		date: "January 2026",
-		category: "Youth & empowerment",
-		image: figmaAssets.news.lasustechStudentLeaders,
-		href: "/news/nans-student-leaders-lasustech",
-	},
-	{
-		title: "Tour of Ikorodu North LCDA",
-		description: "The Chairman toured communities across the LCDA to see local needs firsthand and meet residents.",
-		date: "January 2026",
-		category: "Community engagement",
-		image: figmaAssets.news.communityTour,
-		href: "/news/community-tour-ikorodu-north",
-	},
-	{
-		title: "Solar-powered water: project progress",
-		description: "The Chairman returned to the water project site to review progress and the next stage of delivery for residents.",
-		date: "January 2026",
-		category: "Infrastructure",
-		image: figmaAssets.news.communityProjectDelivery,
-		href: "/news/solar-powered-water-progress",
-	},
-	{
-		title: "From plan to delivery",
-		description: "How a community project moves through planning, construction and public updates across Ikorodu North.",
-		date: "January 2026",
-		category: "Projects",
-		image: figmaAssets.news.neighbourhoodPriorities,
-		href: "/news/community-project-delivery",
-	},
-	{
-		title: "Neighbourhood priorities",
-		description: "Residents are sharing the needs of their wards so the council can respond with the right projects.",
-		date: "January 2026",
-		category: "Community",
-		image: figmaAssets.news.councilArchive,
-		href: "/news/neighbourhood-priorities",
-	},
-];
+export const homeProjects: HomeProject[] = projects.map((project) => ({
+	title: project.title,
+	description: project.summary,
+	date: project.date,
+	category: project.category,
+	image: project.image,
+	href: `/projects/${project.slug}`,
+}));
 
 export const homeDepartments: HomeDepartment[] = [
 	{

@@ -1,3 +1,4 @@
+export { default as ArticleLayout } from "./article-layout";
 export { default as CouncilWordmark } from "./council-wordmark";
 export { default as InteractiveCard } from "./interactive-card";
 export { default as LocalImage } from "./local-image";
