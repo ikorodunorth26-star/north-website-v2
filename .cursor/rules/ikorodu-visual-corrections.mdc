@@ -23,9 +23,9 @@ Match these when a new page repeats the same elements.
 
 ## Chairman type
 
-- Name is green and bold. The role line is green, with **Ikorodu North LCDA** bold.
+- Name is green and bold. The role line is green, with **Ikorodu North LCDA** bold. On small screens the name is `text-[26px]` and the role line is `text-base`; both return to the larger size from `md`.
 - The label is “From the Executive Chairman” in normal gray (`text-council-subtle`), with padding below. Do not uppercase it or color it gold.
-- The heading is bold and larger than the default section title. Body copy and the link are one step larger than the original card text.
+- The heading is bold and larger than the default section title. It types on, pauses, deletes, and repeats, the same way as the hero title. Body copy and the link are one step larger than the original card text.
 
 ## Team cards
 
