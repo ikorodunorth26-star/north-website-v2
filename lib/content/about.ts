@@ -27,12 +27,12 @@ export const aboutIntroduction = {
 export const aboutImpact = {
 	eyebrow: "Ikorodu North at a glance",
 	title: "Our place",
-	description: "Figures published by the council: the wards it serves, the community associations within them, and the year the LCDA was created from Ikorodu Local Government.",
+	description: "Measuring the progress we have made in service of the people of Ikorodu North.",
 	stats: [
-		{ figure: "5", label: "Wards" },
-		{ figure: "300+", label: "Community development areas" },
-		{ figure: "10", label: "Joint community development areas" },
-		{ figure: "2003", label: "Year the LCDA was created" },
+		{ value: 5, label: "Wards" },
+		{ value: 300, suffix: "+", label: "Community development areas" },
+		{ value: 10, label: "Joint community development areas" },
+		{ value: 2003, label: "Year the LCDA was created" },
 	],
 };
 

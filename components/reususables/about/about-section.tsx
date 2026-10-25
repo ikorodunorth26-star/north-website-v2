@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
+import { NumberTicker } from "@/components/ui/number-ticker";
 import { aboutCommunity, aboutHistory, aboutImpact, aboutIntroduction, aboutRelated } from "@/lib/content/about";
 
 import { LocalImage, TypewriterText } from "../site";
 import HistoryChapter from "./history-chapter";
 
 const headingClassName = "whitespace-pre-line text-[32px] font-semibold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]";
+
+const figureClassName = "text-[40px] font-bold leading-none tracking-normal text-council-green sm:text-[56px] lg:text-[64px]";
 
 const AboutSection = () => {
 	return (
@@ -36,9 +39,12 @@ const AboutSection = () => {
 						<p className="mt-3 text-lg font-medium leading-[27px] text-council-subtle">{aboutImpact.description}</p>
 					</div>
 					<ul className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-						{aboutImpact.stats.map((stat) => (
+						{aboutImpact.stats.map((stat, index) => (
 							<li key={stat.label} className="rounded-[20px] bg-background px-6 py-8 text-center sm:px-8">
-								<p className="text-[40px] font-bold leading-none text-council-green sm:text-[56px] lg:text-[64px]">{stat.figure}</p>
+								<p className={figureClassName} aria-label={`${stat.value}${stat.suffix ?? ""}`}>
+									<NumberTicker value={stat.value} delay={index * 0.12} useGrouping={false} className={figureClassName} />
+									{stat.suffix}
+								</p>
 								<p className="mt-3 text-base font-medium leading-[22px] text-council-subtle">{stat.label}</p>
 							</li>
 						))}
