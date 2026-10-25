@@ -4,6 +4,7 @@ export { default as HomeChairmanSection } from "./home-chairman-section";
 export { default as HomeDepartmentCard } from "./home-department-card";
 export { default as HomeDepartmentsSection } from "./home-departments-section";
 export { default as HomeHero } from "./home-hero";
+export { default as HomeHeroSlider } from "./home-hero-slider";
 export { default as HomeMapSection } from "./home-map-section";
 export { default as HomeProjectsSection } from "./home-projects-section";
 export { default as HomeSectionHeading } from "./home-section-heading";

@@ -240,6 +240,24 @@ export const homeContent = {
 		description: "Connect with your council, access essential services and discover what’s happening across our community.",
 		cta: "Learn about us",
 	},
+	editorialSlides: [
+		{
+			headline: "Services Built\nAround You",
+			description: "From health and education to permits and records, find the right department and get the help you need, faster.",
+			cta: "Explore departments",
+			href: "/government/departments",
+			image: figmaAssets.home.heroCountyComplex,
+			imageClassName: "object-[24%_center]",
+		},
+		{
+			headline: "Progress You\nCan See",
+			description: "Follow the projects and programmes shaping a cleaner, safer and more prosperous Ikorodu North.",
+			cta: "View our projects",
+			href: "/projects",
+			image: figmaAssets.home.heroSecretariat,
+			imageClassName: "object-[68%_center]",
+		},
+	],
 	projects: {
 		eyebrow: "Community Projects",
 		title: "Building Ikorodu\nNorth, Together",

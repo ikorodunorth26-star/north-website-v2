@@ -76,6 +76,18 @@ export const figmaAssets = {
 			height: 1080,
 			alt: "",
 		},
+		heroSecretariat: {
+			src: "/images/home/hero-secretariat.jpg",
+			width: 1080,
+			height: 720,
+			alt: "Ashiru Bola Ahmed Tinubu County Home, the Ikorodu North LCDA secretariat",
+		},
+		heroCountyComplex: {
+			src: "/images/home/hero-county-complex.jpg",
+			width: 1080,
+			height: 720,
+			alt: "Prince Abiodun Ogunleye KJW County Complex, Ikorodu North LCDA legislative office",
+		},
 		mayorPortrait: {
 			src: "/images/home/mayor-ameen-apanisile.webp",
 			width: 848,

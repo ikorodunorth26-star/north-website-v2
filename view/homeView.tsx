@@ -2,7 +2,7 @@ import {
 	HomeAnnouncementsSection,
 	HomeChairmanSection,
 	HomeDepartmentsSection,
-	HomeHero,
+	HomeHeroSlider,
 	HomeMapSection,
 	HomeProjectsSection,
 	HomeTeamSection,
@@ -12,7 +12,7 @@ import {
 const HomeView = () => {
 	return (
 		<main className="bg-[#f8f7f2]">
-			<HomeHero />
+			<HomeHeroSlider />
 			<HomeProjectsSection />
 			<HomeDepartmentsSection />
 			<HomeAnnouncementsSection />

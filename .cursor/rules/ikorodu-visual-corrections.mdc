@@ -13,6 +13,7 @@ Match these when a new page repeats the same elements.
 - On smaller screens the photo is graded green with a long fade: deep forest at the bottom, softer sage at the top. Clouds, buildings, and the shoreline stay visible. Hide the portrait. The copy sits in the lower half. The progress marks and both arrow buttons stay on screen; the buttons are smaller green circles with white icons. The right arrow turns lime from `lg` up.
 - Dot texture stays visible but soft: `opacity-25 mix-blend-soft-light`, above the gradients and below the portrait. Do not remove it and do not strengthen it.
 - The hero title types on, pauses, deletes, and repeats. Keep the existing type size and color. The full line stays in the layout so the description does not jump. Reduced motion shows the full title at once.
+- The welcome hero is the first slide and stays as its own full screen. Two later slides share the split layout: green copy on the left, photograph on the right. Each slide leaves completely before the next one enters. On a phone those later slides put the photograph on top and the copy underneath.
 
 ## Chairman portrait
 
