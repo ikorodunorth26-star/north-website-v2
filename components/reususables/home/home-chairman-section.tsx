@@ -36,7 +36,7 @@ const HomeChairmanSection = () => {
 
 				<div className="flex h-full flex-col justify-center rounded-[40px] bg-white p-7 shadow-soft sm:p-10 lg:p-16">
 					<p className="pb-4 text-base font-normal leading-6 text-council-subtle">{chairman.eyebrow}</p>
-					<h2 id="home-chairman-heading" className="mt-4 text-[38px] font-bold leading-[44px] tracking-[-0.8px] text-council-green md:text-[44px] md:leading-[50px] lg:text-[48px] lg:leading-[54px] lg:tracking-[-1px] xl:text-[52px] xl:leading-[58px] xl:tracking-[-1.1px]">
+					<h2 id="home-chairman-heading" className="mt-4 text-[28px] font-bold leading-[34px] tracking-[-0.4px] text-council-green sm:text-[32px] sm:leading-[38px] md:text-[44px] md:leading-[50px] md:tracking-[-0.8px] lg:text-[48px] lg:leading-[54px] lg:tracking-[-1px] xl:text-[52px] xl:leading-[58px] xl:tracking-[-1.1px]">
 						{chairman.title}
 					</h2>
 					<div className="mt-6 max-w-[580px] space-y-5 text-base leading-7 text-council-subtle lg:text-lg lg:leading-8">

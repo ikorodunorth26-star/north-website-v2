@@ -23,7 +23,7 @@ const HomeSectionHeading = ({ id, eyebrow, title, description, ctaLabel, ctaHref
 		<div className={cn("flex flex-col gap-5", centered ? "items-center text-center" : "lg:flex-row lg:items-end lg:justify-between")}>
 			<div className={cn("w-full max-w-[620px]", centered && "mx-auto max-w-[740px]", columnClassName)}>
 				{eyebrow ? <p className={cn("text-xs font-bold leading-4 tracking-[0.15em]", dark ? "text-council-lime" : "text-council-gold")}>{eyebrow.toUpperCase()}</p> : null}
-				<h2 id={id} className={cn(eyebrow && "mt-4", "whitespace-pre-line text-[32px] font-medium leading-[38px] tracking-[-0.64px] md:text-[40px] md:leading-[46px] lg:text-[44px] lg:leading-[50px] lg:tracking-[-1px] xl:text-[48px] xl:leading-[54px] xl:tracking-[-1.15px]", dark ? "text-white" : "text-council-green", titleClassName)}>
+				<h2 id={id} className={cn(eyebrow && "mt-4", "whitespace-pre-line text-[26px] font-medium leading-8 tracking-[-0.4px] sm:text-[30px] sm:leading-9 md:text-[40px] md:leading-[46px] md:tracking-[-0.64px] lg:text-[44px] lg:leading-[50px] lg:tracking-[-1px] xl:text-[48px] xl:leading-[54px] xl:tracking-[-1.15px]", dark ? "text-white" : "text-council-green", titleClassName)}>
 					{title}
 				</h2>
 				<p className={cn("mt-4 max-w-[500px] text-[15px] leading-6 lg:text-base lg:leading-[26px]", dark ? "text-white/70" : "text-council-subtle", centered && "mx-auto", descriptionClassName)}>

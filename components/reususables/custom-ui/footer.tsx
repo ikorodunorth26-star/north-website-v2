@@ -31,7 +31,7 @@ const Footer = () => {
 						<TypewriterText
 							as="h2"
 							text={"A stronger community\nstarts with all of us."}
-							className="whitespace-pre-line text-[38px] font-medium leading-[46px] tracking-[-0.8px] lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.5px]"
+							className="whitespace-pre-line text-[30px] font-medium leading-9 tracking-[-0.4px] sm:text-[34px] sm:leading-10 md:text-[40px] md:leading-[46px] lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.5px]"
 						/>
 					</div>
 					<Link
