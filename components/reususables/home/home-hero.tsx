@@ -52,7 +52,7 @@ const HomeHero = () => {
 						{hero.description}
 					</p>
 					<Link
-						href="/government/executive-council"
+						href="/about"
 						className="mt-8 inline-flex items-center gap-2.5 rounded-[32px] bg-council-lime px-5 py-[14px] text-[15px] font-medium leading-[21px] text-council-green transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime focus-visible:ring-offset-2 focus-visible:ring-offset-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
 						{hero.cta}
 						<ArrowUpRight className="size-[18px]" aria-hidden="true" />
