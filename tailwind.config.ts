@@ -42,6 +42,7 @@ export default {
 			},
 			animation: {
 				"blur-in": "blur-in 1s ease-out",
+				"slide-down": "slide-down 650ms cubic-bezier(0.22, 1, 0.36, 1)",
 			},
 			keyframes: {
 				"blur-in": {
@@ -50,6 +51,16 @@ export default {
 					},
 					"100%": {
 						filter: "blur(0px)",
+					},
+				},
+				"slide-down": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(-110%)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)",
 					},
 				},
 			},

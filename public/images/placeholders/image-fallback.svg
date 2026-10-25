@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Ikorodu North image placeholder</title>
+  <desc id="desc">A green placeholder card with the Ikorodu North initials.</desc>
+  <rect width="800" height="500" rx="24" fill="#e8e9df"/>
+  <circle cx="400" cy="210" r="72" fill="#173d32"/>
+  <text x="400" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ddeb9d">IN</text>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="500" fill="#173d32">Ikorodu North LCDA</text>
+</svg>

@@ -1,3 +1,5 @@
 import HomeView from "./homeView";
+import NewsView from "./newsView";
+import NewsArticleView from "./newsArticleView";
 
-export { HomeView };
+export { HomeView, NewsView, NewsArticleView };
