@@ -3,5 +3,6 @@ import NewsView from "./newsView";
 import NewsArticleView from "./newsArticleView";
 import ProjectDetailView from "./projectDetailView";
 import ProjectsView from "./projectsView";
+import ContactView from "./contactView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView };
