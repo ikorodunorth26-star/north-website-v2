@@ -23,10 +23,7 @@ const HomeDepartmentCard = ({ department }: HomeDepartmentCardProps) => {
 			</div>
 			<h3 className="mt-7 text-2xl font-medium leading-[30px] tracking-[-0.48px] text-council-green lg:text-[25px] lg:leading-[32px] lg:tracking-[-0.5px] xl:text-[27px] xl:leading-[34px] xl:tracking-[-0.54px]">{department.title}</h3>
 			<p className="mt-4 text-sm leading-6 text-council-subtle lg:text-[15px] lg:leading-[24px]">{department.description}</p>
-			<div className="mt-7">
-				<p className="text-[15px] font-medium leading-6 text-council-green">{department.responsibleLead}</p>
-			</div>
-			<div className="mt-5 inline-flex w-fit rounded-full bg-council-muted px-4 py-2 text-xs font-bold leading-4 tracking-[0.1em] text-council-green">{department.category.toUpperCase()}</div>
+			<p className="mt-7 inline-flex w-fit rounded-full bg-council-lime/35 px-4 py-2 text-sm font-medium leading-5 text-council-green">{department.responsibleLead}</p>
 			<StoryLink href={department.href} className="mt-7">
 				Read full profile
 			</StoryLink>

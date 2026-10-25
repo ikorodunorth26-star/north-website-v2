@@ -1,0 +1,44 @@
+---
+description: Hero, chairman, and type corrections already approved for this site
+alwaysApply: true
+---
+
+# Approved visual corrections
+
+Match these when a new page repeats the same elements.
+
+## Hero
+
+- From the `lg` breakpoint up, the aerial photo has a dark green wash: darker on the left, lighter toward the right. The chairman portrait stays on the right.
+- On smaller screens the photo is darkened, and the green shadow rises from the bottom and fades out before the top. Hide the portrait. The copy sits in the lower half. The progress marks and both arrow buttons stay on screen; the buttons are smaller green circles with white icons. The right arrow turns lime from `lg` up.
+- Dot texture stays visible but soft: `opacity-25 mix-blend-soft-light`, above the gradients and below the portrait. Do not remove it and do not strengthen it.
+- The hero title types on, pauses, deletes, and repeats. Keep the existing type size and color. The full line stays in the layout so the description does not jump. Reduced motion shows the full title at once.
+
+## Chairman portrait
+
+- Bust crop, not the full figure. `object-cover object-top`, `scale-[1.12]`, `-translate-x-[11%]` so the face is centered.
+- Keep the cap off the top edge: the image box is `top-10 lg:top-14`, anchored to the bottom.
+- The portrait, name, and role together match the height of the white quote card. The image flexes; the name stays under it.
+- City photo plus `bg-council-green/45` sits behind the cutout.
+
+## Chairman type
+
+- Name is green and bold. The role line is green, with **Ikorodu North LCDA** bold.
+- The label is “From the Executive Chairman” in normal gray (`text-council-subtle`), with padding below. Do not uppercase it or color it gold.
+- The heading is bold and larger than the default section title. Body copy and the link are one step larger than the original card text.
+
+## Team cards
+
+- Portrait on top, solid green band underneath. The name is white. The role is lime. The photo is inset with padding so the green card shows around it. Each card has a faded grey border.
+- Cutout portraits use a bust crop over the city photo. The mayor uses the same face centering as the chairman portrait.
+- The three legislative photos are framed so each head is visible and centered: leader `object-[center_22%]`, deputy `object-[42%_50%]`, chief whip `object-[center_18%]`.
+
+## Ward cards
+
+- The label on each ward card uses `bg-[#FFFDF8CC]`, with green text.
+- Only the “Explore” link uses `#DDCA90`. The ward name stays white, and the landmarks stay white at 72% opacity.
+- The photo shade is a short gradient from the bottom. The top of the image stays clear.
+
+## Headings already set bold
+
+Projects, departments, announcements, wards, map, and the chairman heading. Apply the same bold treatment to matching titles on new pages. The footer line “A stronger community starts with all of us.” stays medium weight and uses the same type-on, pause, and delete loop as the hero title.

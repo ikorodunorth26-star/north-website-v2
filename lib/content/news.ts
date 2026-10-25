@@ -70,7 +70,7 @@ const buildBody = (summary: string, title: string): ArticleSection[] => [
 
 export const featuredArticle: NewsArticle = {
 	slug: "the-new-deal-2026-budget-explained",
-	category: "FEATURED  /  2026 BUDGET",
+	category: "FEATURED / 2026 BUDGET",
 	filterGroup: "council",
 	title: "The New Deal: Ikorodu North’s 2026 budget explained",
 	summary: "Mayor Ameen Apanisile presented ‘The New Deal’ in January. Here is what it sets out for our communities.",

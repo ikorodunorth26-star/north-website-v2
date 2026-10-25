@@ -75,7 +75,7 @@ const NewsroomSection = ({ featuredArticle, articles }: NewsroomSectionProps) =>
 					)}
 				</div>
 
-				{isDefaultView ? <NewsPagination /> : null}
+				{isDefaultView ? <NewsPagination pageSize={Math.min(DESKTOP_PAGE_SIZE, articles.length)} totalPosts={articles.length} /> : null}
 			</div>
 		</section>
 	);

@@ -41,12 +41,6 @@ export type HomeTeamMember = {
 	href: string;
 };
 
-export type HomeMapFeature = {
-	label: string;
-	countLabel: string;
-	icon: "building" | "heartPulse" | "graduationCap" | "store" | "landmark" | "trees";
-};
-
 export const homeProjects: HomeProject[] = [
 	{
 		title: "Solar-Powered Water Project",
@@ -72,6 +66,30 @@ export const homeProjects: HomeProject[] = [
 		image: figmaAssets.news.communityTour,
 		href: "/news/community-tour-ikorodu-north",
 	},
+	{
+		title: "Solar-powered water: project progress",
+		description: "The Chairman returned to the water project site to review progress and the next stage of delivery for residents.",
+		date: "January 2026",
+		category: "Infrastructure",
+		image: figmaAssets.news.communityProjectDelivery,
+		href: "/news/solar-powered-water-progress",
+	},
+	{
+		title: "From plan to delivery",
+		description: "How a community project moves through planning, construction and public updates across Ikorodu North.",
+		date: "January 2026",
+		category: "Projects",
+		image: figmaAssets.news.neighbourhoodPriorities,
+		href: "/news/community-project-delivery",
+	},
+	{
+		title: "Neighbourhood priorities",
+		description: "Residents are sharing the needs of their wards so the council can respond with the right projects.",
+		date: "January 2026",
+		category: "Community",
+		image: figmaAssets.news.councilArchive,
+		href: "/news/neighbourhood-priorities",
+	},
 ];
 
 export const homeDepartments: HomeDepartment[] = [
@@ -94,7 +112,7 @@ export const homeDepartments: HomeDepartment[] = [
 	{
 		title: "Primary Health Care",
 		description: "Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.",
-		responsibleLead: "Headed by Primary Health Care Coordinator",
+		responsibleLead: "Headed by Edu. & Library Services Dept.",
 		category: "Community health",
 		icon: "heartPulse",
 		href: "/government/departments",
@@ -111,14 +129,32 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 	{
 		title: "Monthly Environmental Sanitation Exercise",
 		summary: "Join your neighbours in keeping Ikorodu North clean. Here’s what you need to know about this month’s exercise.",
-		image: figmaAssets.news.councilServicesGuide,
+		image: figmaAssets.news.communityTour,
 		href: "/news/clean-neighbourhoods-together",
 	},
 	{
 		title: "Mayor Apanisile Inspects Ongoing Solar-Powered Water Project",
-		summary: "The Chairman visited the project site to review progress on a solar-powered water project for residents of Ikorodu North.",
-		image: figmaAssets.news.communityProjectDelivery,
+		summary: "The Chairman visited the project site to review progress on a solar-powered water project for residents of [community].",
+		image: figmaAssets.news.solarPoweredWaterProject,
 		href: "/news/solar-powered-water-progress",
+	},
+	{
+		title: "The New Deal: key priorities for 2026",
+		summary: "A plain-language look at the priorities set out in the 2026 budget for Ikorodu North.",
+		image: figmaAssets.news.councilArchive,
+		href: "/news/new-deal-priorities-2026",
+	},
+	{
+		title: "Giving young people a voice",
+		summary: "How young people in Ikorodu North can take part in local programmes and council conversations.",
+		image: figmaAssets.news.lasustechStudentLeaders,
+		href: "/news/young-people-voice-local-development",
+	},
+	{
+		title: "Your neighbourhood, your priorities",
+		summary: "How to share your community’s needs with the council and get a response.",
+		image: figmaAssets.news.neighbourhoodPriorities,
+		href: "/news/neighbourhood-priorities",
 	},
 ];
 
@@ -183,7 +219,7 @@ export const homeTeamMembers: HomeTeamMember[] = [
 		href: "/government/legislative-house",
 	},
 	{
-		name: "Hon. Jimoh Idris Iliasu",
+		name: "Hon jimoh Idris iliasu",
 		role: "Deputy Leader of House",
 		image: figmaAssets.home.deputyLeaderPortrait,
 		portraitMode: "photo",
@@ -191,20 +227,11 @@ export const homeTeamMembers: HomeTeamMember[] = [
 	},
 	{
 		name: "Hon Banjoko Babatunde O.",
-		role: "Chief Whip",
+		role: "Chip Whip",
 		image: figmaAssets.home.chiefWhipPortrait,
 		portraitMode: "photo",
 		href: "/government/legislative-house",
 	},
-];
-
-export const homeMapFeatures: HomeMapFeature[] = [
-	{ label: "Government buildings", countLabel: "7 locations", icon: "building" },
-	{ label: "Health centres", countLabel: "11 locations", icon: "heartPulse" },
-	{ label: "Schools", countLabel: "5 locations", icon: "graduationCap" },
-	{ label: "Markets", countLabel: "8 locations", icon: "store" },
-	{ label: "Commercial centers", countLabel: "18 locations", icon: "landmark" },
-	{ label: "Parks & recreation", countLabel: "To be confirmed", icon: "trees" },
 ];
 
 export const homeContent = {
@@ -228,29 +255,29 @@ export const homeContent = {
 	announcements: {
 		eyebrow: "Announcements",
 		title: "Latest Announcements\nand Programmes",
-		description: "Official council updates, public notices and programmes for residents.",
+		description: "See the projects transforming communities across Ikorodu North.",
 		cta: "View all announcements",
 	},
 	chairman: {
 		eyebrow: "From the Executive Chairman",
 		title: "Building the Ikorodu North We Deserve",
 		paragraphs: [
-			"Ikorodu North is full of energy, talent and possibility. Our job is to make sure our local government matches that ambition.",
-			"Since taking office, our administration has focused on safer streets, stronger businesses and more transparent, responsive governance. But real progress is not measured in plans. It shows up in better services and opportunities for our young people.",
-			"The journey is ongoing, and we cannot make it alone. Together, we will build an Ikorodu North that our children are proud to inherit.",
+			"Ikorodu North is a community of energy, talent and possibility. After eight years as Vice Chairman, I took office as Executive Chairman in July 2025 with one duty: to bring government closer to the people.",
+			"Our New Deal puts residents first. We are improving roads and public facilities, strengthening primary healthcare, supporting our schools, and keeping neighbourhoods cleaner and safer. We are also opening opportunities for young people, artisans and small businesses, and making the council more open and accountable.",
+			"There is more to do, and it cannot be done alone. We will keep listening to our communities and working with you to build a stronger, more prosperous Ikorodu North.",
 		],
 		cta: "Read full profile",
 	},
 	wards: {
 		eyebrow: "Communities of Ikorodu North",
 		title: "Five wards. One council.\nDevelopment in every community.",
-		description: "Explore each ward to see its public facilities, verified projects, photographs and local updates, so residents can see development where they live.",
+		description: "Explore each ward to see its public facilities, verified projects,\nphotographs and local updates, so residents can see development where they live.",
 		cta: "Open the Interactive Map",
 	},
 	team: {
 		eyebrow: "Government Team",
-		title: "Ikorodu Local Government Team",
-		description: "Meet our dedicated team of leaders, legislators, and professionals working together to serve and develop Ikorodu Local Government Area.",
+		title: "Ikorodu Local\nGovernment Team",
+		description: "Meet our dedicated team of leaders, legislators, and professionals\nworking together to serve and develop Ikorodu Local Government Area.",
 		cta: "View all",
 	},
 	map: {

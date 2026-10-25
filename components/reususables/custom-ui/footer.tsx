@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 
-import { CouncilWordmark } from "@/components/reususables/site";
+import { CouncilWordmark, TypewriterText } from "@/components/reususables/site";
 import { figmaAssets } from "@/lib/content/figma-assets";
 import { getCurrentYear } from "@/lib/helper";
 
@@ -26,13 +26,13 @@ const Footer = () => {
 		<footer className="relative isolate overflow-hidden bg-council-dark px-5 text-council-cream md:px-10 lg:px-10 xl:px-20">
 			<div aria-hidden="true" className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#1f5243]/45 via-[#173f35]/20 to-transparent" />
 			<div className="relative z-10 mx-auto w-full max-w-council pb-8 pt-16 lg:pb-6 lg:pt-16">
-				<div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-					<div className="max-w-[493px]">
-						<h2 className="text-[38px] font-medium leading-[46px] tracking-[-0.8px] lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.5px]">
-							A stronger community
-							<br />
-							starts with all of us.
-						</h2>
+				<div className="flex flex-col gap-8 pb-10 lg:flex-row lg:items-end lg:justify-between lg:pb-16">
+					<div className="max-w-[760px]">
+						<TypewriterText
+							as="h2"
+							text={"A stronger community\nstarts with all of us."}
+							className="whitespace-pre-line text-[38px] font-medium leading-[46px] tracking-[-0.8px] lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.5px]"
+						/>
 					</div>
 					<Link
 						href="/contact"
@@ -42,7 +42,7 @@ const Footer = () => {
 					</Link>
 				</div>
 
-				<div className="mt-16 grid gap-10 border-council-border/40 lg:grid-cols-[1.1fr_0.8fr_1fr] lg:gap-12 xl:grid-cols-[400px_1fr_340px] xl:gap-[72px]">
+				<div className="mt-16 grid gap-10 lg:grid-cols-2 xl:grid-cols-[minmax(0,400px)_minmax(0,1fr)_minmax(0,300px)] xl:gap-12">
 					<div>
 						<Link href="/" className="flex items-center gap-3.5">
 							<Image

@@ -8,13 +8,11 @@ const HomeAnnouncementsSection = () => {
 	const { announcements } = homeContent;
 
 	return (
-		<section className="bg-[#f1efe4] py-16 lg:py-24" aria-labelledby="home-announcements-heading">
+		<section className="overflow-x-clip bg-[#f1efe4] py-16 lg:py-24" aria-labelledby="home-announcements-heading">
 			<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1360px]:px-0">
-				<HomeSectionHeading id="home-announcements-heading" title={announcements.title} description={announcements.description} />
-			</div>
-			<div className="mt-10 overflow-hidden">
-				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1360px]:px-0">
-					<HomeCarousel label="latest announcements">
+				<HomeSectionHeading id="home-announcements-heading" title={announcements.title} description={announcements.description} ctaLabel={announcements.cta} ctaHref="/news" titleClassName="font-bold" />
+				<div className="mt-10">
+					<HomeCarousel bleed autoSlide label="latest announcements">
 						{homeAnnouncements.map((announcement) => (
 							<HomeStoryCard
 								key={announcement.title}

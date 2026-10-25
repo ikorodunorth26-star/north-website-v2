@@ -15,29 +15,28 @@ type HomeStoryCardProps = {
 
 const HomeStoryCard = ({ title, description, image, href, category, date, variant = "announcement" }: HomeStoryCardProps) => {
 	return (
-		<article className="group flex w-[82vw] max-w-[520px] shrink-0 snap-start flex-col rounded-[40px] bg-white p-3 shadow-soft transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border hover:border-council-border hover:shadow-card motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:w-[480px] lg:w-[610px] lg:max-w-none">
+		<article className="group flex h-[420px] w-[300px] shrink-0 snap-start flex-col overflow-hidden rounded-[32px] bg-white p-3 shadow-soft transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border hover:border-council-border hover:shadow-card motion-reduce:transition-none motion-reduce:hover:translate-y-0 sm:h-[440px] sm:w-[360px] lg:h-[460px] lg:w-[420px]">
 			<LocalImage
 				src={image.src}
 				alt={image.alt}
-				className="h-[220px] rounded-[28px] lg:h-[285px]"
+				className="h-[170px] shrink-0 rounded-[22px] sm:h-[180px] lg:h-[200px]"
 				imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
-				sizes="(min-width: 1024px) 586px, 82vw"
+				sizes="(min-width: 1024px) 420px, 80vw"
 			/>
-			<div className="flex flex-1 flex-col px-3 pb-4 pt-6 sm:px-6 lg:px-8 lg:pb-6">
-				<h3 className="line-clamp-2 text-[22px] font-medium leading-[29px] tracking-[-0.44px] text-council-green lg:text-[26px] lg:leading-[33px] lg:tracking-[-0.52px] xl:text-[28px] xl:leading-[36px] xl:tracking-[-0.56px]">
+			<div className="flex min-h-0 flex-1 flex-col px-3 pb-3 pt-4">
+				<h3 className="line-clamp-2 h-12 text-lg font-medium leading-6 tracking-[-0.2px] text-council-green">
 					<Link href={href} className="transition-colors hover:text-council-gold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
 						{title}
 					</Link>
 				</h3>
-				<p className="mt-3 line-clamp-3 text-sm leading-6 text-council-subtle lg:text-[15px] lg:leading-[24px]">{description}</p>
+				<p className="mt-2 line-clamp-2 h-12 text-sm leading-6 text-council-subtle">{description}</p>
 				{variant === "project" ? (
-					<div className="mt-auto flex flex-wrap items-center gap-2 pt-8">
-						{date ? <span className="rounded-full px-3 py-1.5 text-sm font-medium leading-5 text-council-green">{date}</span> : null}
-						{category ? <span className="rounded-full bg-council-muted px-3 py-1.5 text-sm font-medium leading-5 text-council-green">{category}</span> : null}
-						<span className="ml-auto rounded-full bg-council-lime px-3 py-1.5 text-sm font-medium leading-5 text-council-green">Completed</span>
+					<div className="mt-auto flex flex-wrap items-center gap-2 pt-3">
+						{date ? <span className="rounded-full bg-council-lime/35 px-3 py-1 text-[13px] font-medium leading-5 text-council-green">{date}</span> : null}
+						{category ? <span className="rounded-full bg-council-lime/35 px-3 py-1 text-[13px] font-medium leading-5 text-council-green">{category}</span> : null}
 					</div>
 				) : (
-					<StoryLink href={href} className="mt-5">
+					<StoryLink href={href} className="mt-auto pt-3">
 						Read more
 					</StoryLink>
 				)}

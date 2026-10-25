@@ -70,6 +70,12 @@ export const figmaAssets = {
 			height: 1200,
 			alt: "",
 		},
+		lagosAerial: {
+			src: "/images/home/lagos-aerial-waterside.webp",
+			width: 1920,
+			height: 1080,
+			alt: "",
+		},
 		mayorPortrait: {
 			src: "/images/home/mayor-ameen-apanisile.webp",
 			width: 848,

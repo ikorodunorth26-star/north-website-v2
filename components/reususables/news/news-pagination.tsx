@@ -5,11 +5,13 @@ import { cn } from "@/lib/utils";
 type NewsPaginationProps = {
 	currentPage?: number;
 	totalPages?: number;
+	pageSize?: number;
+	totalPosts?: number;
 };
 
 const pageButtonClass = "inline-flex h-11 min-w-11 items-center justify-center rounded-xl border border-border bg-card px-4 text-sm font-medium text-council-green";
 
-const NewsPagination = ({ currentPage = 1, totalPages = 3 }: NewsPaginationProps) => {
+const NewsPagination = ({ currentPage = 1, totalPages = 3, pageSize = 9, totalPosts = 0 }: NewsPaginationProps) => {
 	return (
 		<nav className="hidden flex-col items-center gap-4 pt-6 md:flex" aria-label="News pages">
 			<div className="flex items-center justify-center gap-2">
@@ -39,7 +41,9 @@ const NewsPagination = ({ currentPage = 1, totalPages = 3 }: NewsPaginationProps
 					<ArrowRight className="size-4" aria-hidden="true" />
 				</button>
 			</div>
-
+			<p className="text-[11px] font-medium uppercase tracking-[0.16em] text-council-subtle">
+				Showing 1–{pageSize} of {totalPosts || "[x]"} posts
+			</p>
 		</nav>
 	);
 };

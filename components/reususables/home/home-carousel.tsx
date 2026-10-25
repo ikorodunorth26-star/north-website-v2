@@ -1,6 +1,6 @@
 "use client";
 
-import { Children, useCallback, useEffect, useState } from "react";
+import { Children, useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import { MoveLeft, MoveRight } from "lucide-react";
@@ -11,9 +11,13 @@ type HomeCarouselProps = {
 	children: React.ReactNode;
 	label: string;
 	footerAction?: React.ReactNode;
+	bleed?: boolean;
+	autoSlide?: boolean;
 };
 
-const HomeCarousel = ({ children, label, footerAction }: HomeCarouselProps) => {
+const HomeCarousel = ({ children, label, footerAction, bleed = false, autoSlide = false }: HomeCarouselProps) => {
+	const anchorRef = useRef<HTMLDivElement>(null);
+	const [bleedWidth, setBleedWidth] = useState("100%");
 	const [emblaRef, emblaApi] = useEmblaCarousel({
 		align: "start",
 		containScroll: "trimSnaps",
@@ -22,13 +26,11 @@ const HomeCarousel = ({ children, label, footerAction }: HomeCarouselProps) => {
 	});
 	const [canScrollPrev, setCanScrollPrev] = useState(false);
 	const [canScrollNext, setCanScrollNext] = useState(false);
-	const [progress, setProgress] = useState(0);
 
 	const updateState = useCallback(() => {
 		if (!emblaApi) return;
 		setCanScrollPrev(emblaApi.canScrollPrev());
 		setCanScrollNext(emblaApi.canScrollNext());
-		setProgress(Math.min(Math.max(emblaApi.scrollProgress(), 0), 1));
 	}, [emblaApi]);
 
 	useEffect(() => {
@@ -45,10 +47,96 @@ const HomeCarousel = ({ children, label, footerAction }: HomeCarouselProps) => {
 		};
 	}, [emblaApi, updateState]);
 
+	useEffect(() => {
+		if (!bleed) return;
+
+		const measure = () => {
+			const anchor = anchorRef.current;
+			if (!anchor) return;
+			const left = anchor.getBoundingClientRect().left;
+			setBleedWidth(`${Math.max(anchor.clientWidth, Math.round(window.innerWidth - left))}px`);
+		};
+
+		measure();
+		window.addEventListener("resize", measure);
+		return () => window.removeEventListener("resize", measure);
+	}, [bleed]);
+
+	useEffect(() => {
+		emblaApi?.reInit();
+	}, [emblaApi, bleedWidth]);
+
+	useEffect(() => {
+		if (!autoSlide || !emblaApi) return;
+		const root = anchorRef.current;
+		if (!root || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+		let timer: ReturnType<typeof setInterval> | undefined;
+		let paused = false;
+		let visible = false;
+
+		const stop = () => {
+			if (!timer) return;
+			clearInterval(timer);
+			timer = undefined;
+		};
+
+		const tick = () => {
+			if (!visible || paused) return;
+			if (emblaApi.canScrollNext()) emblaApi.scrollNext();
+			else emblaApi.scrollTo(0);
+		};
+
+		const start = () => {
+			if (timer) return;
+			timer = setInterval(tick, 2800);
+		};
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				visible = entry.isIntersecting;
+				if (visible) start();
+				else stop();
+			},
+			{ threshold: 0.45 },
+		);
+
+		const pause = () => {
+			paused = true;
+		};
+		const resume = () => {
+			paused = false;
+		};
+
+		observer.observe(root);
+		root.addEventListener("mouseenter", pause);
+		root.addEventListener("mouseleave", resume);
+		root.addEventListener("focusin", pause);
+		root.addEventListener("focusout", resume);
+		emblaApi.on("pointerDown", pause);
+		emblaApi.on("pointerUp", resume);
+
+		return () => {
+			stop();
+			observer.disconnect();
+			root.removeEventListener("mouseenter", pause);
+			root.removeEventListener("mouseleave", resume);
+			root.removeEventListener("focusin", pause);
+			root.removeEventListener("focusout", resume);
+			emblaApi.off("pointerDown", pause);
+			emblaApi.off("pointerUp", resume);
+		};
+	}, [autoSlide, emblaApi]);
+
 	return (
-		<div>
-			<div ref={emblaRef} className="-mx-5 overflow-hidden md:-mx-10 min-[1360px]:mx-0" aria-label={label} aria-roledescription="carousel">
-				<div className="flex touch-pan-y cursor-grab gap-6 px-5 pb-2 pt-1 active:cursor-grabbing md:px-10 lg:gap-8 min-[1360px]:px-0">
+		<div ref={anchorRef}>
+			<div
+				ref={emblaRef}
+				className={cn("overflow-hidden", !bleed && "-mx-5 md:-mx-10 min-[1360px]:mx-0")}
+				style={bleed ? { width: bleedWidth } : undefined}
+				aria-label={label}
+				aria-roledescription="carousel">
+				<div className={cn("flex touch-pan-y cursor-grab pb-2 pt-1 active:cursor-grabbing", bleed ? "gap-3 pr-6 lg:gap-4" : "gap-6 px-5 md:px-10 lg:gap-8 min-[1360px]:px-0")}>
 					{Children.map(children, (child, index) => (
 						<motion.div
 							className="min-w-0 shrink-0 grow-0"
@@ -64,19 +152,14 @@ const HomeCarousel = ({ children, label, footerAction }: HomeCarouselProps) => {
 					))}
 				</div>
 			</div>
-			<div className="mt-5 flex items-center justify-between gap-4">
-				<div>{footerAction}</div>
-				<div className="hidden h-1 w-28 overflow-hidden rounded-full bg-council-image sm:block" aria-hidden="true">
-					<div className="h-full origin-left rounded-full bg-council-green transition-transform duration-150 ease-out" style={{ transform: `scaleX(${progress})` }} />
-				</div>
-				<div className="ml-auto flex items-center gap-3">
+			<div className={cn("mt-8 flex items-center gap-4", bleed ? "justify-end" : "justify-center")}>
+				{footerAction ? <div className="mr-auto">{footerAction}</div> : null}
+				<div className={cn("flex items-center gap-3", footerAction && "ml-auto")}>
 					<button
 						type="button"
 						onClick={() => emblaApi?.scrollPrev()}
 						disabled={!canScrollPrev}
-						className={cn(
-							"inline-flex size-12 items-center justify-center rounded-full border border-council-image bg-white text-council-green transition-all hover:bg-council-muted focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white",
-						)}
+						className="inline-flex size-[46px] items-center justify-center rounded-full bg-council-lime text-council-green transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-40 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
 						aria-label={`Scroll ${label} backwards`}>
 						<MoveLeft className="size-5" aria-hidden="true" />
 					</button>
@@ -84,9 +167,7 @@ const HomeCarousel = ({ children, label, footerAction }: HomeCarouselProps) => {
 						type="button"
 						onClick={() => emblaApi?.scrollNext()}
 						disabled={!canScrollNext}
-						className={cn(
-							"inline-flex size-12 items-center justify-center rounded-full bg-council-green text-white transition-all hover:bg-council-surface focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-council-green",
-						)}
+						className="inline-flex size-[46px] items-center justify-center rounded-full bg-council-lime text-council-green transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-40 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
 						aria-label={`Scroll ${label} forwards`}>
 						<MoveRight className="size-5" aria-hidden="true" />
 					</button>
