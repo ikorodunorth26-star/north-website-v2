@@ -47,9 +47,9 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 	return (
 		<section className="mt-16" aria-labelledby="photo-gallery-heading">
 			<SectionHeading id="photo-gallery-heading" title="Photo gallery" titleClassName="font-bold" />
-			<ul className="mt-8 grid grid-cols-4 gap-3 sm:gap-4">
+			<ul className={`mt-8 grid gap-3 sm:gap-4 ${photos.length >= 4 ? "grid-cols-4" : photos.length === 3 ? "grid-cols-3" : photos.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-2"}`}>
 				{photos.map((photo, index) => (
-					<li key={photo.src}>
+					<li key={`${photo.src}-${index}`}>
 						<button
 							type="button"
 							className="group block w-full cursor-pointer rounded-xl focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green md:rounded-[20px]"

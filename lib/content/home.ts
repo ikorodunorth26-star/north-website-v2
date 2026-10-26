@@ -1,4 +1,5 @@
 import { figmaAssets, type FigmaAsset } from "./figma-assets";
+import { reportImages } from "./report-images";
 import { projects } from "./projects";
 
 export type HomeProject = {
@@ -80,40 +81,40 @@ export const homeDepartments: HomeDepartment[] = [
 
 export const homeAnnouncements: HomeAnnouncement[] = [
 	{
-		title: "The New Deal: Inside Ikorodu North’s 2026 Budget",
-		summary: "The administration has presented its 2026 budget, setting out its priorities for the year ahead.",
-		image: figmaAssets.news.councilHeadquartersBudget,
-		href: "/news/the-new-deal-2026-budget-explained",
+		title: "First 100 days: the New Deal record at Isiu",
+		summary: "Mayor Apanisile set out what the first hundred days had delivered, from Odo-Nla to Iranlowo Owo Apa.",
+		image: reportImages.hundredDays,
+		href: "/news/first-100-days",
 	},
 	{
-		title: "Monthly Environmental Sanitation Exercise",
-		summary: "Join your neighbours in keeping Ikorodu North clean. Here’s what you need to know about this month’s exercise.",
-		image: figmaAssets.news.communityTour,
-		href: "/news/clean-neighbourhoods-together",
+		title: "Iranlowo Owo Apa: support for traders and households",
+		summary: "Artisans, small businesses, young people, elders and vulnerable residents each received ₦100,000.",
+		image: reportImages.empowermentCheques,
+		href: "/news/iranlowo-owo-apa",
 	},
 	{
-		title: "Mayor Apanisile Inspects Ongoing Solar-Powered Water Project",
-		summary: "The Chairman visited the project site to review progress on a solar-powered water project for residents of [community].",
-		image: figmaAssets.news.solarPoweredWaterProject,
-		href: "/news/solar-powered-water-progress",
+		title: "Four solar water facilities handed over",
+		summary: "Solar water and sanitation facilities were commissioned at Farm Settlement Primary School and in Irepodun, Arobiona and Agbede.",
+		image: reportImages.fourWaterFacilities,
+		href: "/news/four-solar-water-facilities",
 	},
 	{
-		title: "The New Deal: key priorities for 2026",
-		summary: "A plain-language look at the priorities set out in the 2026 budget for Ikorodu North.",
-		image: figmaAssets.news.councilArchive,
-		href: "/news/new-deal-priorities-2026",
+		title: "Six classroom blocks commissioned at Igbaga",
+		summary: "The Chairman commissioned six classroom blocks facilitated by Rep. Babajimi Benson.",
+		image: reportImages.classroomsIgbaga,
+		href: "/news/igbaga-classroom-blocks",
 	},
 	{
-		title: "Giving young people a voice",
-		summary: "How young people in Ikorodu North can take part in local programmes and council conversations.",
-		image: figmaAssets.news.lasustechStudentLeaders,
-		href: "/news/young-people-voice-local-development",
+		title: "WaterAid hands over school water and toilets",
+		summary: "Solar boreholes, tanks and toilets were handed over at schools in Odogunyan and Erikorodo.",
+		image: reportImages.schoolWaterTank,
+		href: "/news/wateraid-school-handover",
 	},
 	{
-		title: "Your neighbourhood, your priorities",
-		summary: "How to share your community’s needs with the council and get a response.",
-		image: figmaAssets.news.neighbourhoodPriorities,
-		href: "/news/neighbourhood-priorities",
+		title: "October inspection of roads, water and the registry",
+		summary: "The Chairman inspected the marriage registry, the Apeka culvert, Oju Emuren–Agbede and works at Odo-Nla.",
+		image: reportImages.drainageWorks,
+		href: "/news/october-project-inspection",
 	},
 ];
 

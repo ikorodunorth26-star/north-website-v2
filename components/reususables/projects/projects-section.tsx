@@ -4,18 +4,11 @@ import { useState } from "react";
 
 import { FeaturedNewsCard, NewsCard, NewsPagination, NewsToolbar } from "@/components/reususables/news";
 import { SectionHeading } from "@/components/reususables/site";
-import { projects, type CouncilProject } from "@/lib/content/projects";
+import { projectCategories, projects, type CouncilProject } from "@/lib/content/projects";
 
 import SuggestProjectBanner from "./suggest-project-banner";
 
 const pageSize = 9;
-
-const projectCategories = [
-	{ label: "All projects", value: "all" },
-	{ label: "Water & sanitation", value: "Water & sanitation" },
-	{ label: "Water", value: "Water" },
-	{ label: "Education", value: "Education" },
-] as const;
 
 const featuredProject = projects[0];
 const listedProjects = projects.slice(1);
