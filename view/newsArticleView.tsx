@@ -1,4 +1,4 @@
-import { NewsCard } from "@/components/reususables";
+import { NewsCard, PhotoGallery } from "@/components/reususables";
 import { ArticleLayout, SectionHeading } from "@/components/reususables/site";
 import type { NewsArticle } from "@/lib/content/news";
 import { getRelatedArticles } from "@/lib/content/news";
@@ -17,7 +17,7 @@ const NewsArticleView = ({ article }: NewsArticleViewProps) => {
 				backLabel="Back to News"
 				title={article.title}
 				image={article.image}
-				caption="[Image caption: describe photo and credit]"
+				caption={article.caption ?? "[Image caption: describe photo and credit]"}
 				meta={
 					<>
 						<time dateTime={article.date}>{article.date}</time>
@@ -37,6 +37,7 @@ const NewsArticleView = ({ article }: NewsArticleViewProps) => {
 						</section>
 					))}
 				</div>
+				{article.gallery ? <PhotoGallery photos={article.gallery} /> : null}
 			</ArticleLayout>
 
 			<section className="bg-council-image py-16 lg:py-24">

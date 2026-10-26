@@ -81,6 +81,24 @@ export const homeDepartments: HomeDepartment[] = [
 
 export const homeAnnouncements: HomeAnnouncement[] = [
 	{
+		title: "Triplets welcomed at Agbede Health Centre",
+		summary: "Mrs Omowunmi Ameen Apanisile presented gifts to the family of triplets born at Agbede Health Centre.",
+		image: reportImages.agbedeTripletsFamily,
+		href: "/news/agbede-triplets",
+	},
+	{
+		title: "Chairman holds community engagement meetings at Agbede and Odogunyan",
+		summary: "Mayor Ameen Apanisile met residents at Agbede and Odogunyan to receive feedback, identify pressing needs, and discuss issues requiring government attention.",
+		image: reportImages.agbedeMeetingBanner,
+		href: "/news/agbede-odogunyan-meetings",
+	},
+	{
+		title: "Chairman receives Lagos East APC women leaders",
+		summary: "Mayor Ameen Apanisile received APC women leaders from Lagos East on a familiarisation and solidarity visit ahead of the forthcoming elections.",
+		image: reportImages.womenLeadersGroup,
+		href: "/news/lagos-east-apc-women-leaders",
+	},
+	{
 		title: "First 100 days: the New Deal record at Isiu",
 		summary: "Mayor Apanisile set out what the first hundred days had delivered, from Odo-Nla to Iranlowo Owo Apa.",
 		image: reportImages.hundredDays,

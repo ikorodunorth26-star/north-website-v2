@@ -12,9 +12,13 @@ type PhotoGalleryProps = {
 	photos: FigmaAsset[];
 };
 
+const previewLimit = 4;
+
 const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 	const activePhoto = activeIndex === null ? null : photos[activeIndex];
+	const previewPhotos = photos.slice(0, previewLimit);
+	const hiddenCount = photos.length - previewPhotos.length;
 
 	useEffect(() => {
 		if (activeIndex === null || photos.length < 2) return;
@@ -36,6 +40,15 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 
 	if (!photos.length) return null;
 
+	const columnClass =
+		previewPhotos.length >= 4
+			? "grid-cols-2 sm:grid-cols-4"
+			: previewPhotos.length === 3
+				? "grid-cols-2 sm:grid-cols-3"
+				: previewPhotos.length === 2
+					? "grid-cols-2"
+					: "grid-cols-1 sm:grid-cols-2";
+
 	const showPrevious = () => {
 		setActiveIndex((index) => (index === null ? index : (index - 1 + photos.length) % photos.length));
 	};
@@ -47,24 +60,35 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 	return (
 		<section className="mt-16" aria-labelledby="photo-gallery-heading">
 			<SectionHeading id="photo-gallery-heading" title="Photo gallery" titleClassName="font-bold" />
-			<ul className={`mt-8 grid gap-3 sm:gap-4 ${photos.length >= 4 ? "grid-cols-4" : photos.length === 3 ? "grid-cols-3" : photos.length === 2 ? "grid-cols-2" : "grid-cols-1 sm:grid-cols-2"}`}>
-				{photos.map((photo, index) => (
-					<li key={`${photo.src}-${index}`}>
-						<button
-							type="button"
-							className="group block w-full cursor-pointer rounded-xl focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green md:rounded-[20px]"
-							aria-label={photo.alt ? `View larger photo: ${photo.alt}` : "View larger photo"}
-							onClick={() => setActiveIndex(index)}>
-							<LocalImage
-								src={photo.src}
-								alt=""
-								className="aspect-[4/3] w-full rounded-xl md:rounded-[20px]"
-								imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.035] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
-								sizes="(min-width: 1408px) 320px, 25vw"
-							/>
-						</button>
-					</li>
-				))}
+			<ul className={`mt-8 grid gap-3 sm:gap-4 ${columnClass}`}>
+				{previewPhotos.map((photo, index) => {
+					const isMoreTile = hiddenCount > 0 && index === previewPhotos.length - 1;
+					const label = photo.alt ? `View larger photo: ${photo.alt}` : "View larger photo";
+
+					return (
+						<li key={`${photo.src}-${index}`}>
+							<button
+								type="button"
+								className="group relative block w-full cursor-pointer rounded-xl focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green md:rounded-[20px]"
+								aria-label={isMoreTile ? `${label}. ${hiddenCount} more photos` : label}
+								onClick={() => setActiveIndex(index)}>
+								<LocalImage
+									src={photo.src}
+									alt=""
+									loading="eager"
+									className="aspect-[4/3] w-full rounded-xl md:rounded-[20px]"
+									imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.035] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+									sizes="(min-width: 640px) 320px, 50vw"
+								/>
+								{isMoreTile ? (
+									<span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl bg-[#0e241d]/62 text-white transition-colors duration-300 group-hover:bg-[#0e241d]/72 md:rounded-[20px]">
+										<span className="text-[32px] font-semibold leading-none tracking-[-0.03em] md:text-4xl">+{hiddenCount}</span>
+									</span>
+								) : null}
+							</button>
+						</li>
+					);
+				})}
 			</ul>
 
 			<Modal
@@ -113,7 +137,10 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 										</>
 									) : null}
 								</div>
-								{activePhoto.alt ? <p className="mt-3 text-center text-sm leading-5 text-white">{activePhoto.alt}</p> : null}
+								<p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-council-lime">
+									{activeIndex !== null ? activeIndex + 1 : 0} / {photos.length}
+								</p>
+								{activePhoto.alt ? <p className="mt-1 text-center text-sm leading-5 text-white">{activePhoto.alt}</p> : null}
 							</ModalBody>
 						) : null
 					}
