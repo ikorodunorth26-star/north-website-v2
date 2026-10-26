@@ -1,0 +1,81 @@
+services	I252:3528;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+services	I252:10711;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+services	154:3911	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+departments	I272:270;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+departments	272:836	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+departments	I252:11006;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+departmentIct	I252:11112;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+departmentIct	252:11813	HOD ICT 1	7c485b4a3d2f7103bc581ad7ff2d01d40a8b39ed	110x165
+departmentIct	252:11494	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+departmentIct	I252:12217;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+executive	I177:78;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+executive	177:100	Ellipse 3	78a6aee82bf6cf430800c068fdea86dadd58aebd	194x194
+executive	177:146	Hon Mathew Aliu Adesanya official portrait	5abdbf4e16cd1be3217aedb0c278882e8a079f9c	387x285
+executive	177:921	Secretary to the Local government 1	11c7e342e57e542162bc103f7241285629bb14fc	386x579
+executive	177:922	Chief of Staff 1	961e63da8807fdd223ed847674c615847225848a	387x513
+executive	177:923	Supervisor for works 1	368b96921afe3a6a84123ff3821fa253c7cf91dd	387x581
+executive	177:924	Supervisor for ICT 1	86a93a918a7866f965558f53455da053ffd7cf82	386x579
+executive	177:925	Supervisor for WAPA 1	51c0d1a28f457b2ef9056e6e85a87c8d6c0a238c	387x582
+executive	177:926	Supervisor for Special Duties 1	b7fde09e99b44ef26a4bc25bce46da3656ec5c10	387x581
+executive	177:927	S A Students Affairs 1	8f8ffb6f3ebd37553be3fc2e96b25ea088f10229	386x513
+executive	177:928	S A Information 1	3cb166fe5096dc4a432a58436f58059b9e47af49	387x580
+executive	177:929	S A Youth and Sports-1 1	60b85c1011728f87463a2a32415cad59bff6092d	387x583
+executive	177:930	S A Procurement  1	44a062f2907194a84c4ead186ed99771b08bc883	386x515
+executive	177:931	Supervisor for Education-1 1	c84faf072b334c2c9081af087ef514069fc5399b	387x582
+executive	177:932	Supervisor for Agricultural Rural development food security and chieftancy affairs 1	7f6cc64565d04dd1f62d4114936e982bd1abd905	387x583
+executive	177:933	S A market affairs 1	1bf0de3528388727ad62b507d42b52de34146699	386x432
+executive	177:934	S A Political affairs 1	3fc9a96f83282651f6adb8ac21374748a1d7e7f4	387x548
+executive	177:935	Supervisor for civic Engagement 1	4df8bb81ea615b47743578ee572907e0b202e1b0	387x583
+executive	177:936	Supervisor for community Development 1	47846e0f471da9c2fa86c695bc1942fa8d50bfc4	386x581
+executive	177:937	Supervisor for Intergovernmental affairs and Legislative duties 1	24529722d2ccfdbfe274fa37506f8a2912c01d2b	387x582
+executive	177:938	S A Project Monitoring 1	2367a165ea32713893ac504950fd0c874ed0045a	387x583
+executive	177:939	S A Tourism 1	b2bde1a54c0aa10339a069b963428c2c442abf58	386x581
+executive	177:940	Supervisor for Budget and Planning 1	31471f26fee45523cd7dba2d134b5ecd80285bc9	387x478
+executive	I231:2589;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+executive	177:475	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+legislative	I177:1358;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+legislative	221:2321	Leader of the house Councilor ward E2 Erikorodo 2	68d5a1949e02fadac5aa75441960e6263f80b01b	387x583
+legislative	224:2325	Deputy Leader Councilor Ward B3 Isiu 2	79f51eb1cd6a7a72b60ddad8de637d0bd630951b	386x579
+legislative	224:2326	Majority Leader Councilor ward E1 Odogunyan 1	ff448b77045069f98f09d7c38c6b24f5dae11f19	429x647
+legislative	224:2341	Chief Whip Councilor Ward E4 Olorunda 2	123b3a338a5df18e7deb0576dbf1614c59274af3	459x486
+legislative	224:2342	Councilor ward E3 Agbala 1	6a83edd69bc8cffce4395bef32c5ef8543a4d600	478x722
+legislative	I231:2637;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+legislative	154:3892	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+revenue	I384:2284;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+revenue	384:2286	happy-black-woman-yellow-blazer-using-smartphone-green-sofa 1	88d72524001fc78563f1f2ec4aaa690cb6b24138	720x964
+revenue	384:2263	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+revenue	384:3639	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+payNow	I384:3408;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+payNow	395:950	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+payNow	439:4143	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+billReview	I384:3412;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+billReview	401:766	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+billReview	384:3347	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+myBills	I384:3416;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+myBills	401:971	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+myBills	384:3506	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+paymentVerified	I384:3420;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+paymentVerified	401:1184	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+paymentVerified	384:3566	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+billBusiness	I384:3424;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+billBusiness	402:877	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+billBusiness	384:3446	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+isiu	439:4441	francis-tokede-G1c8iGBCC4g-unsplash 1	a8250a3b804df606a23599f66156c00aa274125a	1440x960
+isiu	I439:4415;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x837
+isiu	444:736	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+isiu	I444:814;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+odogunyan	444:998	Odogunyan representative image · replace before launch	c56b4d529957a9a88293bd0b9f41fb5f5eb36f56	520x310
+odogunyan	444:1003	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+odogunyan	I444:1127;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+olorunda	444:1357	Olorunda representative image · replace before launch	b544c1a9c57f83c9f2baf2b6a4dc1bf1d5485a22	520x310
+olorunda	444:1362	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+olorunda	I444:1448;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+erikorodo	444:1640	Erikorodo representative image · replace before launch	0a3a7d0df9ee9b6193987421fd2370c4365abdf7	520x310
+erikorodo	444:1645	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+erikorodo	I444:1725;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+agbala	444:1911	Agbala representative image · replace before launch	0a9dc457e48a282b772bfb01cf3d58e65d364513	520x310
+agbala	444:1916	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+agbala	I444:2004;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+suggest	I296:505;9701:28336	texture	06f09a5283d23e6997b2c7ecc7440c9640f49b88	1440x800
+suggest	I296:672;231:2502	INLC logo 2	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56
+suggest	296:722	INLC logo 1	4396685dfe36e25c6dad6c5acd63d6a2fd734c8b	56x56

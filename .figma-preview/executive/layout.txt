@@ -1,0 +1,209 @@
+FRAME Executive Council · Ikorodu North 1440x6128 VERTICAL gap0 p0/0/0/0 fill=#f8f7f2
+  FRAME Executive Council · page introduction 1440x596 VERTICAL gap20 p152/80/56/80 fill=#173d32
+    ELLIPSE Ellipse 2 518x518 fill=#f8f7f2
+    INSTANCE pixels 1440x800
+      RECTANGLE texture 1440x800 fill=image
+    FRAME Frame 12 128x50 r32 VERTICAL gap8 p14/24/14/24 fill=gradient
+      TEXT Leadership 80x22 fill=#173d32 "Leadership"
+    TEXT Page title 584x80 fill=#f8f7f2 "Executive Council"
+    TEXT Introduction 680x54 fill=#dfe5df "Meet the executive leadership guiding policy, coordinating council services and "
+  FRAME Office of the Executive Chairman 1440x882 VERTICAL gap30 p64/80/64/80 fill=#ece8db
+    FRAME Frame 35 1280x202 VERTICAL gap14 p0/0/0/0
+      TEXT Executive office heading 500x140 fill=#173d32 "Office of the Executive Chairman"
+      TEXT Executive office heading 585x48 fill=#62726a "The chairman's office sets the administrative tone for delivery, inter-departmen"
+    FRAME Chairman portrait and introduction 1280x522 r24 HORIZONTAL gap24 p0/0/0/0
+      FRAME Mayor Ameen Apanisile official portrait 307x522 VERTICAL gap24 p32/0/0/0 fill=#173d32
+        ELLIPSE Ellipse 3 194x194 fill=image
+        TEXT Chairman name 307x126 fill=#ffffff "Mayor. Ameen Olawale Ibrahim Apanisile"
+        TEXT Chairman name 307x24 fill=#ddeb9d "Executive Chairman"
+      FRAME Chairman introduction 949x522 VERTICAL gap20 p40/48/40/48 fill=#ffffff
+        TEXT Chairman role 108x16 fill=#62715c "Chairman’s Brief"
+        TEXT Leadership statement 506x90 fill=#173d32 "Public service with purpose. / Progress built together."
+        TEXT Chairman description 634x130 fill=#626b62 "The Executive Chairman leads the executive arm of Ikorodu North LCDA, providing "
+        FRAME Contact details 853x78 HORIZONTAL gap16 p0/0/0/0
+          FRAME Contact · Email 419x78 r16 VERTICAL gap10 p18/20/18/20 fill=#ffffff
+            TEXT Email label 39x13 fill=#62715c "EMAIL"
+            FRAME Email value row 259x17 HORIZONTAL gap8 p0/0/0/0
+              FRAME lucide/mail 16x16
+              TEXT Email value 235x17 fill=#626b62 "chairman@ikorodunorthlcda.gov.ng"
+          FRAME Contact · Phone 419x78 r16 VERTICAL gap10 p18/20/18/20 fill=#ffffff
+            TEXT Phone label 45x13 fill=#62715c "PHONE"
+            FRAME Phone value row 157x17 HORIZONTAL gap8 p0/0/0/0
+              FRAME lucide/phone 16x16
+              TEXT Phone value 133x17 fill=#626b62 "+234 801 000 0000"
+        FRAME Explore resident services 153x48 r32 HORIZONTAL gap10 p15/22/15/22 fill=#173d32
+          TEXT Services button label 81x17 fill=#ddeb9d "View profile"
+          FRAME lucide/arrow-up-right 18x18
+            VECTOR Vector 8x8
+            VECTOR Vector 8x8
+  FRAME Council members directory 1440x3732 VERTICAL gap28 p64/80/72/80 fill=#f8f5ed
+    FRAME Directory introduction 1280x103 VERTICAL gap16 p0/0/0/0
+      TEXT Directory title 433x60 fill=#173d32 "Meet your council."
+      TEXT Directory description 720x27 fill=#626b62 "Meet the leaders supporting executive coordination and the day-to-day work of th"
+    FRAME Council leadership card grid 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Vice Chairman profile 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Hon Mathew Aliu Adesanya official portrait 387x285 r12 HORIZONTAL gap0 p0/0/0/0 fill=image
+          RECTANGLE Rectangle 9 387x98 fill=gradient
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Vice Chairman name 363x31 fill=#173d32 "Hon. Adesanya Mathew Aliu"
+          TEXT Vice Chairman office 107x16 fill=#c39828 "VICE CHAIRMAN"
+      FRAME Council member 03 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 03 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Secretary to the Local government 1 386x579 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 03 name placeholder 363x31 fill=#173d32 "Hon. Tijani Olakanmi Sheriff"
+          TEXT Member 03 portfolio 271x16 fill=#c39828 "SECRETARY TO THE LOCAL GOVERNMENT"
+      FRAME Council member 04 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 04 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Chief of Staff 1 387x513 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 04 name placeholder 363x62 fill=#173d32 "Hon. Mojeed Oluwamayowa Saheed"
+          TEXT Member 04 portfolio 363x48 fill=#c39828 "CHIEF OF STAFF"
+    FRAME Council members row 2 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 05 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 05 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for works 1 387x581 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 05 name placeholder 363x31 fill=#173d32 "Hon. Jokomba Kehinde"
+          TEXT Member 05 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR WORKS"
+      FRAME Council member 06 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 06 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for ICT 1 386x579 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 06 name placeholder 363x62 fill=#173d32 "Hon. Banjo Olanrewaju Abiodun"
+          TEXT Member 06 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR ICT"
+      FRAME Council member 07 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 07 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for WAPA 1 387x582 fill=image
+        FRAME Vice Chairman details 387x75 VERTICAL gap16 p0/12/12/12
+          TEXT Member 07 name placeholder 363x31 fill=#173d32 "Hon. Sulaimon Laolat"
+          TEXT Member 07 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR WAPA"
+    FRAME Council members row 3 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 08 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 08 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for Special Duties 1 387x581 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 08 name placeholder 363x62 fill=#173d32 "Hon. Adeyemi Adeniran Babatunde"
+          TEXT Member 08 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR SPECIAL DUTIES"
+      FRAME Council member 09 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 09 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Students Affairs 1 386x513 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 09 name placeholder 363x31 fill=#173d32 "Com. Alimi Idris"
+          TEXT Member 09 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, STUDENTS' AFFAIRS"
+      FRAME Council member 10 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 10 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Information 1 387x580 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 10 name placeholder 363x62 fill=#173d32 "Hon. Olowolagba Olawale Adebayo"
+          TEXT Member 10 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, INFORMATION"
+    FRAME Council members row 4 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 11 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 11 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Youth and Sports-1 1 387x583 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 11 name placeholder 363x31 fill=#173d32 "Hon. Ogunba Adetunbosun"
+          TEXT Member 11 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, YOUTH AND SPORTS"
+      FRAME Council member 12 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 12 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Procurement  1 386x515 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 12 name placeholder 363x62 fill=#173d32 "Hon. Oyinloye Kayode Olabode"
+          TEXT Member 12 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, PROCUREMENT"
+      FRAME Council member 13 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 10 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for Education-1 1 387x582 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 10 name placeholder 363x31 fill=#173d32 "Hon. Adaramola Abimbola"
+          TEXT Member 10 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR EDUCATION"
+    FRAME Council members row 5 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 14 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 11 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for Agricultural Rural development food security and chieftancy affairs 1 387x583 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 11 name placeholder 363x31 fill=#173d32 "[Name to be confirmed]"
+          TEXT Member 11 portfolio 363x48 fill=#c39828 "SUPERVISOR FOR AGRICULTURE, RURAL DEVELOPMENT, FOOD SECURITY AND CHIEFTAINCY AFF"
+      FRAME Council member 15 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 15 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A market affairs 1 386x432 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 15 name placeholder 363x62 fill=#173d32 "Hon. Baliqees Aderoju Ibrahim"
+          TEXT Member 15 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, MARKET AFFAIRS"
+      FRAME Council member 16 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 10 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Political affairs 1 387x548 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 10 name placeholder 363x62 fill=#173d32 "Hon. Adeniyi Afolabi Odugbesi"
+          TEXT Member 10 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, POLITICAL AFFAIRS"
+    FRAME Council members row 6 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 17 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 11 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for civic Engagement 1 387x583 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 11 name placeholder 363x31 fill=#173d32 "Hon. Edu Hafsat"
+          TEXT Member 11 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR CIVIC ENGAGEMENT"
+      FRAME Council member 18 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 18 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for community Development 1 386x581 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 18 name placeholder 363x62 fill=#173d32 "Hon. Fakumoju Kehinde Babayemisi"
+          TEXT Member 18 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR COMMUNITY DEVELOPMENT"
+      FRAME Council member 19 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 10 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE Supervisor for Intergovernmental affairs and Legislative duties 1 387x582 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 10 name placeholder 363x31 fill=#173d32 "Hon. Ambali Olutusin"
+          TEXT Member 10 portfolio 363x32 fill=#c39828 "SUPERVISOR FOR INTERGOVERNMENTAL AFFAIRS AND LEGISLATIVE DUTIES"
+    FRAME Council members row 7 1280x471 HORIZONTAL gap24 p0/0/0/0
+      FRAME Council member 20 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 11 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          RECTANGLE S A Project Monitoring 1 387x583 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 11 name placeholder 363x31 fill=#173d32 "Hon. Ishmaheel Bashir"
+          TEXT Member 11 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, PROJECT MONITORING"
+      FRAME Council member 21 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 21 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          FRAME lucide/user-round 48x48
+            VECTOR Vector 20x20
+            VECTOR Vector 32x16
+          TEXT Member 21 photograph status 114x14 fill=#626b62 "PORTRAIT PENDING"
+          RECTANGLE S A Tourism 1 386x581 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 21 name placeholder 363x31 fill=#173d32 "Hon. Abiodun Salau"
+          TEXT Member 21 portfolio 363x16 fill=#c39828 "SPECIAL ADVISER, TOURISM"
+      FRAME Council member 22 · pending details 411x471 r20 VERTICAL gap24 p12/12/12/12 fill=#fffdf8
+        FRAME Member 10 portrait placeholder 387x285 r12 VERTICAL gap16 p0/0/0/0 fill=#e8e9df
+          FRAME lucide/user-round 48x48
+            VECTOR Vector 20x20
+            VECTOR Vector 32x16
+          TEXT Member 10 photograph status 114x14 fill=#626b62 "PORTRAIT PENDING"
+          RECTANGLE Supervisor for Budget and Planning 1 387x478 fill=image
+        FRAME Vice Chairman details 387x138 VERTICAL gap16 p0/12/12/12
+          TEXT Member 10 name placeholder 363x62 fill=#173d32 "Hon. Basirat Adewunmi Babatunde"
+          TEXT Member 10 portfolio 363x16 fill=#c39828 "SUPERVISOR FOR BUDGET AND PLANNING"
+  FRAME Explore council leadership 1440x286 VERTICAL gap32 p56/80/64/80 fill=#eeeadf
+    TEXT Related pages title 498x45 fill=#173d32 "More about your local government"
+    FRAME Related government pages 1280x89 HORIZONTAL gap40 p0/0/0/0
+      FRAME Legislative Members link 400x89 VERTICAL gap12 p24/0/0/0
+        TEXT Legislative Members heading 233x31 fill=#173d32 "Legislative Members  ↗"
+        TEXT Legislative Members description 315x22 fill=#626b62 "Meet the representatives of our communities."
+      FRAME Management Team link 400x89 VERTICAL gap12 p24/0/0/0
+        TEXT Management Team heading 221x31 fill=#173d32 "Management Team  ↗"
+        TEXT Management Team description 366x22 fill=#626b62 "Get to know the team behind council administration."
+      FRAME Departments link 400x89 VERTICAL gap12 p24/0/0/0
+        TEXT Departments heading 160x31 fill=#173d32 "Departments  ↗"
+        TEXT Departments description 369x22 fill=#626b62 "Find the office responsible for the services you need."
+  FRAME Primary navigation -light 1328x76 r40 HORIZONTAL gap0 p0/40/0/16 fill=#15332b/80
+    FRAME Frame 2 1272x76 HORIZONTAL gap676 p0/0/0/0
+      FRAME Council brand 198x56 HORIZONTAL gap12 p0/0/0/0
+        RECTANGLE INLC logo 1 56x56 fill=image
+        FRAME Council wordmark 130x40 VERTICAL gap5 p0/0/0/0
+          TEXT Council name 130x40 fill=#ffffff "Ikorodu North LCDA"
+      FRAME Main links 392x76 HORIZONTAL gap32 p0/0/0/0
+        FRAME Nav Item 39x76 HORIZONTAL gap8 p0/0/0/0
+          TEXT Government 39x19 fill=#ffffff/70 "Home"
+        FRAME Nav Item 81x76 HORIZONTAL gap8 p0/0/0/0
+          TEXT Government 81x19 fill=#ffffff/70 "Government"
+        TEXT Services 55x19 fill=#ffffff/70 "Services"
+        TEXT News 36x19 fill=#ffffff/70 "News"
+        TEXT Contact 53x19 fill=#ffffff/70 "Contact"

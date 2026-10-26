@@ -1,0 +1,106 @@
+[
+  {
+    "key": "desktop",
+    "id": "I177:1358;9701:28336",
+    "name": "texture",
+    "imageRef": "06f09a5283d23e6997b2c7ecc7440c9640f49b88",
+    "width": 1440,
+    "height": 800
+  },
+  {
+    "key": "desktop",
+    "id": "221:2321",
+    "name": "Leader of the house Councilor ward E2 Erikorodo 2",
+    "imageRef": "68d5a1949e02fadac5aa75441960e6263f80b01b",
+    "width": 387,
+    "height": 583
+  },
+  {
+    "key": "desktop",
+    "id": "224:2325",
+    "name": "Deputy Leader Councilor Ward B3 Isiu 2",
+    "imageRef": "79f51eb1cd6a7a72b60ddad8de637d0bd630951b",
+    "width": 386,
+    "height": 579
+  },
+  {
+    "key": "desktop",
+    "id": "224:2326",
+    "name": "Majority Leader Councilor ward E1 Odogunyan 1",
+    "imageRef": "ff448b77045069f98f09d7c38c6b24f5dae11f19",
+    "width": 429,
+    "height": 647
+  },
+  {
+    "key": "desktop",
+    "id": "224:2341",
+    "name": "Chief Whip Councilor Ward E4 Olorunda 2",
+    "imageRef": "123b3a338a5df18e7deb0576dbf1614c59274af3",
+    "width": 459,
+    "height": 486
+  },
+  {
+    "key": "desktop",
+    "id": "224:2342",
+    "name": "Councilor ward E3 Agbala 1",
+    "imageRef": "6a83edd69bc8cffce4395bef32c5ef8543a4d600",
+    "width": 478,
+    "height": 722
+  },
+  {
+    "key": "mobile",
+    "id": "I233:939;9701:28336",
+    "name": "texture",
+    "imageRef": "06f09a5283d23e6997b2c7ecc7440c9640f49b88",
+    "width": 600,
+    "height": 600
+  },
+  {
+    "key": "mobile",
+    "id": "233:944",
+    "name": "Council crest",
+    "imageRef": "4396685dfe36e25c6dad6c5acd63d6a2fd734c8b",
+    "width": 44,
+    "height": 44
+  },
+  {
+    "key": "mobile",
+    "id": "233:976",
+    "name": "Portrait",
+    "imageRef": "68d5a1949e02fadac5aa75441960e6263f80b01b",
+    "width": 319,
+    "height": 480
+  },
+  {
+    "key": "mobile",
+    "id": "233:983",
+    "name": "Portrait",
+    "imageRef": "79f51eb1cd6a7a72b60ddad8de637d0bd630951b",
+    "width": 318,
+    "height": 477
+  },
+  {
+    "key": "mobile",
+    "id": "233:990",
+    "name": "Portrait",
+    "imageRef": "ff448b77045069f98f09d7c38c6b24f5dae11f19",
+    "width": 353,
+    "height": 533
+  },
+  {
+    "key": "mobile",
+    "id": "233:997",
+    "name": "Portrait",
+    "imageRef": "123b3a338a5df18e7deb0576dbf1614c59274af3",
+    "width": 378,
+    "height": 400
+  },
+  {
+    "key": "mobile",
+    "id": "233:1004",
+    "name": "Portrait",
+    "imageRef": "6a83edd69bc8cffce4395bef32c5ef8543a4d600",
+    "width": 394,
+    "height": 595
+  }
+]

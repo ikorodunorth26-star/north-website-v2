@@ -1,0 +1,172 @@
+[
+  {
+    "imageRef": "06f09a5283d23e6997b2c7ecc7440c9640f49b88",
+    "uses": [
+      "desktop:texture:1440x800",
+      "mobile:texture:600x500"
+    ]
+  },
+  {
+    "imageRef": "78a6aee82bf6cf430800c068fdea86dadd58aebd",
+    "uses": [
+      "desktop:Ellipse 3:194x194",
+      "mobile:Official portrait:168x168"
+    ]
+  },
+  {
+    "imageRef": "5abdbf4e16cd1be3217aedb0c278882e8a079f9c",
+    "uses": [
+      "desktop:Hon Mathew Aliu Adesanya official portrait:387x285",
+      "mobile:Portrait:318x235"
+    ]
+  },
+  {
+    "imageRef": "11c7e342e57e542162bc103f7241285629bb14fc",
+    "uses": [
+      "desktop:Secretary to the Local government 1:386x579",
+      "mobile:Portrait:318x477"
+    ]
+  },
+  {
+    "imageRef": "961e63da8807fdd223ed847674c615847225848a",
+    "uses": [
+      "desktop:Chief of Staff 1:387x513",
+      "mobile:Portrait:318x422"
+    ]
+  },
+  {
+    "imageRef": "368b96921afe3a6a84123ff3821fa253c7cf91dd",
+    "uses": [
+      "desktop:Supervisor for works 1:387x581",
+      "mobile:Portrait:318x477"
+    ]
+  },
+  {
+    "imageRef": "86a93a918a7866f965558f53455da053ffd7cf82",
+    "uses": [
+      "desktop:Supervisor for ICT 1:386x579",
+      "mobile:Portrait:318x477"
+    ]
+  },
+  {
+    "imageRef": "51c0d1a28f457b2ef9056e6e85a87c8d6c0a238c",
+    "uses": [
+      "desktop:Supervisor for WAPA 1:387x582",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "b7fde09e99b44ef26a4bc25bce46da3656ec5c10",
+    "uses": [
+      "desktop:Supervisor for Special Duties 1:387x581",
+      "mobile:Portrait:318x477"
+    ]
+  },
+  {
+    "imageRef": "8f8ffb6f3ebd37553be3fc2e96b25ea088f10229",
+    "uses": [
+      "desktop:S A Students Affairs 1:386x513",
+      "mobile:Portrait:318x422"
+    ]
+  },
+  {
+    "imageRef": "3cb166fe5096dc4a432a58436f58059b9e47af49",
+    "uses": [
+      "desktop:S A Information 1:387x580",
+      "mobile:Portrait:318x477"
+    ]
+  },
+  {
+    "imageRef": "60b85c1011728f87463a2a32415cad59bff6092d",
+    "uses": [
+      "desktop:S A Youth and Sports-1 1:387x583",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "44a062f2907194a84c4ead186ed99771b08bc883",
+    "uses": [
+      "desktop:S A Procurement  1:386x515",
+      "mobile:Portrait:318x424"
+    ]
+  },
+  {
+    "imageRef": "c84faf072b334c2c9081af087ef514069fc5399b",
+    "uses": [
+      "desktop:Supervisor for Education-1 1:387x582",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "7f6cc64565d04dd1f62d4114936e982bd1abd905",
+    "uses": [
+      "desktop:Supervisor for Agricultural Rural development food security and chieftancy affairs 1:387x583",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "1bf0de3528388727ad62b507d42b52de34146699",
+    "uses": [
+      "desktop:S A market affairs 1:386x432",
+      "mobile:Portrait:318x356"
+    ]
+  },
+  {
+    "imageRef": "3fc9a96f83282651f6adb8ac21374748a1d7e7f4",
+    "uses": [
+      "desktop:S A Political affairs 1:387x548",
+      "mobile:Portrait:318x451"
+    ]
+  },
+  {
+    "imageRef": "4df8bb81ea615b47743578ee572907e0b202e1b0",
+    "uses": [
+      "desktop:Supervisor for civic Engagement 1:387x583",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "47846e0f471da9c2fa86c695bc1942fa8d50bfc4",
+    "uses": [
+      "desktop:Supervisor for community Development 1:386x581",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "24529722d2ccfdbfe274fa37506f8a2912c01d2b",
+    "uses": [
+      "desktop:Supervisor for Intergovernmental affairs and Legislative duties 1:387x582",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "2367a165ea32713893ac504950fd0c874ed0045a",
+    "uses": [
+      "desktop:S A Project Monitoring 1:387x583",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "b2bde1a54c0aa10339a069b963428c2c442abf58",
+    "uses": [
+      "desktop:S A Tourism 1:386x581",
+      "mobile:Portrait:318x478"
+    ]
+  },
+  {
+    "imageRef": "31471f26fee45523cd7dba2d134b5ecd80285bc9",
+    "uses": [
+      "desktop:Supervisor for Budget and Planning 1:387x478",
+      "mobile:Portrait:318x393"
+    ]
+  },
+  {
+    "imageRef": "4396685dfe36e25c6dad6c5acd63d6a2fd734c8b",
+    "uses": [
+      "desktop:INLC logo 2:56x56",
+      "desktop:INLC logo 1:56x56",
+      "mobile:Council crest:44x44",
+      "mobile:INLC logo 2:56x56"
+    ]
+  }
+]

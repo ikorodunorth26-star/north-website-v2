@@ -1,0 +1,185 @@
+# Departments · Ikorodu North 1440x4343
+#   Departments introduction 1440x596
+#     Ellipse 2 518x518
+#     pixels 1440x800
+#       texture 1440x800
+#     Frame 12 167x50
+16/500/ORIGINAL Service Network
+76/500/ORIGINAL Departments
+18/500/ORIGINAL Find the department or unit responsible for your enquiry, what it handles and how to reach it.
+#   Department directory 1440x2625
+#     Service directory heading and search 1280x52
+#       Service directory introduction 716x48
+42/500/ORIGINAL Find a department
+#       Search council services 500x52
+#         lucide/search 22x22
+15/400/ORIGINAL Search departments or services
+#     Service audience filters 1280x43
+#       All services filter 140x43
+14/500/ORIGINAL All departments
+#       For residents filter 122x43
+14/500/ORIGINAL Departments
+#       For businesses filter 72x43
+14/500/ORIGINAL Units
+#       Community support filter 177x43
+14/500/ORIGINAL Health & environment
+#     Projects 1280x442
+#       Project 1 411x441
+#         Frame 16 56x56
+#         Frame 13 363x217
+26/700/ORIGINAL Admin & Human Resources
+18/500/ORIGINAL Handles the council's people and processes, including recruitment, training, staff welfare, records and day-to-day administration.
+16/500/ORIGINAL hr@ikorodunorthlcda.gov.ng
+16/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Project 4 411x442
+#         Frame 16 56x56
+#         Frame 13 363x209
+26/700/ORIGINAL Finance & Accounts
+18/500/ORIGINAL Keeps the council's money accountable through revenue collection, budgeting, payroll, spending controls and financial reporting
+15/500/ORIGINAL finance@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Project 5 411x442
+#         Frame 16 56x56
+#         Frame 13 363x209
+26/700/ORIGINAL Primary Health Care
+18/500/ORIGINAL Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.
+15/500/ORIGINAL phc@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#     Department cards row 1 1280x442
+#       Education & Library Services department 411x442
+#         Education & Library Services icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Education & Library Services
+18/500/ORIGINAL Primary education support, scholarships and library services.
+15/500/ORIGINAL education@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Planning, Budget, Research & Statistics department 411x442
+#         Planning, Budget, Research & Statistics icon row 56x56
+#         Frame 363x214
+26/700/ORIGINAL Planning, Budget, Research & Statistics
+18/500/ORIGINAL Development planning, budget preparation and statistics.
+15/500/ORIGINAL planning@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Environmental Health Services department 411x442
+#         Environmental Health Services icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Environmental Health Services
+18/500/ORIGINAL Sanitation, waste management and public health inspections.
+15/500/ORIGINAL environmentalhealth@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#     Department cards row 2 1280x442
+#       Agriculture, Rural & Social Development department 411x442
+#         Agriculture, Rural & Social Development icon row 56x56
+#         Frame 363x214
+26/700/ORIGINAL Agriculture, Rural & Social Development
+18/500/ORIGINAL Farmer support, rural empowerment and social development.
+15/500/ORIGINAL agriculture@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Women Affairs & Poverty Alleviation department 411x442
+#         Women Affairs & Poverty Alleviation icon row 56x56
+#         Frame 363x214
+26/700/ORIGINAL Women Affairs & Poverty Alleviation
+18/500/ORIGINAL Women's empowerment, skills programmes and poverty reduction.
+15/500/ORIGINAL womenaffairs@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Works & Infrastructure department 411x442
+#         Works & Infrastructure icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Works & Infrastructure
+18/500/ORIGINAL Roads, drainage, public buildings and capital projects.
+15/500/ORIGINAL works@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#     Department cards row 3 1280x442
+#       Legislative Unit department 411x442
+#         Legislative Unit icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Legislative Unit
+18/500/ORIGINAL Support for the Legislative House and its records.
+15/500/ORIGINAL legislative@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Public Affairs Unit department 411x442
+#         Public Affairs Unit icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Public Affairs Unit
+18/500/ORIGINAL Public communication, media relations and community updates.
+15/500/ORIGINAL publicaffairs@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Internal Audit Unit department 411x442
+#         Internal Audit Unit icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Internal Audit Unit
+18/500/ORIGINAL Audits of revenue and spending, and internal controls.
+15/500/ORIGINAL audit@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#     Department cards row 4 1280x442
+#       Legal Unit department 411x442
+#         Legal Unit icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Legal Unit
+18/500/ORIGINAL Legal advice, contracts and regulatory compliance.
+15/500/ORIGINAL legal@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Procurement Unit department 411x442
+#         Procurement Unit icon row 56x56
+#         Frame 363x179
+26/700/ORIGINAL Procurement Unit
+18/500/ORIGINAL Public procurement, vendor registration and value for money.
+15/500/ORIGINAL procurement@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#       Information & Communication Technology Unit department 411x442
+#         Information & Communication Technology Unit icon row 56x56
+#         Frame 363x214
+26/700/ORIGINAL Information & Communication Technology Unit
+18/500/ORIGINAL Council systems, digital services and technical support.
+15/500/ORIGINAL ict@ikorodunorthlcda.gov.ng
+15/500/ORIGINAL +234 XXX XXX XXXX
+#         Contact us button 128x24
+18/700/ORIGINAL View profile
+#   How to reach a department 1440x490
+42/500/ORIGINAL How to reach a department
+#     Three ways to reach a department 1280x200
+#       Check the requirements 411x200
+32/400/ORIGINAL 01
+22/500/ORIGINAL Find the right desk
+16/400/ORIGINAL Use the directory above to find the department or unit responsible for your enquiry.
+#       Prepare your information 411x200
+32/400/ORIGINAL 02
+22/500/ORIGINAL Contact the department
+16/400/ORIGINAL Call [department phone] or email [department email], or use the council contact form.
+#       Confirm the next step 411x200
+32/400/ORIGINAL 03
+22/500/ORIGINAL Visit in person
+16/400/ORIGINAL Visit the council secretariat during office hours. Call ahead to confirm availability.
+#     Verification notice 1280x58
+#       lucide/shield-check 24x24
+#         Vector 16x20
+#         Vector 6x4
+14/400/ORIGINAL Department contact details and Heads of Department will be published once verified.

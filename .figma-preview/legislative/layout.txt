@@ -1,0 +1,138 @@
+desktop FRAME Legislative House · Ikorodu North 1440x3151 fill=#f8f5ed
+desktop   FRAME Executive Council · page introduction 1440x596 fill=#173d32
+desktop     ELLIPSE Ellipse 2 518x518 fill=#f8f7f2
+desktop     INSTANCE pixels 1440x800
+desktop       RECTANGLE texture 1440x800 fill=image:06f09a5283d23e6997b2c7ecc7440c9640f49b88
+desktop     FRAME Frame 12 189x50 fill=gradient
+desktop       TEXT Representative Arm 141x22 fill=#173d32 "Representative Arm"
+desktop     TEXT Page title 568x80 fill=#f8f7f2 "Legislative House"
+desktop     TEXT Introduction 680x54 fill=#dfe5df "Connecting the priorities of our communities with local lawmaking, oversight and accountable government in Ikorodu North."
+desktop   FRAME Chamber overview and civic mandate 1440x574 fill=#ece8db
+desktop     FRAME Frame 12 152x50 fill=#ffffff
+desktop       TEXT Civic Mandate 104x22 fill=#173d32 "Civic Mandate"
+desktop     FRAME Chamber introduction 1280x207
+desktop       TEXT Overview heading 391x67 fill=#173d32 "Chamber overview"
+desktop       TEXT Overview description 529x116 fill=#626b62 "The Legislative House brings community priorities into council deliberations. Councillors represent residents, review local policies and pro"
+desktop     FRAME Three responsibilities of the house 1280x125
+desktop       FRAME Representation 400x125
+desktop         TEXT Representation title 163x35 fill=#173d32 "Representation"
+desktop         TEXT Representation description 400x52 fill=#626b62 "Bringing the needs and concerns of residents into council discussions."
+desktop       FRAME Local lawmaking 400x125
+desktop         TEXT Local lawmaking title 180x35 fill=#173d32 "Local lawmaking"
+desktop         TEXT Local lawmaking description 400x52 fill=#626b62 "Deliberating on local policies and bye-laws that shape community life."
+desktop       FRAME Public oversight 400x125
+desktop         TEXT Public oversight title 173x35 fill=#173d32 "Public oversight"
+desktop         TEXT Public oversight description 400x52 fill=#626b62 "Scrutinising council activities and supporting accountable public service."
+desktop   FRAME Ward representatives directory 1440x1349 fill=#f8f5ed
+desktop     FRAME Frame 36 618x113
+desktop       TEXT Directory heading 618x75 fill=#173d32 "Meet your representatives."
+desktop       TEXT Directory introduction 570x26 fill=#626b62 "Find the people representing your community in the Legislative House."
+desktop     FRAME Representatives row 1 1280x522
+desktop       FRAME Representative 1 · pending verification 411x522 fill=#fffdf8
+desktop         FRAME Representative portrait pending 387x285 fill=#e8e9df
+desktop           RECTANGLE Leader of the house Councilor ward E2 Erikorodo 2 387x583 fill=image:68d5a1949e02fadac5aa75441960e6263f80b01b
+desktop         FRAME Vice Chairman details 387x189
+desktop           TEXT Vice Chairman name 363x31 fill=#173d32 "Hon Benson Titilayo Abosede "
+desktop           TEXT Vice Chairman office 363x32 fill=#c39828 "Leader of the house, Councilor ward E2 Erikorodo"
+desktop           TEXT Vice Chairman responsibilities 363x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+desktop       FRAME Representative 2 · pending verification 411x522 fill=#fffdf8
+desktop         FRAME Representative portrait pending 387x285 fill=#e8e9df
+desktop           RECTANGLE Deputy Leader Councilor Ward B3 Isiu 2 386x579 fill=image:79f51eb1cd6a7a72b60ddad8de637d0bd630951b
+desktop         FRAME Vice Chairman details 387x189
+desktop           TEXT Vice Chairman name 363x31 fill=#173d32 "Hon Jimoh Idris Iliasu "
+desktop           TEXT Vice Chairman office 363x16 fill=#c39828 "Deputy Leader, Councilor Ward B3, Isiu"
+desktop           TEXT Vice Chairman responsibilities 363x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+desktop       FRAME Representative 3 · pending verification 411x522 fill=#fffdf8
+desktop         FRAME Representative portrait pending 387x285 fill=#e8e9df
+desktop           RECTANGLE Majority Leader Councilor ward E1 Odogunyan 1 429x647 fill=image:ff448b77045069f98f09d7c38c6b24f5dae11f19
+desktop         FRAME Vice Chairman details 387x189
+desktop           TEXT Vice Chairman name 363x62 fill=#173d32 "Hon Banjoko Babatunde Oluwaseun"
+desktop           TEXT Vice Chairman office 363x16 fill=#c39828 "Majority Leader, Councilor ward E1 Odogunyan"
+desktop           TEXT Vice Chairman responsibilities 363x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+desktop     FRAME Representatives row 2 1280x522
+desktop       FRAME Representative 4 · pending verification 397x522 fill=#fffdf8
+desktop         FRAME Representative portrait pending 373x285 fill=#e8e9df
+desktop           RECTANGLE Chief Whip Councilor Ward E4 Olorunda 2 459x486 fill=image:123b3a338a5df18e7deb0576dbf1614c59274af3
+desktop         FRAME Vice Chairman details 373x189
+desktop           TEXT Vice Chairman name 349x62 fill=#173d32 "Hon Onabajo Oluwaseyi Olugbenga"
+desktop           TEXT Vice Chairman office 349x16 fill=#c39828 "Chief Whip, Councilor Ward E4, Olorunda"
+desktop           TEXT Vice Chairman responsibilities 349x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+desktop       FRAME Representative 5 · pending verification 397x522 fill=#fffdf8
+desktop         FRAME Representative portrait pending 373x285 fill=#e8e9df
+desktop           RECTANGLE Councilor ward E3 Agbala 1 478x722 fill=image:6a83edd69bc8cffce4395bef32c5ef8543a4d600
+desktop         FRAME Vice Chairman details 373x189
+desktop           TEXT Vice Chairman name 349x31 fill=#173d32 "Hon Ibrahim Risikat Abiodun"
+desktop           TEXT Vice Chairman office 349x16 fill=#c39828 "Councilor ward E3 Agbala"
+desktop           TEXT Vice Chairman responsibilities 349x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+mobile FRAME Legislative House · Ikorodu North · Mobile 390x4866 fill=#f8f5ed
+mobile   FRAME Navigation and introduction 390x500 fill=#173d32
+mobile     INSTANCE Civic dot texture 600x600
+mobile       RECTANGLE texture 600x600 fill=image:06f09a5283d23e6997b2c7ecc7440c9640f49b88
+mobile     FRAME Page introduction 350x251
+mobile       FRAME Representative arm label 164x39 fill=gradient
+mobile         TEXT Label 124x19 fill=#173d32 "Representative Arm"
+mobile       TEXT Page title 350x100 fill=#f8f7f2 "Legislative House"
+mobile       TEXT Introduction 350x72 fill=#dfe5df "Connecting the priorities of our communities with local lawmaking, oversight and accountable government in Ikorodu North."
+mobile     FRAME Mobile navigation 350x64 fill=#15382e
+mobile       FRAME Council brand 159x44
+mobile         RECTANGLE Council crest 44x44 fill=image:4396685dfe36e25c6dad6c5acd63d6a2fd734c8b
+mobile         TEXT Council name 105x34 fill=#ffffff "Ikorodu North LCDA"
+mobile       FRAME Open navigation 62x44
+mobile         TEXT Menu label 34x18 fill=#ffffff "Menu"
+mobile         FRAME menu 20x20
+mobile           VECTOR Vector 13x12
+mobile   FRAME Chamber overview and civic mandate 390x655 fill=#ece8db
+mobile     FRAME Civic mandate label 131x39 fill=#ffffff
+mobile       TEXT Label 91x19 fill=#173d32 "Civic Mandate"
+mobile     FRAME Chamber introduction 342x151
+mobile       TEXT Heading 342x39 fill=#173d32 "Chamber overview"
+mobile       TEXT Description 342x96 fill=#626b62 "The Legislative House brings community priorities into council deliberations. Councillors represent residents, review local policies and pro"
+mobile     FRAME Responsibilities of the house 342x317
+mobile       FRAME House responsibility 342x87
+mobile         TEXT Title 342x29 fill=#173d32 "Representation"
+mobile         TEXT Description 342x48 fill=#626b62 "Bringing the needs and concerns of residents into council discussions."
+mobile       FRAME House responsibility 342x87
+mobile         TEXT Title 342x29 fill=#173d32 "Local lawmaking"
+mobile         TEXT Description 342x48 fill=#626b62 "Deliberating on local policies and bye-laws that shape community life."
+mobile       FRAME House responsibility 342x87
+mobile         TEXT Title 342x29 fill=#173d32 "Public oversight"
+mobile         TEXT Description 342x48 fill=#626b62 "Scrutinising council activities and supporting accountable public service."
+mobile   FRAME Ward representatives directory 390x2666 fill=#f8f5ed
+mobile     FRAME Directory introduction 342x140
+mobile       TEXT Heading 342x78 fill=#173d32 "Meet your representatives."
+mobile       TEXT Description 342x48 fill=#626b62 "Find the people representing your community in the Legislative House."
+mobile     FRAME Representative profile 342x480 fill=#fffdf8
+mobile       FRAME Official portrait 318x235
+mobile         RECTANGLE Portrait 319x480 fill=image:68d5a1949e02fadac5aa75441960e6263f80b01b
+mobile       FRAME Profile details 318x201
+mobile         TEXT Name 298x56 fill=#173d32 "Hon Benson Titilayo Abosede"
+mobile         TEXT Office 298x36 fill=#c39828 "Leader of the house, Councilor ward E2 Erikorodo"
+mobile         TEXT Responsibilities 298x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+mobile     FRAME Representative profile 342x434 fill=#fffdf8
+mobile       FRAME Official portrait 318x235
+mobile         RECTANGLE Portrait 318x477 fill=image:79f51eb1cd6a7a72b60ddad8de637d0bd630951b
+mobile       FRAME Profile details 318x155
+mobile         TEXT Name 298x28 fill=#173d32 "Hon Jimoh Idris Iliasu"
+mobile         TEXT Office 298x18 fill=#c39828 "Deputy Leader, Councilor Ward B3, Isiu"
+mobile         TEXT Responsibilities 298x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+mobile     FRAME Representative profile 342x480 fill=#fffdf8
+mobile       FRAME Official portrait 318x235
+mobile         RECTANGLE Portrait 353x533 fill=image:ff448b77045069f98f09d7c38c6b24f5dae11f19
+mobile       FRAME Profile details 318x201
+mobile         TEXT Name 298x56 fill=#173d32 "Hon Banjoko Babatunde Oluwaseun"
+mobile         TEXT Office 298x36 fill=#c39828 "Majority Leader, Councilor ward E1 Odogunyan"
+mobile         TEXT Responsibilities 298x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+mobile     FRAME Representative profile 342x462 fill=#fffdf8
+mobile       FRAME Official portrait 318x235
+mobile         RECTANGLE Portrait 378x400 fill=image:123b3a338a5df18e7deb0576dbf1614c59274af3
+mobile       FRAME Profile details 318x183
+mobile         TEXT Name 298x56 fill=#173d32 "Hon Onabajo Oluwaseyi Olugbenga"
+mobile         TEXT Office 298x18 fill=#c39828 "Chief Whip, Councilor Ward E4, Olorunda"
+mobile         TEXT Responsibilities 298x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
+mobile     FRAME Representative profile 342x462 fill=#fffdf8
+mobile       FRAME Official portrait 318x235
+mobile         RECTANGLE Portrait 394x595 fill=image:6a83edd69bc8cffce4395bef32c5ef8543a4d600
+mobile       FRAME Profile details 318x183
+mobile         TEXT Name 298x56 fill=#173d32 "Hon Ibrahim Risikat Abiodun"
+mobile         TEXT Office 298x18 fill=#c39828 "Councilor ward E3 Agbala"
+mobile         TEXT Responsibilities 298x69 fill=#626b62 "The councillor’s name, position in the House and community responsibilities will be published once verified."
