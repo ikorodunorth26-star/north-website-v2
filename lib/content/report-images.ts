@@ -73,4 +73,12 @@ export const reportImages = {
 	olorundaStakeholders: photo("olorunda-stakeholders.png", 1024, 1024, "Stakeholders at the Olorunda engagement"),
 	olorundaEngagement: photo("olorunda-engagement.jpg", 1024, 1024, "Residents listening during the Olorunda engagement"),
 	olorundaCommunity: photo("olorunda-community.jpg", 1024, 1024, "Community stakeholders at the Ward E4 engagement"),
+	apmGroup: photo("apm-group.jpg", 1024, 682, "Members of the Apanisile Progressive Movement outside the council secretariat"),
+	apmChairman: photo("apm-chairman.png", 590, 393, "Mayor Ameen Apanisile speaking with the Apanisile Progressive Movement"),
+	apmMeeting: photo("apm-meeting.png", 590, 393, "The Apanisile Progressive Movement in discussion with the Chairman"),
+	apmCards: photo("apm-cards.png", 590, 393, "Members of the movement with voter cards"),
+	apmHall: photo("apm-hall.png", 1024, 682, "The engagement with the Apanisile Progressive Movement"),
+	apmDiscussion: photo("apm-discussion.jpg", 1024, 682, "The Chairman with members of the Apanisile Progressive Movement"),
+	apmAddress: photo("apm-address.png", 590, 393, "A member of the movement addressing the meeting"),
+	apmMembers: photo("apm-members.png", 1024, 682, "Members of the Apanisile Progressive Movement at the engagement"),
 };

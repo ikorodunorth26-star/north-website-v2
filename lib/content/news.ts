@@ -305,6 +305,59 @@ export const newsArticles: NewsArticle[] = [
 		],
 	},
 	{
+		slug: "apanisile-progressive-movement",
+		category: "COUNCIL NEWS",
+		filterGroup: "council",
+		title: "Chairman receives the Apanisile Progressive Movement",
+		summary: "On Thursday, 8 October 2026, Mayor Ameen Olawale Ibrahim Apanisile received the Apanisile Progressive Movement and set out the work of continuity, PVC collection, and voter mobilisation ahead of the forthcoming elections.",
+		date: "8 October 2026",
+		readTime: "6 min read",
+		image: reportImages.apmGroup,
+		caption: "Members of the Apanisile Progressive Movement at the council secretariat on 8 October 2026.",
+		gallery: [
+			reportImages.apmGroup,
+			reportImages.apmChairman,
+			reportImages.apmMeeting,
+			reportImages.apmCards,
+			reportImages.apmHall,
+			reportImages.apmDiscussion,
+			reportImages.apmAddress,
+			reportImages.apmMembers,
+		],
+		body: [
+			{
+				heading: "The meeting",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North Local Council Development Area, Mayor Ameen Olawale Ibrahim Apanisile, on Thursday, 8 October 2026, received members of the Apanisile Progressive Movement. The movement, known as APM, is a support group of community stakeholders and political mobilisers.",
+					"The engagement was about development, continuity, and good governance, and about voter awareness and preparations for the forthcoming elections. It was held at the council secretariat on Eweye Road, Isiu. The Chairman sat with the group so that the work of mobilisation and the work of the council could be spoken of in the same room.",
+				],
+			},
+			{
+				heading: "What the administration has in hand",
+				paragraphs: [
+					"During the meeting, Mayor Apanisile highlighted key achievements of his administration. He spoke of ongoing efforts and investments in healthcare, infrastructure, potable water, environmental sanitation, youth development, education, and other critical sectors aimed at improving the welfare and living conditions of residents across Ikorodu North LCDA.",
+					"He tied those efforts to continuity in governance. The point he put to the movement was that work already started has to be carried on, and that the people who mobilise in the communities are part of how that continuity is explained to residents.",
+				],
+			},
+			{
+				heading: "PVCs and the elections",
+				paragraphs: [
+					"The Chairman discussed the importance of continuity and encouraged members of the group to promote public awareness about the collection of Permanent Voter Cards. He asked them to engage residents on the importance of taking part in the electoral process. A card that stays uncollected is a resident who cannot vote, and he asked the movement to treat that collection as part of its work in the communities.",
+					"He urged members of the movement to support the political aspirations of President Asiwaju Bola Ahmed Tinubu, GCFR; Lagos State Governor Babajide Sanwo-Olu; Deputy Governor Dr. Obafemi Hamzat; Senator Adetokunbo Abiru; Hon. Babajimi Benson; Hon. Toyin Gaffar Bolowotan; and the other candidates of the All Progressives Congress ahead of the forthcoming elections.",
+					"He called on members to extend their engagement across the communities of Ikorodu North, with the focus on governance, development, civic awareness, and sustained grassroots participation. The meeting was not only a reception. It was a charge to take that message from the secretariat back into the wards.",
+				],
+			},
+			{
+				heading: "The mobilisation target",
+				paragraphs: [
+					"Addressing the group’s mobilisation objectives, the Chairman highlighted a target of 70,000 to 100,000 votes for Ikorodu North LCDA, and 250,000 votes for Ikorodu Division. He emphasised grassroots engagement, voter education, and peaceful participation as the elements of that effort.",
+					"The figures were set out as the scale of the work, not as a claim already achieved. What he asked of the movement was the patient work underneath the numbers: residents who have collected their cards, who understand what the election is for, and who take part peacefully.",
+					"The meeting reaffirmed the movement’s focus on community engagement, political participation, and the discussions surrounding the future development of Ikorodu North LCDA.",
+				],
+			},
+		],
+	},
+	{
 		slug: "apeka-road-army-school-flagoff",
 		category: "INFRASTRUCTURE",
 		filterGroup: "projects",

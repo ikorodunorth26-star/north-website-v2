@@ -111,6 +111,12 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 		href: "/news/olorunda-ward-e4-engagement",
 	},
 	{
+		title: "Chairman receives the Apanisile Progressive Movement",
+		summary: "Mayor Apanisile met the movement on continuity, Permanent Voter Card collection, and mobilisation ahead of the forthcoming elections.",
+		image: reportImages.apmGroup,
+		href: "/news/apanisile-progressive-movement",
+	},
+	{
 		title: "First 100 days: the New Deal record at Isiu",
 		summary: "Mayor Apanisile set out what the first hundred days had delivered, from Odo-Nla to Iranlowo Owo Apa.",
 		image: reportImages.hundredDays,
