@@ -1,0 +1,23 @@
+[
+  {
+    "key": "desktop",
+    "name": "HOD ICT 1",
+    "imageRef": "7c485b4a3d2f7103bc581ad7ff2d01d40a8b39ed",
+    "width": 110,
+    "height": 165
+  },
+  {
+    "key": "mobile",
+    "name": "Head of ICT portrait",
+    "imageRef": "7c485b4a3d2f7103bc581ad7ff2d01d40a8b39ed",
+    "width": 92,
+    "height": 138
+  },
+  {
+    "key": "mobile",
+    "name": "Council crest",
+    "imageRef": "4396685dfe36e25c6dad6c5acd63d6a2fd734c8b",
+    "width": 48,
+    "height": 48
+  }
+]

@@ -49,7 +49,7 @@ const DepartmentCard = ({ department }: { department: CouncilDepartment }) => {
 				</p>
 				<p>{department.phone}</p>
 			</div>
-			<Link href="/contact" className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-lg font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+			<Link href={department.href ?? "/contact"} className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-lg font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
 				{departmentDirectory.profileLabel}
 				<ArrowUpRight className="size-[18px]" aria-hidden="true" />
 			</Link>

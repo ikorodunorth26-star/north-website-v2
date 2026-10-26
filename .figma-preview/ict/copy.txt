@@ -1,0 +1,186 @@
+desktop # Department · Information & Communication Technology · Ikorodu North 1440x2858
+desktop #   Department introduction 1440x596
+desktop #     Ellipse 2 518x518
+desktop #     pixels 1440x800
+desktop #       texture 1440x800
+desktop #     Back to departments link 206x50
+desktop 16/500 Department Directory
+desktop 76/500 Information & Communication Technology
+desktop 18/500 Digital strategy, infrastructure, systems support and technology services for council operations.
+desktop #   Department overview 1440x851
+desktop #     Overview main column 732x659
+desktop 42/500 About the department
+desktop 18/400 The Information & Communication Technology Department supports the council’s digital operations, infrastructure and systems. It leads technology planning, maintains core systems, and helps departments use digital tools more effectively.
+desktop 18/400 The department also provides helpdesk support, manages digital security, and helps teams adopt technology that improves service delivery, reporting and public access to council information.
+desktop 24/500 Key responsibilities
+desktop #       Key responsibilities list 732x306
+desktop #         Responsibility 1 732x26
+desktop 18/400 Managing council networks, email, hardware and core digital infrastructure
+desktop #         Responsibility 2 732x26
+desktop 18/400 Developing and maintaining council websites, portals and digital services
+desktop #         Responsibility 3 732x26
+desktop 18/400 Providing ICT training and support for council staff and departments
+desktop #         Responsibility 4 732x26
+desktop 18/400 Supporting digital reporting, data collection and analytics across departments
+desktop #         Responsibility 5 732x26
+desktop 18/400 Managing digital security, backups and incident response for council systems
+desktop #         Responsibility 6 732x26
+desktop 18/400 Procuring and maintaining ICT equipment, software and licenses
+desktop #         Responsibility 7 732x26
+desktop 18/400 Coordinating helpdesk support and resolving ICT service requests
+desktop #         Responsibility 8 732x26
+desktop 18/400 Advising on digital transformation and ICT policy for council operations
+desktop #     Department info card (sticky) 420x328
+desktop 12/400 Department desk
+desktop #       Head of Department 356x96
+desktop #         Portrait placeholder (no photo) 96x96
+desktop #         Head of Department text 244x70
+desktop 12/400 Head of Department
+desktop 20/500 Mr Amori Muritala Kehinde
+desktop 14/400 Head of ICT
+desktop #       Phone row 356x40
+desktop #         Phone icon badge 40x40
+desktop #         Phone text 302x40
+desktop 12/500 Phone
+desktop 16/500 +234 XXX XXX XXXX
+desktop #       Email row 356x40
+desktop #         Email icon badge 40x40
+desktop #         Email text 302x40
+desktop 12/500 Email
+desktop 16/500 ict@ikorodunorthlcda.gov.ng
+desktop #   Other departments 1440x779
+desktop #     Other departments heading 361x57
+desktop 42/500 Other departments
+desktop #     Other departments row 1200x498
+desktop #       Project 4 384x498
+desktop #         Frame 16 56x56
+desktop #         Frame 13 336x149
+desktop 32/700 Finance & Accounts
+desktop 18/500 Keeps the council's money accountable through revenue collection, budgeting, payroll, spending controls and financial reporting
+desktop #         Frame 15 242x50
+desktop 16/500 Headed by Council Treasurer
+desktop #         Contact us button 128x24
+desktop 18/700 View profile
+desktop #       Education & Library Services department 384x498
+desktop #         Education & Library Services icon row 56x56
+desktop #         Frame 336x192
+desktop 32/700 Education & Library Services
+desktop 18/500 Primary education support, scholarships and library services.
+desktop #         Frame 336x50
+desktop 16/500 HOD: [Head of Department]
+desktop #         Contact us button 128x24
+desktop 18/700 View profile
+desktop #       Project 5 384x498
+desktop #         Frame 16 56x56
+desktop #         Frame 13 336x149
+desktop 32/700 Primary Health Care
+desktop 18/500 Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.
+desktop #         Frame 15 336x50
+desktop 16/500 Headed by Edu. & Library Services Dept.
+desktop #         Contact us button 128x24
+desktop 18/700 View profile
+mobile # Department · Information & Communication Technology · Ikorodu North · Mobile 390x4343
+mobile #   Navigation and introduction 390x500
+mobile #     Civic dot texture 600x600
+mobile #       texture 600x600
+mobile #     Page introduction 350x261
+mobile #       Department directory link 178x44
+mobile 14/500 Department Directory
+mobile 40/500 Information & Communication Technology
+mobile 16/500 Digital strategy, infrastructure, systems support and technology services for council operations.
+mobile #   Department overview 390x1346
+mobile #     About the department 350x363
+mobile 32/500 About the department
+mobile 16/400 The Information & Communication Technology Department supports the council’s digital operations, infrastructure and systems. It leads technology planning, maintains core systems, and helps departments use digital tools more effectively.
+mobile 16/400 The department also provides helpdesk support, manages digital security, and helps teams adopt technology that improves service delivery, reporting and public access to council information.
+mobile #     Key responsibilities 350x546
+mobile 24/500 Key responsibilities
+mobile #       Responsibilities list 350x496
+mobile #         Responsibility 350x48
+mobile 16/400 Managing council networks, email, hardware and core digital infrastructure
+mobile #         Responsibility 350x48
+mobile 16/400 Developing and maintaining council websites, portals and digital services
+mobile #         Responsibility 350x48
+mobile 16/400 Providing ICT training and support for council staff and departments
+mobile #         Responsibility 350x48
+mobile 16/400 Supporting digital reporting, data collection and analytics across departments
+mobile #         Responsibility 350x48
+mobile 16/400 Managing digital security, backups and incident response for council systems
+mobile #         Responsibility 350x48
+mobile 16/400 Procuring and maintaining ICT equipment, software and licenses
+mobile #         Responsibility 350x48
+mobile 16/400 Coordinating helpdesk support and resolving ICT service requests
+mobile #         Responsibility 350x48
+mobile 16/400 Advising on digital transformation and ICT policy for council operations
+mobile #     Department desk 350x309
+mobile 11/500 Department desk
+mobile #       Head of Department 302x94
+mobile #         Leadership portrait 80x80
+mobile #         Leadership information 206x94
+mobile 10/500 Head of Department
+mobile 20/500 Mr Amori Muritala Kehinde
+mobile 14/400 Head of ICT
+mobile #       Contact detail 302x40
+mobile #         Contact icon badge 36x36
+mobile #         Contact text 254x40
+mobile 11/500 Phone
+mobile 14/500 +234 XXX XXX XXXX
+mobile #       Contact detail 302x40
+mobile #         Contact icon badge 36x36
+mobile #         Contact text 254x40
+mobile 11/500 Email
+mobile 14/500 ict@ikorodunorthlcda.gov.ng
+mobile #   Other departments 390x1454
+mobile 32/500 Other departments
+mobile #     Related department cards 350x1313
+mobile #       Department card 350x432
+mobile #         Department icon badge 56x56
+mobile #         Department information 302x147
+mobile 24/700 Finance & Accounts
+mobile 16/500 Keeps the council's money accountable through revenue collection, budgeting, payroll, spending controls and financial reporting
+mobile #         Leadership badge 302x49
+mobile 14/500 Headed by Council Treasurer
+mobile #         View profile action 117x44
+mobile 16/700 View profile
+mobile #       Department card 350x409
+mobile #         Department icon badge 56x56
+mobile #         Department information 302x124
+mobile 24/700 Education & Library Services
+mobile 16/500 Primary education support, scholarships and library services.
+mobile #         Leadership badge 302x49
+mobile 14/500 HOD: [Head of Department]
+mobile #         View profile action 117x44
+mobile 16/700 View profile
+mobile #       Department card 350x432
+mobile #         Department icon badge 56x56
+mobile #         Department information 302x147
+mobile 24/700 Primary Health Care
+mobile 16/500 Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.
+mobile #         Leadership badge 302x49
+mobile 14/500 Headed by Edu. & Library Services Dept.
+mobile #         View profile action 117x44
+mobile 16/700 View profile
+mobile #   Council footer 390x1043
+mobile #     Ambient civic glow 518x518
+mobile #     Council contact information 342x637
+mobile #       Council identity 342x118
+mobile #         Council logo lockup 232x48
+mobile 20/700 IKORODU / NORTH LCDA
+mobile 16/400 Working together for a cleaner, safer and more prosperous Ikorodu North.
+mobile #       Explore the council 342x264
+mobile 16/700 Explore
+mobile #         Council links 342x224
+mobile 15/400 Executive Council 
+mobile 15/400 Legislative Members
+mobile 15/400 Management Team
+mobile 15/400 Departments
+mobile 15/400 Projects
+mobile 15/400 News
+mobile #       Contact the council 342x183
+mobile 16/700 Contact the council
+mobile #         Contact details 342x104
+mobile 15/400 info@ikorodunorth.gov.ng
+mobile 15/400 admin@ikorodunorth.gov.ng
+mobile 15/500 Tel: +234 816 544 2373
+mobile #         Council location 342x21
+mobile 14/400 Ikorodu North, Lagos State

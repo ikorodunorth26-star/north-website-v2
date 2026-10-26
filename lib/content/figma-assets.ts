@@ -177,6 +177,7 @@ export const figmaAssets = {
 		majorityLeader: { src: "/images/government/majority-banjoko-oluwaseun.webp", width: 612, height: 924, alt: "Hon Banjoko Babatunde Oluwaseun" },
 		chiefWhip: { src: "/images/government/whip-onabajo-olugbenga.webp", width: 1155, height: 1224, alt: "Hon Onabajo Oluwaseyi Olugbenga" },
 		agbalaCouncillor: { src: "/images/government/councillor-ibrahim-agbala.webp", width: 847, height: 1280, alt: "Hon Ibrahim Risikat Abiodun" },
+		hodIct: { src: "/images/government/hod-amori-muritala-kehinde.webp", width: 664, height: 996, alt: "Mr Amori Muritala Kehinde, Head of ICT" },
 	},
 } as const;
 

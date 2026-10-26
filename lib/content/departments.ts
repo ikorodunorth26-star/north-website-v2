@@ -10,6 +10,7 @@ export type CouncilDepartment = {
 	icon: DepartmentIcon;
 	group: "department" | "unit";
 	health?: boolean;
+	href?: string;
 };
 
 export const departmentIcons: Record<DepartmentIcon, LucideIcon> = {
@@ -66,7 +67,7 @@ export const councilDepartments: CouncilDepartment[] = [
 	{ title: "Internal Audit Unit", description: "Audits of revenue and spending, and internal controls.", email: "audit@ikorodunorthlcda.gov.ng", phone, icon: "fileCheck", group: "unit" },
 	{ title: "Legal Unit", description: "Legal advice, contracts and regulatory compliance.", email: "legal@ikorodunorthlcda.gov.ng", phone, icon: "fileText", group: "unit" },
 	{ title: "Procurement Unit", description: "Public procurement, vendor registration and value for money.", email: "procurement@ikorodunorthlcda.gov.ng", phone, icon: "receiptText", group: "unit" },
-	{ title: "Information & Communication Technology Unit", description: "Council systems, digital services and technical support.", email: "ict@ikorodunorthlcda.gov.ng", phone, icon: "files", group: "unit" },
+	{ title: "Information & Communication Technology Unit", description: "Council systems, digital services and technical support.", email: "ict@ikorodunorthlcda.gov.ng", phone, icon: "files", group: "unit", href: "/government/departments/information-communication-technology" },
 ];
 
 export const departmentReach = {
