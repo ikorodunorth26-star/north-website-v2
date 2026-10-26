@@ -19,6 +19,7 @@ type NavItem = NavLink | { label: string; children: NavLink[] };
 
 const governmentLinks: NavLink[] = [
 	{ href: "/about", label: "About & History" },
+	{ href: "/landmarks", label: "Landmarks & culture" },
 	{ href: "/government/executive-council", label: "Executive Council" },
 	{ href: "/government/legislative-house", label: "Legislative Members" },
 	{ href: "/government/management-team", label: "Management Team" },

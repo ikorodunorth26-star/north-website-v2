@@ -12,6 +12,7 @@ const exploreLinks = [
 	{ href: "/government/legislative-house", label: "Legislative Members" },
 	{ href: "/government/management-team", label: "Management Team" },
 	{ href: "/government/departments", label: "Departments" },
+	{ href: "/landmarks", label: "Landmarks & culture" },
 	{ href: "/projects", label: "Projects" },
 	{ href: "/news", label: "News" },
 ];
