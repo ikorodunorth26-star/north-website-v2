@@ -11,5 +11,6 @@ import DepartmentsView from "./departmentsView";
 import IctDepartmentView from "./ictDepartmentView";
 import ManagementTeamView from "./managementTeamView";
 import WardView from "./wardView";
+import SuggestProjectView from "./suggestProjectView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView, WardView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView, WardView, SuggestProjectView };

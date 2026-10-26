@@ -1,0 +1,116 @@
+FRAME Suggest a project · Ikorodu North 34904,8678 1440x3495 #f8f5ed
+  FRAME Suggest a project introduction 34904,8678 1440x596 #173d32
+    ELLIPSE Ellipse 2 34702,8738 518x518 #f8f7f2
+    INSTANCE pixels 34904,8678 1440x800
+      RECTANGLE texture 34904,8678 1440x800
+    FRAME Hero category chip 34984,8912 173x50
+      TEXT Hero category chip label 35008,8926 125x22 #173d32 "Community input"
+    TEXT Page title 34984,8982 747x80 #f8f7f2 "Suggest a project"
+    TEXT Introduction 34984,9082 680x54 #dfe5df "Tell the council what your street, ward or community needs. Every suggestion is "
+  FRAME How it works 34904,9274 1440x443 #f8f5ed
+    FRAME How it works heading 35024,9370 244x57
+      TEXT How it works title 35024,9370 244x57 #173d32 "How it works"
+    FRAME How it works steps 35024,9459 1200x210
+      FRAME Submit your suggestion step 35024,9459 282x210 #fffdf8
+        TEXT Submit your suggestion number 35048,9483 33x43 #c39828 "01"
+        TEXT Submit your suggestion title 35048,9536 234x27 #173d32 "Submit your suggestion"
+        TEXT Submit your suggestion text 35048,9573 234x48 #5c6862 "Fill in the form with the project, location and who it would benefit."
+      FRAME Review step 35330,9459 282x210 #fffdf8
+        TEXT Review number 35354,9483 40x43 #c39828 "02"
+        TEXT Review title 35354,9536 234x27 #173d32 "Review"
+        TEXT Review text 35354,9573 234x48 #5c6862 "Your suggestion is reviewed by [responsible department]."
+      FRAME Feedback step 35636,9459 282x210 #fffdf8
+        TEXT Feedback number 35660,9483 40x43 #c39828 "03"
+        TEXT Feedback title 35660,9536 234x27 #173d32 "Feedback"
+        TEXT Feedback text 35660,9573 234x72 #5c6862 "You receive an update on the outcome by [contact method] within [timeframe]."
+      FRAME Planning step 35942,9459 282x210 #fffdf8
+        TEXT Planning number 35966,9483 42x43 #c39828 "04"
+        TEXT Planning title 35966,9536 234x27 #173d32 "Planning"
+        TEXT Planning text 35966,9573 234x72 #5c6862 "Suitable suggestions may be considered in [planning or budget cycle]."
+  FRAME Suggestion form area 34904,9717 1440x1824 #f8f5ed
+    FRAME Suggest a project form 35024,9765 776x1680 #fffdf8
+      TEXT Form eyebrow 35056,9797 128x16 #c39828 "SUGGESTION FORM"
+      TEXT Form title 35056,9837 367x46 #173d32 "Tell us about the project"
+      TEXT Form guidance 35056,9907 712x20 #626b62 "Fields marked * are required."
+      FRAME Name and phone row 35056,9951 712x79
+        FRAME Full name * field 35056,9951 346x79
+        FRAME Phone number * field 35422,9951 346x79
+      FRAME Email and ward row 35056,10054 712x79
+        FRAME Email address (optional) field 35056,10054 346x79
+        FRAME Ward or community * field 35422,10054 346x79
+      FRAME Category and title row 35056,10157 712x79
+        FRAME Project category * field 35056,10157 346x79
+        FRAME Project title * field 35422,10157 346x79
+      FRAME Location or landmark * field 35056,10260 712x79
+        TEXT Location or landmark * label 35056,10260 144x19 #173d32 "Location or landmark *"
+        FRAME Location or landmark * input 35056,10287 712x52 #ffffff
+      FRAME Project description * field 35056,10363 712x183
+        TEXT Project description * label 35056,10363 129x19 #173d32 "Project description *"
+        FRAME Project description * input 35056,10390 712x156 #ffffff
+      FRAME Who benefits? field 35056,10570 712x79
+        TEXT Who benefits? label 35056,10570 92x19 #173d32 "Who benefits?"
+        FRAME Who benefits? input 35056,10597 712x52 #ffffff
+      FRAME Project category dropdown · open state 35056,10673 712x386 #fffdf8
+        FRAME Category option · Roads & drainage 35057,10674 710x48 #e8e9df
+        FRAME Category option · Water 35057,10722 710x48
+        FRAME Category option · Health 35057,10770 710x48
+        FRAME Category option · Education 35057,10818 710x48
+        FRAME Category option · Environment 35057,10866 710x48
+        FRAME Category option · Markets 35057,10914 710x48
+        FRAME Category option · Youth & sports 35057,10962 710x48
+        FRAME Category option · Other 35057,11010 710x48
+      TEXT Dropdown state note 35056,11083 712x16 #626b62 "Project category dropdown shown open for reference."
+      FRAME Upload photos field 35056,11123 712x168
+        TEXT Upload photos label 35056,11123 107x19 #173d32 "Photos (optional)"
+        FRAME Upload photos drop zone 35056,11150 712x141 #ffffff
+      FRAME Privacy consent 35056,11315 712x20
+        TEXT Privacy consent text 35088,11315 680x18 #626b62 "I agree to the council using my details to review this suggestion and contact me"
+      FRAME Submit suggestion button 35056,11359 712x54 #173d32
+        TEXT Submit button label 35345,11375 134x22 #f8f7f2 "Submit suggestion"
+    FRAME Suggestion side column 35840,9765 384x671
+      FRAME What makes a strong suggestion (sticky) 35840,9765 384x380 #fffdf8
+        TEXT Tips eyebrow 35864,9789 27x16 #c39828 "Tips"
+        TEXT Tips title 35864,9819 336x64 #173d32 "What makes a strong suggestion"
+        FRAME Tip 1 35864,9897 336x48
+        FRAME Tip 2 35864,9959 336x24
+        FRAME Tip 3 35864,9997 336x24
+        FRAME Tip 4 35864,10035 336x24
+        FRAME Tip 5 35864,10073 336x48
+      FRAME Suggestion contact card 35840,10169 384x267 #fffdf8
+        TEXT Contact eyebrow 35864,10193 79x16 #c39828 "Need help?"
+        TEXT Contact title 35864,10223 336x27 #173d32 "Contact [responsible department]"
+        FRAME Phone row 35864,10264 336x40
+        FRAME Email row 35864,10318 336x40
+        FRAME Office hours row 35864,10372 336x40
+  INSTANCE Footer 34904,11541 1440x632 #102d26
+    FRAME Footer invitation 34984,11605 1280x156
+      FRAME Community closing message 34984,11605 760x116
+        TEXT Footer headline 34984,11605 493x116 #f8f7f2 "A stronger community / starts with all of us."
+      FRAME Explore resident services 36101,11669 163x52 #ddeb9d
+        TEXT Services button label 36123,11684 91x22 #173d32 "Get in touch"
+        FRAME lucide/arrow-up-right 36224,11686 18x18
+    FRAME Council contact information 34984,11809 1280x248
+      FRAME Council identity 34984,11809 400x130
+        FRAME Council logo lockup 34984,11809 238x56
+        FRAME Frame 1 34984,11887 400x52
+      FRAME Explore the council 35456,11809 396x248
+        TEXT Call Us 35456,11809 57x22 #f8f7f2 "Explore"
+        FRAME Frame 31 35456,11853 134x204
+      FRAME Contact the council 35924,11809 340x177
+        TEXT Email Us 35924,11809 146x22 #f8f7f2 "Contact the council"
+        FRAME Frame 32 35924,11853 187x92
+        FRAME Council location 35924,11967 193x19
+    FRAME Footer legal 34984,12105 1280x40
+      TEXT Copyright 34984,12129 256x16 #9eb5a8 "© 2026 Ikorodu North LCDA. All rights reserved."
+      TEXT Legal links 36029,12129 235x16 #9eb5a8 "Privacy policy     Accessibility     Terms of use"
+    ELLIPSE Ellipse 2 34702,11601 518x518 #f8f7f2
+  FRAME Primary navigation -light 34960,8702 1328x76 #15332b
+    FRAME Frame 2 34976,8702 1272x76
+      FRAME Council brand 34976,8712 198x56
+        FRAME Council wordmark 35044,8720 130x40
+      FRAME Main links 35856,8702 392x76
+        FRAME Nav Item 35856,8702 39x76
+        FRAME Nav Item 35927,8702 81x76
+        TEXT Services 36040,8731 55x19 #ffffff "Services"
+        TEXT News 36127,8731 36x19 #ffffff "News"
+        TEXT Contact 36195,8731 53x19 #ffffff "Contact"

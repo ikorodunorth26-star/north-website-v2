@@ -69,7 +69,7 @@ const AboutSection = () => {
 				</div>
 			</section>
 
-			<HomeWardsSection id="communities" ctaHref="/#home-map" />
+			<HomeWardsSection id="communities" />
 
 			<section className="bg-council-green py-16">
 				<div className="mx-auto grid w-full max-w-council items-center gap-10 px-5 md:px-10 lg:grid-cols-[minmax(0,620px)_minmax(0,1fr)] lg:gap-16 min-[1408px]:px-0">

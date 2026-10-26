@@ -12,11 +12,12 @@ type LocalImageProps = {
 	imageClassName?: string;
 	sizes?: string;
 	priority?: boolean;
+	loading?: "eager" | "lazy";
 };
 
 const fallbackImage = "/images/placeholders/image-fallback.svg";
 
-const LocalImage = ({ src, alt, className, imageClassName, sizes = "100vw", priority = false }: LocalImageProps) => {
+const LocalImage = ({ src, alt, className, imageClassName, sizes = "100vw", priority = false, loading }: LocalImageProps) => {
 	const [failed, setFailed] = useState(false);
 
 	return (
@@ -26,6 +27,7 @@ const LocalImage = ({ src, alt, className, imageClassName, sizes = "100vw", prio
 				alt={alt}
 				fill
 				priority={priority}
+				loading={priority ? undefined : loading}
 				sizes={sizes}
 				className={cn("object-cover", imageClassName)}
 				onError={() => setFailed(true)}

@@ -250,7 +250,6 @@ export const homeContent = {
 		eyebrow: "Communities of Ikorodu North",
 		title: "Five wards. One council.\nDevelopment in every community.",
 		description: "Explore each ward to see its public facilities, verified projects,\nphotographs and local updates, so residents can see development where they live.",
-		cta: "Open the Interactive Map",
 	},
 	team: {
 		eyebrow: "Government Team",
