@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
+import { HomeWardsSection } from "@/components/reususables/home";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { aboutCommunity, aboutHistory, aboutImpact, aboutIntroduction, aboutRelated } from "@/lib/content/about";
 
@@ -67,6 +68,8 @@ const AboutSection = () => {
 					) : null}
 				</div>
 			</section>
+
+			<HomeWardsSection id="communities" ctaHref="/#home-map" />
 
 			<section className="bg-council-green py-16">
 				<div className="mx-auto grid w-full max-w-council items-center gap-10 px-5 md:px-10 lg:grid-cols-[minmax(0,620px)_minmax(0,1fr)] lg:gap-16 min-[1408px]:px-0">

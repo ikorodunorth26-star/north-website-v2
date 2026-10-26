@@ -1,0 +1,330 @@
+
+# isiu
+# Community · Isiu Ward · Desktop 1440x2569
+#   Ward introduction 1440x570
+#     francis-tokede-G1c8iGBCC4g-unsplash 1 1440x960
+#     Rectangle 11 1440x570
+#     Ellipse 2 518x518
+#     pixels 1440x837
+#       texture 1440x837
+14/700 ← All communities
+#     Ward introduction and photography 1280x310
+#       Ward introduction copy 696x220
+16/500 Communites of Ikorodu North
+64/700 Isiu Ward
+20/500 Isiu Town is the administrative seat of Ikorodu North LCDA, home to the council secretariat, the Marriage Registry and the palace of the Oba of Isiu.
+#       Ward photograph · representative 520x310
+#   Explore another ward 1440x86
+#     Ward navigation 1280x46
+#       Isiu 214x46
+16/700 Isiu
+#       Odogunyan 214x46
+16/700 Odogunyan
+#       Olorunda 214x46
+16/700 Olorunda
+#       Erikorodo 214x46
+16/700 Erikorodo
+#       Agbala 214x46
+16/700 Agbala
+#   Community overview 1440x462
+#     Overview and facilities 1280x318
+#       About Isiu 724x318
+11/700 COMMUNITY OVERVIEW
+42/700 The council seat of Ikorodu North.
+18/500 The council secretariat stands in Isiu Town on the Ikorodu-Shagamu Road. Mayor Apanisile assumed office here on 28 July 2025 and inaugurated the 6th Legislative Council.  /  / The Marriage Registry was among the facilities inspected on 28 October 2025. Population, land area and CDA counts for the ward will be published once confirmed by the Budget and Planning department.
+#       Infrastructure and public facilities 500x240
+26/700 Local facilities & infrastructure
+16/500 Council Secretariat
+16/500 Marriage Registry
+16/500 Oba of Isiu’s palace
+#   Projects in Isiu 1440x349
+#     Frame 66 1280x86
+#       Frame 65 972x86
+42/700 Projects in this ward
+17/500 Project details and statuses from the published community record.
+#       Explore all council projects 280x52
+16/700 Explore all council projects
+#     No ward-only project record 1280x107
+28/700 No ward-only project record yet
+#   Latest from Isiu 1440x470
+11/700 NEWS & LOCAL INITIATIVES
+42/700 Latest from Isiu
+#     Ward news empty state 1280x226
+#       Frame 67 1216x80
+28/700 More local updates to come
+16/500 Ward-specific stories will appear here as they are published. Visit the news page for council-wide announcements.
+#       View council news 220x52
+16/700 View council news
+
+# odogunyan
+# Community · Odogunyan Ward · Desktop 1440x3389
+#   Ward introduction 1440x596
+14/700 ← All communities
+#     Ward introduction and photography 1280x336
+#       Ward introduction copy 696x186
+11/700 COMMUNITIES OF IKORODU NORTH
+64/700 Odogunyan Ward
+20/400 Odogunyan is the industrial gateway of Ikorodu North, home to Ebuwawa Market, the Agbede corridor and the 174 Battalion barracks community.
+#       Ward photograph · representative 520x336
+11/400 Representative image · ward photography to be updated
+#   Explore another ward 1440x86
+#     Ward navigation 1280x46
+#       Isiu 246x46
+16/700 Isiu
+#       Odogunyan 246x46
+16/700 Odogunyan
+#       Olorunda 246x46
+16/700 Olorunda
+#       Erikorodo 246x46
+16/700 Erikorodo
+#       Agbala 246x46
+16/700 Agbala
+#   Community overview 1440x528
+#     Overview and facilities 1280x384
+#       About Odogunyan 724x380
+11/700 COMMUNITY OVERVIEW
+42/700 A growing ward at the heart of the road programme.
+18/400 Odogunyan sits along the Ikorodu–Shagamu corridor and connects the council to Agbede, Ebuwawa and the Ikorodu Industrial Estate. Its communities are served by Zumratul Islamiyyah and Farm Settlement primary schools, where solar-powered water and sanitation facilities are being delivered with WaterAid.
+14/400 Population, land area and CDA counts will be published once confirmed by the Budget and Planning department.
+#       Infrastructure and public facilities 500x384
+26/700 Local facilities & infrastructure
+16/500 Ebuwawa Market
+16/500 Zumratul Islamiyyah Primary School
+16/500 Farm Settlement Primary School
+16/500 174 Battalion Army Children Primary School
+16/500 Oju Emuren–Agbede Road · under construction
+16/500 Agbede–Ebuwawa Road · under construction
+#   Projects in Odogunyan 1440x763
+11/700 PROJECT RECORDS
+42/700 Projects in this ward
+15/400 Project details and statuses from the published community record.
+#     Ward project cards 1280x381
+#       Oju Emuren–Agbede Road 413x371
+12/700 Ongoing
+11/700 ROADS
+28/700 Oju Emuren–Agbede Road
+16/400 Construction of the link road, flagged off in October 2025 and facilitated through Senator Tokunbo Abiru’s constituency office.
+13/500 Flagged off October 2025
+16/700 View project details
+#       Agbede–Ebuwawa Road 413x345
+12/700 Ongoing
+11/700 ROADS
+28/700 Agbede–Ebuwawa Road
+16/400 The second of two Senator Abiru-facilitated road projects, connecting Agbede to Ebuwawa Market.
+13/500 Flagged off October 2025
+16/700 View project details
+#       174 Battalion Army Children Primary School 413x381
+12/700 Planned
+11/700 EDUCATION
+28/700 174 Battalion Army Children Primary School
+16/400 Full reconstruction of the school in Odogunyan, advertised for tender in June 2026.
+13/500 Tender issued June 2026
+16/700 View project details
+#     Explore all council projects 280x52
+16/700 Explore all council projects
+#   Latest from Odogunyan 1440x503
+11/700 NEWS & LOCAL INITIATIVES
+42/700 Latest from Odogunyan
+#     Ward news 1280x259
+12/700 PROJECT FLAG-OFF · 25 October 2025
+32/700 Mayor Apanisile and Senator Abiru flag off Oju Emuren–Agbede and Agbede–Ebuwawa roads
+#       Read the story 200x52
+16/700 Read the story
+#   Community feedback 1440x281
+40/700 Have a concern in Odogunyan?
+17/400 Tell the council about an issue in your neighbourhood or share an idea for your community.
+#     Contact the council 240x52
+16/700 Contact the council
+
+# olorunda
+# Community · Olorunda Ward · Desktop 1440x3214
+#   Ward introduction 1440x596
+14/700 ← All communities
+#     Ward introduction and photography 1280x336
+#       Ward introduction copy 696x217
+11/700 COMMUNITIES OF IKORODU NORTH
+64/700 Olorunda Ward
+20/400 Olorunda is a growing residential ward, served by Olorunda Primary and Secondary Schools and by the Adamo–Araro Road completed in the administration’s first 100 days.
+#       Ward photograph · representative 520x336
+11/400 Representative image · ward photography to be updated
+#   Explore another ward 1440x86
+#     Ward navigation 1280x46
+#       Isiu 246x46
+16/700 Isiu
+#       Odogunyan 246x46
+16/700 Odogunyan
+#       Olorunda 246x46
+16/700 Olorunda
+#       Erikorodo 246x46
+16/700 Erikorodo
+#       Agbala 246x46
+16/700 Agbala
+#   Community overview 1440x464
+#     Overview and facilities 1280x320
+#       About Olorunda 724x320
+11/700 COMMUNITY OVERVIEW
+42/700 Residential communities linked by a completed road.
+18/400 Adamo–Araro Road was delivered within the first 100 days and reported on 20 November 2025 as part of the New Deal service delivery agenda.
+14/400 Population, land area and CDA counts will be published once confirmed by the Budget and Planning department.
+#       Infrastructure and public facilities 500x240
+26/700 Local facilities & infrastructure
+16/500 Adamo–Araro Road
+16/500 Olorunda Primary School
+16/500 Olorunda Secondary School
+#   Projects in Olorunda 1440x701
+11/700 PROJECT RECORDS
+42/700 Projects in this ward
+15/400 Project details and statuses from the published community record.
+#     Ward project cards 1280x319
+#       Adamo–Araro Road 1280x319
+12/700 Completed
+11/700 ROADS
+28/700 Adamo–Araro Road
+16/400 Road project delivered within the administration’s first 100 days as part of the New Deal service delivery agenda.
+13/500 Completed November 2025
+16/700 View project details
+#     Explore all council projects 280x52
+16/700 Explore all council projects
+#   Latest from Olorunda 1440x454
+11/700 NEWS & LOCAL INITIATIVES
+42/700 Latest from Olorunda
+#     Ward news empty state 1280x210
+28/700 More local updates to come
+16/400 Ward-specific stories will appear here as they are published. Visit the news page for council-wide announcements.
+#       View council news 220x52
+16/700 View council news
+#   Community feedback 1440x281
+40/700 Have a concern in Olorunda?
+17/400 Tell the council about an issue in your neighbourhood or share an idea for your community.
+#     Contact the council 240x52
+16/700 Contact the council
+
+# erikorodo
+# Community · Erikorodo Ward · Desktop 1440x3221
+#   Ward introduction 1440x596
+14/700 ← All communities
+#     Ward introduction and photography 1280x336
+#       Ward introduction copy 696x186
+11/700 COMMUNITIES OF IKORODU NORTH
+64/700 Erikorodo Ward
+20/400 Erikorodo is the ward of Council Leader Hon. Bose Benson Titilayo. African Bethel Primary School is among its public facilities.
+#       Ward photograph · representative 520x336
+11/400 Representative image · ward photography to be updated
+#   Explore another ward 1440x86
+#     Ward navigation 1280x46
+#       Isiu 246x46
+16/700 Isiu
+#       Odogunyan 246x46
+16/700 Odogunyan
+#       Olorunda 246x46
+16/700 Olorunda
+#       Erikorodo 246x46
+16/700 Erikorodo
+#       Agbala 246x46
+16/700 Agbala
+#   Community overview 1440x471
+#     Overview and facilities 1280x327
+#       About Erikorodo 724x327
+11/700 COMMUNITY OVERVIEW
+42/700 Community life, education and local representation.
+18/400 Hon. Bose Benson Titilayo of Erikorodo Ward emerged Council Leader when the 6th Legislative Council was inaugurated on 28 July 2025. Schools in Erikorodo are part of the WaterAid solar water and sanitation programme.
+14/400 Population and CDA counts will be published once confirmed.
+#       Infrastructure and public facilities 500x192
+26/700 Local facilities & infrastructure
+16/500 African Bethel Primary School
+16/500 Solar water and sanitation works in primary schools
+#   Projects in Erikorodo 1440x701
+11/700 PROJECT RECORDS
+42/700 Projects in this ward
+15/400 Project details and statuses from the published community record.
+#     Ward project cards 1280x319
+#       Solar Water & Sanitation in Primary Schools 1280x319
+12/700 Ongoing
+11/700 EDUCATION
+28/700 Solar Water & Sanitation in Primary Schools
+16/400 Solar-powered boreholes and rehabilitated sanitation facilities delivered with WaterAid across Erikorodo and Odogunyan wards.
+13/500 Programme total: 6 completed · 4 ongoing
+16/700 View project details
+#     Explore all council projects 280x52
+16/700 Explore all council projects
+#   Latest from Erikorodo 1440x454
+11/700 NEWS & LOCAL INITIATIVES
+42/700 Latest from Erikorodo
+#     Ward news empty state 1280x210
+28/700 More local updates to come
+16/400 Ward-specific stories will appear here as they are published. Visit the news page for council-wide announcements.
+#       View council news 220x52
+16/700 View council news
+#   Community feedback 1440x281
+40/700 Have a concern in Erikorodo?
+17/400 Tell the council about an issue in your neighbourhood or share an idea for your community.
+#     Contact the council 240x52
+16/700 Contact the council
+
+# agbala
+# Community · Agbala Ward · Desktop 1440x3200
+#   Ward introduction 1440x596
+14/700 ← All communities
+#     Ward introduction and photography 1280x336
+#       Ward introduction copy 696x186
+11/700 COMMUNITIES OF IKORODU NORTH
+64/700 Agbala Ward
+20/400 Agbala is linked to Apeka by completed box culverts. High School Road is approved and was advertised for tender in June 2026.
+#       Ward photograph · representative 520x336
+11/400 Representative image · ward photography to be updated
+#   Explore another ward 1440x86
+#     Ward navigation 1280x46
+#       Isiu 246x46
+16/700 Isiu
+#       Odogunyan 246x46
+16/700 Odogunyan
+#       Olorunda 246x46
+16/700 Olorunda
+#       Erikorodo 246x46
+16/700 Erikorodo
+#       Agbala 246x46
+16/700 Agbala
+#   Community overview 1440x424
+#     Overview and facilities 1280x280
+#       About Agbala 724x280
+11/700 COMMUNITY OVERVIEW
+42/700 Access restored, with a new road out to tender.
+18/400 Box culverts linking Agbala to Apeka were completed in 2025 to ease flooding and restore year-round access. The Mayor inspected the Apeka culvert on 28 October 2025. Construction of High School Road, Apeka–Agbala, was advertised for competitive tender on 11 June 2026.
+#       Infrastructure and public facilities 500x192
+26/700 Local facilities & infrastructure
+16/500 Apeka–Agbala box culverts
+16/500 High School Road · tender issued
+#   Projects in Agbala 1440x727
+11/700 PROJECT RECORDS
+42/700 Projects in this ward
+15/400 Project details and statuses from the published community record.
+#     Ward project cards 1280x345
+#       Apeka–Agbala Box Culverts 630x345
+12/700 Completed
+11/700 DRAINAGE
+28/700 Apeka–Agbala Box Culverts
+16/400 Box culverts linking Agbala to Apeka to ease flooding and restore year-round access between the two communities.
+13/500 Completed 2025
+16/700 View project details
+#       High School Road, Apeka–Agbala 630x345
+12/700 Planned
+11/700 ROADS
+28/700 High School Road, Apeka–Agbala
+16/400 Construction approved by the council and advertised for competitive tender in June 2026.
+13/500 Tender issued June 2026
+16/700 View project details
+#     Explore all council projects 280x52
+16/700 Explore all council projects
+#   Latest from Agbala 1440x454
+11/700 NEWS & LOCAL INITIATIVES
+42/700 Latest from Agbala
+#     Ward news empty state 1280x210
+28/700 More local updates to come
+16/400 Ward-specific stories will appear here as they are published. Visit the news page for council-wide announcements.
+#       View council news 220x52
+16/700 View council news
+#   Community feedback 1440x281
+40/700 Have a concern in Agbala?
+17/400 Tell the council about an issue in your neighbourhood or share an idea for your community.
+#     Contact the council 240x52
+16/700 Contact the council
