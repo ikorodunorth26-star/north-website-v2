@@ -9,5 +9,6 @@ import ExecutiveCouncilView from "./executiveCouncilView";
 import LegislativeHouseView from "./legislativeHouseView";
 import DepartmentsView from "./departmentsView";
 import IctDepartmentView from "./ictDepartmentView";
+import ManagementTeamView from "./managementTeamView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView };
