@@ -22,7 +22,6 @@ export type Landmark = {
 	place: string;
 	group: LandmarkGroup;
 	summary: string;
-	href?: string;
 	image?: LandmarkImage;
 };
 
@@ -37,14 +36,6 @@ export const landmarkGroups = [
 ] as const;
 
 export const landmarks: Landmark[] = [
-	{
-		title: "Ikorodu North LCDA Secretariat",
-		place: "Isiu Town",
-		group: "administration",
-		summary: "The secretariat at Isiu is the council’s administrative seat, on the Ikorodu–Shagamu Road. From here the chairman’s office, the legislative house and the departments serve the five wards.",
-		href: "/communities/isiu",
-		image: figmaAssets.home.heroSecretariat,
-	},
 	{
 		title: "Lagos State University of Science and Technology",
 		place: "First Gate",
@@ -62,7 +53,6 @@ export const landmarks: Landmark[] = [
 		place: "Odogunyan",
 		group: "industry",
 		summary: "Odogunyan is the LCDA’s industrial and residential hub. The council names African Steel Mills, Lucky Fibres and PZ among the large works there, alongside smaller factories and the settlements around them.",
-		href: "/communities/odogunyan",
 		image: {
 			...figmaAssets.home.wardOdogunyan,
 			caption: "Idera Community Primary School, Odogunyan",
@@ -73,7 +63,6 @@ export const landmarks: Landmark[] = [
 		place: "Isiu",
 		group: "tradition",
 		summary: "Isiu is one of the older settlements in the LCDA and the seat of the Eweye. His Royal Majesty Oba David Kayode Raji (Olupejobi II) is the custodian of its customs, with Baales across the other communities. In April 2025 a foundation was laid for an ultra-modern Eweye palace.",
-		href: "/communities/isiu",
 		image: {
 			...reportImages.hundredDaysCrowd,
 			caption: "A gathering at Isiu",
@@ -94,7 +83,6 @@ export const landmarks: Landmark[] = [
 		place: "Isiu",
 		group: "administration",
 		summary: "The Marriage Registry beside the secretariat was renewed in the first hundred days, so residents can register marriages closer to home.",
-		href: "/communities/isiu",
 		image: {
 			...figmaAssets.home.heroSecretariat,
 			caption: "The secretariat compound at Isiu",
@@ -105,21 +93,18 @@ export const landmarks: Landmark[] = [
 		place: "Losi-Onikoko, Odogunyan",
 		group: "community",
 		summary: "The battalion sits in Odogunyan. Army Children Primary School at Losi-Onikoko, beside the barracks, was flagged off for reconstruction in July 2026.",
-		href: "/communities/odogunyan",
 	},
 	{
 		title: "Isiu Market",
 		place: "Isiu",
 		group: "community",
 		summary: "Isiu Market is the trading ground beside the headquarters town, where produce and household goods move between the wards and the highway.",
-		href: "/communities/isiu",
 	},
 	{
 		title: "Farm settlements",
 		place: "Erikorodo and Odogunyan",
 		group: "industry",
 		summary: "The council records farm settlements at Erikorodo and Odogunyan. Farming, poultry and produce markets also sustain Isiu, Adamo, Agbala, Agbede and the other rural communities.",
-		href: "/communities/erikorodo",
 	},
 ];
 

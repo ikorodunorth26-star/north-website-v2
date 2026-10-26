@@ -1,8 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 
 import { CategoryFilter } from "@/components/reususables/news";
 import { LocalImage } from "@/components/reususables/site";
@@ -48,12 +46,6 @@ const LandmarksSection = () => {
 													CC BY-SA 4.0
 												</a>
 											</p>
-										) : null}
-										{landmark.href ? (
-											<Link href={landmark.href} className="mt-6 inline-flex w-fit items-center gap-2 text-base font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-												Open the ward
-												<ArrowUpRight className="size-4" aria-hidden="true" />
-											</Link>
 										) : null}
 									</div>
 								</article>
