@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Mail, Phone, UserRound } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { executiveDirectory, executiveOffice, executiveRelated, type ExecutiveMember } from "@/lib/content/executive-council";
@@ -8,14 +8,7 @@ const ExecutiveMemberCard = ({ member }: { member: ExecutiveMember }) => {
 	return (
 		<article className="flex flex-col gap-6 rounded-[20px] bg-council-card p-3">
 			<div className="relative aspect-[387/285] overflow-hidden rounded-xl bg-council-image">
-				<LocalImage src={member.image.src} alt={member.image.alt} className="absolute inset-0" imageClassName="object-cover object-top" sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw" />
-				<div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#173d32]/35 to-transparent" aria-hidden="true" />
-				{member.portraitPending ? (
-					<div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#e8e9df]/70 text-council-subtle">
-						<UserRound className="size-12" aria-hidden="true" />
-						<p className="text-[10px] font-normal uppercase tracking-[0.08em]">Portrait pending</p>
-					</div>
-				) : null}
+				<LocalImage src={member.image.src} alt={member.image.alt} className="absolute inset-0" imageClassName="object-cover object-[center_22%]" sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw" />
 			</div>
 			<div className="flex flex-col gap-4 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
@@ -47,8 +40,8 @@ const ExecutiveCouncilSection = () => {
 						</div>
 						<div id="chairman-brief" className="flex flex-col gap-5 px-6 py-8 sm:px-10 lg:px-12 lg:py-10">
 							<p className="text-xs font-normal text-[#62715c]">{executiveOffice.briefLabel}</p>
-							<h3 className="max-w-[506px] whitespace-pre-line text-[28px] font-medium leading-9 text-council-green sm:text-[36px] sm:leading-[44px] lg:text-[40px] lg:leading-[45px]">{executiveOffice.statement}</h3>
-							<div className="max-w-[634px] space-y-4 text-base font-normal leading-6 text-council-subtle">
+							<h3 className="whitespace-pre-line text-[28px] font-medium leading-9 text-council-green sm:text-[36px] sm:leading-[44px] lg:text-[40px] lg:leading-[45px]">{executiveOffice.statement}</h3>
+							<div className="space-y-4 text-base font-normal leading-6 text-council-subtle">
 								{executiveOffice.paragraphs.map((paragraph) => (
 									<p key={paragraph}>{paragraph}</p>
 								))}

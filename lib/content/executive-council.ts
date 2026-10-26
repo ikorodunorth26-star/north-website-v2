@@ -5,7 +5,6 @@ export type ExecutiveMember = {
 	role: string;
 	image: FigmaAsset;
 	bio: string;
-	portraitPending?: boolean;
 };
 
 const pendingBiography = "Member name, official portfolio and biography will be published once appointment details are confirmed.";
@@ -18,15 +17,15 @@ export const executiveCouncilPage = {
 
 export const executiveOffice = {
 	heading: "Office of the Executive Chairman",
-	introduction: "The chairman's office sets the administrative tone for delivery, inter-department coordination, and visible local accountability.",
-	name: "Mayor. Ameen Olawale Ibrahim Apanisile",
+	introduction: "After eight years as Vice Chairman, Mayor Ameen Apanisile now leads the New Deal from the secretariat at Isiu.",
+	name: "Mayor Ameen Olawale Ibrahim Apanisile",
 	role: "Executive Chairman",
 	image: figmaAssets.government.chairman,
 	briefLabel: "Chairman’s Brief",
-	statement: "Public service with purpose.\nProgress built together.",
+	statement: "We are delivering\nnot just projects, but impact.",
 	paragraphs: [
-		"The Executive Chairman leads the executive arm of Ikorodu North LCDA, providing policy direction and coordinating the delivery of local government services.",
-		"Working alongside the council, the office brings together community priorities and the teams responsible for putting them into action.",
+		"A town planner, he was elected Executive Chairman in July 2025 to give Ikorodu North a New Deal in roads, care, schools and open government.",
+		"His first hundred days renewed care at Odo-Nla, backed traders and young people through Iranlowo Owo Apa, and linked Apeka with Agbala.",
 	],
 	email: "chairman@ikorodunorthlcda.gov.ng",
 	phone: "+234 801 000 0000",
@@ -50,20 +49,20 @@ export const executiveDirectory = {
 		{ name: "Hon. Banjo Olanrewaju Abiodun", role: "Supervisor for ICT", image: figmaAssets.government.ict, bio: pendingBiography },
 		{ name: "Hon. Sulaimon Laolat", role: "Supervisor for WAPA", image: figmaAssets.government.wapa, bio: pendingBiography },
 		{ name: "Hon. Adeyemi Adeniran Babatunde", role: "Supervisor for Special Duties", image: figmaAssets.government.specialDuties, bio: pendingBiography },
-		{ name: "Com. Alimi Idris", role: "Special Adviser, Students' Affairs", image: figmaAssets.government.students, bio: pendingBiography },
+		{ name: "Hon. Alimi Lekan Idris", role: "Special Adviser, Students' Affairs", image: figmaAssets.government.students, bio: pendingBiography },
 		{ name: "Hon. Olowolagba Olawale Adebayo", role: "Special Adviser, Information", image: figmaAssets.government.information, bio: pendingBiography },
 		{ name: "Hon. Ogunba Adetunbosun", role: "Special Adviser, Youth and Sports", image: figmaAssets.government.youth, bio: pendingBiography },
 		{ name: "Hon. Oyinloye Kayode Olabode", role: "Special Adviser, Procurement", image: figmaAssets.government.procurement, bio: pendingBiography },
 		{ name: "Hon. Adaramola Abimbola", role: "Supervisor for Education", image: figmaAssets.government.education, bio: pendingBiography },
-		{ name: "[Name to be confirmed]", role: "Supervisor for Agriculture, Rural Development, Food Security and Chieftaincy Affairs", image: figmaAssets.government.agriculture, bio: pendingBiography },
+		{ name: "Hon. Olawale Ogunbela JP", role: "Supervisor for Agriculture, Rural Development, Food Security and Chieftaincy Affairs", image: figmaAssets.government.agriculture, bio: pendingBiography },
 		{ name: "Hon. Baliqees Aderoju Ibrahim", role: "Special Adviser, Market Affairs", image: figmaAssets.government.market, bio: pendingBiography },
 		{ name: "Hon. Adeniyi Afolabi Odugbesi", role: "Special Adviser, Political Affairs", image: figmaAssets.government.political, bio: pendingBiography },
 		{ name: "Hon. Edu Hafsat", role: "Supervisor for Civic Engagement", image: figmaAssets.government.civic, bio: pendingBiography },
 		{ name: "Hon. Fakumoju Kehinde Babayemisi", role: "Supervisor for Community Development", image: figmaAssets.government.community, bio: pendingBiography },
 		{ name: "Hon. Ambali Olutusin", role: "Supervisor for Intergovernmental Affairs and Legislative Duties", image: figmaAssets.government.intergovernmental, bio: pendingBiography },
 		{ name: "Hon. Ishmaheel Bashir", role: "Special Adviser, Project Monitoring", image: figmaAssets.government.projects, bio: pendingBiography },
-		{ name: "Hon. Abiodun Salau", role: "Special Adviser, Tourism", image: figmaAssets.government.tourism, bio: pendingBiography, portraitPending: true },
-		{ name: "Hon. Basirat Adewunmi Babatunde", role: "Supervisor for Budget and Planning", image: figmaAssets.government.budget, bio: pendingBiography, portraitPending: true },
+		{ name: "Hon. Abiodun Salau", role: "Special Adviser, Tourism", image: figmaAssets.government.tourism, bio: pendingBiography },
+		{ name: "Hon. Basirat Adewunmi Babatunde", role: "Supervisor for Budget and Planning", image: figmaAssets.government.budget, bio: pendingBiography },
 	] satisfies ExecutiveMember[],
 };
 
