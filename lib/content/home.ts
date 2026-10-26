@@ -117,6 +117,18 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 		href: "/news/apanisile-progressive-movement",
 	},
 	{
+		title: "Chairman hosts Rescue Home and its U.S. partners",
+		summary: "Rescue Home and its partners met the Chairman, then took food, backpacks and footballs to Akaun Village.",
+		image: reportImages.rescueChildren,
+		href: "/news/rescue-home-visit",
+	},
+	{
+		title: "Leadership team trains on serving within the mandate",
+		summary: "Supervisors and advisers spent three days at Novatel Hotel, Lekki, and the Chairman presented their certificates.",
+		image: reportImages.mandateCertificates,
+		href: "/news/serving-within-the-mandate",
+	},
+	{
 		title: "First 100 days: the New Deal record at Isiu",
 		summary: "Mayor Apanisile set out what the first hundred days had delivered, from Odo-Nla to Iranlowo Owo Apa.",
 		image: reportImages.hundredDays,

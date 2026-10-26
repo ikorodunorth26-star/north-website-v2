@@ -358,6 +358,108 @@ export const newsArticles: NewsArticle[] = [
 		],
 	},
 	{
+		slug: "rescue-home-visit",
+		category: "COMMUNITY",
+		filterGroup: "community",
+		title: "Chairman hosts Rescue Home and its U.S. partners",
+		summary: "On 6 October 2026, Mayor Ameen Olawale Ibrahim Apanisile received Rescue Home and its U.S.-based partners. The delegation then took food, backpacks, footballs and other materials to Akaun Village and the surrounding communities.",
+		date: "6 October 2026",
+		readTime: "5 min read",
+		image: reportImages.rescueChildren,
+		caption: "Rescue Home and its partners with children in Akaun Village on 6 October 2026.",
+		gallery: [
+			reportImages.rescueChildren,
+			reportImages.rescueWelcome,
+			reportImages.rescueFood,
+			reportImages.rescueDelegation,
+			reportImages.rescueFootball,
+			reportImages.rescueResidents,
+			reportImages.rescueBoys,
+			reportImages.rescuePartners,
+			reportImages.rescueGreeting,
+			reportImages.rescueBriefing,
+			reportImages.rescueDiscussion,
+			reportImages.rescueArrival,
+			reportImages.rescueSecretariat,
+			reportImages.rescueVisitors,
+			reportImages.rescueMeeting,
+		],
+		body: [
+			{
+				heading: "The visit",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North LCDA, Mayor Ameen Olawale Ibrahim Apanisile, on 6 October 2026, received representatives of Rescue Home and its U.S.-based partners. They came to discuss humanitarian support, investment, and sustainable development in the LCDA.",
+					"The meeting was held at the council secretariat. The Chairman received the delegation so that a conversation about what the council has already done could sit beside a conversation about what partners from outside might still do with the communities.",
+				],
+			},
+			{
+				heading: "What the Chairman set out",
+				paragraphs: [
+					"The Chairman highlighted his administration’s achievements in healthcare, education, security, renewable energy, water and sanitation. He noted that all LCDA health centres have been powered with solar energy. He put that record in front of the delegation as the ground on which any further partnership would stand: work already under way in the wards, not a list of wishes.",
+					"Healthcare, schools, security, power, water and sanitation were the sectors he asked the visitors to see. The solar supply at the health centres was the example he gave of a service that now runs when the public grid does not.",
+				],
+			},
+			{
+				heading: "Akaun Village",
+				paragraphs: [
+					"As part of the visit, Rescue Home and its partners distributed food items, backpacks, footballs, sandals, socks and other materials to residents of Akaun Village and the surrounding communities. The gifts were handed to the people who live there, including the children who came out for the distribution.",
+					"The materials were a humanitarian intervention on the day, not a standing programme. Food for households, packs for school, and footballs for the children were what the delegation brought into the village.",
+				],
+			},
+			{
+				heading: "Interest in investing",
+				paragraphs: [
+					"The delegation commended the administration’s development efforts. It identified renewable energy, education, healthcare, ICT, agriculture, data centres, solar farms and waterfront development as areas with significant investment potential, and it expressed interest in investing in Ikorodu North.",
+					"That interest was stated at the meeting. It is not yet a signed investment. What the visitors left with the Chairman was a list of the sectors they believe can carry private partnership, and a willingness to look at Ikorodu North as a place for that partnership.",
+					"The Chairman appreciated the delegation for its humanitarian intervention. He assured them of the LCDA’s readiness to welcome partnerships that bring investment, development and opportunities to the people of Ikorodu North.",
+				],
+			},
+		],
+	},
+	{
+		slug: "serving-within-the-mandate",
+		category: "COUNCIL NEWS",
+		filterGroup: "council",
+		title: "Leadership team trains on serving within the mandate",
+		summary: "From 17 to 19 September 2026 the Vice Chairman, the Secretary to the Local Government, the Chief of Staff, supervisors and special advisers attended a three-day seminar at Novatel Hotel, Lekki. The Chairman later presented their certificates.",
+		date: "19 September 2026",
+		readTime: "5 min read",
+		image: reportImages.mandateCertificates,
+		caption: "The Ikorodu North leadership team with certificates after the Serving Within the Mandate seminar.",
+		gallery: [
+			reportImages.mandateCertificates,
+			reportImages.mandateChairman,
+			reportImages.mandateSeminar,
+			reportImages.mandateTeam,
+			reportImages.mandateLeaders,
+			reportImages.mandateSession,
+		],
+		body: [
+			{
+				heading: "The seminar",
+				paragraphs: [
+					"The leadership team of Ikorodu North LCDA attended a three-day leadership development seminar from 17 to 19 September 2026 at Novatel Hotel, Lekki. The team comprised the Vice Chairman, the Secretary to the Local Government, the Chief of Staff, the supervisors and the special advisers.",
+					"Hon. Mathew Aliu Adesanya, the Vice Chairman, Hon. Tijani Olakanmi Sheriff, Secretary to the Local Government, and Hon. Mojeed Oluwamayowa Saheed, Chief of Staff, were part of that team, with the supervisors and special advisers who carry the day-to-day work of the council.",
+					"The seminar was themed “Serving Within the Mandate.” It focused on strengthening leadership capacity, on clarifying institutional responsibilities, and on a more effective and coordinated service to the public. Three days were given to the question of what each office is for, and how those offices work as one administration rather than as separate desks.",
+				],
+			},
+			{
+				heading: "Back at the secretariat",
+				paragraphs: [
+					"Receiving the team at his office, the Executive Chairman, Mayor Ameen Olawale Ibrahim Apanisile, reaffirmed his administration’s commitment to continuous training and retraining. He noted that sustained capacity development is essential to effective leadership, to sound administration, and to the quality of public service.",
+					"The Chairman then presented certificates to all the participants. He commended their commitment to professional development and to improved service delivery. The certificates marked the three days at Lekki, and they marked his expectation that the training would show in the work that follows.",
+				],
+			},
+			{
+				heading: "Why the training was held",
+				paragraphs: [
+					"He noted that the initiative underscores the administration’s deliberate investment in a leadership team that is capable, responsive and oriented to results, and equipped to deliver on its mandate to the people of Ikorodu North LCDA.",
+					"The seminar was not an event beside the work of the council. It was part of that work: a leadership that knows the limit and the duty of its mandate is better placed to serve the wards it was elected to serve.",
+				],
+			},
+		],
+	},
+	{
 		slug: "apeka-road-army-school-flagoff",
 		category: "INFRASTRUCTURE",
 		filterGroup: "projects",
