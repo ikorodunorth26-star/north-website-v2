@@ -99,6 +99,18 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 		href: "/news/lagos-east-apc-women-leaders",
 	},
 	{
+		title: "Chairman hosts the second Spelling Bee",
+		summary: "Public primary and secondary schools competed at the Council Hall, and the finalists received their certificates.",
+		image: reportImages.spellingBeeFinalists,
+		href: "/news/spelling-bee-2026",
+	},
+	{
+		title: "Chairman meets Ward E4, Olorunda",
+		summary: "Mayor Apanisile assured the Joint CDA and community stakeholders that no ward would be left out of the development agenda.",
+		image: reportImages.olorundaChairman,
+		href: "/news/olorunda-ward-e4-engagement",
+	},
+	{
 		title: "First 100 days: the New Deal record at Isiu",
 		summary: "Mayor Apanisile set out what the first hundred days had delivered, from Odo-Nla to Iranlowo Owo Apa.",
 		image: reportImages.hundredDays,

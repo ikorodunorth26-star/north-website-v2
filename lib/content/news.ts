@@ -184,6 +184,127 @@ export const newsArticles: NewsArticle[] = [
 		],
 	},
 	{
+		slug: "spelling-bee-2026",
+		category: "EDUCATION",
+		filterGroup: "community",
+		title: "Chairman hosts the second Spelling Bee",
+		summary: "On Thursday, 15 October 2026, Mayor Ameen Olawale Ibrahim Apanisile hosted the second edition of the Spelling Bee for public primary and secondary schools at the Council Hall.",
+		date: "15 October 2026",
+		readTime: "6 min read",
+		image: reportImages.spellingBeeFinalists,
+		caption: "Finalists of the Year 2026 Preliminary Spelling Bee with their certificates at the Council Hall on 15 October 2026.",
+		gallery: [
+			reportImages.spellingBeeFinalists,
+			reportImages.spellingBeeBanner,
+			reportImages.spellingBeeHost,
+			reportImages.spellingBeePrimaryWinners,
+			reportImages.spellingBeeSecondaryWinners,
+			reportImages.spellingBeeSecondaryFirst,
+			reportImages.spellingBeeSecondarySecond,
+			reportImages.spellingBeePrimaryAward,
+			reportImages.spellingBeePrimaryRound,
+			reportImages.spellingBeeContestants,
+			reportImages.spellingBeeHall,
+			reportImages.spellingBeeOfficials,
+			reportImages.spellingBeeGroup,
+			reportImages.spellingBeeContestant,
+		],
+		body: [
+			{
+				heading: "The competition",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North Local Council Development Area, Mayor Ameen Olawale Ibrahim Apanisile, on Thursday, 15 October 2026, hosted the second edition of the Spelling Bee Competition for public primary and secondary schools. It was held to promote academic excellence, to encourage healthy competition, and to nurture young talents.",
+					"The Year 2026 Preliminary Spelling Bee took place at the Council Hall, Ikorodu North LCDA, from 10am. Pupils and students from public schools across the LCDA came to spell in the open, in front of their schools, their teachers, and the council.",
+					"The initiative reflects the Apanisile-led administration’s commitment to educational development, and its determination to give students a place to show their intellectual abilities, to expand their vocabulary, and to build confidence in their academic pursuits. A competition of this kind puts the classroom on a public stage, so that effort in school is seen and honoured.",
+				],
+			},
+			{
+				heading: "The Chief Host",
+				paragraphs: [
+					"The Chief Host, Mrs Omowunmi Azeezat Ameen Apanisile, commended the administration for its continued efforts to promote education and to encourage academic excellence among young learners. She urged the contestants to remain disciplined, focused, and dedicated to their studies, and to show good sportsmanship throughout the competition.",
+					"She further emphasised the importance of nurturing the students’ confidence, their communication skills, and their intellectual abilities. Educational competitions, she noted, play a vital role in preparing children for future academic and professional achievements. The spelling itself was only part of the day. The larger point was that a child who can stand up, listen, and answer in public is already being prepared for the work ahead.",
+					"In her closing remarks, Mrs Apanisile offered prayers for wisdom, knowledge, and success for the students in their academic pursuits. She expressed the hope that they would grow into responsible citizens who would contribute meaningfully to society.",
+				],
+			},
+			{
+				heading: "Winners",
+				paragraphs: [
+					"In the primary school category, first position went to Sharafa Darasimi Maria of Estate Primary School. Second position went to Isreal Mogoke of Model Nursery and Primary School. Third position went to Adebisi Elizabeth of Local Government Primary School.",
+					"In the secondary school category, first position went to Mukaila Aishat of Maya Senior Grammar School. Second position went to Bodunrin Rapheal of Odogunyan Senior Grammar School. Third position went to Sanni Elizabeth of Maya Community Senior Grammar School.",
+					"Each finalist received a certificate of the Education and Library Services Department, dated 15 October 2026, together with a medal. The certificates name the position and the category, so the result of the day is on the record of the schools as well as of the council.",
+				],
+			},
+			{
+				heading: "Who was present",
+				paragraphs: [
+					"Also present were the Vice Chairman of Ikorodu North LCDA, Hon. Mathew Aliu Adesanya; the Council Manager; members of the Executive and Legislative Arms of the Council; other members of staff; and distinguished guests who came to support the educational initiative.",
+					"The competition gave pupils and students from public schools across Ikorodu North LCDA a platform to demonstrate their spelling, to sharpen their academic skills, and to compete for honours in a spirit of excellence, discipline, and fair play.",
+					"The successful hosting of the second edition further underscores the Apanisile-led administration’s commitment to investing in education, promoting academic excellence, nurturing young talents, and creating opportunities for the next generation.",
+				],
+			},
+		],
+	},
+	{
+		slug: "olorunda-ward-e4-engagement",
+		category: "COMMUNITY",
+		filterGroup: "community",
+		title: "Chairman meets Ward E4, Olorunda, and assures residents of more development",
+		summary: "On Sunday, 11 October 2026, Mayor Ameen Olawale Apanisile met the Joint CDA and community stakeholders in Ward E4, Olorunda, and assured residents that no ward would be left out of the development agenda.",
+		date: "11 October 2026",
+		readTime: "6 min read",
+		image: reportImages.olorundaChairman,
+		caption: "Mayor Ameen Apanisile at the strategic engagement with the Ward E4 Joint CDA in Olorunda on 11 October 2026.",
+		gallery: [
+			reportImages.olorundaChairman,
+			reportImages.olorundaResidents,
+			reportImages.olorundaLeaders,
+			reportImages.olorundaWomen,
+			reportImages.olorundaHall,
+			reportImages.olorundaMeeting,
+			reportImages.olorundaStakeholders,
+			reportImages.olorundaEngagement,
+			reportImages.olorundaCommunity,
+		],
+		body: [
+			{
+				heading: "The engagement",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North LCDA, Mayor Ameen Olawale Apanisile, on Sunday, 11 October 2026, held a strategic engagement with the Joint Community Development Association and community stakeholders in Ward E4, Olorunda. The meeting was called to discuss development priorities, to strengthen grassroots participation, and to address the needs of residents.",
+					"Olorunda was heard on its own ground. The Chairman sat with the Joint CDA and the community leadership so that the ward could set out what it wants taken up, and so that the council could answer in the room rather than from a distance.",
+				],
+			},
+			{
+				heading: "Who was there",
+				paragraphs: [
+					"The meeting was attended by Hon. Kehinde Babayemisi, Supervisor for Community Affairs; Hon. Hafsat Edu; Hon. Oluseyi Onabajo, Councillor representing Ward E4, Olorunda; Hon. Balikeez Aderoju, Supervisor for Markets; the CDC Chairman, Hon. Niran Ogunbanwo; Chief Olubowale John, Baale of Igbaga Ogun-Akin; Engr. Salako, Joint CDA Chairman; and other community leaders and stakeholders.",
+					"The ward councillor, the community supervisors, the CDC, the Joint CDA, and the baale were in the same room. That is the partnership the engagement was meant to put to work: the council and the people who live with the daily condition of Ward E4.",
+				],
+			},
+			{
+				heading: "What the community said",
+				paragraphs: [
+					"Speaking at the engagement, Chief Olubowale John acknowledged and appreciated the Chairman’s efforts towards the development of the secondary school and other developmental initiatives in Ward E4 and across Ikorodu North. He commended the administration’s commitment to addressing community needs, and he emphasised the importance of sustained collaboration between the government and residents if the development is to be meaningful and lasting.",
+					"The baale’s thanks were specific. He pointed to the secondary school and to the other work already under way in the ward, and he asked that the collaboration which produced that work be kept up. Development, as he put it to the meeting, is not a single project. It is a continuing partnership.",
+				],
+			},
+			{
+				heading: "The Chairman’s assurance",
+				paragraphs: [
+					"In his remarks, Mayor Ameen Apanisile highlighted ongoing and planned development initiatives across the wards of Ikorodu North. He assured residents that no ward would be left out of his administration’s development agenda. Olorunda’s place in that agenda, he said, is not conditional on being the loudest ward. It is part of the commitment to the whole LCDA.",
+					"The Chairman emphasised the strategic importance of the Maya–Idafa Road and of improved road connectivity across Ikorodu North. Better connections between communities, he noted, would ease movement, enhance accessibility, and stimulate economic activities. He was speaking of the road as a link the ward needs, not as a work already closed.",
+					"He further observed that the area’s growing population, and the increasing influx of residents, make strategic planning and infrastructure development imperative. A ward that is taking in more people cannot be planned as if it were standing still. He also acknowledged the development efforts of President Bola Ahmed Tinubu, GCFR; Senator Tokunbo Abiru; and Hon. Babajimi Adegoke Benson, MHR.",
+				],
+			},
+			{
+				heading: "The commitment",
+				paragraphs: [
+					"Mayor Apanisile reaffirmed his administration’s commitment to inclusive governance, to regular community engagement, and to equitable development across Ikorodu North LCDA. He assured the people of Olorunda that their concerns would continue to receive attention as the council pursues initiatives aimed at improving infrastructure, education, accessibility, and the overall well-being of residents.",
+					"The engagement further demonstrated the administration’s commitment to strengthening grassroots participation, and to a productive partnership between the government and community stakeholders for sustainable development. Ward E4 left the meeting with the Chairman’s assurance that Olorunda will not be passed over.",
+				],
+			},
+		],
+	},
+	{
 		slug: "apeka-road-army-school-flagoff",
 		category: "INFRASTRUCTURE",
 		filterGroup: "projects",
