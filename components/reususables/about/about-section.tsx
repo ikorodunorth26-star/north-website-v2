@@ -6,6 +6,7 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 import { aboutCommunity, aboutHistory, aboutImpact, aboutIntroduction, aboutRelated } from "@/lib/content/about";
 
 import { LocalImage, TypewriterText } from "../site";
+import AboutLandmarks from "./about-landmarks";
 import HistoryChapter from "./history-chapter";
 
 const headingClassName = "whitespace-pre-line text-[32px] font-semibold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]";
@@ -54,20 +55,20 @@ const AboutSection = () => {
 			</section>
 
 			<section className="bg-background py-16">
-				<div className="mx-auto grid w-full max-w-council items-start gap-6 px-5 md:px-10 lg:grid-cols-2 lg:gap-10 min-[1408px]:px-0">
-					<div className="flex flex-col gap-6">
+				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
+					<div className="max-w-[640px]">
 						<TypewriterText as="h2" text={aboutHistory.heading} className={headingClassName} />
-						<p className="text-lg font-medium leading-[27px] text-council-subtle">{aboutHistory.introduction}</p>
-						{aboutHistory.chapters[0] ? <HistoryChapter chapter={aboutHistory.chapters[0]} /> : null}
+						<p className="mt-6 text-lg font-medium leading-[27px] text-council-subtle">{aboutHistory.introduction}</p>
 					</div>
-					{aboutHistory.chapters[1] ? <HistoryChapter chapter={aboutHistory.chapters[1]} /> : null}
-					{aboutHistory.chapters[2] ? (
-						<div className="lg:col-span-2">
-							<HistoryChapter chapter={aboutHistory.chapters[2]} />
-						</div>
-					) : null}
+					<div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-10">
+						{aboutHistory.chapters[0] ? <HistoryChapter chapter={aboutHistory.chapters[0]} className="order-1 h-full lg:col-start-1 lg:row-start-1" /> : null}
+						{aboutHistory.chapters[2] ? <HistoryChapter chapter={aboutHistory.chapters[2]} className="order-2 h-full lg:col-start-1 lg:row-start-2" /> : null}
+						{aboutHistory.chapters[1] ? <HistoryChapter chapter={aboutHistory.chapters[1]} tone="panel" className="order-3 h-full lg:col-start-2 lg:row-span-2 lg:row-start-1" /> : null}
+					</div>
 				</div>
 			</section>
+
+			<AboutLandmarks />
 
 			<HomeWardsSection id="communities" />
 
