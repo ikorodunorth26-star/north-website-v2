@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
-import { figmaAssets } from "@/lib/content/figma-assets";
 import { getWard, wardConcernTitle, wardLabels, wardNewsTitle, wards, type WardProjectStatus, type WardRecord } from "@/lib/content/wards";
 import { cn } from "@/lib/utils";
 
@@ -14,18 +13,23 @@ const statusClassName: Record<WardProjectStatus, string> = {
 
 const WardHero = ({ ward }: { ward: WardRecord }) => {
 	return (
-		<section className="relative isolate min-h-[520px] overflow-hidden bg-council-green lg:min-h-[570px]">
-			<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="object-cover" sizes="100vw" priority />
-			<div className="absolute inset-0 bg-[linear-gradient(90deg,hsl(var(--brand-dark))_0%,hsl(var(--brand-dark)/0.78)_46%,hsl(var(--brand-dark)/0.2)_100%)]" aria-hidden="true" />
-			<div className="absolute inset-0 opacity-25 mix-blend-soft-light" style={{ backgroundImage: `url(${figmaAssets.brand.heroTexture.src})`, backgroundSize: "600px 600px" }} aria-hidden="true" />
-			<div className="relative z-10 mx-auto flex min-h-[520px] w-full max-w-council flex-col justify-end px-5 pb-14 pt-36 md:px-10 lg:min-h-[570px] lg:pb-16 min-[1408px]:px-0">
-				<Link href={wardLabels.backHref} className="inline-flex w-fit items-center gap-2 text-sm font-bold text-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-white">
-					<ArrowLeft className="size-4" aria-hidden="true" />
-					{wardLabels.back}
-				</Link>
-				<p className="mt-6 inline-flex w-fit items-center rounded-[32px] bg-gradient-to-b from-council-lime to-[#f0f6d5] px-5 py-2.5 text-sm font-medium text-council-green lg:px-6 lg:py-3.5">{wardLabels.pill}</p>
-				<h1 className="mt-5 max-w-[747px] text-[42px] font-medium leading-[46px] tracking-[-0.84px] text-council-cream md:text-[52px] md:leading-[56px] lg:text-[64px] lg:leading-[68px] lg:tracking-[-1.28px]">{ward.name} Ward</h1>
-				<p className="mt-5 max-w-[696px] text-lg font-medium leading-7 text-[#dfe5df] lg:text-xl lg:leading-8">{ward.introduction}</p>
+		<section className="bg-council-green">
+			<div className="mx-auto grid w-full max-w-council items-center gap-10 px-5 pb-16 pt-36 md:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,520px)] lg:gap-16 lg:pb-20 lg:pt-44 min-[1408px]:px-0">
+				<div>
+					<Link href={wardLabels.backHref} className="inline-flex w-fit items-center gap-2 text-sm font-bold text-council-lime focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime">
+						<ArrowLeft className="size-4" aria-hidden="true" />
+						{wardLabels.back}
+					</Link>
+					<p className="mt-8 text-[11px] font-bold uppercase tracking-[0.16em] text-council-gold">{wardLabels.pill}</p>
+					<h1 className="mt-4 max-w-[640px] text-[42px] font-medium leading-[46px] tracking-[-0.84px] text-white md:text-[52px] md:leading-[56px] lg:text-[64px] lg:leading-[68px] lg:tracking-[-1.28px]">{ward.name} Ward</h1>
+					<p className="mt-5 max-w-[560px] text-lg font-normal leading-8 text-white/90">{ward.introduction}</p>
+				</div>
+				<figure>
+					<div className="relative aspect-[16/11] overflow-hidden rounded-[24px] bg-council-green">
+						<LocalImage src={ward.image.src} alt={ward.image.alt} className="absolute inset-0" imageClassName="object-cover" sizes="(min-width: 1024px) 520px, 100vw" priority />
+					</div>
+					<figcaption className="mt-3 text-xs leading-5 text-white/60">{ward.image.alt}</figcaption>
+				</figure>
 			</div>
 		</section>
 	);
@@ -33,12 +37,12 @@ const WardHero = ({ ward }: { ward: WardRecord }) => {
 
 const WardSwitcher = ({ slug }: { slug: string }) => {
 	return (
-		<nav aria-label="Explore another ward" className="bg-background">
-			<div className="mx-auto flex w-full max-w-council gap-3 overflow-x-auto px-5 py-6 md:px-10 min-[1408px]:px-0">
+		<nav aria-label="Explore another ward" className="bg-white">
+			<div className="mx-auto grid w-full max-w-council grid-cols-2 gap-3 px-5 py-10 sm:grid-cols-5 md:px-10 min-[1408px]:px-0">
 				{wards.map((item) => {
 					const current = item.slug === slug;
 					return (
-						<Link key={item.slug} href={`/communities/${item.slug}`} aria-current={current ? "page" : undefined} className={cn("inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-base font-bold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green", current ? "bg-council-green text-white" : "bg-[#f3f0e6] text-council-green hover:bg-[#e7e2d4]")}>
+						<Link key={item.slug} href={`/communities/${item.slug}`} aria-current={current ? "page" : undefined} className={cn("inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-center text-base font-bold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green", current ? "bg-council-green text-white" : "bg-[#f3f0e6] text-council-green hover:bg-[#e7e2d4]")}>
 							{item.name}
 						</Link>
 					);
@@ -56,8 +60,8 @@ const WardSection = ({ slug }: { slug: string }) => {
 		<>
 			<WardHero ward={ward} />
 			<WardSwitcher slug={ward.slug} />
-			<section className="bg-background pb-16">
-				<div className="mx-auto grid w-full max-w-council gap-8 px-5 md:px-10 lg:grid-cols-[minmax(0,1fr)_500px] lg:items-start min-[1408px]:px-0">
+			<section className="bg-[#F8F7F2] py-20 lg:py-24">
+				<div className="mx-auto grid w-full max-w-council items-center gap-8 px-5 md:px-10 lg:grid-cols-[minmax(0,1fr)_500px] lg:gap-16 min-[1408px]:px-0">
 					<div>
 						<p className="text-[11px] font-bold uppercase tracking-[0.14em] text-council-gold">{wardLabels.overviewEyebrow}</p>
 						<h2 className="mt-3 max-w-[724px] text-[32px] font-bold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]">{ward.overviewHeading}</h2>
@@ -84,7 +88,7 @@ const WardSection = ({ slug }: { slug: string }) => {
 				</div>
 			</section>
 
-			<section className="bg-[#eef3df] py-16">
+			<section className="bg-[#E8EDDE] py-16">
 				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 					<div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
 						<div className="max-w-[720px]">
@@ -123,7 +127,7 @@ const WardSection = ({ slug }: { slug: string }) => {
 				</div>
 			</section>
 
-			<section className="bg-background py-16">
+			<section className="bg-[#F8F7F2] py-16">
 				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 					<p className="text-[11px] font-bold uppercase tracking-[0.14em] text-council-gold">{wardLabels.newsEyebrow}</p>
 					<h2 className="mt-3 text-[32px] font-bold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]">{wardNewsTitle(ward.name)}</h2>

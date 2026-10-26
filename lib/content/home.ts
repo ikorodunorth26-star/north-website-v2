@@ -228,7 +228,6 @@ export const homeContent = {
 		eyebrow: "Departments",
 		title: "Serving You,\nDepartment by Department",
 		description: "Find the right office for your needs and see how each team serves the community.",
-		cta: "View all departments",
 	},
 	announcements: {
 		eyebrow: "Announcements",
