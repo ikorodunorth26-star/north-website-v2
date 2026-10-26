@@ -4,10 +4,7 @@ export type LegislativeMember = {
 	name: string;
 	role: string;
 	image: FigmaAsset;
-	bio: string;
 };
-
-const pendingResponsibilities = "The councillor’s name, position in the House and community responsibilities will be published once verified.";
 
 export const legislativeHousePage = {
 	label: "Representative Arm",
@@ -30,10 +27,10 @@ export const legislativeDirectory = {
 	title: "Meet your representatives.",
 	description: "Find the people representing your community in the Legislative House.",
 	members: [
-		{ name: "Hon Benson Titilayo Abosede", role: "Leader of the house, Councilor ward E2 Erikorodo", image: figmaAssets.government.leader, bio: pendingResponsibilities },
-		{ name: "Hon Jimoh Idris Iliasu", role: "Deputy Leader, Councilor Ward B3, Isiu", image: figmaAssets.government.deputyLeader, bio: pendingResponsibilities },
-		{ name: "Hon Banjoko Babatunde Oluwaseun", role: "Majority Leader, Councilor ward E1 Odogunyan", image: figmaAssets.government.majorityLeader, bio: pendingResponsibilities },
-		{ name: "Hon Onabajo Oluwaseyi Olugbenga", role: "Chief Whip, Councilor Ward E4, Olorunda", image: figmaAssets.government.chiefWhip, bio: pendingResponsibilities },
-		{ name: "Hon Ibrahim Risikat Abiodun", role: "Councilor ward E3 Agbala", image: figmaAssets.government.agbalaCouncillor, bio: pendingResponsibilities },
+		{ name: "Hon Benson Titilayo Abosede", role: "Leader of the house, Councilor ward E2 Erikorodo", image: figmaAssets.government.leader },
+		{ name: "Hon Jimoh Idris Iliasu", role: "Deputy Leader, Councilor Ward B3, Isiu", image: figmaAssets.government.deputyLeader },
+		{ name: "Hon Banjoko Babatunde Oluwaseun", role: "Majority Leader, Councilor ward E1 Odogunyan", image: figmaAssets.government.majorityLeader },
+		{ name: "Hon Onabajo Oluwaseyi Olugbenga", role: "Chief Whip, Councilor Ward E4, Olorunda", image: figmaAssets.government.chiefWhip },
+		{ name: "Hon Ibrahim Risikat Abiodun", role: "Councilor ward E3 Agbala", image: figmaAssets.government.agbalaCouncillor },
 	] satisfies LegislativeMember[],
 };

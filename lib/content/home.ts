@@ -17,7 +17,6 @@ export type HomeDepartment = {
 	responsibleLead: string;
 	category: string;
 	icon: "landmark" | "wallet" | "heartPulse";
-	href: string;
 };
 
 export type HomeAnnouncement = {
@@ -59,7 +58,6 @@ export const homeDepartments: HomeDepartment[] = [
 		responsibleLead: "Headed by Human Resources Officer",
 		category: "Council administration",
 		icon: "landmark",
-		href: "/government/departments",
 	},
 	{
 		title: "Finance & Accounts",
@@ -67,7 +65,6 @@ export const homeDepartments: HomeDepartment[] = [
 		responsibleLead: "Headed by Council Treasurer",
 		category: "Public finance",
 		icon: "wallet",
-		href: "/government/departments",
 	},
 	{
 		title: "Primary Health Care",
@@ -75,7 +72,6 @@ export const homeDepartments: HomeDepartment[] = [
 		responsibleLead: "Headed by Edu. & Library Services Dept.",
 		category: "Community health",
 		icon: "heartPulse",
-		href: "/government/departments",
 	},
 ];
 
@@ -127,6 +123,18 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 		summary: "Supervisors and advisers spent three days at Novatel Hotel, Lekki, and the Chairman presented their certificates.",
 		image: reportImages.mandateCertificates,
 		href: "/news/serving-within-the-mandate",
+	},
+	{
+		title: "Chairman unveils a plan for a mini bus stop at Adamo",
+		summary: "A working visit on 17 September 2026 set out a designated stop for the traffic at Adamo Bus Stop. The facility is still being planned.",
+		image: reportImages.adamoBusChairman,
+		href: "/news/adamo-mini-bus-stop",
+	},
+	{
+		title: "Chairman rewards the Apanisile Champions Cup winners",
+		summary: "United Talent took the first edition at TPS Stadium, with ₦500,000, the trophy and medals.",
+		image: reportImages.cupWinners,
+		href: "/news/apanisile-champions-cup",
 	},
 	{
 		title: "First 100 days: the New Deal record at Isiu",

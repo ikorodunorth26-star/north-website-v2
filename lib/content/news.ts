@@ -460,6 +460,56 @@ export const newsArticles: NewsArticle[] = [
 		],
 	},
 	{
+		slug: "adamo-mini-bus-stop",
+		category: "COUNCIL NEWS",
+		filterGroup: "council",
+		title: "Chairman unveils a plan for a mini bus stop at Adamo",
+		summary: "On 17 September 2026 Mayor Apanisile inspected the traffic at Adamo Bus Stop and set out a plan for a mini bus stop. The facility is still being planned, with consultations and a further assessment of the site to follow.",
+		date: "17 September 2026",
+		readTime: "5 min read",
+		image: reportImages.adamoBusChairman,
+		caption: "Mayor Ameen Apanisile on a working visit to Adamo Bus Stop, where he set out plans for a mini bus stop.",
+		gallery: [
+			reportImages.adamoBusChairman,
+			reportImages.adamoBusMarket,
+			reportImages.adamoBusMotorcycles,
+			reportImages.adamoBusTraffic,
+			reportImages.adamoBusAerial,
+			reportImages.adamoBusStreet,
+		],
+		body: [
+			{
+				heading: "The visit",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North Local Council Development Area, Mayor Ameen Olawale Ibrahim Apanisile, has unveiled plans for a mini bus stop at Adamo Bus Stop. The proposal is part of the administration’s work to tackle traffic congestion, improve road safety, and make the road easier for commuters and other road users.",
+					"He disclosed the plan on 17 September 2026 during a working visit to the Adamo axis. On that visit he inspected the traffic as it stood and assessed the pressure coming from the growing movement of commuters, commercial vehicles and other road users.",
+					"This is a plan for a facility, not a facility already built. The paved Adamo–Araro Road, facilitated by Rep. Babajimi Benson and later reported complete, is a separate work. What the Chairman set out at Adamo Bus Stop is a place for vehicles to stop, load and set passengers down.",
+				],
+			},
+			{
+				heading: "Why Adamo needs a designated stop",
+				paragraphs: [
+					"The Adamo axis is a major link to several surrounding communities. A growing number of residents and commuters rely on it every day. Traders, motorcycles, cars and commercial vehicles already crowd the same stretch, and there is no properly designated bus-stop facility to hold them.",
+					"That absence has contributed to indiscriminate stopping, loading and off-loading by commercial vehicles, particularly during peak periods. The result is avoidable traffic build-up, and a higher risk for pedestrians and motorists.",
+				],
+			},
+			{
+				heading: "What the mini bus stop is meant to do",
+				paragraphs: [
+					"Mayor Apanisile said the proposed mini bus stop will give passengers a more organised place to be picked up and dropped off. It is meant to cut the unnecessary obstruction on the road and to let traffic move more smoothly. The facility is also expected to make the transport environment safer and more orderly for commuters, motorists, pedestrians and commercial transport operators.",
+					"The Chairman reaffirmed his administration’s commitment to finding the difficulties that affect communities across Ikorodu North and to practical interventions that change the daily life of residents. He emphasised that the proposed Adamo mini bus stop sits inside a wider effort: better mobility, public safety, traffic management and community infrastructure across the LCDA.",
+				],
+			},
+			{
+				heading: "What happens next",
+				paragraphs: [
+					"The council will continue consultations with the relevant stakeholders and will assess the location further. The aim is a facility that is properly planned, placed where it will actually serve the traffic, and matched to the needs of the growing population around Adamo and the communities that adjoin it.",
+					"The administration of Mayor Ameen Apanisile remains committed to a safer, more organised and more functional Ikorodu North, one community-focused intervention at a time.",
+				],
+			},
+		],
+	},
+	{
 		slug: "apeka-road-army-school-flagoff",
 		category: "INFRASTRUCTURE",
 		filterGroup: "projects",
@@ -473,6 +523,54 @@ export const newsArticles: NewsArticle[] = [
 				paragraphs: [
 					"Mayor Ameen Apanisile joined Rep. Babajimi Benson to flag off High School Road, Apeka, in the first year of the administration. The same programme covered reconstruction of Army Children Primary School at Losi-Onikoko, by 174 Battalion.",
 					"Both works were marked as ongoing from the flag-off. The road is the council’s own first-year project. The school rebuild sits beside the battalion community in Odogunyan.",
+				],
+			},
+		],
+	},
+	{
+		slug: "apanisile-champions-cup",
+		category: "YOUTH & SPORTS",
+		filterGroup: "community",
+		title: "Chairman rewards the Apanisile Champions Cup winners",
+		summary: "United Talent won the Apanisile Champions Cup 1.0 at TPS Stadium, Ikorodu, and received ₦500,000, the trophy and medals. Hon. Babajimi Adegoke Benson attended the grand finale.",
+		date: "5 July 2026",
+		readTime: "5 min read",
+		image: reportImages.cupWinners,
+		caption: "United Talent, winners of the Apanisile Champions Cup 1.0, with the trophy and a ₦500,000 cheque.",
+		gallery: [
+			reportImages.cupWinners,
+			reportImages.cupRunnerUp,
+			reportImages.cupTrophy,
+			reportImages.cupPresentation,
+			reportImages.cupCrowd,
+			reportImages.cupGuests,
+			reportImages.cupAddress,
+			reportImages.cupGuest,
+		],
+		body: [
+			{
+				heading: "The grand finale",
+				paragraphs: [
+					"The Executive Chairman of Ikorodu North Local Council Development Area, Mayor Ameen Olawale Ibrahim Apanisile, rewarded the winners of the Apanisile Champions Cup 1.0 2026 with cash prizes after the grand finale at TPS Stadium, Ikorodu.",
+					"United Talent emerged as champions. The team received a ₦500,000 cash prize, the trophy and medals. The winners’ cheque, dated 5 July 2026, is made out to United Talent for five hundred thousand naira.",
+					"The presentation photographs also show the first runner-up. Big Tex received a cheque for ₦300,000, three hundred thousand naira, marked first runner-up and dated the same day. The teams took their prizes on the pitch, in front of the crowd that had followed the final.",
+				],
+			},
+			{
+				heading: "Who was there",
+				paragraphs: [
+					"The Member of the House of Representatives, Hon. Babajimi Adegoke Benson, graced the occasion. With him were political leaders, traditional rulers, government officials, community leaders and youth stakeholders.",
+					"Those named at the final included Hon. Bolowotan, APC candidate for Ikorodu Constituency I; Hon. Tijani, APC Division Chairman; Hon. Ogunbela; Hon. Iyiola; Mrs. Toyin Salau; and the Baales of Adamo, Akanun and Mopelufa. Hon. Tijani, the APC Division Chairman, is a different office from the Secretary to the Local Government, Hon. Tijani Olakanmi Sheriff, who was also present.",
+					"Also present were the Deputy Mayor, Hon. Mathew Aliu Adesanya, the Council Manager, the Council Engineer, heads of department, the supervisors, the councillors and members of the Council Executive, together with LGA and ward party executives.",
+					"The event also drew the Chairman of the Ikorodu Divisional Football Association, Alhaji Sonibare; executives of the Community Development Committee; representatives of the National Youth Council of Nigeria; sports enthusiasts; football stakeholders; community representatives; and other well-wishers.",
+				],
+			},
+			{
+				heading: "What the Chairman said",
+				paragraphs: [
+					"Speaking at the event, Mayor Ameen Apanisile praised the participating teams. He reaffirmed his administration’s commitment to youth development, to talent discovery, and to grassroots sports.",
+					"He assured residents that outstanding players would be given opportunities to represent Ikorodu North in future competitions. “We must continue to invest in our young people because they are our future. We want to discover these talents, nurture them and give them opportunities to represent Ikorodu North beyond this tournament.”",
+					"The line he left with the final was “Let’s mind our future.” The cup was the first edition, and the promise attached to it was that players found on this pitch would have a path beyond it.",
 				],
 			},
 		],

@@ -13,7 +13,6 @@ const ExecutiveMemberCard = ({ member }: { member: ExecutiveMember }) => {
 			<div className="flex flex-col gap-4 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
 				<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
-				<p className="text-[15px] font-normal leading-6 text-council-subtle lg:hidden">{member.bio}</p>
 			</div>
 		</article>
 	);
