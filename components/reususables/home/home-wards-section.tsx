@@ -4,11 +4,28 @@ import { useState, type KeyboardEvent } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-import { homeContent, homeWards } from "@/lib/content/home";
+import { homeContent, homeWards, type HomeWard } from "@/lib/content/home";
 import { LocalImage } from "@/components/reususables/site";
 import { cn } from "@/lib/utils";
 
 import HomeSectionHeading from "./home-section-heading";
+
+const WardRow = ({ ward, index, selected = false, linked = false }: { ward: HomeWard; index: number; selected?: boolean; linked?: boolean }) => {
+	return (
+		<>
+			<span className={cn("absolute inset-y-3 left-0 w-[3px] rounded-full transition-colors", selected ? "bg-council-green" : "bg-transparent group-hover/ward:bg-council-green/30")} aria-hidden="true" />
+			<span className={cn("relative size-14 shrink-0 overflow-hidden rounded-xl ring-2 ring-offset-2 ring-offset-white transition-[box-shadow,ring-color]", selected ? "ring-council-green" : "ring-transparent group-hover/ward:ring-council-green/25")}>
+				<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="transition-transform duration-300 group-hover/ward:scale-105 motion-reduce:transition-none motion-reduce:group-hover/ward:scale-100" sizes="56px" loading="eager" />
+			</span>
+			<span className="min-w-0">
+				<span className={cn("text-[11px] font-bold leading-4 tracking-[0.14em] transition-colors", selected ? "text-council-green" : "text-council-gold group-hover/ward:text-council-green")}>{String(index + 1).padStart(2, "0")}</span>
+				<span className="mt-0.5 block truncate text-base font-semibold leading-6 text-council-green">{ward.name}</span>
+				<span className="block truncate text-xs leading-4 text-council-subtle">{ward.tag}</span>
+			</span>
+			<ArrowRight className={cn("ml-auto size-4 shrink-0 transition-all duration-200", selected || linked ? "translate-x-0 text-council-green" : "-translate-x-1 text-council-green/0 group-hover/ward:translate-x-0 group-hover/ward:text-council-green/60")} aria-hidden="true" />
+		</>
+	);
+};
 
 const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 	const { wards } = homeContent;
@@ -31,7 +48,18 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 				<HomeSectionHeading id={id} eyebrow={wards.eyebrow} title={wards.title} description={wards.description} titleClassName="font-bold" columnClassName="max-w-none flex-1" descriptionClassName="max-w-none whitespace-pre-line" />
 
 				<div className="mt-10 grid items-stretch gap-4 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-5">
-					<div role="tablist" aria-label="Wards of Ikorodu North" className="flex h-full gap-3 overflow-x-auto pb-1 lg:flex-col lg:justify-between lg:overflow-visible lg:pb-0" onKeyDown={onKeyDown}>
+					<ul className="flex flex-col gap-3 lg:hidden">
+						{homeWards.map((ward, index) => (
+							<li key={ward.name}>
+								<Link
+									href={ward.href}
+									className="group/ward relative flex w-full items-center gap-3 rounded-[20px] border border-transparent bg-white/40 px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-council-green/15 hover:bg-white hover:shadow-soft focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+									<WardRow ward={ward} index={index} linked />
+								</Link>
+							</li>
+						))}
+					</ul>
+					<div role="tablist" aria-label="Wards of Ikorodu North" className="hidden h-full gap-3 lg:flex lg:flex-col lg:justify-between" onKeyDown={onKeyDown}>
 						{homeWards.map((ward, index) => {
 							const selected = index === activeIndex;
 							return (
@@ -45,25 +73,16 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 									tabIndex={selected ? 0 : -1}
 									onClick={() => setActiveIndex(index)}
 									className={cn(
-										"group/ward relative flex w-[250px] shrink-0 items-center gap-3 rounded-[20px] border px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0 lg:w-auto",
+										"group/ward relative flex w-auto items-center gap-3 rounded-[20px] border px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0",
 										selected ? "border-council-green/15 bg-white shadow-[0_14px_32px_-18px_rgba(23,61,50,0.65)]" : "border-transparent bg-white/40 hover:border-council-green/15 hover:bg-white hover:shadow-soft",
 									)}>
-									<span className={cn("absolute inset-y-3 left-0 w-[3px] rounded-full transition-colors", selected ? "bg-council-green" : "bg-transparent group-hover/ward:bg-council-green/30")} aria-hidden="true" />
-									<span className={cn("relative size-14 shrink-0 overflow-hidden rounded-xl ring-2 ring-offset-2 ring-offset-white transition-[box-shadow,ring-color]", selected ? "ring-council-green" : "ring-transparent group-hover/ward:ring-council-green/25")}>
-										<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="transition-transform duration-300 group-hover/ward:scale-105 motion-reduce:transition-none motion-reduce:group-hover/ward:scale-100" sizes="56px" loading="eager" />
-									</span>
-									<span className="min-w-0">
-										<span className={cn("text-[11px] font-bold leading-4 tracking-[0.14em] transition-colors", selected ? "text-council-green" : "text-council-gold group-hover/ward:text-council-green")}>{String(index + 1).padStart(2, "0")}</span>
-										<span className="mt-0.5 block truncate text-base font-semibold leading-6 text-council-green">{ward.name}</span>
-										<span className="block truncate text-xs leading-4 text-council-subtle">{ward.tag}</span>
-									</span>
-									<ArrowRight className={cn("ml-auto size-4 shrink-0 transition-all duration-200", selected ? "translate-x-0 text-council-green" : "-translate-x-1 text-council-green/0 group-hover/ward:translate-x-0 group-hover/ward:text-council-green/60")} aria-hidden="true" />
+									<WardRow ward={ward} index={index} selected={selected} />
 								</button>
 							);
 						})}
 					</div>
 
-					<article id="ward-stage" role="tabpanel" aria-labelledby={`ward-tab-${activeWard.name}`} className="group relative min-h-[460px] overflow-hidden rounded-[28px] bg-council-green sm:min-h-[520px]">
+					<article id="ward-stage" role="tabpanel" aria-labelledby={`ward-tab-${activeWard.name}`} className="group relative hidden min-h-[460px] overflow-hidden rounded-[28px] bg-council-green sm:min-h-[520px] lg:block">
 						<LocalImage
 							key={activeWard.image.src}
 							src={activeWard.image.src}

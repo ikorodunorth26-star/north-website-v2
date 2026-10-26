@@ -21,9 +21,9 @@ const LegislativeHouseSection = () => {
 			<section className="bg-[#ece8db] py-16">
 				<div className="mx-auto flex w-full max-w-council flex-col gap-10 px-5 md:px-10 min-[1408px]:px-0">
 					<p className="inline-flex w-fit items-center rounded-[32px] bg-white px-6 py-3.5 text-base font-medium text-council-green">{legislativeChamber.eyebrow}</p>
-					<div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between lg:gap-16">
-						<h2 className="max-w-[391px] text-[32px] font-medium leading-10 text-council-green sm:text-[40px] lg:text-[46px] lg:leading-[56px]">{legislativeChamber.heading}</h2>
-						<p className="max-w-[529px] text-lg font-medium leading-7 text-council-subtle lg:text-xl lg:leading-8">{legislativeChamber.description}</p>
+					<div className="flex max-w-[640px] flex-col gap-4">
+						<h2 className="text-[32px] font-medium leading-10 text-council-green sm:text-[40px] lg:text-[46px] lg:leading-[56px]">{legislativeChamber.heading}</h2>
+						<p className="text-lg font-medium leading-7 text-council-subtle lg:text-xl lg:leading-8">{legislativeChamber.description}</p>
 					</div>
 					<ul className="grid gap-8 lg:grid-cols-3 lg:gap-10">
 						{legislativeChamber.responsibilities.map((item) => (

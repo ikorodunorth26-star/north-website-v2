@@ -243,7 +243,7 @@ export const homeTeamMembers: HomeTeamMember[] = [
 	},
 	{
 		name: "Hon Banjoko Babatunde O.",
-		role: "Chip Whip",
+		role: "Chief Whip",
 		image: figmaAssets.home.chiefWhipPortrait,
 		portraitMode: "photo",
 		href: "/government/legislative-house",

@@ -34,7 +34,7 @@ export const managementDirectory = {
 	title: "Meet the management team.",
 	description: "The officers who keep administration moving from the secretariat at Isiu.",
 	officers: [
-		{ name: "Mr. Nairu Abayomi Samsideen", role: "Council Manager", image: portrait("nairu-abayomi-samsideen.webp", 720, 1080, "Mr. Nairu Abayomi Samsideen") },
+		{ name: "Mr. Nasiru Abayomi Samsideen", role: "Council Manager", image: portrait("nairu-abayomi-samsideen.webp", 720, 1080, "Mr. Nairu Abayomi Samsideen") },
 		{ name: "Bankole Esther Oluyemi", role: "Council Treasurer", image: portrait("bankole-esther-oluyemi.webp", 664, 996, "Bankole Esther Oluyemi") },
 		{ name: "Awonusi Ademola A", role: "Clerk of the House", image: portrait("awonusi-ademola.webp", 664, 996, "Awonusi Ademola A") },
 		{ name: "Mr Amori Muritala Kehinde", role: "Head of Department, Information & Communication Technology", image: portrait("amori-muritala-kehinde.webp", 664, 996, "Mr Amori Muritala Kehinde") },
