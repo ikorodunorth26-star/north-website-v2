@@ -33,7 +33,7 @@ export const ictDepartment = {
 	phoneLabel: "Phone",
 	phone: "+234 XXX XXX XXXX",
 	emailLabel: "Email",
-	email: "ict@ikorodunorthlcda.gov.ng",
+	email: "ict@ikorodunorthlcda.lg.gov.ng",
 };
 
 const relatedLeads = [

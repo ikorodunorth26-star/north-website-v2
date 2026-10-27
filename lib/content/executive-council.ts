@@ -24,7 +24,7 @@ export const executiveOffice = {
 		"A town planner, he was elected Executive Chairman in July 2025 to give Ikorodu North a New Deal in roads, care, schools and open government.",
 		"His first hundred days renewed care at Odo-Nla, backed traders and young people through Iranlowo Owo Apa, and linked Apeka with Agbala.",
 	],
-	email: "chairman@ikorodunorthlcda.gov.ng",
+	email: "chairman@ikorodunorthlcda.lg.gov.ng",
 	phone: "+234 801 000 0000",
 	phoneHref: "tel:+2348010000000",
 	profileLabel: "View profile",

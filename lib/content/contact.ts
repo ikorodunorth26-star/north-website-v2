@@ -10,8 +10,8 @@ export const contactPhones = [
 ] as const;
 
 export const contactEmails = {
-	general: "info@ikorodunorth.gov.ng",
-	administrative: "admin@ikorodunorth.gov.ng",
+	general: "info@ikorodunorthlcda.lg.gov.ng",
+	administrative: "admin@ikorodunorthlcda.lg.gov.ng",
 } as const;
 
 export const enquiryTopics = ["General enquiry", "Permits & approvals", "Sanitation & waste", "Roads & drainage", "Bursary & scholarships", "Complaints & feedback"] as const;

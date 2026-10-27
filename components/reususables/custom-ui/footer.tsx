@@ -80,8 +80,8 @@ const Footer = () => {
 						<h3 className="text-base font-medium leading-[22px] text-council-cream">Contact the council</h3>
 						<div className="mt-6 space-y-3 text-base leading-6 text-council-footer">
 							<p>
-								<Link href="mailto:info@ikorodunorth.gov.ng" className="transition-colors hover:text-white">
-									info@ikorodunorth.gov.ng
+								<Link href="mailto:info@ikorodunorthlcda.lg.gov.ng" className="transition-colors hover:text-white">
+									info@ikorodunorthlcda.lg.gov.ng
 								</Link>
 							</p>
 							<p>
@@ -90,8 +90,8 @@ const Footer = () => {
 								</a>
 							</p>
 							<p>
-								<Link href="mailto:admin@ikorodunorth.gov.ng" className="transition-colors hover:text-white">
-									admin@ikorodunorth.gov.ng
+								<Link href="mailto:admin@ikorodunorthlcda.lg.gov.ng" className="transition-colors hover:text-white">
+									admin@ikorodunorthlcda.lg.gov.ng
 								</Link>
 							</p>
 							<p className="flex items-center gap-3 text-council-cream">

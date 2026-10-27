@@ -48,4 +48,4 @@ export const suggestProjectHelp = {
 	],
 } as const;
 
-export const suggestProjectInbox = "info@ikorodunorth.gov.ng";
+export const suggestProjectInbox = "info@ikorodunorthlcda.lg.gov.ng";
