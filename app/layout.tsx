@@ -1,10 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { MaxWidthWrapper, cn, ThemeProvider, InternetStatus, Satoshi } from "@/lib";
+import { cn, ThemeProvider, InternetStatus, Satoshi } from "@/lib";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
-import { Footer, Header } from "@/components/reususables";
 
 const appName = "Ikorodu North LCDA";
 const appColor = "#173d32";
@@ -40,9 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						showSpinner={false}
 						easing="ease"
 					/>
-					<Header />
-					<MaxWidthWrapper>{children}</MaxWidthWrapper>
-					<Footer />
+					{children}
 
 					<Toaster
 						position="top-right"

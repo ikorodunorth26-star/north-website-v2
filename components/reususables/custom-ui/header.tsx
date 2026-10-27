@@ -29,7 +29,7 @@ const governmentLinks: NavLink[] = [
 const navigationLinks: NavItem[] = [
 	{ href: "/", label: "Home" },
 	{ label: "Government", children: governmentLinks },
-	{ href: "/services", label: "Services" },
+	{ href: "/revenue", label: "Services" },
 	{ href: "/news", label: "News" },
 	{ href: "/contact", label: "Contact" },
 ];

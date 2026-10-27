@@ -1,0 +1,247 @@
+FRAME Revenue & Payments · Ikorodu North 1440x4370 @0,0 VERTICAL gap0 p0/0/0/0 fill=#f8f5ed
+  FRAME Revenue hero 1440x837 @0,0 VERTICAL gap32 p184/80/96/80 fill=#173d32
+    ELLIPSE Ellipse 2 518x518 @-202,60 fill=#f8f7f2
+    INSTANCE pixels 1440x837 @0,0
+      RECTANGLE texture 1440x837 @0,0 fill=image
+    FRAME Image 720x964 @720,0
+      RECTANGLE happy-black-woman-yellow-blazer-using-smartphone-green-sofa 1 720x964 @720,0 fill=image
+    RECTANGLE Rectangle 10 1440x316 @0,521 fill=gradient(#173d32/0@0>#173d32@100)
+    FRAME Frame 59 535x326 @80,184 VERTICAL gap16 p0/0/0/0
+      FRAME Frame 57 234x34 @80,184 r24 HORIZONTAL gap8 p8/12/8/12
+        FRAME shield-check 18x18 @92,192
+          VECTOR Vector 14x15 @94,194 stroke=#ffffff
+          VECTOR Vector 5x4 @98,198 stroke=#ffffff
+        TEXT Label 184x16 @118,193 fill=#ddca90 "Official Revenue Portal" 12/700 lh16 Satoshi
+      FRAME Frame 58 535x276 @80,234 VERTICAL gap24 p0/0/0/0
+        TEXT Hero heading 535x192 @80,234 fill=#ffffff "Pay your levies and fees online, simply and securely." 56/700 lh64 Satoshi
+        TEXT Pay a demand notice, check what you owe or confirm a receipt is genuine, all in one place for Ikorodu North LCDA. 535x60 @80,450 fill=#ffffff/70 "Pay a demand notice, check what you owe or confirm a receipt is genuine, all in one place " 19/500 lh30 Satoshi
+    FRAME Lookup box 680x199 @80,542 r20 VERTICAL gap20 p12/12/24/12 fill=#fffdf8
+      FRAME Lookup tabs 656x52 @92,554 r14 HORIZONTAL gap4 p4/4/4/4 fill=#e8e9df
+        FRAME Tab · Pay a notice (active) 213x44 @96,558 r12 HORIZONTAL gap0 p12/16/12/16 fill=#173d32
+          TEXT Pay a notice 85x20 @160,570 fill=#ffffff "Pay a notice" 15/700 lh20 Satoshi
+        FRAME Tab · Check my bills 213x44 @313,558 r12 HORIZONTAL gap0 p12/16/12/16
+          TEXT Check my bills 99x20 @371,570 fill=#173d32 "Check my bills" 15/500 lh20 Satoshi
+        FRAME Tab · Verify a payment 213x44 @531,558 r12 HORIZONTAL gap0 p12/16/12/16
+          TEXT Verify a payment 114x20 @580,570 fill=#173d32 "Verify a payment" 15/500 lh20 Satoshi
+      FRAME Lookup field row 656x52 @92,626 HORIZONTAL gap12 p0/12/0/12
+        FRAME Field · notice / RIN / receipt 476x52 @104,626 r12 HORIZONTAL gap0 p0/18/0/18 fill=#ffffff stroke=#e8e9df
+          TEXT Enter demand notice number, RIN or receipt number 370x22 @123,641 fill=#54665e "Enter demand notice number, RIN or receipt number" 16/400 lh22 Satoshi
+        FRAME Continue button 144x52 @592,626 r12 HORIZONTAL gap0 p0/28/0/28 fill=#ddeb9d
+          TEXT Continue → 88x22 @620,641 fill=#173d32 "Continue →" 16/700 lh22 Satoshi
+      FRAME Hint row 656x19 @92,698 HORIZONTAL gap0 p0/12/0/12
+        TEXT Field hint 549x19 @104,698 fill=#54665e "Your notice number and RIN are printed on the demand notice delivered to your property." 14/400 lh19 Satoshi
+  FRAME Revenue hero 1440x663 @0,837 VERTICAL gap32 p96/80/96/80 fill=#173d32,gradient(#000000/0@24>#000000@100)
+    FRAME What would you like to do 1280x471 @80,933 VERTICAL gap40 p56/80/56/80
+      FRAME Section header 1120x50 @160,989 VERTICAL gap12 p0/0/0/0
+        TEXT Section heading 1120x50 @160,989 fill=#ffffff "What would you like to do?" 42/500 lh50 Satoshi
+      FRAME Action cards 1120x269 @160,1079 HORIZONTAL gap24 p0/0/0/0
+        FRAME Action card · Pay a demand notice 357x269 @160,1079 r40 VERTICAL gap17 p32/32/32/32 fill=#194337 stroke=#ffffff/20
+          FRAME payment-success-02 44x44 @193,1112
+            VECTOR Vector 9x9 @210,1128 stroke=#ddeb9d
+            VECTOR Vector 37x26 @197,1119 stroke=#ddeb9d
+            VECTOR Vector 37x24 @197,1120 stroke=#ddeb9d
+            VECTOR Vector 15x11 @219,1138 stroke=#ddeb9d
+          TEXT Pay a demand notice 291x34 @193,1173 fill=#ffffff "Pay a demand notice" 26/500 lh34 Satoshi
+          TEXT Enter the number on your demand notice and pay your bill securely online. 291x52 @193,1224 fill=#ffffff/70 "Enter the number on your demand notice and pay your bill securely online." 16/500 lh26 Satoshi
+          TEXT Continue link 88x22 @193,1293 fill=#ddeb9d "Continue →" 16/700 lh22 Satoshi
+        FRAME Action card · Check my bills 357x269 @541,1079 r40 VERTICAL gap17 p32/32/32/32 fill=#194337 stroke=#ffffff/20
+          FRAME receipt-text 44x44 @574,1112
+            VECTOR Vector 29x37 @582,1116 stroke=#ddeb9d
+            VECTOR Vector 15x0 @589,1134 stroke=#ddeb9d
+            VECTOR Vector 7x0 @589,1127 stroke=#ddeb9d
+            VECTOR Vector 15x0 @589,1141 stroke=#ddeb9d
+          TEXT Check my bills 291x34 @574,1173 fill=#ffffff "Check my bills" 26/500 lh34 Satoshi
+          TEXT Use your RIN to see your demand notices, balances and due dates. 291x52 @574,1224 fill=#ffffff/70 "Use your RIN to see your demand notices, balances and due dates." 16/400 lh26 Satoshi
+          TEXT Continue link 88x22 @574,1293 fill=#ddeb9d "Continue →" 16/700 lh22 Satoshi
+        FRAME Action card · Verify a payment 357x269 @923,1079 r40 VERTICAL gap17 p32/32/32/32 fill=#194337 stroke=#ffffff/20
+          FRAME new-releases 44x44 @956,1112
+            VECTOR Vector 35x37 @960,1116 stroke=#ddeb9d
+            VECTOR Vector 13x9 @972,1130 stroke=#ddeb9d
+          TEXT Verify a payment 291x34 @956,1173 fill=#ffffff "Verify a payment" 26/500 lh34 Satoshi
+          TEXT Confirm a payment is genuine using the receipt number on the receipt. 291x52 @956,1224 fill=#ffffff/70 "Confirm a payment is genuine using the receipt number on the receipt." 16/400 lh26 Satoshi
+          TEXT Continue link 88x22 @956,1293 fill=#ddeb9d "Continue →" 16/700 lh22 Satoshi
+  FRAME Revenue payment features 1440x240 @0,1500 HORIZONTAL gap24 p64/80/64/80 fill=#173d32 stroke=#ddeb9d/8
+    FRAME Revenue feature · Secure payments 411x84 @80,1578 HORIZONTAL gap16 p0/0/0/0
+      FRAME Secure payments icon 44x44 @80,1578 r14 HORIZONTAL gap0 p0/0/0/0 stroke=#ddeb9d/18
+        FRAME lucide/shield-check 22x22 @91,1589
+          VECTOR Vector 15x18 @95,1591 stroke=#ddeb9d
+          VECTOR Vector 6x4 @99,1598 stroke=#ddeb9d
+      FRAME Secure payments copy 351x84 @140,1578 VERTICAL gap6 p0/0/0/0
+        TEXT Feature heading 351x26 @140,1578 fill=#edf2e8 "Secure payments" 20/500 lh26 Satoshi
+        TEXT Feature description 280x52 @140,1610 fill=#b0c9b8 "Bank-grade checkout, powered by Paystack." 16/500 lh26 Satoshi
+    FRAME Revenue feature · Instant receipts 411x84 @515,1578 HORIZONTAL gap16 p0/0/0/0
+      FRAME Instant receipts icon 44x44 @515,1578 r14 HORIZONTAL gap0 p0/0/0/0 stroke=#ddeb9d/18
+        FRAME lucide/message-square 22x22 @526,1589
+          VECTOR Vector 17x17 @528,1592 stroke=#ddeb9d
+      FRAME Instant receipts copy 351x84 @575,1578 VERTICAL gap6 p0/0/0/0
+        TEXT Feature heading 351x26 @575,1578 fill=#edf2e8 "Instant receipts" 20/500 lh26 Satoshi
+        TEXT Feature description 280x52 @575,1610 fill=#b0c9b8 "An SMS receipt the moment your payment clears." 16/500 lh26 Satoshi
+    FRAME Revenue feature · Always available 411x84 @949,1578 HORIZONTAL gap16 p0/0/0/0
+      FRAME Always available icon 44x44 @949,1578 r14 HORIZONTAL gap0 p0/0/0/0 stroke=#ddeb9d/18
+        FRAME lucide/clock 22x22 @960,1589
+          VECTOR Vector 18x18 @962,1591 stroke=#ddeb9d
+          VECTOR Vector 4x7 @971,1595 stroke=#ddeb9d
+      FRAME Always available copy 351x84 @1009,1578 VERTICAL gap6 p0/0/0/0
+        TEXT Feature heading 351x26 @1009,1578 fill=#edf2e8 "Always available" 20/500 lh26 Satoshi
+        TEXT Feature description 280x52 @1009,1610 fill=#b0c9b8 "Pay anytime, from any phone or computer." 16/500 lh26 Satoshi
+  FRAME How it works 1440x540 @0,1740 VERTICAL gap40 p96/80/96/80 fill=#f8f5ed
+    FRAME Section header 1280x78 @80,1836 VERTICAL gap12 p0/0/0/0
+      TEXT Label 103x16 @80,1836 fill=#c39828 "HOW IT WORKS" 12/700 lh16 Satoshi
+      TEXT Section heading 1280x50 @80,1864 fill=#173d32 "Four simple steps" 42/500 lh50 Satoshi
+    FRAME Steps 1280x230 @80,1954 HORIZONTAL gap24 p0/0/0/0
+      FRAME Step 1 · Find your notice 302x230 @80,1954 r20 VERTICAL gap14 p28/28/28/28 fill=#fffdf8
+        FRAME Frame 60 246x44 @108,1982 HORIZONTAL gap14 p0/0/0/0
+          TEXT Label 188x16 @108,1996 fill=#c39828 "STEP 1" 12/700 lh16 Satoshi
+          FRAME Icon badge · 1 44x44 @310,1982 r22 HORIZONTAL gap0 p0/0/0/0 fill=#173d32
+            TEXT 1 6x20 @329,1994 fill=#ffffff "1" 15/700 lh20 Satoshi
+        TEXT Find your notice 246x30 @108,2040 fill=#173d32 "Find your notice" 22/500 lh30 Satoshi
+        TEXT Locate the demand notice number or RIN on the notice delivered to your property. 246x72 @108,2084 fill=#54665e "Locate the demand notice number or RIN on the notice delivered to your property." 15/500 lh24 Satoshi
+      FRAME Step 2 · Review your bill 302x230 @406,1954 r20 VERTICAL gap14 p28/28/28/28 fill=#fffdf8
+        FRAME Frame 61 246x44 @434,1982 HORIZONTAL gap14 p0/0/0/0
+          TEXT Label 188x16 @434,1996 fill=#c39828 "STEP 2" 12/700 lh16 Satoshi
+          FRAME Icon badge · 2 44x44 @636,1982 r22 HORIZONTAL gap0 p0/0/0/0 fill=#173d32
+            TEXT 2 9x20 @654,1994 fill=#ffffff "2" 15/700 lh20 Satoshi
+        TEXT Review your bill 246x30 @434,2040 fill=#173d32 "Review your bill" 22/500 lh30 Satoshi
+        TEXT Check the revenue type, amount, period and due date before you pay. 246x48 @434,2084 fill=#54665e "Check the revenue type, amount, period and due date before you pay." 15/500 lh24 Satoshi
+      FRAME Step 3 · Pay securely 302x230 @732,1954 r20 VERTICAL gap14 p28/28/28/28 fill=#fffdf8
+        FRAME Frame 62 246x44 @760,1982 HORIZONTAL gap14 p0/0/0/0
+          TEXT Label 188x16 @760,1996 fill=#c39828 "STEP 3" 12/700 lh16 Satoshi
+          FRAME Icon badge · 3 44x44 @962,1982 r22 HORIZONTAL gap0 p0/0/0/0 fill=#173d32
+            TEXT 3 9x20 @980,1994 fill=#ffffff "3" 15/700 lh20 Satoshi
+        TEXT Pay securely 246x30 @760,2040 fill=#173d32 "Pay securely" 22/500 lh30 Satoshi
+        TEXT Choose card, bank transfer or USSD and complete your payment. 246x48 @760,2084 fill=#54665e "Choose card, bank transfer or USSD and complete your payment." 15/500 lh24 Satoshi
+      FRAME Step 4 · Get your receipt 302x230 @1058,1954 r20 VERTICAL gap14 p28/28/28/28 fill=#fffdf8
+        FRAME Frame 63 246x44 @1086,1982 HORIZONTAL gap14 p0/0/0/0
+          TEXT Label 188x16 @1086,1996 fill=#c39828 "STEP 4" 12/700 lh16 Satoshi
+          FRAME Icon badge · 4 44x44 @1288,1982 r22 HORIZONTAL gap0 p0/0/0/0 fill=#173d32
+            TEXT 4 10x20 @1305,1994 fill=#ffffff "4" 15/700 lh20 Satoshi
+        TEXT Get your receipt 246x30 @1086,2040 fill=#173d32 "Get your receipt" 22/500 lh30 Satoshi
+        TEXT Receive a receipt by SMS and email, and download a printable copy. 246x48 @1086,2084 fill=#54665e "Receive a receipt by SMS and email, and download a printable copy." 15/500 lh24 Satoshi
+  FRAME Where to find your notice number 1440x632 @0,2280 VERTICAL gap0 p96/80/96/80 fill=#e8e9df
+    FRAME Notice row 1280x440 @80,2376 HORIZONTAL gap80 p0/0/0/0
+      FRAME Notice copy 640x268 @80,2462 VERTICAL gap16 p0/0/0/0
+        TEXT Label 82x16 @80,2462 fill=#c39828 "NEED HELP?" 12/700 lh16 Satoshi
+        TEXT Section heading 640x100 @80,2494 fill=#173d32 "Where to find your notice number" 42/500 lh50 Satoshi
+        FRAME Callout key · Demand notice number 640x52 @80,2610 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · 1 44x44 @80,2610 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ffffff
+            TEXT 1 6x20 @99,2622 fill=#173d32 "1" 15/700 lh20 Satoshi
+          FRAME Callout copy 580x52 @140,2610 VERTICAL gap4 p0/0/0/0
+            TEXT Demand notice number 580x24 @140,2610 fill=#173d32 "Demand notice number" 18/700 lh24 Satoshi
+            TEXT Printed at the top right of your notice. Use it to pay that bill. 580x24 @140,2638 fill=#54665e "Printed at the top right of your notice. Use it to pay that bill." 15/400 lh24 Satoshi
+        FRAME Callout key · RIN (Revenue Identification Number) 640x52 @80,2678 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · 2 44x44 @80,2678 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ffffff
+            TEXT 2 9x20 @98,2690 fill=#173d32 "2" 15/700 lh20 Satoshi
+          FRAME Callout copy 580x52 @140,2678 VERTICAL gap4 p0/0/0/0
+            TEXT RIN (Revenue Identification Number) 580x24 @140,2678 fill=#173d32 "RIN (Revenue Identification Number)" 18/700 lh24 Satoshi
+            TEXT Printed under your name and address. Use it to see all your bills. 580x24 @140,2706 fill=#54665e "Printed under your name and address. Use it to see all your bills." 15/400 lh24 Satoshi
+      FRAME Demand notice mockup · placeholder 560x440 @800,2376 r20 fill=#ffffff
+        RECTANGLE Rectangle 560x72 @800,2376 fill=#173d32
+        TEXT IKORODU NORTH LCDA · DEMAND NOTICE 281x16 @832,2406 fill=#ddca90 "IKORODU NORTH LCDA · DEMAND NOTICE" 12/700 lh16 Satoshi
+        TEXT Notice no. 56x16 @1160,2472 fill=#54665e "Notice no." 12/500 lh16 Satoshi
+        TEXT [DN-XXXXXXXX] 128x22 @1160,2490 fill=#173d32 "[DN-XXXXXXXX]" 16/700 lh22 Satoshi
+        TEXT Name / address 86x16 @832,2472 fill=#54665e "Name / address" 12/500 lh16 Satoshi
+        RECTANGLE Rectangle 200x10 @832,2494 r5 fill=#e8e9df
+        RECTANGLE Rectangle 160x10 @832,2512 r5 fill=#e8e9df
+        TEXT RIN 20x16 @832,2540 fill=#54665e "RIN" 12/500 lh16 Satoshi
+        TEXT [RIN-XXXXXXXX] 132x22 @832,2558 fill=#173d32 "[RIN-XXXXXXXX]" 16/700 lh22 Satoshi
+        RECTANGLE Rectangle 300x10 @832,2608 r5 fill=#e8e9df
+        RECTANGLE Rectangle 108x10 @1220,2608 r5 fill=#e8e9df
+        RECTANGLE Rectangle 300x10 @832,2638 r5 fill=#e8e9df
+        RECTANGLE Rectangle 108x10 @1220,2638 r5 fill=#e8e9df
+        RECTANGLE Rectangle 300x10 @832,2668 r5 fill=#e8e9df
+        RECTANGLE Rectangle 108x10 @1220,2668 r5 fill=#e8e9df
+        RECTANGLE Rectangle 300x10 @832,2698 r5 fill=#e8e9df
+        RECTANGLE Rectangle 108x10 @1220,2698 r5 fill=#e8e9df
+        RECTANGLE Rectangle 300x10 @832,2728 r5 fill=#e8e9df
+        RECTANGLE Rectangle 108x10 @1220,2728 r5 fill=#e8e9df
+        TEXT Total due 56x18 @832,2768 fill=#173d32 "Total due" 13/700 lh18 Satoshi
+        TEXT [₦ amount] 80x22 @1220,2766 fill=#173d32 "[₦ amount]" 16/700 lh22 Satoshi
+        RECTANGLE Callout ring 1 190x52 @1150,2464 r10 stroke=#c39828
+        FRAME Icon badge · 1 32x32 @1324,2448 r16 HORIZONTAL gap0 p0/0/0/0 fill=#c39828
+          TEXT 1 6x20 @1337,2454 fill=#ffffff "1" 15/700 lh20 Satoshi
+        RECTANGLE Callout ring 2 180x52 @822,2532 r10 stroke=#c39828
+        FRAME Icon badge · 2 32x32 @986,2516 r16 HORIZONTAL gap0 p0/0/0/0 fill=#c39828
+          TEXT 2 9x20 @998,2522 fill=#ffffff "2" 15/700 lh20 Satoshi
+  FRAME FAQ 1440x738 @0,2912 VERTICAL gap40 p96/80/96/80 fill=#e8e9df
+    FRAME Section header 1280x50 @80,3008 VERTICAL gap12 p0/0/0/0
+      TEXT Section heading 1280x50 @80,3008 fill=#173d32 "Frequently asked questions" 42/500 lh50 Satoshi
+    FRAME FAQ accordion 1280x456 @80,3098 VERTICAL gap12 p0/0/0/0
+      FRAME FAQ item 1 (open) 1280x112 @80,3098 r20 VERTICAL gap12 p22/24/22/24 fill=#fffdf8
+        FRAME Question row 1232x30 @104,3120 HORIZONTAL gap16 p0/0/0/0
+          TEXT What is a demand notice and why did I receive one? 1194x26 @104,3122 fill=#173d32 "What is a demand notice and why did I receive one?" 19/500 lh26 Satoshi
+          TEXT – 22x30 @1314,3120 fill=#c39828 "–" 22/700 lh30 Satoshi
+        TEXT [Answer to be provided by the Revenue Office.] 1232x26 @104,3162 fill=#54665e "[Answer to be provided by the Revenue Office.]" 16/400 lh26 Satoshi
+      FRAME FAQ item 2 1280x74 @80,3222 r20 VERTICAL gap12 p22/24/22/24 fill=#fffdf8
+        FRAME Question row 1232x30 @104,3244 HORIZONTAL gap16 p0/0/0/0
+          TEXT I have lost my demand notice. How can I pay? 1201x26 @104,3246 fill=#173d32 "I have lost my demand notice. How can I pay?" 19/500 lh26 Satoshi
+          TEXT + 15x30 @1321,3244 fill=#c39828 "+" 22/700 lh30 Satoshi
+      FRAME FAQ item 3 1280x74 @80,3308 r20 VERTICAL gap12 p22/24/22/24 fill=#fffdf8
+        FRAME Question row 1232x30 @104,3330 HORIZONTAL gap16 p0/0/0/0
+          TEXT How do I get my receipt after paying? 1201x26 @104,3332 fill=#173d32 "How do I get my receipt after paying?" 19/500 lh26 Satoshi
+          TEXT + 15x30 @1321,3330 fill=#c39828 "+" 22/700 lh30 Satoshi
+      FRAME FAQ item 4 1280x74 @80,3394 r20 VERTICAL gap12 p22/24/22/24 fill=#fffdf8
+        FRAME Question row 1232x30 @104,3416 HORIZONTAL gap16 p0/0/0/0
+          TEXT How can I check that a receipt is genuine? 1201x26 @104,3418 fill=#173d32 "How can I check that a receipt is genuine?" 19/500 lh26 Satoshi
+          TEXT + 15x30 @1321,3416 fill=#c39828 "+" 22/700 lh30 Satoshi
+      FRAME FAQ item 5 1280x74 @80,3480 r20 VERTICAL gap12 p22/24/22/24 fill=#fffdf8
+        FRAME Question row 1232x30 @104,3502 HORIZONTAL gap16 p0/0/0/0
+          TEXT What happens if I pay after the due date? 1201x26 @104,3504 fill=#173d32 "What happens if I pay after the due date?" 19/500 lh26 Satoshi
+          TEXT + 15x30 @1321,3502 fill=#c39828 "+" 22/700 lh30 Satoshi
+  FRAME Revenue office contact 1440x556 @0,3650 VERTICAL gap40 p96/80/96/80 fill=#f8f5ed
+    FRAME Revenue office contact card 1280x364 @80,3746 r20 HORIZONTAL gap48 p48/48/48/48 fill=#fffdf8
+      FRAME Contact intro 568x142 @128,3794 VERTICAL gap12 p0/0/0/0
+        TEXT Label 115x16 @128,3794 fill=#c39828 "REVENUE OFFICE" 12/700 lh16 Satoshi
+        TEXT Section heading 568x50 @128,3822 fill=#173d32 "Need help with a payment?" 42/500 lh50 Satoshi
+        TEXT Visit or contact the Ikorodu North LCDA Revenue Office for help with notices, RINs and receipts. 385x52 @128,3884 fill=#54665e "Visit or contact the Ikorodu North LCDA Revenue Office for help with notices, RINs and rec" 16/500 lh26 Satoshi
+      FRAME Contact details 568x268 @744,3794 VERTICAL gap24 p0/0/0/0
+        FRAME Contact · Address 568x64 @744,3794 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · A 44x44 @744,3804 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ddeb9d
+            FRAME location-05 20x20 @756,3816
+              VECTOR Vector 4x4 @764,3821 stroke=#173d32
+              VECTOR Vector 12x13 @760,3818 stroke=#173d32
+              VECTOR Vector 10x2 @761,3833 stroke=#173d32
+          FRAME c 508x64 @804,3794 VERTICAL gap2 p0/0/0/0
+            TEXT Label 62x16 @804,3794 fill=#c39828 "ADDRESS" 12/700 lh16 Satoshi
+            TEXT Council Secretariat, Isiu Town, Ikorodu–Shagamu Road, Ikorodu 104101, Lagos State 365x46 @804,3812 fill=#173d32 "Council Secretariat, Isiu Town, Ikorodu–Shagamu Road, Ikorodu 104101, Lagos State" 17/500 lh23 Satoshi
+        FRAME Contact · Phone 568x44 @744,3882 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · P 44x44 @744,3882 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ddeb9d
+            FRAME call-02 20x20 @756,3894
+              VECTOR Vector 15x15 @759,3897 stroke=#173d32
+          FRAME c 508x41 @804,3884 VERTICAL gap2 p0/0/0/0
+            TEXT Label 47x16 @804,3884 fill=#c39828 "PHONE" 12/700 lh16 Satoshi
+            TEXT +234 816 544 2373 153x23 @804,3902 fill=#173d32 "+234 816 544 2373" 17/500 lh23 Satoshi
+        FRAME Contact · Email 568x44 @744,3950 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · @ 44x44 @744,3950 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ddeb9d
+            FRAME mail-02 20x20 @756,3962
+              VECTOR Vector 8x2 @762,3969 stroke=#173d32
+              VECTOR Vector 17x14 @758,3965 stroke=#173d32
+          FRAME c 508x41 @804,3952 VERTICAL gap2 p0/0/0/0
+            TEXT Label 40x16 @804,3952 fill=#c39828 "EMAIL" 12/700 lh16 Satoshi
+            TEXT revenue@ikorodunorth.gov.ng 232x23 @804,3970 fill=#173d32 "revenue@ikorodunorth.gov.ng" 17/500 lh23 Satoshi
+        FRAME Contact · Office hours 568x44 @744,4018 HORIZONTAL gap16 p0/0/0/0
+          FRAME Icon badge · H 44x44 @744,4018 r22 HORIZONTAL gap0 p0/0/0/0 fill=#ddeb9d
+            FRAME clock-hour-4 20x20 @756,4030
+              VECTOR Vector 17x17 @758,4032 stroke=#173d32
+              VECTOR Vector 3x7 @766,4035 stroke=#173d32
+          FRAME c 508x41 @804,4020 VERTICAL gap2 p0/0/0/0
+            TEXT Label 100x16 @804,4020 fill=#c39828 "OFFICE HOURS" 12/700 lh16 Satoshi
+            TEXT 8:00 AM - 4:00 PM 156x23 @804,4038 fill=#173d32 "8:00 AM - 4:00 PM" 17/500 lh23 Satoshi
+  FRAME Primary navigation -light 1328x76 @56,24 r40 HORIZONTAL gap0 p0/16/0/16 fill=#15332b/80 stroke=#ffffff/10
+    FRAME Frame 2 1177x76 @72,24 HORIZONTAL gap676 p0/0/0/0
+      FRAME Council brand 198x56 @72,34 HORIZONTAL gap12 p0/0/0/0
+        RECTANGLE INLC logo 1 56x56 @72,34 fill=image
+        FRAME Council wordmark 130x40 @140,42 VERTICAL gap5 p0/0/0/0
+          TEXT Council name 130x40 @140,42 fill=#ffffff "Ikorodu North LCDA" 18/700 lh20 Satoshi
+    FRAME Continue button 119x50 @1249,37 r36 HORIZONTAL gap0 p14/28/14/28 fill=#ddeb9d
+      TEXT Pay now 63x22 @1277,51 fill=#173d32 "Pay now" 16/700 lh22 Satoshi
+  FRAME Footer 1440x164 @0,4206 VERTICAL gap12 p28/80/28/80 fill=#102d26
+    FRAME Council contact information 1280x56 @80,4234 HORIZONTAL gap72 p0/0/0/0
+      FRAME Council identity 1079x56 @80,4234 VERTICAL gap22 p0/0/0/0
+        FRAME Council logo lockup 212x56 @80,4234 HORIZONTAL gap14 p0/0/0/0
+          RECTANGLE INLC logo 2 56x56 @80,4234 fill=image
+          TEXT Council name 142x48 @150,4238 fill=#ffffff "IKORODU / NORTH LCDA" 22/700 lh24 Satoshi
+      TEXT Revenue & Payments 129x20 @1231,4234 fill=#ccded1 "Revenue & Payments" 14/400 lh20 Satoshi
+    FRAME Footer legal 1280x40 @80,4302 HORIZONTAL gap0 p24/0/0/0
+      TEXT Copyright 256x16 @80,4326 fill=#9eb5a8 "© 2026 Ikorodu North LCDA. All rights reserved." 12/400 lh16 Satoshi
+      TEXT Legal links 235x16 @1125,4326 fill=#9eb5a8 "Privacy policy     Accessibility     Terms of use" 12/400 lh16 Satoshi
+    ELLIPSE Ellipse 2 518x518 @-202,4266 fill=#f8f7f2

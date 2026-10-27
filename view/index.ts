@@ -14,5 +14,6 @@ import WardView from "./wardView";
 import SuggestProjectView from "./suggestProjectView";
 import LandmarksView from "./landmarksView";
 import LegalView from "./legalView";
+import RevenueView from "./revenueView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView, WardView, SuggestProjectView, LandmarksView, LegalView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView, WardView, SuggestProjectView, LandmarksView, LegalView, RevenueView };
