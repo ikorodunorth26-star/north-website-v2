@@ -1,14 +1,26 @@
-import type { Metadata } from "next";
-
+import { contactPage } from "@/lib/content/contact";
+import { JsonLd } from "@/components/reususables/site";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 import { ContactView } from "@/view";
 
-export const metadata: Metadata = {
-	title: "Contact | Ikorodu North LCDA",
-	description: "Ask a question, share feedback or report a local concern. Here's how to reach Ikorodu North LCDA.",
-};
+export const metadata = createPageMetadata({
+	title: "Contact",
+	description: contactPage.description,
+	path: "/contact",
+});
 
 const ContactPage = () => {
-	return <ContactView />;
+	return (
+		<>
+			<JsonLd
+				data={breadcrumbJsonLd([
+					{ name: "Home", path: "/" },
+					{ name: "Contact", path: "/contact" },
+				])}
+			/>
+			<ContactView />
+		</>
+	);
 };
 
 export default ContactPage;

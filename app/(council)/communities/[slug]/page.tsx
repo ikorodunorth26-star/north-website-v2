@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { JsonLd } from "@/components/reususables/site";
 import { getWard, wards } from "@/lib/content/wards";
+import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 import { WardView } from "@/view";
 
 type WardPageProps = {
@@ -17,23 +19,37 @@ export const generateMetadata = async ({ params }: WardPageProps): Promise<Metad
 	const ward = getWard(slug);
 
 	if (!ward) {
-		return { title: "Community | Ikorodu North LCDA" };
+		return { title: "Community", robots: { index: false, follow: false } };
 	}
 
-	return {
-		title: `${ward.name} Ward | Ikorodu North LCDA`,
+	return createPageMetadata({
+		title: `${ward.name} Ward`,
 		description: ward.introduction,
-	};
+		path: `/communities/${ward.slug}`,
+		image: ward.image,
+	});
 };
 
 const WardPage = async ({ params }: WardPageProps) => {
 	const { slug } = await params;
+	const ward = getWard(slug);
 
-	if (!getWard(slug)) {
+	if (!ward) {
 		notFound();
 	}
 
-	return <WardView slug={slug} />;
+	return (
+		<>
+			<JsonLd
+				data={breadcrumbJsonLd([
+					{ name: "Home", path: "/" },
+					{ name: "About & History", path: "/about" },
+					{ name: `${ward.name} Ward`, path: `/communities/${ward.slug}` },
+				])}
+			/>
+			<WardView slug={slug} />
+		</>
+	);
 };
 
 export default WardPage;

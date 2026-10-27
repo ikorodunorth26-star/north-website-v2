@@ -93,6 +93,13 @@ export const landmarks: Landmark[] = [
 		place: "Losi-Onikoko, Odogunyan",
 		group: "community",
 		summary: "The battalion sits in Odogunyan. Army Children Primary School at Losi-Onikoko, beside the barracks, was flagged off for reconstruction in July 2026.",
+		image: {
+			src: "/images/landmarks/odogunyan-barracks.webp",
+			width: 546,
+			height: 366,
+			alt: "Officers' Gate of 174 Battalion Nigerian Army, Odogunyan Barracks",
+			caption: "Officers' Gate, Odogunyan Barracks",
+		},
 	},
 	{
 		title: "Isiu Market",

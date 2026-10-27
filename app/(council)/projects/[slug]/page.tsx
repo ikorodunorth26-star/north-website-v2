@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { JsonLd } from "@/components/reususables/site";
 import { getProject, projects } from "@/lib/content/projects";
+import { articleJsonLd, breadcrumbJsonLd, createPageMetadata, publishedIso } from "@/lib/seo";
 import { ProjectDetailView } from "@/view";
 
 type ProjectPageProps = {
@@ -17,13 +19,17 @@ export const generateMetadata = async ({ params }: ProjectPageProps): Promise<Me
 	const project = getProject(slug);
 
 	if (!project) {
-		return { title: "Project | Ikorodu North LCDA" };
+		return { title: "Project", robots: { index: false, follow: false } };
 	}
 
-	return {
-		title: `${project.title} | Ikorodu North LCDA`,
+	return createPageMetadata({
+		title: project.title,
 		description: project.summary,
-	};
+		path: `/projects/${project.slug}`,
+		image: project.image,
+		type: "article",
+		publishedTime: publishedIso(project.date),
+	});
 };
 
 const ProjectPage = async ({ params }: ProjectPageProps) => {
@@ -34,7 +40,30 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
 		notFound();
 	}
 
-	return <ProjectDetailView project={project} />;
+	const path = `/projects/${project.slug}`;
+
+	return (
+		<>
+			<JsonLd
+				data={[
+					breadcrumbJsonLd([
+						{ name: "Home", path: "/" },
+						{ name: "Projects", path: "/projects" },
+						{ name: project.title, path },
+					]),
+					articleJsonLd({
+						kind: "Article",
+						path,
+						title: project.title,
+						description: project.summary,
+						image: project.image.src,
+						date: project.date,
+					}),
+				]}
+			/>
+			<ProjectDetailView project={project} />
+		</>
+	);
 };
 
 export default ProjectPage;

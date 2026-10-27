@@ -37,7 +37,6 @@ const HomeHero = () => {
 					className="h-full bg-transparent"
 					imageClassName="object-cover object-top drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)]"
 					sizes="(min-width: 1024px) 598px, 285px"
-					priority
 				/>
 			</div>
 

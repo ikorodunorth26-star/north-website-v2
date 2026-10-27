@@ -43,7 +43,7 @@ const RevenuePortal = () => {
 				</div>
 				<div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 lg:block">
 					<Image
-						src="/images/revenue/payer.webp"
+						src="/images/revenue/shopkeeper.webp"
 						alt=""
 						fill
 						priority

@@ -15,7 +15,7 @@ const WardRow = ({ ward, index, selected = false, linked = false }: { ward: Home
 		<>
 			<span className={cn("absolute inset-y-3 left-0 w-[3px] rounded-full transition-colors", selected ? "bg-council-green" : "bg-transparent group-hover/ward:bg-council-green/30")} aria-hidden="true" />
 			<span className={cn("relative size-14 shrink-0 overflow-hidden rounded-xl ring-2 ring-offset-2 ring-offset-white transition-[box-shadow,ring-color]", selected ? "ring-council-green" : "ring-transparent group-hover/ward:ring-council-green/25")}>
-				<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="transition-transform duration-300 group-hover/ward:scale-105 motion-reduce:transition-none motion-reduce:group-hover/ward:scale-100" sizes="56px" loading="eager" />
+				<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="transition-transform duration-300 group-hover/ward:scale-105 motion-reduce:transition-none motion-reduce:group-hover/ward:scale-100" sizes="56px" />
 			</span>
 			<span className="min-w-0">
 				<span className={cn("text-[11px] font-bold leading-4 tracking-[0.14em] transition-colors", selected ? "text-council-green" : "text-council-gold group-hover/ward:text-council-green")}>{String(index + 1).padStart(2, "0")}</span>
