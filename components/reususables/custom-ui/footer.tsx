@@ -109,7 +109,23 @@ const Footer = () => {
 				</div>
 
 				<div className="mt-12 flex flex-col gap-4 pt-6 text-xs leading-4 text-[#9eb5a8] lg:mt-10 lg:flex-row lg:items-center lg:justify-between">
-					<p>© {getCurrentYear()} Ikorodu North LCDA. All rights reserved.</p>
+					<div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1">
+						<p>© {getCurrentYear()} Ikorodu North LCDA. All rights reserved.</p>
+						<span className="hidden text-[#9eb5a8]/40 sm:inline" aria-hidden="true">
+							·
+						</span>
+						<p>
+							Powered by{" "}
+							<a
+								href="https://itoldigital.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="transition-colors hover:text-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime"
+							>
+								iTOL Digital
+							</a>
+						</p>
+					</div>
 					<div className="flex flex-wrap gap-x-5 gap-y-2">
 						{legalLinks.map((link) => (
 							<Link key={link.href} href={link.href} className="transition-colors hover:text-white">
