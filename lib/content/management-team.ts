@@ -47,6 +47,8 @@ export const managementDirectory = {
 		{ name: "Mr Japhet O Enemunhe", role: "Head of Public Affairs", image: portrait("japhet-enemunhe.webp", 664, 910, "Mr Japhet O Enemunhe") },
 		{ name: "Mr Ahoton Jameson Thona", role: "Head of Department, Environmental Health Services", image: portrait("ahoton-jameson-thona.webp", 664, 996, "Mr Ahoton Jameson Thona") },
 		{ name: "Barr. Amusa Adebayo Aminat", role: "Head of Department, Legal", image: portrait("amusa-adebayo-aminat.webp", 612, 924, "Barr. Amusa Adebayo Aminat") },
+		{ name: "Shobowale Olalekan", role: "HOU Audit", image: portrait("shobowale-olalekan.webp", 682, 1024, "Shobowale Olalekan") },
+		{ name: "Mrs Balogun Zainab Mojisola", role: "Head of Department, Women Affairs & Poverty Alleviation", image: portrait("balogun-zainab-mojisola.webp", 681, 1024, "Mrs Balogun Zainab Mojisola") },
 	] satisfies ManagementOfficer[],
 };
 
