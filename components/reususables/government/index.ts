@@ -3,3 +3,4 @@ export { default as LegislativeHouseSection } from "./legislative-house-section"
 export { default as DepartmentsSection } from "./departments-section";
 export { default as IctDepartmentSection } from "./ict-department-section";
 export { default as ManagementTeamSection } from "./management-team-section";
+export { default as NulgeExcoSection } from "./nulge-exco-section";

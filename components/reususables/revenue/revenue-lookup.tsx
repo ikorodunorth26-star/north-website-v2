@@ -31,7 +31,7 @@ const RevenueLookup = () => {
 
 	return (
 		<form id="lookup" onSubmit={onSubmit} className="scroll-mt-8 rounded-[20px] bg-[#fffdf8] p-3 pb-6">
-			<div className="grid grid-cols-3 gap-1 rounded-[14px] bg-[#e8e9df] p-1" role="tablist" aria-label="What to look up">
+			<div className="grid grid-cols-1 gap-1 rounded-[14px] bg-[#e8e9df] p-1 sm:grid-cols-3" role="tablist" aria-label="What to look up">
 				{revenueLookupTabs.map((tab) => {
 					const selected = tab.id === intent;
 					return (
@@ -42,7 +42,7 @@ const RevenueLookup = () => {
 							aria-selected={selected}
 							onClick={() => selectIntent(tab.id)}
 							className={cn(
-								"flex min-h-11 items-center justify-center rounded-xl px-1.5 py-2.5 text-center text-[12px] font-medium leading-4 text-[#173d32] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#173d32] sm:px-2 sm:text-[15px] sm:leading-5",
+								"flex min-h-11 items-center justify-center rounded-xl px-2 py-2.5 text-center text-[13px] font-medium leading-4 text-[#173d32] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#173d32] sm:px-2 sm:text-[15px] sm:leading-5",
 								selected && "bg-[#173d32] font-bold text-white",
 							)}>
 							{tab.label}

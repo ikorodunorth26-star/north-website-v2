@@ -56,7 +56,7 @@ export const managementRelated = {
 	title: "More about your local government",
 	links: [
 		{ href: "/government/executive-council", title: "Executive Council", description: "Meet the executive leadership guiding policy and council services." },
-		{ href: "/government/legislative-house", title: "Legislative Members", description: "Meet the representatives of our communities." },
+		{ href: "/government/nulge-exco", title: "NULGE Exco", description: "Meet the staff union executives representing local government employees." },
 		{ href: "/government/departments", title: "Departments", description: "Find the office responsible for the services you need." },
 	],
 };

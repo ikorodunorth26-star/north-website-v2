@@ -31,7 +31,7 @@ const LandmarksSection = () => {
 											{landmark.image.caption ? <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-council-green/90 to-transparent px-4 pb-3 pt-10 text-xs font-medium text-white">{landmark.image.caption}</p> : null}
 										</div>
 									) : null}
-									<div className="flex flex-1 flex-col p-6 sm:p-8">
+									<div className="flex min-w-0 flex-1 flex-col p-6 sm:p-8">
 										<p className="text-[11px] font-bold uppercase tracking-[0.14em] text-council-gold">{landmark.place}</p>
 										<h3 className="mt-3 text-[26px] font-bold leading-8 text-council-green">{landmark.title}</h3>
 										<p className="mt-4 text-base font-normal leading-7 text-council-subtle">{landmark.summary}</p>

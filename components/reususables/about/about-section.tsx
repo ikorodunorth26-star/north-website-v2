@@ -40,9 +40,9 @@ const AboutSection = () => {
 						<h2 className="mt-3 text-[32px] font-bold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]">{aboutImpact.title}</h2>
 						<p className="mt-3 text-lg font-medium leading-[27px] text-council-subtle">{aboutImpact.description}</p>
 					</div>
-					<ul className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+					<ul className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4 lg:gap-6">
 						{aboutImpact.stats.map((stat, index) => (
-							<li key={stat.label} className="rounded-[20px] bg-background px-6 py-8 text-center sm:px-8">
+							<li key={stat.label} className="rounded-[20px] bg-background px-3 py-6 text-center sm:px-6 sm:py-8 md:px-8">
 								<p className={figureClassName} aria-label={`${stat.value}${stat.suffix ?? ""}`}>
 									<NumberTicker value={stat.value} delay={index * 0.12} useGrouping={false} className={figureClassName} />
 									{stat.suffix}

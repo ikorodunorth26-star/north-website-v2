@@ -38,11 +38,11 @@ const WardHero = ({ ward }: { ward: WardRecord }) => {
 const WardSwitcher = ({ slug }: { slug: string }) => {
 	return (
 		<nav aria-label="Explore another ward" className="bg-white">
-			<div className="mx-auto grid w-full max-w-council grid-cols-2 gap-3 px-5 py-10 sm:grid-cols-5 md:px-10 min-[1408px]:px-0">
+			<div className="mx-auto grid w-full max-w-council grid-cols-2 gap-2.5 px-5 py-10 sm:gap-3 md:grid-cols-5 md:px-10 min-[1408px]:px-0">
 				{wards.map((item) => {
 					const current = item.slug === slug;
 					return (
-						<Link key={item.slug} href={`/communities/${item.slug}`} aria-current={current ? "page" : undefined} className={cn("inline-flex w-full items-center justify-center rounded-full px-4 py-3 text-center text-base font-bold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green", current ? "bg-council-green text-white" : "bg-[#f3f0e6] text-council-green hover:bg-[#e7e2d4]")}>
+						<Link key={item.slug} href={`/communities/${item.slug}`} aria-current={current ? "page" : undefined} className={cn("inline-flex w-full items-center justify-center rounded-full px-3 py-3 text-center text-sm font-bold sm:px-4 sm:text-base focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green", current ? "bg-council-green text-white" : "bg-[#f3f0e6] text-council-green hover:bg-[#e7e2d4]")}>
 							{item.name}
 						</Link>
 					);

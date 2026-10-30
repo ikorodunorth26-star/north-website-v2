@@ -67,7 +67,7 @@ const ContactSection = () => {
 										</span>
 										<div className="min-w-0">
 											<p className="text-xs font-medium uppercase tracking-[1px] text-council-gold">{card.label}</p>
-											<div className="mt-2 text-lg font-medium leading-[27px] text-council-green">{card.value}</div>
+											<div className="mt-2 break-words text-base font-medium leading-[27px] text-council-green sm:text-lg">{card.value}</div>
 										</div>
 									</li>
 								);

@@ -203,7 +203,7 @@ const RevenuePortal = () => {
 								</a>
 							</ContactRow>
 							<ContactRow icon={Mail} label="EMAIL">
-								<a href={`mailto:${revenueOfficeEmail}`} className="focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#173d32]">
+								<a href={`mailto:${revenueOfficeEmail}`} className="break-all focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#173d32]">
 									{revenueOfficeEmail}
 								</a>
 							</ContactRow>
@@ -277,9 +277,9 @@ const ContactRow = ({
 			<span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#ddeb9d]">
 				<Icon className="size-5 text-[#173d32]" strokeWidth={1.75} aria-hidden="true" />
 			</span>
-			<div>
+			<div className="min-w-0">
 				<p className="text-xs font-bold leading-4 tracking-[0.08em] text-[#c39828]">{label}</p>
-				<div className="mt-0.5 max-w-[365px] text-[17px] font-medium leading-[23px]">{children}</div>
+				<div className="mt-0.5 max-w-[365px] break-words text-[17px] font-medium leading-[23px]">{children}</div>
 			</div>
 		</div>
 	);

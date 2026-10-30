@@ -11,6 +11,7 @@ const exploreLinks = [
 	{ href: "/government/executive-council", label: "Executive Council" },
 	{ href: "/government/legislative-house", label: "Legislative Members" },
 	{ href: "/government/management-team", label: "Management Team" },
+	{ href: "/government/nulge-exco", label: "NULGE Exco" },
 	{ href: "/government/departments", label: "Departments" },
 	{ href: "/landmarks", label: "Landmarks & culture" },
 	{ href: "/projects", label: "Projects" },
@@ -44,7 +45,7 @@ const Footer = () => {
 					</Link>
 				</div>
 
-				<div className="mt-16 grid gap-10 lg:grid-cols-2 xl:grid-cols-[minmax(0,400px)_minmax(0,1fr)_minmax(0,300px)] xl:gap-12">
+				<div className="mt-16 grid gap-10 lg:grid-cols-[minmax(0,400px)_minmax(0,1fr)_minmax(0,300px)] lg:gap-12">
 					<div>
 						<Link href="/" className="flex items-center gap-3.5">
 							<Image
@@ -80,7 +81,7 @@ const Footer = () => {
 						<h3 className="text-base font-medium leading-[22px] text-council-cream">Contact the council</h3>
 						<div className="mt-6 space-y-3 text-base leading-6 text-council-footer">
 							<p>
-								<Link href="mailto:info@ikorodunorthlcda.lg.gov.ng" className="transition-colors hover:text-white">
+								<Link href="mailto:info@ikorodunorthlcda.lg.gov.ng" className="break-all transition-colors hover:text-white">
 									info@ikorodunorthlcda.lg.gov.ng
 								</Link>
 							</p>
@@ -90,7 +91,7 @@ const Footer = () => {
 								</a>
 							</p>
 							<p>
-								<Link href="mailto:admin@ikorodunorthlcda.lg.gov.ng" className="transition-colors hover:text-white">
+								<Link href="mailto:admin@ikorodunorthlcda.lg.gov.ng" className="break-all transition-colors hover:text-white">
 									admin@ikorodunorthlcda.lg.gov.ng
 								</Link>
 							</p>

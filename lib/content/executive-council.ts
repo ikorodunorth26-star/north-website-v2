@@ -65,8 +65,8 @@ export const executiveDirectory = {
 export const executiveRelated = {
 	title: "More about your local government",
 	links: [
-		{ href: "/government/legislative-house", title: "Legislative Members", description: "Meet the representatives of our communities." },
 		{ href: "/government/management-team", title: "Management Team", description: "Get to know the team behind council administration." },
+		{ href: "/government/nulge-exco", title: "NULGE Exco", description: "Meet the staff union executives representing local government employees." },
 		{ href: "/government/departments", title: "Departments", description: "Find the office responsible for the services you need." },
 	],
 };

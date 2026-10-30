@@ -45,7 +45,7 @@ const ManagementTeamSection = () => {
 						<h2 className="text-[32px] font-medium leading-10 text-council-green sm:text-[42px] sm:leading-[48px] lg:text-[52px] lg:leading-[60px]">{managementDirectory.title}</h2>
 						<p className="mt-4 text-lg font-normal leading-7 text-council-subtle">{managementDirectory.description}</p>
 					</div>
-					<ul className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-3">
+					<ul className="mt-7 grid grid-cols-1 gap-6 md:grid-cols-3">
 						{managementDirectory.officers.map((officer) => (
 							<li key={officer.name}>
 								<ManagementOfficerCard officer={officer} />

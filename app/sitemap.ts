@@ -12,6 +12,7 @@ const staticRoutes: { path: string; changeFrequency: MetadataRoute.Sitemap[numbe
 	{ path: "/government/executive-council", changeFrequency: "monthly", priority: 0.8 },
 	{ path: "/government/legislative-house", changeFrequency: "monthly", priority: 0.8 },
 	{ path: "/government/management-team", changeFrequency: "monthly", priority: 0.7 },
+	{ path: "/government/nulge-exco", changeFrequency: "monthly", priority: 0.7 },
 	{ path: "/government/departments", changeFrequency: "monthly", priority: 0.7 },
 	{ path: "/government/departments/information-communication-technology", changeFrequency: "monthly", priority: 0.6 },
 	{ path: "/projects", changeFrequency: "weekly", priority: 0.9 },

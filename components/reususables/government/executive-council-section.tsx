@@ -28,12 +28,12 @@ const ExecutiveCouncilSection = () => {
 						<p className="max-w-[585px] text-lg font-medium leading-6 text-[#62726a]">{executiveOffice.introduction}</p>
 					</div>
 					<div className="overflow-hidden rounded-[24px] bg-white lg:grid lg:grid-cols-[307px_minmax(0,1fr)]">
-						<div className="flex items-center gap-6 bg-council-green px-6 py-8 text-left lg:flex-col lg:justify-start lg:px-6 lg:pb-8 lg:pt-8 lg:text-center">
-							<div className="relative size-[168px] shrink-0 overflow-hidden rounded-full lg:size-[194px]">
+						<div className="flex flex-col items-center gap-4 bg-council-green px-5 py-8 text-center sm:flex-row sm:gap-6 sm:px-6 sm:text-left lg:flex-col lg:justify-start lg:px-6 lg:pb-8 lg:pt-8 lg:text-center">
+							<div className="relative size-28 shrink-0 overflow-hidden rounded-full sm:size-[140px] lg:size-[194px]">
 								<LocalImage src={executiveOffice.image.src} alt={executiveOffice.image.alt} className="absolute inset-0 bg-transparent" imageClassName="object-cover object-top" sizes="194px" priority />
 							</div>
-							<div>
-								<p className="text-[27px] font-medium leading-8 text-white lg:text-[32px] lg:leading-[38px]">{executiveOffice.name}</p>
+							<div className="min-w-0">
+								<p className="text-[22px] font-medium leading-7 text-white sm:text-[27px] sm:leading-8 lg:text-[32px] lg:leading-[38px]">{executiveOffice.name}</p>
 								<p className="mt-2 text-base font-medium text-council-lime lg:text-lg">{executiveOffice.role}</p>
 							</div>
 						</div>
