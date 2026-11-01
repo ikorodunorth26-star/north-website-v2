@@ -510,19 +510,37 @@ export const newsArticles: NewsArticle[] = [
 		],
 	},
 	{
-		slug: "apeka-road-army-school-flagoff",
+		slug: "construction-of-high-school-road-apeka-flagoff",
 		category: "INFRASTRUCTURE",
 		filterGroup: "projects",
-		title: "High School Road, Apeka, and Army Children School flagged off",
-		summary: "In July 2026 the council flagged off High School Road in Apeka and reconstruction of Army Children Primary School at Losi-Onikoko.",
+		title: "Construction of High School Road, Apeka flagged off",
+		summary: "In July 2026 the council flagged off construction of High School Road in Apeka to improve access for residents and businesses.",
 		date: "26 July 2026",
-		readTime: "3 min read",
+		readTime: "2 min read",
+		image: reportImages.apekaRoad,
+		body: [
+			{
+				paragraphs: [
+					"Mayor Ameen Apanisile joined Rep. Babajimi Benson to flag off construction of High School Road, Apeka, in the first year of the administration.",
+					"The road is the council’s own first-year project and remains ongoing from the July 2026 flag-off.",
+				],
+			},
+		],
+	},
+	{
+		slug: "ongoing-construction-of-army-children-school-flagoff",
+		category: "EDUCATION",
+		filterGroup: "projects",
+		title: "Ongoing construction of Army Children School flagged off",
+		summary: "In July 2026 the council flagged off reconstruction of Army Children Primary School at Losi-Onikoko, beside 174 Battalion.",
+		date: "26 July 2026",
+		readTime: "2 min read",
 		image: reportImages.apekaFlagoff,
 		body: [
 			{
 				paragraphs: [
-					"Mayor Ameen Apanisile joined Rep. Babajimi Benson to flag off High School Road, Apeka, in the first year of the administration. The same programme covered reconstruction of Army Children Primary School at Losi-Onikoko, by 174 Battalion.",
-					"Both works were marked as ongoing from the flag-off. The road is the council’s own first-year project. The school rebuild sits beside the battalion community in Odogunyan.",
+					"Mayor Ameen Apanisile flagged off reconstruction of Army Children Primary School at Losi-Onikoko, by 174 Battalion, as part of the first-year programme.",
+					"The school rebuild sits beside the battalion community in Odogunyan and remains ongoing from the July 2026 flag-off.",
 				],
 			},
 		],

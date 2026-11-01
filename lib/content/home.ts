@@ -69,7 +69,7 @@ export const homeDepartments: HomeDepartment[] = [
 	{
 		title: "Primary Health Care",
 		description: "Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.",
-		responsibleLead: "Headed by Edu. & Library Services Dept.",
+		responsibleLead: "Headed by Health Care Dept.",
 		category: "Community health",
 		icon: "heartPulse",
 	},

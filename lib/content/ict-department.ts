@@ -39,7 +39,7 @@ export const ictDepartment = {
 const relatedLeads = [
 	{ title: "Finance & Accounts", lead: "Headed by Council Treasurer" },
 	{ title: "Education & Library Services", lead: "HOD: [Head of Department]" },
-	{ title: "Primary Health Care", lead: "Headed by Edu. & Library Services Dept." },
+	{ title: "Primary Health Care", lead: "Headed by Health Care Dept." },
 ] as const;
 
 export type IctRelatedDepartment = CouncilDepartment & { lead: string; iconName: DepartmentIcon };
