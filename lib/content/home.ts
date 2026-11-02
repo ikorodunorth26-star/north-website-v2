@@ -235,18 +235,18 @@ export const homeTeamMembers: HomeTeamMember[] = [
 		href: "/government/legislative-house",
 	},
 	{
-		name: "Hon jimoh Idris iliasu",
-		role: "Deputy Leader of House",
-		image: figmaAssets.home.deputyLeaderPortrait,
+		name: "Hon. Tijani Olakanmi Sheriff",
+		role: "Secretary to the Local Government",
+		image: figmaAssets.government.secretary,
 		portraitMode: "photo",
-		href: "/government/legislative-house",
+		href: "/government/executive-council",
 	},
 	{
-		name: "Hon Banjoko Babatunde O.",
-		role: "Chief Whip",
-		image: figmaAssets.home.chiefWhipPortrait,
+		name: "Hon. Mojeed Oluwamayowa Saheed",
+		role: "Chief of Staff",
+		image: figmaAssets.government.chiefOfStaff,
 		portraitMode: "photo",
-		href: "/government/legislative-house",
+		href: "/government/executive-council",
 	},
 ];
 
