@@ -11,10 +11,10 @@ const HomeHero = () => {
 	return (
 		<section className="relative isolate min-h-svh overflow-hidden bg-council-green text-white lg:min-h-[800px]" aria-labelledby="home-hero-title">
 			<LocalImage
-				src={figmaAssets.home.lagosAerial.src}
+				src={figmaAssets.home.lasustechGate.src}
 				alt=""
 				className="absolute inset-0 bg-council-green"
-				imageClassName="object-cover object-center contrast-110 grayscale lg:object-[78%_center] lg:brightness-[0.6] lg:contrast-100 lg:grayscale-0"
+				imageClassName="object-cover object-center contrast-110 grayscale lg:brightness-[0.6] lg:contrast-100 lg:grayscale-0"
 				sizes="100vw"
 				priority
 			/>

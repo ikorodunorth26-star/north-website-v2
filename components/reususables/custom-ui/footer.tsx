@@ -20,7 +20,7 @@ const exploreLinks = [
 	{ href: "/landmarks", label: "Landmarks & culture" },
 	{ href: "/projects", label: "Projects" },
 	{ href: "/news", label: "News" },
-	{ href: "/communities", label: "Communities" },
+	{ href: "/contact", label: "Contact" },
 ];
 
 const legalLinks = [
