@@ -30,7 +30,7 @@ const HomeTeamMemberCard = ({ member, large = false, featured = false }: HomeTea
 			<div className="relative min-h-0 flex-1 overflow-hidden rounded-[24px]">
 				{member.portraitMode === "cutout" ? (
 					<>
-						<LocalImage src={figmaAssets.home.lagosAerial.src} alt="" className="absolute inset-0" imageClassName="object-cover object-[70%_center]" sizes={sizes} />
+						<LocalImage src={figmaAssets.home.lasustechGate.src} alt="" className="absolute inset-0" imageClassName="object-cover object-center" sizes={sizes} />
 						<div className="absolute inset-0 bg-council-green/45" aria-hidden="true" />
 						<div className={cn("absolute inset-x-0 bottom-0", featured ? "top-2" : "top-4")}>
 							<LocalImage

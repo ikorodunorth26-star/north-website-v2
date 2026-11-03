@@ -76,6 +76,12 @@ export const figmaAssets = {
 			height: 1080,
 			alt: "",
 		},
+		lasustechGate: {
+			src: "/images/landmarks/lasustech-gate.png",
+			width: 498,
+			height: 307,
+			alt: "West Gate of Lagos State University of Science and Technology, Ikorodu",
+		},
 		heroSecretariat: {
 			src: "/images/home/hero-secretariat.jpg",
 			width: 1080,

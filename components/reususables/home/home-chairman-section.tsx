@@ -11,10 +11,10 @@ const HomeChairmanSection = () => {
 				<div className="flex h-full flex-col">
 					<div className="relative h-[380px] overflow-hidden rounded-[32px] bg-council-green shadow-soft sm:h-[440px] lg:h-auto lg:min-h-0 lg:flex-1">
 						<LocalImage
-							src={figmaAssets.home.lagosAerial.src}
+							src={figmaAssets.home.lasustechGate.src}
 							alt=""
 							className="absolute inset-0"
-							imageClassName="object-cover object-[70%_center]"
+							imageClassName="object-cover object-center"
 							sizes="(min-width: 1024px) 531px, 100vw"
 						/>
 						<div className="absolute inset-0 bg-council-green/45" aria-hidden="true" />
