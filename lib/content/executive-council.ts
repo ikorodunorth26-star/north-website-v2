@@ -4,6 +4,8 @@ export type ExecutiveMember = {
 	name: string;
 	role: string;
 	image: FigmaAsset;
+	/** Tailwind object-position class for face-safe cropping. */
+	portraitFocus?: string;
 };
 
 export const executiveCouncilPage = {

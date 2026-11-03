@@ -1,11 +1,18 @@
 import { LocalImage } from "@/components/reususables/site";
 import { legislativeChamber, legislativeDirectory, type LegislativeMember } from "@/lib/content/legislative-house";
+import { cn } from "@/lib/utils";
 
 const LegislativeMemberCard = ({ member }: { member: LegislativeMember }) => {
 	return (
 		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
-			<div className="relative aspect-[387/285] overflow-hidden rounded-xl bg-council-image">
-				<LocalImage src={member.image.src} alt={member.image.alt} className="absolute inset-0" imageClassName="object-cover object-top" sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw" />
+			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
+				<LocalImage
+					src={member.image.src}
+					alt={member.image.alt}
+					className="absolute inset-0"
+					imageClassName={cn("object-cover", member.portraitFocus ?? "object-[center_12%]")}
+					sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
+				/>
 			</div>
 			<div className="flex flex-col gap-3 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>

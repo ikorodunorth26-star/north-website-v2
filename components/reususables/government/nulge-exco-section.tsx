@@ -7,11 +7,12 @@ import {
 	nulgeRelated,
 	type NulgeOfficer,
 } from "@/lib/content/nulge-exco";
+import { cn } from "@/lib/utils";
 
 const NulgeOfficerCard = ({ officer }: { officer: NulgeOfficer }) => {
 	return (
 		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
-			<div className="relative aspect-[387/285] overflow-hidden rounded-xl bg-council-image">
+			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				{officer.portraitPending ? (
 					<div
 						className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[#e8e9df] px-6 text-center"
@@ -27,7 +28,7 @@ const NulgeOfficerCard = ({ officer }: { officer: NulgeOfficer }) => {
 						src={officer.image.src}
 						alt={officer.image.alt}
 						className="absolute inset-0"
-						imageClassName="object-cover object-[center_18%]"
+						imageClassName={cn("object-cover", officer.portraitFocus ?? "object-[center_12%]")}
 						sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
 					/>
 				)}

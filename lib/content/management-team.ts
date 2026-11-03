@@ -4,6 +4,8 @@ export type ManagementOfficer = {
 	name: string;
 	role: string;
 	image: FigmaAsset;
+	/** Tailwind object-position class for face-safe cropping. */
+	portraitFocus?: string;
 };
 
 const portrait = (file: string, width: number, height: number, alt: string): FigmaAsset => ({

@@ -6,6 +6,8 @@ export type NulgeOfficer = {
 	image: FigmaAsset;
 	/** Portrait not yet available — show branded pending state. */
 	portraitPending?: boolean;
+	/** Tailwind object-position class for face-safe cropping. */
+	portraitFocus?: string;
 };
 
 const portrait = (

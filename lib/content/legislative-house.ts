@@ -4,6 +4,8 @@ export type LegislativeMember = {
 	name: string;
 	role: string;
 	image: FigmaAsset;
+	/** Tailwind object-position class for face-safe cropping. */
+	portraitFocus?: string;
 };
 
 export const legislativeHousePage = {
@@ -28,7 +30,12 @@ export const legislativeDirectory = {
 	description: "Find the people representing your community in the Legislative House.",
 	members: [
 		{ name: "Hon Benson Titilayo Abosede", role: "Leader of the house, Councilor ward E2 Erikorodo", image: figmaAssets.government.leader },
-		{ name: "Hon Jimoh Idris Iliasu", role: "Deputy Leader, Councilor Ward B3, Isiu", image: figmaAssets.government.deputyLeader },
+		{
+			name: "Hon Jimoh Idris Iliasu",
+			role: "Deputy Leader, Councilor Ward B3, Isiu",
+			image: figmaAssets.government.deputyLeader,
+			portraitFocus: "object-[center_8%]",
+		},
 		{ name: "Hon Banjoko Babatunde Oluwaseun", role: "Majority Leader, Councilor ward E1 Odogunyan", image: figmaAssets.government.majorityLeader },
 		{ name: "Hon Onabajo Oluwaseyi Olugbenga", role: "Chief Whip, Councilor Ward E4, Olorunda", image: figmaAssets.government.chiefWhip },
 		{ name: "Hon Ibrahim Risikat Abiodun", role: "Councilor ward E3 Agbala", image: figmaAssets.government.agbalaCouncillor },

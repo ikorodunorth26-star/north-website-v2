@@ -3,12 +3,19 @@ import { ArrowUpRight } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { managementDirectory, managementOverview, managementRelated, type ManagementOfficer } from "@/lib/content/management-team";
+import { cn } from "@/lib/utils";
 
 const ManagementOfficerCard = ({ officer }: { officer: ManagementOfficer }) => {
 	return (
 		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
-			<div className="relative aspect-[387/285] overflow-hidden rounded-xl bg-council-image">
-				<LocalImage src={officer.image.src} alt={officer.image.alt} className="absolute inset-0" imageClassName="object-cover object-[center_18%]" sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw" />
+			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
+				<LocalImage
+					src={officer.image.src}
+					alt={officer.image.alt}
+					className="absolute inset-0"
+					imageClassName={cn("object-cover", officer.portraitFocus ?? "object-[center_12%]")}
+					sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
+				/>
 			</div>
 			<div className="flex flex-col gap-4 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{officer.name}</h3>
