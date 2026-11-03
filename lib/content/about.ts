@@ -52,10 +52,11 @@ export const aboutHistory: { heading: string; introduction: string; chapters: Ab
 			paragraphs: ["In 2003 Lagos cut Ikorodu North from Ikorodu Local Government and set the headquarters at Isiu. The Executive Chairman leads. Councillors represent the wards. The council’s record names those who have held the chair:"],
 			points: [
 				"Mayor Ameen Olawale Ibrahim Apanisile, incumbent Executive Chairman",
-				"Dr. Adebisi Adeola Banjo, Executive Secretary, then Executive Chairman",
+				"Dr. Adebisi Adeola Banjo, Executive Secretary",
+				"Dr. Adebisi Adeola Banjo, Executive Chairman",
 				"Sukurat Oke-Owo, Sole Administrator",
 				"Hon. Muyideen Adeola Jokomba, Executive Chairman",
-				"Mr. Kamoru Keshinro, Executive Secretary",
+				"Mr. Kamoru Keshinro, Sole Administrator",
 				"Hon. Kunle Ogunbela, pioneer Executive Chairman",
 			],
 		},
