@@ -8,7 +8,7 @@ import AboutView from "./aboutView";
 import ExecutiveCouncilView from "./executiveCouncilView";
 import LegislativeHouseView from "./legislativeHouseView";
 import DepartmentsView from "./departmentsView";
-import IctDepartmentView from "./ictDepartmentView";
+import DepartmentDetailView from "./departmentDetailView";
 import ManagementTeamView from "./managementTeamView";
 import NulgeExcoView from "./nulgeExcoView";
 import WardView from "./wardView";
@@ -17,4 +17,4 @@ import LandmarksView from "./landmarksView";
 import LegalView from "./legalView";
 import RevenueView from "./revenueView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, IctDepartmentView, ManagementTeamView, NulgeExcoView, WardView, SuggestProjectView, LandmarksView, LegalView, RevenueView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, DepartmentDetailView, ManagementTeamView, NulgeExcoView, WardView, SuggestProjectView, LandmarksView, LegalView, RevenueView };

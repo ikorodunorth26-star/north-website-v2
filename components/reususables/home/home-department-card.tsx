@@ -1,4 +1,5 @@
-import { HeartPulse, Landmark, Wallet } from "lucide-react";
+import Link from "next/link";
+import { ArrowUpRight, HeartPulse, Landmark, Wallet } from "lucide-react";
 
 import type { HomeDepartment } from "@/lib/content/home";
 
@@ -23,6 +24,12 @@ const HomeDepartmentCard = ({ department }: HomeDepartmentCardProps) => {
 			<h3 className="mt-7 text-[26px] font-semibold leading-8 tracking-[-0.48px] text-council-green lg:text-[28px] lg:leading-[34px] lg:tracking-[-0.5px] xl:text-[30px] xl:leading-[36px] xl:tracking-[-0.54px]">{department.title}</h3>
 			<p className="mt-4 text-sm leading-6 text-council-subtle lg:text-[15px] lg:leading-[24px]">{department.description}</p>
 			<p className="mt-7 inline-flex w-fit rounded-full bg-council-lime/35 px-4 py-2 text-sm font-medium leading-5 text-council-green">{department.responsibleLead}</p>
+			<Link
+				href={department.href}
+				className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-base font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+				View department
+				<ArrowUpRight className="size-[18px]" aria-hidden="true" />
+			</Link>
 		</article>
 	);
 };

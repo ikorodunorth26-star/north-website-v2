@@ -17,6 +17,7 @@ export type HomeDepartment = {
 	responsibleLead: string;
 	category: string;
 	icon: "landmark" | "wallet" | "heartPulse";
+	href: string;
 };
 
 export type HomeAnnouncement = {
@@ -55,9 +56,10 @@ export const homeDepartments: HomeDepartment[] = [
 	{
 		title: "Admin & Human Resources",
 		description: "Handles the council’s people and processes, including recruitment, training, staff welfare, records and day-to-day administration.",
-		responsibleLead: "Headed by Human Resources Officer",
+		responsibleLead: "Headed by Council Manager",
 		category: "Council administration",
 		icon: "landmark",
+		href: "/government/departments/admin-human-resources",
 	},
 	{
 		title: "Finance & Accounts",
@@ -65,6 +67,7 @@ export const homeDepartments: HomeDepartment[] = [
 		responsibleLead: "Headed by Council Treasurer",
 		category: "Public finance",
 		icon: "wallet",
+		href: "/government/departments/finance-accounts",
 	},
 	{
 		title: "Primary Health Care",
@@ -72,6 +75,7 @@ export const homeDepartments: HomeDepartment[] = [
 		responsibleLead: "Headed by Health Care Dept.",
 		category: "Community health",
 		icon: "heartPulse",
+		href: "/government/departments/primary-health-care",
 	},
 ];
 
@@ -284,6 +288,7 @@ export const homeContent = {
 		eyebrow: "Departments",
 		title: "Serving You,\nDepartment by Department",
 		description: "Find the right office for your needs and see how each team serves the community.",
+		cta: "View all departments",
 	},
 	announcements: {
 		eyebrow: "Announcements",

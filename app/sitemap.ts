@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { councilDepartments, departmentHref } from "@/lib/content/departments";
 import { allNewsArticles } from "@/lib/content/news";
 import { projects } from "@/lib/content/projects";
 import { wards } from "@/lib/content/wards";
@@ -14,7 +15,6 @@ const staticRoutes: { path: string; changeFrequency: MetadataRoute.Sitemap[numbe
 	{ path: "/government/management-team", changeFrequency: "monthly", priority: 0.7 },
 	{ path: "/government/nulge-exco", changeFrequency: "monthly", priority: 0.7 },
 	{ path: "/government/departments", changeFrequency: "monthly", priority: 0.7 },
-	{ path: "/government/departments/information-communication-technology", changeFrequency: "monthly", priority: 0.6 },
 	{ path: "/projects", changeFrequency: "weekly", priority: 0.9 },
 	{ path: "/projects/suggest", changeFrequency: "monthly", priority: 0.6 },
 	{ path: "/news", changeFrequency: "weekly", priority: 0.9 },
@@ -58,5 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		priority: 0.7,
 	}));
 
-	return [...pages, ...projectPages, ...news, ...communities];
+	const departments = councilDepartments.map((department) => ({
+		url: absoluteUrl(departmentHref(department.slug)),
+		changeFrequency: "monthly" as const,
+		priority: 0.6,
+	}));
+
+	return [...pages, ...projectPages, ...news, ...communities, ...departments];
 }

@@ -24,6 +24,7 @@ const governmentLinks: NavLink[] = [
 	{ href: "/government/legislative-house", label: "Legislative Members" },
 	{ href: "/government/management-team", label: "Management Team" },
 	{ href: "/government/nulge-exco", label: "NULGE Exco" },
+	{ href: "/government/departments", label: "Departments" },
 	{ href: "/projects", label: "Projects" },
 ];
 
