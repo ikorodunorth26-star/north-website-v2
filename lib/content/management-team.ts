@@ -13,6 +13,13 @@ const portrait = (file: string, width: number, height: number, alt: string): Fig
 	alt,
 });
 
+const areaOfficerPortrait = (file: string, width: number, height: number, alt: string): FigmaAsset => ({
+	src: `/images/government/nulge/${file}`,
+	width,
+	height,
+	alt,
+});
+
 export const managementTeamPage = {
 	label: "Administration",
 	title: "Management Team",
@@ -22,11 +29,12 @@ export const managementTeamPage = {
 export const managementOverview = {
 	eyebrow: "Administrative arm",
 	heading: "Council administration",
-	description: "The administrative arm is led by the Council Manager. It coordinates the departments that deliver services across Ikorodu North, including administration, works, budget, agriculture, environment, health and education.",
+	description: "The administrative arm is led by the Council Manager. It coordinates the departments that deliver services across Ikorodu North, including administration, works, budget, agriculture, environment, health, education and area offices.",
 	responsibilities: [
 		{ title: "Council management", description: "The Council Manager coordinates departments and the day-to-day work of the secretariat at Isiu." },
 		{ title: "Public finance", description: "The Council Treasurer keeps revenue, budgets, payroll and spending on record." },
 		{ title: "Department desks", description: "Heads of department run works and infrastructure, primary health, education and library services, environmental health, budget and planning, agriculture, tourism, legal services, public affairs and information and communication technology." },
+		{ title: "Area offices", description: "Area officers keep council administration present in communities such as Agbede and Isiu, supporting local service delivery." },
 	],
 };
 
@@ -49,6 +57,9 @@ export const managementDirectory = {
 		{ name: "Barr. Amusa Adebayo Aminat", role: "Head of Department, Legal", image: portrait("amusa-adebayo-aminat.webp", 612, 924, "Barr. Amusa Adebayo Aminat") },
 		{ name: "Shobowale Olalekan", role: "HOU Audit", image: portrait("shobowale-olalekan.webp", 682, 1024, "Shobowale Olalekan") },
 		{ name: "Mrs Balogun Zainab Mojisola", role: "Head of Department, Women Affairs & Poverty Alleviation", image: portrait("balogun-zainab-mojisola.webp", 681, 1024, "Mrs Balogun Zainab Mojisola") },
+		{ name: "Masha Aluroko M", role: "Area Officer Agbede", image: areaOfficerPortrait("masha-aluroko-m.webp", 720, 1080, "Masha Aluroko M") },
+		{ name: "Okhidre Olayinka", role: "Area Officer Agbede II", image: areaOfficerPortrait("okhidre-olayinka.webp", 720, 1080, "Okhidre Olayinka") },
+		{ name: "Osilesi Bukola", role: "Area Office Isiwu", image: areaOfficerPortrait("osilesi-bukola.webp", 720, 1080, "Osilesi Bukola") },
 	] satisfies ManagementOfficer[],
 };
 

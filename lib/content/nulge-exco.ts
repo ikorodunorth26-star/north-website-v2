@@ -53,7 +53,7 @@ export const nulgeOverview = {
 		{
 			title: "Service desks",
 			description:
-				"Budget, environment, education, agriculture, health, AHR and area office representatives keep field staff connected to the union.",
+				"Budget, environment, education, agriculture, health and AHR representatives keep department staff connected to the union.",
 		},
 	],
 };
@@ -65,7 +65,7 @@ export const nulgeDirectory = {
 	officers: [
 		{
 			name: "Adebayo Femi",
-			role: "Chairman",
+			role: "Acting Chairman",
 			image: portrait("adebayo-femi.webp", "Adebayo Femi"),
 		},
 		{
@@ -146,21 +146,6 @@ export const nulgeDirectory = {
 			role: "Rep Health",
 			image: pendingPortrait("Yassuf Olamide"),
 			portraitPending: true,
-		},
-		{
-			name: "Masha Aluroko M",
-			role: "Area Officer Agbede",
-			image: portrait("masha-aluroko-m.webp", "Masha Aluroko M"),
-		},
-		{
-			name: "Okhidre Olayinka",
-			role: "Area Officer Agbede II",
-			image: portrait("okhidre-olayinka.webp", "Okhidre Olayinka"),
-		},
-		{
-			name: "Osilesi Bukola",
-			role: "Area Office Isiwu",
-			image: portrait("osilesi-bukola.webp", "Osilesi Bukola"),
 		},
 		{
 			name: "Adeniji Husenat Mopelola",
