@@ -172,6 +172,7 @@ export const figmaAssets = {
 		projects: { src: "/images/government/adviser-projects-ishmaheel-bashir.webp", width: 718, height: 1080, alt: "Hon. Ishmaheel Bashir" },
 		tourism: { src: "/images/government/adviser-tourism-abiodun-salau.webp", width: 718, height: 1080, alt: "Hon. Abiodun Salau" },
 		budget: { src: "/images/government/supervisor-budget-basirat-babatunde.webp", width: 874, height: 1080, alt: "Hon. Basirat Adewunmi Babatunde" },
+		health: { src: "/images/government/supervisor-health-ogunbiyi-adedoyin.svg", width: 800, height: 500, alt: "Hon. Ogunbiyi Adedoyin" },
 		leader: { src: "/images/government/leader-benson-abosede.webp", width: 851, height: 1280, alt: "Hon Benson Titilayo Abosede" },
 		deputyLeader: { src: "/images/government/deputy-jimoh-iliasu.webp", width: 720, height: 1080, alt: "Hon Jimoh Idris Iliasu" },
 		majorityLeader: { src: "/images/government/majority-banjoko-oluwaseun.webp", width: 612, height: 924, alt: "Hon Banjoko Babatunde Oluwaseun" },

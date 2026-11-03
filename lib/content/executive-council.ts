@@ -51,6 +51,7 @@ export const executiveDirectory = {
 		{ name: "Hon. Fakumoju Kehinde Babayemisi", role: "Supervisor for Community Development", image: figmaAssets.government.community },
 		{ name: "Hon. Ambali Olutusin", role: "Supervisor for Intergovernmental Affairs and Legislative Duties", image: figmaAssets.government.intergovernmental },
 		{ name: "Hon. Basirat Adewunmi Babatunde", role: "Supervisor for Budget and Planning", image: figmaAssets.government.budget },
+		{ name: "Hon. Ogunbiyi Adedoyin", role: "Supervisor for Health", image: figmaAssets.government.health },
 		{ name: "Hon. Alimi Lekan Idris", role: "Special Adviser, Students' Affairs", image: figmaAssets.government.students },
 		{ name: "Hon. Olowolagba Olawale Adebayo", role: "Special Adviser, Information", image: figmaAssets.government.information },
 		{ name: "Hon. Ogunba Adetunbosun", role: "Special Adviser, Youth and Sports", image: figmaAssets.government.youth },
