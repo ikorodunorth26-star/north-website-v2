@@ -313,8 +313,8 @@ export const homeContent = {
 	},
 	team: {
 		eyebrow: "Government Team",
-		title: "Ikorodu Local\nGovernment Team",
-		description: "Meet our dedicated team of leaders, legislators, and professionals\nworking together to serve and develop Ikorodu Local Government Area.",
+		title: "Ikorodu North Local\nGovernment Team",
+		description: "Meet our dedicated team of leaders, legislators, and professionals\nworking together to serve and develop Ikorodu North Local Government Area.",
 		cta: "View all",
 	},
 	map: {

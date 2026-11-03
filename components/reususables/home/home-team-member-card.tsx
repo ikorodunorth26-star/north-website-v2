@@ -24,8 +24,8 @@ const HomeTeamMemberCard = ({ member, large = false, featured = false }: HomeTea
 	return (
 		<article
 			className={cn(
-				"group relative flex flex-col overflow-hidden rounded-[32px] border border-[#cfcfcf]/40 bg-council-green p-3 shadow-soft",
-				featured ? "h-[500px] lg:h-[520px]" : large ? "h-[440px] lg:h-[430px]" : "h-[380px] lg:h-[360px]",
+				"group relative flex h-full flex-col overflow-hidden rounded-[32px] border border-[#cfcfcf]/40 bg-council-green p-3 shadow-soft",
+				featured || large ? "min-h-[500px] lg:min-h-[520px]" : "h-[380px] lg:h-[360px]",
 			)}>
 			<div className="relative min-h-0 flex-1 overflow-hidden rounded-[24px]">
 				{member.portraitMode === "cutout" ? (

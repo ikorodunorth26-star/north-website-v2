@@ -20,7 +20,7 @@ const HomeTeamSection = () => {
 					<div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-council-dark/40" aria-hidden="true" />
 					<div className="relative">
 						<HomeSectionHeading id="home-team-heading" title={team.title} description={team.description} ctaLabel={team.cta} ctaHref="/government/management-team" dark ctaVariant="lime" descriptionClassName="max-w-none whitespace-pre-line" titleClassName="text-[30px] leading-9 sm:text-[34px] sm:leading-10 md:text-[48px] md:leading-[54px] lg:text-[52px] lg:leading-[58px] lg:tracking-[-1.1px] xl:text-[56px] xl:leading-[62px]" />
-						<div className="mt-10 grid items-end gap-5 lg:mt-12 lg:grid-cols-2 lg:gap-6">
+						<div className="mt-10 grid items-stretch gap-5 lg:mt-12 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:gap-6">
 							<HomeTeamMemberCard member={chairman} featured />
 							<HomeTeamMemberCard member={viceChairman} large />
 						</div>
