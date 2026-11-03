@@ -70,7 +70,7 @@ const NulgeExcoSection = ({
 						{nulgeOverview.responsibilities.map((item) => (
 							<li key={item.title} className="max-w-[400px]">
 								<h3 className="text-2xl font-medium leading-9 text-council-green">
-									{item.title}
+									            {item.title}
 								</h3>
 								<p className="mt-3 text-lg font-medium leading-7 text-council-subtle">
 									{item.description}
