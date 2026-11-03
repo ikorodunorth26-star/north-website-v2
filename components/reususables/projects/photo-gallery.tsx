@@ -10,14 +10,20 @@ import { LocalImage, SectionHeading } from "../site";
 
 type PhotoGalleryProps = {
 	photos: FigmaAsset[];
+	title?: string;
+	/** How many thumbnails to show before a “+N” tile. Pass the full length to show every photo. */
+	previewLimit?: number;
+	headingId?: string;
+	className?: string;
 };
 
-const previewLimit = 4;
+const defaultPreviewLimit = 4;
 
-const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
+const PhotoGallery = ({ photos, title = "Photo gallery", previewLimit = defaultPreviewLimit, headingId = "photo-gallery-heading", className }: PhotoGalleryProps) => {
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 	const activePhoto = activeIndex === null ? null : photos[activeIndex];
-	const previewPhotos = photos.slice(0, previewLimit);
+	const limit = Math.max(1, previewLimit);
+	const previewPhotos = photos.slice(0, limit);
 	const hiddenCount = photos.length - previewPhotos.length;
 
 	useEffect(() => {
@@ -40,8 +46,10 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 
 	if (!photos.length) return null;
 
-	const columnClass =
-		previewPhotos.length >= 4
+	const showAll = hiddenCount <= 0;
+	const columnClass = showAll
+		? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+		: previewPhotos.length >= 4
 			? "grid-cols-2 sm:grid-cols-4"
 			: previewPhotos.length === 3
 				? "grid-cols-2 sm:grid-cols-3"
@@ -58,8 +66,8 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 	};
 
 	return (
-		<section className="mt-16" aria-labelledby="photo-gallery-heading">
-			<SectionHeading id="photo-gallery-heading" title="Photo gallery" titleClassName="font-bold" />
+		<section className={className ?? "mt-16"} aria-labelledby={headingId}>
+			<SectionHeading id={headingId} title={title} titleClassName="font-bold" />
 			<ul className={`mt-8 grid gap-3 sm:gap-4 ${columnClass}`}>
 				{previewPhotos.map((photo, index) => {
 					const isMoreTile = hiddenCount > 0 && index === previewPhotos.length - 1;
@@ -78,7 +86,7 @@ const PhotoGallery = ({ photos }: PhotoGalleryProps) => {
 									loading="eager"
 									className="aspect-[4/3] w-full rounded-xl md:rounded-[20px]"
 									imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.035] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
-									sizes="(min-width: 640px) 320px, 50vw"
+									sizes="(min-width: 1024px) 280px, (min-width: 640px) 33vw, 50vw"
 								/>
 								{isMoreTile ? (
 									<span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-xl bg-[#0e241d]/62 text-white transition-colors duration-300 group-hover:bg-[#0e241d]/72 md:rounded-[20px]">

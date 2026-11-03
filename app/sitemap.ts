@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { councilDepartments, departmentHref } from "@/lib/content/departments";
+import { galleryAlbums } from "@/lib/content/gallery";
 import { allNewsArticles } from "@/lib/content/news";
 import { projects } from "@/lib/content/projects";
 import { wards } from "@/lib/content/wards";
@@ -18,6 +19,7 @@ const staticRoutes: { path: string; changeFrequency: MetadataRoute.Sitemap[numbe
 	{ path: "/projects", changeFrequency: "weekly", priority: 0.9 },
 	{ path: "/projects/suggest", changeFrequency: "monthly", priority: 0.6 },
 	{ path: "/news", changeFrequency: "weekly", priority: 0.9 },
+	{ path: "/gallery", changeFrequency: "weekly", priority: 0.8 },
 	{ path: "/revenue", changeFrequency: "monthly", priority: 0.8 },
 	{ path: "/contact", changeFrequency: "yearly", priority: 0.7 },
 	{ path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
@@ -64,5 +66,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		priority: 0.6,
 	}));
 
-	return [...pages, ...projectPages, ...news, ...communities, ...departments];
+	const gallery = galleryAlbums.map((album) => {
+		const lastModified = publishedIso(album.date);
+		return {
+			url: absoluteUrl(`/gallery/${album.slug}`),
+			...(lastModified ? { lastModified } : {}),
+			changeFrequency: "monthly" as const,
+			priority: 0.6,
+		};
+	});
+
+	return [...pages, ...projectPages, ...news, ...gallery, ...communities, ...departments];
 }

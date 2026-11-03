@@ -7,3 +7,4 @@ export * from "./projects";
 export * from "./contact";
 export * from "./about";
 export * from "./government";
+export * from "./gallery";
