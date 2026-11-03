@@ -1,6 +1,7 @@
 import { NewsCard, PhotoGallery } from "@/components/reususables";
-import { ArticleLayout, SectionHeading, StoryLink } from "@/components/reususables/site";
+import { ArticleLayout, ContentPlaceLinks, SectionHeading, StoryLink } from "@/components/reususables/site";
 import { councilFacebookUrl, getRelatedProjects, type CouncilProject } from "@/lib/content/projects";
+import { getDepartmentsForProject, getWardsForProject } from "@/lib/content/relations";
 
 type ProjectDetailViewProps = {
 	project: CouncilProject;
@@ -8,6 +9,8 @@ type ProjectDetailViewProps = {
 
 const ProjectDetailView = ({ project }: ProjectDetailViewProps) => {
 	const relatedProjects = getRelatedProjects(project.slug);
+	const linkedWards = getWardsForProject(project);
+	const linkedDepartments = getDepartmentsForProject(project);
 
 	return (
 		<>
@@ -31,6 +34,7 @@ const ProjectDetailView = ({ project }: ProjectDetailViewProps) => {
 					))}
 				</div>
 				<PhotoGallery photos={project.gallery} />
+				<ContentPlaceLinks wards={linkedWards} departments={linkedDepartments} />
 				<StoryLink href={councilFacebookUrl} external className="mt-10">
 					Follow updates on Facebook
 				</StoryLink>

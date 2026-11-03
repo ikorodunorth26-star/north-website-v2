@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
-import { LocalImage } from "@/components/reususables/site";
+import { LocalImage, RelatedWorkSection } from "@/components/reususables/site";
 import {
 	departmentDetailCopy,
 	departmentHref,
 	departmentIcons,
+	departmentPhoneHref,
 	getRelatedDepartments,
 	type CouncilDepartment,
 } from "@/lib/content/departments";
+import { getNewsForDepartment, getProjectsForDepartment, relatedWorkLabels } from "@/lib/content/relations";
 
 type DepartmentDetailSectionProps = {
 	department: CouncilDepartment;
@@ -16,6 +18,8 @@ type DepartmentDetailSectionProps = {
 
 const DepartmentDetailSection = ({ department }: DepartmentDetailSectionProps) => {
 	const related = getRelatedDepartments(department.slug);
+	const linkedProjects = getProjectsForDepartment(department.slug);
+	const linkedNews = getNewsForDepartment(department.slug);
 
 	return (
 		<>
@@ -74,7 +78,9 @@ const DepartmentDetailSection = ({ department }: DepartmentDetailSectionProps) =
 								</span>
 								<div>
 									<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.phoneLabel}</p>
-									<p className="text-base font-medium text-council-green">{department.phone}</p>
+									<a href={departmentPhoneHref} className="text-base font-medium text-council-green hover:underline focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+										{department.phone}
+									</a>
 								</div>
 							</div>
 							<div className="flex items-center gap-3">
@@ -95,7 +101,16 @@ const DepartmentDetailSection = ({ department }: DepartmentDetailSectionProps) =
 				</div>
 			</section>
 
-			<section className="bg-background pb-16">
+			<RelatedWorkSection
+				eyebrow="On record"
+				title={`From ${department.title}`}
+				projects={linkedProjects}
+				articles={linkedNews}
+				emptyMessage={relatedWorkLabels.departmentEmpty}
+				tone="sage"
+			/>
+
+			<section className="bg-background py-16">
 				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 					<h2 className="text-[32px] font-medium leading-10 text-council-green sm:text-[42px] sm:leading-[48px]">{departmentDetailCopy.relatedTitle}</h2>
 					<ul className="mt-8 grid gap-6 lg:grid-cols-3">

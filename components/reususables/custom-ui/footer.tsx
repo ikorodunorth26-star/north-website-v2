@@ -107,14 +107,14 @@ const Footer = () => {
 								</Link>
 							</p>
 							<p>
-								<a href={councilFacebookUrl} className="transition-colors hover:text-white" rel="noopener noreferrer" target="_blank">
-									Facebook
-								</a>
-							</p>
-							<p>
 								<Link href="mailto:admin@ikorodunorthlcda.lg.gov.ng" className="break-all transition-colors hover:text-white">
 									admin@ikorodunorthlcda.lg.gov.ng
 								</Link>
+							</p>
+							<p>
+								<a href={councilFacebookUrl} className="transition-colors hover:text-white" rel="noopener noreferrer" target="_blank">
+									Follow us on Facebook
+								</a>
 							</p>
 							<p className="flex items-center gap-3 text-council-cream">
 								<Phone className="size-[18px] shrink-0" aria-hidden="true" />

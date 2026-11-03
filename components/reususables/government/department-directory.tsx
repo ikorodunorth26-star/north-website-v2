@@ -5,7 +5,14 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Search } from "lucide-react";
 
 import { CategoryFilter } from "@/components/reususables/news";
-import { councilDepartments, departmentDirectory, departmentHref, departmentIcons, type CouncilDepartment } from "@/lib/content/departments";
+import {
+	councilDepartments,
+	departmentDirectory,
+	departmentHref,
+	departmentIcons,
+	departmentPhoneHref,
+	type CouncilDepartment,
+} from "@/lib/content/departments";
 
 const filters = ["all", "departments", "units", "health"] as const;
 type DepartmentFilter = (typeof filters)[number];
@@ -47,7 +54,11 @@ const DepartmentCard = ({ department }: { department: CouncilDepartment }) => {
 						{department.email}
 					</a>
 				</p>
-				<p>{department.phone}</p>
+				<p>
+					<a href={departmentPhoneHref} className="hover:text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+						{department.phone}
+					</a>
+				</p>
 			</div>
 			<Link href={departmentHref(department.slug)} className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-lg font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
 				{departmentDirectory.profileLabel}

@@ -3,8 +3,10 @@ import { ArrowUpRight } from "lucide-react";
 
 import type { GalleryAlbum } from "@/lib/content/gallery";
 import { getRelatedAlbums } from "@/lib/content/gallery";
+import { getArticle } from "@/lib/content/news";
+import { getDepartmentsForNews, getWardsForNews } from "@/lib/content/relations";
 import { PhotoGallery } from "@/components/reususables/projects";
-import { ArticleLayout, SectionHeading } from "@/components/reususables/site";
+import { ArticleLayout, ContentPlaceLinks, SectionHeading } from "@/components/reususables/site";
 
 import GalleryCard from "./gallery-card";
 
@@ -14,6 +16,9 @@ type GalleryAlbumSectionProps = {
 
 const GalleryAlbumSection = ({ album }: GalleryAlbumSectionProps) => {
 	const relatedAlbums = getRelatedAlbums(album.slug);
+	const relatedArticle = getArticle(album.slug);
+	const linkedWards = relatedArticle ? getWardsForNews(relatedArticle) : [];
+	const linkedDepartments = relatedArticle ? getDepartmentsForNews(relatedArticle) : [];
 
 	return (
 		<>
@@ -44,6 +49,7 @@ const GalleryAlbumSection = ({ album }: GalleryAlbumSectionProps) => {
 					</p>
 				) : null}
 				<PhotoGallery photos={album.photos} title="All photographs" previewLimit={album.photos.length} headingId="gallery-album-photos" />
+				<ContentPlaceLinks wards={linkedWards} departments={linkedDepartments} />
 			</ArticleLayout>
 
 			{relatedAlbums.length ? (

@@ -1,7 +1,8 @@
 import { NewsCard, PhotoGallery } from "@/components/reususables";
-import { ArticleLayout, SectionHeading } from "@/components/reususables/site";
+import { ArticleLayout, ContentPlaceLinks, SectionHeading, StoryLink } from "@/components/reususables/site";
 import type { NewsArticle } from "@/lib/content/news";
 import { getRelatedArticles } from "@/lib/content/news";
+import { getDepartmentsForNews, getWardsForNews } from "@/lib/content/relations";
 
 type NewsArticleViewProps = {
 	article: NewsArticle;
@@ -9,6 +10,9 @@ type NewsArticleViewProps = {
 
 const NewsArticleView = ({ article }: NewsArticleViewProps) => {
 	const relatedArticles = getRelatedArticles(article.slug);
+	const linkedWards = getWardsForNews(article);
+	const linkedDepartments = getDepartmentsForNews(article);
+	const galleryHref = article.gallery?.length ? `/gallery/${article.slug}` : null;
 
 	return (
 		<>
@@ -38,6 +42,12 @@ const NewsArticleView = ({ article }: NewsArticleViewProps) => {
 					))}
 				</div>
 				{article.gallery ? <PhotoGallery photos={article.gallery} /> : null}
+				{galleryHref ? (
+					<StoryLink href={galleryHref} className="mt-8">
+						Open full gallery album
+					</StoryLink>
+				) : null}
+				<ContentPlaceLinks wards={linkedWards} departments={linkedDepartments} />
 			</ArticleLayout>
 
 			<section className="bg-council-image py-16 lg:py-24">

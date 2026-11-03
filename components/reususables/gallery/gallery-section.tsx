@@ -6,7 +6,6 @@ import type { GalleryAlbum } from "@/lib/content/gallery";
 import { galleryCategories } from "@/lib/content/gallery";
 
 import { CategoryFilter } from "../news";
-import { SectionHeading } from "../site";
 import GalleryCard from "./gallery-card";
 
 type GallerySectionProps = {
@@ -25,7 +24,10 @@ const GallerySection = ({ albums }: GallerySectionProps) => {
 		<section className="bg-background py-14 lg:py-16">
 			<div className="mx-auto flex w-full max-w-council flex-col gap-9 px-5 md:px-10 min-[1408px]:px-0">
 				<div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-					<SectionHeading title="Event albums" eyebrow="COUNCIL, PROJECTS & COMMUNITY" />
+					<div className="flex flex-col gap-2">
+						<h2 className="whitespace-nowrap text-[30px] font-medium leading-[36px] tracking-[-0.3px] text-council-green md:text-[32px] md:leading-[44px]">Event albums</h2>
+						<p className="text-xs leading-4 tracking-[0.083em] text-council-gold">COUNCIL, PROJECTS & COMMUNITY</p>
+					</div>
 					<CategoryFilter
 						categories={galleryCategories}
 						activeCategory={activeCategory}

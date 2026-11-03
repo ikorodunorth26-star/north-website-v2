@@ -1,9 +1,11 @@
 export { default as ArticleLayout } from "./article-layout";
+export { default as ContentPlaceLinks } from "./content-place-links";
 export { default as JsonLd } from "./json-ld";
 export { default as CouncilWordmark } from "./council-wordmark";
 export { default as InteractiveCard } from "./interactive-card";
 export { default as LocalImage } from "./local-image";
 export { default as PageIntro } from "./page-intro";
+export { default as RelatedWorkSection } from "./related-work-section";
 export { default as SectionHeading } from "./section-heading";
 export { default as StoryLink } from "./story-link";
 export { default as TypewriterText } from "./typewriter-text";

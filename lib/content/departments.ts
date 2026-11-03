@@ -18,6 +18,7 @@ import {
 	type LucideIcon,
 } from "lucide-react";
 
+import { contactPhones } from "./contact";
 import type { FigmaAsset } from "./figma-assets";
 import { figmaAssets } from "./figma-assets";
 
@@ -80,7 +81,8 @@ export const departmentIcons: Record<DepartmentIcon, LucideIcon> = {
 	files: Files,
 };
 
-const phone = "+234 XXX XXX XXXX";
+const phone = contactPhones[0].label;
+export const departmentPhoneHref = contactPhones[0].href;
 
 const managementPortrait = (file: string, width: number, height: number, alt: string): FigmaAsset => ({
 	src: `/images/government/management/${file}`,

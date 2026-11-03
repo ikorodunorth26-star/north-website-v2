@@ -20,6 +20,10 @@ export type NewsArticle = {
 	caption?: string;
 	gallery?: FigmaAsset[];
 	body: ArticleSection[];
+	/** Optional explicit ward links. New stories can set these; otherwise relations are inferred. */
+	wards?: Array<"isiu" | "odogunyan" | "olorunda" | "erikorodo" | "agbala">;
+	/** Optional explicit department slugs. */
+	departments?: string[];
 };
 
 export const featuredArticle: NewsArticle = {

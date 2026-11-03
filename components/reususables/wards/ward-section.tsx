@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 
-import { LocalImage } from "@/components/reususables/site";
-import { getWard, wardConcernTitle, wardLabels, wardNewsTitle, wards, type WardProjectStatus, type WardRecord } from "@/lib/content/wards";
+import { LocalImage, RelatedWorkSection } from "@/components/reususables/site";
+import { getDepartmentsForWard, getNewsForWard, getProjectsForWard, type WardSlug } from "@/lib/content/relations";
+import { getWard, wardConcernTitle, wardLabels, wards, type WardProjectStatus, type WardRecord } from "@/lib/content/wards";
 import { cn } from "@/lib/utils";
 
 const statusClassName: Record<WardProjectStatus, string> = {
@@ -55,6 +56,11 @@ const WardSwitcher = ({ slug }: { slug: string }) => {
 const WardSection = ({ slug }: { slug: string }) => {
 	const ward = getWard(slug);
 	if (!ward) return null;
+
+	const wardSlug = ward.slug as WardSlug;
+	const linkedProjects = getProjectsForWard(wardSlug);
+	const linkedNews = getNewsForWard(wardSlug);
+	const linkedDepartments = getDepartmentsForWard(wardSlug);
 
 	return (
 		<>
@@ -127,31 +133,14 @@ const WardSection = ({ slug }: { slug: string }) => {
 				</div>
 			</section>
 
-			<section className="bg-[#F8F7F2] py-16">
-				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
-					<p className="text-[11px] font-bold uppercase tracking-[0.14em] text-council-gold">{wardLabels.newsEyebrow}</p>
-					<h2 className="mt-3 text-[32px] font-bold leading-10 text-council-green sm:text-[42px] sm:leading-[48px]">{wardNewsTitle(ward.name)}</h2>
-					{ward.newsStory ? (
-						<article className="mt-8 max-w-[720px] rounded-[24px] bg-white p-6 sm:p-8">
-							<p className="text-xs font-bold uppercase tracking-[0.08em] text-council-gold">{ward.newsStory.label}</p>
-							<h3 className="mt-3 text-[28px] font-bold leading-9 text-council-green sm:text-[32px] sm:leading-10">{ward.newsStory.title}</h3>
-							<Link href={wardLabels.newsHref} className="mt-6 inline-flex w-fit items-center gap-2 rounded-full border border-council-green/20 px-5 py-3 text-base font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-								{wardLabels.storyCta}
-								<ArrowUpRight className="size-4" aria-hidden="true" />
-							</Link>
-						</article>
-					) : (
-						<div className="mt-8 rounded-[24px] bg-white px-6 py-10 text-center">
-							<h3 className="text-[28px] font-bold leading-9 text-council-green">{wardLabels.newsEmptyTitle}</h3>
-							<p className="mx-auto mt-3 max-w-[640px] text-base leading-6 text-council-subtle">{wardLabels.newsEmptyDescription}</p>
-							<Link href={wardLabels.newsHref} className="mt-6 inline-flex items-center gap-2 rounded-full border border-council-green/20 px-5 py-3 text-base font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-								{wardLabels.newsCta}
-								<ArrowUpRight className="size-4" aria-hidden="true" />
-							</Link>
-						</div>
-					)}
-				</div>
-			</section>
+			<RelatedWorkSection
+				eyebrow="On the ground"
+				title={`In ${ward.name}`}
+				projects={linkedProjects}
+				articles={linkedNews}
+				departments={linkedDepartments}
+				tone="cream"
+			/>
 
 			{ward.concern ? (
 				<section className="bg-background pb-16">

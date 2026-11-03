@@ -33,7 +33,6 @@ const navigationLinks: NavItem[] = [
 	{ label: "Government", children: governmentLinks },
 	{ href: "/revenue", label: "Services" },
 	{ href: "/news", label: "News" },
-	{ href: "/gallery", label: "Gallery" },
 	{ href: "/contact", label: "Contact" },
 ];
 

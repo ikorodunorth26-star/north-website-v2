@@ -19,6 +19,10 @@ export type CouncilProject = {
 	image: FigmaAsset;
 	gallery: FigmaAsset[];
 	paragraphs: string[];
+	/** Optional explicit ward links. New projects can set these; otherwise relations are inferred. */
+	wards?: Array<"isiu" | "odogunyan" | "olorunda" | "erikorodo" | "agbala">;
+	/** Optional explicit department slugs. */
+	departments?: string[];
 };
 
 export const projects: CouncilProject[] = [

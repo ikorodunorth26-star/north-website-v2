@@ -5,8 +5,9 @@ export const contactPage = {
 };
 
 export const contactPhones = [
-	{ label: "+234 816 544 2373", href: "tel:+2348165442373" },
-	{ label: "+234 811 047 9658", href: "tel:+2348110479658" },
+	{ label: "08165442373 (24hrs)", href: "tel:+2348165442373" },
+	{ label: "08110479658", href: "tel:+2348110479658" },
+	{ label: "09066063640", href: "tel:+2349066063640" },
 ] as const;
 
 export const contactEmails = {
