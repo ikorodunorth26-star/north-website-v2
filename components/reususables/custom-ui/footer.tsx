@@ -4,6 +4,7 @@ import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 
 import { CouncilWordmark, TypewriterText } from "@/components/reususables/site";
 import { figmaAssets } from "@/lib/content/figma-assets";
+import { homeWards } from "@/lib/content/home";
 import { councilFacebookUrl } from "@/lib/content/projects";
 import { getCurrentYear } from "@/lib/helper";
 
@@ -14,6 +15,11 @@ const governmentLinks = [
 	{ href: "/government/nulge-exco", label: "NULGE Exco" },
 	{ href: "/government/departments", label: "Departments" },
 ];
+
+const wardLinks = homeWards.map((ward) => ({
+	href: ward.href,
+	label: ward.name,
+}));
 
 const exploreLinks = [
 	{ href: "/about", label: "About & History" },
@@ -51,7 +57,7 @@ const Footer = () => {
 					</Link>
 				</div>
 
-				<div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 xl:gap-12">
+				<div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8 xl:gap-10">
 					<div>
 						<Link href="/" className="flex items-center gap-3.5">
 							<Image
@@ -72,6 +78,21 @@ const Footer = () => {
 						<h3 className="text-base font-medium leading-[22px] text-council-cream">Government</h3>
 						<ul className="mt-6 space-y-3">
 							{governmentLinks.map((link) => (
+								<li key={link.href}>
+									<Link
+										href={link.href}
+										className="text-base leading-6 text-council-footer transition-colors hover:text-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime">
+										{link.label}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</nav>
+
+					<nav aria-label="Wards">
+						<h3 className="text-base font-medium leading-[22px] text-council-cream">Wards</h3>
+						<ul className="mt-6 space-y-3">
+							{wardLinks.map((link) => (
 								<li key={link.href}>
 									<Link
 										href={link.href}

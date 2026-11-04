@@ -63,26 +63,30 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 						{homeWards.map((ward, index) => {
 							const selected = index === activeIndex;
 							return (
-								<button
+								<Link
 									key={ward.name}
 									id={`ward-tab-${ward.name}`}
-									type="button"
+									href={ward.href}
 									role="tab"
 									aria-selected={selected}
 									aria-controls="ward-stage"
 									tabIndex={selected ? 0 : -1}
-									onClick={() => setActiveIndex(index)}
+									onMouseEnter={() => setActiveIndex(index)}
+									onFocus={() => setActiveIndex(index)}
 									className={cn(
 										"group/ward relative flex w-auto items-center gap-3 rounded-[20px] border px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0",
 										selected ? "border-council-green/15 bg-white shadow-[0_14px_32px_-18px_rgba(23,61,50,0.65)]" : "border-transparent bg-white/40 hover:border-council-green/15 hover:bg-white hover:shadow-soft",
 									)}>
-									<WardRow ward={ward} index={index} selected={selected} />
-								</button>
+									<WardRow ward={ward} index={index} selected={selected} linked />
+								</Link>
 							);
 						})}
 					</div>
 
 					<article id="ward-stage" role="tabpanel" aria-labelledby={`ward-tab-${activeWard.name}`} className="group relative hidden min-h-[460px] overflow-hidden rounded-[28px] bg-council-green sm:min-h-[520px] lg:block">
+						<Link href={activeWard.href} className="absolute inset-0 z-10" aria-label={`Explore ${activeWard.name} ward`}>
+							<span className="sr-only">Explore {activeWard.name}</span>
+						</Link>
 						<LocalImage
 							key={activeWard.image.src}
 							src={activeWard.image.src}
@@ -92,18 +96,16 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 							sizes="(min-width: 1024px) 70vw, 100vw"
 							priority={activeIndex === 0}
 						/>
-						<div className="absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.88)_0%,hsl(var(--brand-dark)/0.42)_34%,transparent_62%)]" aria-hidden="true" />
-						{activeWard.tag ? <span className="absolute left-5 top-5 rounded-full bg-[#FFFDF8CC] px-3 py-1.5 text-[11px] font-bold leading-4 text-council-green sm:left-7 sm:top-7">{activeWard.tag}</span> : null}
-						<div className="absolute inset-x-0 bottom-0 p-5 sm:p-8">
+						<div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.88)_0%,hsl(var(--brand-dark)/0.42)_34%,transparent_62%)]" aria-hidden="true" />
+						{activeWard.tag ? <span className="pointer-events-none absolute left-5 top-5 rounded-full bg-[#FFFDF8CC] px-3 py-1.5 text-[11px] font-bold leading-4 text-council-green sm:left-7 sm:top-7">{activeWard.tag}</span> : null}
+						<div className="pointer-events-none absolute inset-x-0 bottom-0 p-5 sm:p-8">
 							<p className="text-xs font-bold tracking-[0.16em] text-white/70">WARD {String(activeIndex + 1).padStart(2, "0")} / 05</p>
 							<h3 className="mt-2 text-[36px] font-semibold leading-10 text-white sm:text-[48px] sm:leading-[52px]">{activeWard.name}</h3>
 							<p className="mt-3 max-w-[460px] text-sm font-medium leading-6 text-white/72 sm:text-base">{activeWard.landmarks}</p>
-							<Link
-								href={activeWard.href}
-								className="mt-6 inline-flex items-center gap-2 text-sm font-bold leading-5 text-[#DDCA90] transition-colors hover:text-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#DDCA90]">
+							<span className="mt-6 inline-flex items-center gap-2 text-sm font-bold leading-5 text-[#DDCA90]">
 								Explore {activeWard.name}
 								<ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" aria-hidden="true" />
-							</Link>
+							</span>
 						</div>
 					</article>
 				</div>
