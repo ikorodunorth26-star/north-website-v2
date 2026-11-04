@@ -10,11 +10,20 @@ const HomeHero = () => {
 
 	return (
 		<section className="relative isolate min-h-svh overflow-hidden bg-council-green text-white lg:min-h-[800px]" aria-labelledby="home-hero-title">
+			{/* Mobile uses the second slider image; desktop keeps the welcome hero backdrop. */}
+			<LocalImage
+				src={figmaAssets.home.heroCountyComplex.src}
+				alt=""
+				className="absolute inset-0 bg-council-green lg:hidden"
+				imageClassName="object-cover object-[center_28%]"
+				sizes="100vw"
+				priority
+			/>
 			<LocalImage
 				src={figmaAssets.home.lasustechGate.src}
 				alt=""
-				className="absolute inset-0 bg-council-green"
-				imageClassName="object-cover object-center contrast-110 grayscale lg:brightness-[0.6] lg:contrast-100 lg:grayscale-0"
+				className="absolute inset-0 hidden bg-council-green lg:block"
+				imageClassName="object-cover object-center brightness-[0.6]"
 				sizes="100vw"
 				priority
 			/>

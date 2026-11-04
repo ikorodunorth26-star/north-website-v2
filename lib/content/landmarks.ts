@@ -54,8 +54,11 @@ export const landmarks: Landmark[] = [
 		group: "industry",
 		summary: "Odogunyan is the LCDA’s industrial and residential hub. The council names African Steel Mills, Lucky Fibres and PZ among the large works there, alongside smaller factories and the settlements around them.",
 		image: {
-			...figmaAssets.home.wardOdogunyan,
-			caption: "Idera Community Primary School, Odogunyan",
+			src: "/images/landmarks/odogunyan-industrial-estate.webp",
+			width: 1024,
+			height: 682,
+			alt: "Odogunyan Industrial Estate, Ikorodu North",
+			caption: "Odogunyan Industrial Estate",
 		},
 	},
 	{
