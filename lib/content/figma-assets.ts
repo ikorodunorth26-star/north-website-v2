@@ -170,7 +170,7 @@ export const figmaAssets = {
 		procurement: { src: "/images/government/adviser-procurement-oyinloye.webp", width: 959, height: 1280, alt: "Hon. Oyinloye Kayode Olabode" },
 		education: { src: "/images/government/supervisor-education-adaramola.webp", width: 718, height: 1080, alt: "Hon. Adaramola Abimbola" },
 		agriculture: { src: "/images/government/supervisor-agriculture-pending.webp", width: 718, height: 1080, alt: "Hon. Olawale Ogunbela JP" },
-		market: { src: "/images/government/adviser-market-baliqees-ibrahim.webp", width: 964, height: 1080, alt: "Hon. Baliqees Aderoju Ibrahim" },
+		market: { src: "/images/government/adviser-market-baliqees-ibrahim.webp", width: 682, height: 1024, alt: "Hon. Baliqees Aderoju Ibrahim" },
 		political: { src: "/images/government/adviser-political-adeniyi-odugbesi.webp", width: 762, height: 1080, alt: "Hon. Adeniyi Afolabi Odugbesi" },
 		civic: { src: "/images/government/supervisor-civic-edu-hafsat.webp", width: 718, height: 1080, alt: "Hon. Edu Hafsat" },
 		community: { src: "/images/government/supervisor-community-fakumoju.webp", width: 718, height: 1080, alt: "Hon. Fakumoju Kehinde Babayemisi" },

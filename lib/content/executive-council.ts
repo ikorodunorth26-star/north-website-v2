@@ -58,7 +58,7 @@ export const executiveDirectory = {
 		{ name: "Hon. Olowolagba Olawale Adebayo", role: "Special Adviser, Information", image: figmaAssets.government.information },
 		{ name: "Hon. Ogunba Adetunbosun", role: "Special Adviser, Youth and Sports", image: figmaAssets.government.youth },
 		{ name: "Hon. Oyinloye Kayode Olabode", role: "Special Adviser, Procurement", image: figmaAssets.government.procurement },
-		{ name: "Hon. Baliqees Aderoju Ibrahim", role: "Special Adviser, Market Affairs", image: figmaAssets.government.market },
+		{ name: "Hon. Baliqees Aderoju Ibrahim", role: "Special Adviser, Market Affairs", image: figmaAssets.government.market, portraitFocus: "object-[center_18%]" },
 		{ name: "Hon. Adeniyi Afolabi Odugbesi", role: "Special Adviser, Political Affairs", image: figmaAssets.government.political },
 		{ name: "Hon. Ishmaheel Bashir", role: "Special Adviser, Project Monitoring", image: figmaAssets.government.projects },
 		{ name: "Hon. Abiodun Salau", role: "Special Adviser, Tourism", image: figmaAssets.government.tourism },

@@ -34,7 +34,7 @@ const ArticleLayout = ({ backHref, backLabel, title, meta, image, caption, child
 						<ChevronLeft className="size-4" aria-hidden="true" />
 						{backLabel}
 					</Link>
-					<h1 className="mt-5 max-w-[747px] text-4xl font-medium leading-[42px] tracking-[-0.72px] text-council-cream md:text-5xl md:leading-[52px] md:tracking-[-0.96px]">
+					<h1 className="mt-5 w-full text-4xl font-medium leading-[42px] tracking-[-0.72px] text-council-cream md:text-5xl md:leading-[52px] md:tracking-[-0.96px]">
 						{title}
 					</h1>
 					<div className="mt-5 flex items-center gap-4 text-base leading-[22px] text-[#dfe5df]">{meta}</div>

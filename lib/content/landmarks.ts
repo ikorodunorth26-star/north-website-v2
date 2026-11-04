@@ -72,13 +72,16 @@ export const landmarks: Landmark[] = [
 		},
 	},
 	{
-		title: "Ikorodu–Shagamu corridor",
+		title: "Ikorodu–Sagamu Road",
 		place: "Lagos to Ogun State",
 		group: "movement",
-		summary: "Ikorodu North is the gateway between Lagos and Ogun. The Ikorodu–Shagamu road carries trade toward Ogijo and Sagamu, and links the industrial estate, the secretariat and the wards along the way.",
+		summary: "Ikorodu North is the gateway between Lagos and Ogun. The Ikorodu–Sagamu road carries trade toward Ogijo and Sagamu, and links the industrial estate, the secretariat and the wards along the way.",
 		image: {
-			...figmaAssets.home.wardOlorunda,
-			caption: "Adamo–Araro Road, Olorunda",
+			src: "/images/landmarks/ikorodu-sagamu-road.webp",
+			width: 454,
+			height: 675,
+			alt: "Ikorodu–Sagamu Road through Ikorodu North",
+			caption: "Ikorodu–Sagamu Road",
 		},
 	},
 	{
@@ -87,8 +90,11 @@ export const landmarks: Landmark[] = [
 		group: "administration",
 		summary: "The Marriage Registry beside the secretariat was renewed in the first hundred days, so residents can register marriages closer to home.",
 		image: {
-			...figmaAssets.home.heroSecretariat,
-			caption: "The secretariat compound at Isiu",
+			src: "/images/landmarks/marriage-registry.webp",
+			width: 1024,
+			height: 680,
+			alt: "Marriage Registry building at Isiu, Ikorodu North LCDA",
+			caption: "Marriage Registry, Isiu",
 		},
 	},
 	{
