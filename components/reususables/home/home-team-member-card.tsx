@@ -15,6 +15,8 @@ const photoFocus: Record<string, string> = {
 	[figmaAssets.home.leaderPortrait.src]: "object-[center_22%]",
 	[figmaAssets.home.deputyLeaderPortrait.src]: "object-[42%_50%]",
 	[figmaAssets.home.chiefWhipPortrait.src]: "object-[center_18%]",
+	[figmaAssets.government.secretary.src]: "object-[center_42%]",
+	[figmaAssets.government.chiefOfStaff.src]: "object-[center_38%]",
 };
 
 const HomeTeamMemberCard = ({ member, large = false, featured = false }: HomeTeamMemberCardProps) => {
