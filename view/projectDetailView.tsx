@@ -1,4 +1,4 @@
-import { NewsCard, PhotoGallery } from "@/components/reususables";
+import { HomeCarousel, NewsCard, PhotoGallery } from "@/components/reususables";
 import { ArticleLayout, ContentPlaceLinks, SectionHeading, StoryLink } from "@/components/reususables/site";
 import { councilFacebookUrl, getRelatedProjects, type CouncilProject } from "@/lib/content/projects";
 import { getDepartmentsForProject, getWardsForProject } from "@/lib/content/relations";
@@ -41,19 +41,22 @@ const ProjectDetailView = ({ project }: ProjectDetailViewProps) => {
 			</ArticleLayout>
 
 			{relatedProjects.length ? (
-				<section className="bg-council-image py-16 lg:py-24">
+				<section className="overflow-x-clip bg-council-image py-16 lg:py-24">
 					<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 						<SectionHeading title="Other projects" />
-						<div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-							{relatedProjects.map((relatedProject) => (
-								<NewsCard
-									key={relatedProject.slug}
-									article={relatedProject}
-									href={`/projects/${relatedProject.slug}`}
-									cta="View project"
-									date={relatedProject.date}
-								/>
-							))}
+						<div className="mt-10">
+							<HomeCarousel bleed autoSlide label="other projects">
+								{relatedProjects.map((relatedProject) => (
+									<div key={relatedProject.slug} className="w-[300px] sm:w-[360px] lg:w-[400px]">
+										<NewsCard
+											article={relatedProject}
+											href={`/projects/${relatedProject.slug}`}
+											cta="View project"
+											date={relatedProject.date}
+										/>
+									</div>
+								))}
+							</HomeCarousel>
 						</div>
 					</div>
 				</section>

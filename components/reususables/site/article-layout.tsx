@@ -41,7 +41,7 @@ const ArticleLayout = ({ backHref, backLabel, title, meta, image, caption, child
 				</div>
 			</section>
 
-			<div className="relative z-10 -mt-14">
+			<div className="relative z-10 -mt-6 md:-mt-14">
 				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
 					<LocalImage
 						src={image.src}
