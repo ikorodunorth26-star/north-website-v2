@@ -1,7 +1,7 @@
 import { figmaAssets, type FigmaAsset } from "./figma-assets";
 import { reportImages } from "./report-images";
 
-export const councilFacebookUrl = "https://www.facebook.com/profile.php?id=61578369553900";
+export { councilFacebookUrl } from "./social";
 
 export const projectsPage = {
 	label: "Community Projects",

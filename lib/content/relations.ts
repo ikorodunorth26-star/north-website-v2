@@ -43,7 +43,7 @@ const departmentTerms: Record<string, string[]> = {
 	"women-affairs-poverty-alleviation": ["iranlowo", "empowerment", "women leaders", "poverty"],
 	"agriculture-rural-social-development": ["agriculture", "farm", "rural"],
 	"public-affairs-unit": ["engagement", "community meeting", "progressive movement", "public affairs"],
-	"tourism": ["champions cup", "tourism", "cultural"],
+	"tourism": ["champions cup", "tourism", "cultural", "heritage", "eweye day"],
 	"information-communication-technology": ["ict", "digital", "technology"],
 	"admin-human-resources": ["mandate", "seminar", "leadership team"],
 };

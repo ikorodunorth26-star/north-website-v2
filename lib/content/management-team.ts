@@ -35,7 +35,7 @@ export const managementOverview = {
 	responsibilities: [
 		{ title: "Council management", description: "The Council Manager coordinates departments and the day-to-day work of the secretariat at Isiu." },
 		{ title: "Public finance", description: "The Council Treasurer keeps revenue, budgets, payroll and spending on record." },
-		{ title: "Department desks", description: "Heads of department run works and infrastructure, primary health, education and library services, environmental health, budget and planning, agriculture, tourism, legal services, public affairs and information and communication technology." },
+		{ title: "Department desks", description: "Heads of department run works and infrastructure, primary health, education and library services, environmental health, budget and planning, agriculture, tourism and heritage, legal services, public affairs and information and communication technology." },
 		{ title: "Area offices", description: "Area officers keep council administration present in communities such as Agbede and Isiu, supporting local service delivery." },
 	],
 };
@@ -52,7 +52,7 @@ export const managementDirectory = {
 		{ name: "Mr Ogunleye Akintope Abayomi", role: "Head of Department, Planning, Budget, Research & Statistics", image: portrait("ogunleye-akintope-abayomi.webp", 664, 996, "Mr Ogunleye Akintope Abayomi") },
 		{ name: "Eng. Akinsanya Sunday", role: "Head of Department, Works & Infrastructure", image: portrait("akinsanya-sunday.webp", 664, 996, "Eng. Akinsanya Sunday") },
 		{ name: "Dr. Wajero K T", role: "Medical Officer of Health", image: portrait("wajero-kt.webp", 664, 996, "Dr. Wajero K T") },
-		{ name: "Com. Olawore Elijah", role: "Head of Department, Tourism", image: portrait("olawore-elijah.webp", 664, 996, "Com. Olawore Elijah") },
+		{ name: "Com. Olawore Elijah", role: "Head of Department, Tourism & Heritage", image: portrait("olawore-elijah.webp", 664, 996, "Com. Olawore Elijah") },
 		{ name: "Mr Ganiyu Abideen Maiyegun", role: "Head of Department, Education & Library Services", image: portrait("ganiyu-abideen-maiyegun.webp", 664, 996, "Mr Ganiyu Abideen Maiyegun") },
 		{ name: "Mr Japhet O Enemunhe", role: "Head of Public Affairs", image: portrait("japhet-enemunhe.webp", 664, 910, "Mr Japhet O Enemunhe") },
 		{ name: "Mr Ahoton Jameson Thona", role: "Head of Department, Environmental Health Services", image: portrait("ahoton-jameson-thona.webp", 664, 996, "Mr Ahoton Jameson Thona") },

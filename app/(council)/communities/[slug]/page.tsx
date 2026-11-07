@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { JsonLd } from "@/components/reususables/site";
-import { getWard, wards } from "@/lib/content/wards";
+import { getWard, wardDisplayName, wards } from "@/lib/content/wards";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 import { WardView } from "@/view";
 
@@ -23,7 +23,7 @@ export const generateMetadata = async ({ params }: WardPageProps): Promise<Metad
 	}
 
 	return createPageMetadata({
-		title: `${ward.name} Ward`,
+		title: `${wardDisplayName(ward)} Ward`,
 		description: ward.introduction,
 		path: `/communities/${ward.slug}`,
 		image: ward.image,
@@ -44,7 +44,7 @@ const WardPage = async ({ params }: WardPageProps) => {
 				data={breadcrumbJsonLd([
 					{ name: "Home", path: "/" },
 					{ name: "About & History", path: "/about" },
-					{ name: `${ward.name} Ward`, path: `/communities/${ward.slug}` },
+					{ name: `${wardDisplayName(ward)} Ward`, path: `/communities/${ward.slug}` },
 				])}
 			/>
 			<WardView slug={slug} />

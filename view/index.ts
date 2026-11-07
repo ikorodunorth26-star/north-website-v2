@@ -18,5 +18,6 @@ import LegalView from "./legalView";
 import RevenueView from "./revenueView";
 import GalleryView from "./galleryView";
 import GalleryAlbumView from "./galleryAlbumView";
+import PersonProfileView from "./personProfileView";
 
-export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, DepartmentDetailView, ManagementTeamView, NulgeExcoView, WardView, SuggestProjectView, LandmarksView, LegalView, RevenueView, GalleryView, GalleryAlbumView };
+export { HomeView, NewsView, NewsArticleView, ProjectDetailView, ProjectsView, ContactView, AboutView, ExecutiveCouncilView, LegislativeHouseView, DepartmentsView, DepartmentDetailView, ManagementTeamView, NulgeExcoView, WardView, SuggestProjectView, LandmarksView, LegalView, RevenueView, GalleryView, GalleryAlbumView, PersonProfileView };

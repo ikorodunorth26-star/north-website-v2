@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 import HomeSectionHeading from "./home-section-heading";
 
-const WardRow = ({ ward, index, selected = false, linked = false }: { ward: HomeWard; index: number; selected?: boolean; linked?: boolean }) => {
+const WardRow = ({ ward, selected = false, linked = false }: { ward: HomeWard; selected?: boolean; linked?: boolean }) => {
 	return (
 		<>
 			<span className={cn("absolute inset-y-3 left-0 w-[3px] rounded-full transition-colors", selected ? "bg-council-green" : "bg-transparent group-hover/ward:bg-council-green/30")} aria-hidden="true" />
@@ -18,7 +18,7 @@ const WardRow = ({ ward, index, selected = false, linked = false }: { ward: Home
 				<LocalImage src={ward.image.src} alt="" className="absolute inset-0" imageClassName="transition-transform duration-300 group-hover/ward:scale-105 motion-reduce:transition-none motion-reduce:group-hover/ward:scale-100" sizes="56px" />
 			</span>
 			<span className="min-w-0">
-				<span className={cn("text-[11px] font-bold leading-4 tracking-[0.14em] transition-colors", selected ? "text-council-green" : "text-council-gold group-hover/ward:text-council-green")}>{String(index + 1).padStart(2, "0")}</span>
+				<span className={cn("text-[11px] font-bold leading-4 tracking-[0.14em] transition-colors", selected ? "text-council-green" : "text-council-gold group-hover/ward:text-council-green")}>{ward.code}</span>
 				<span className="mt-0.5 block truncate text-base font-semibold leading-6 text-council-green">{ward.name}</span>
 				<span className="block truncate text-xs leading-4 text-council-subtle">{ward.tag}</span>
 			</span>
@@ -49,12 +49,12 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 
 				<div className="mt-10 grid items-stretch gap-4 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-5">
 					<ul className="flex flex-col gap-3 lg:hidden">
-						{homeWards.map((ward, index) => (
+						{homeWards.map((ward) => (
 							<li key={ward.name}>
 								<Link
 									href={ward.href}
 									className="group/ward relative flex w-full items-center gap-3 rounded-[20px] border border-transparent bg-white/40 px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:border-council-green/15 hover:bg-white hover:shadow-soft focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-									<WardRow ward={ward} index={index} linked />
+									<WardRow ward={ward} linked />
 								</Link>
 							</li>
 						))}
@@ -77,7 +77,7 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 										"group/ward relative flex w-auto items-center gap-3 rounded-[20px] border px-3 py-3 text-left transition-[background-color,border-color,box-shadow,transform] duration-200 hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0",
 										selected ? "border-council-green/15 bg-white shadow-[0_14px_32px_-18px_rgba(23,61,50,0.65)]" : "border-transparent bg-white/40 hover:border-council-green/15 hover:bg-white hover:shadow-soft",
 									)}>
-									<WardRow ward={ward} index={index} selected={selected} linked />
+									<WardRow ward={ward} selected={selected} linked />
 								</Link>
 							);
 						})}
@@ -99,7 +99,7 @@ const HomeWardsSection = ({ id = "home-wards-heading" }: { id?: string }) => {
 						<div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,hsl(var(--brand-dark)/0.88)_0%,hsl(var(--brand-dark)/0.42)_34%,transparent_62%)]" aria-hidden="true" />
 						{activeWard.tag ? <span className="pointer-events-none absolute left-5 top-5 rounded-full bg-[#FFFDF8CC] px-3 py-1.5 text-[11px] font-bold leading-4 text-council-green sm:left-7 sm:top-7">{activeWard.tag}</span> : null}
 						<div className="pointer-events-none absolute inset-x-0 bottom-0 p-5 sm:p-8">
-							<p className="text-xs font-bold tracking-[0.16em] text-white/70">WARD {String(activeIndex + 1).padStart(2, "0")} / 05</p>
+							<p className="text-xs font-bold tracking-[0.16em] text-white/70">{activeWard.code} · WARD</p>
 							<h3 className="mt-2 text-[36px] font-semibold leading-10 text-white sm:text-[48px] sm:leading-[52px]">{activeWard.name}</h3>
 							<p className="mt-3 max-w-[460px] text-sm font-medium leading-6 text-white/72 sm:text-base">{activeWard.landmarks}</p>
 							<span className="mt-6 inline-flex items-center gap-2 text-sm font-bold leading-5 text-[#DDCA90]">

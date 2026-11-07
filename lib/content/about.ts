@@ -17,7 +17,7 @@ export const aboutIntroduction = {
 	heading: "A place to belong.\nA future we build together.",
 	paragraphs: [
 		"Ikorodu North lies in the north-east of Ikorodu Division, beside Ikorodu Central, Ikorodu West, Imota and Sagamu in Ogun State. The secretariat is at Isiu, on the road between Lagos and Ogun.",
-		"The five wards are Isiu, Odogunyan, Olorunda, Erikorodo and Agbala. Mayor Ameen Olawale Ibrahim Apanisile has led the council since July 2025, after eight years as Vice Chairman. Hon. Mathew Aliu Adesanya serves with him.",
+		"The five wards are B3 Isiu, E1 Odogunyan, E2 Erikorodo, E3 Agbala and E4 Olorunda. Mayor Ameen Olawale Ibrahim Apanisile has led the council since July 2025, after eight years as Vice Chairman. Hon. Mathew Aliu Adesanya serves with him.",
 	],
 	image: figmaAssets.news.councilArchive,
 	caption: "IKORODU NORTH LCDA  /  COUNCIL HEADQUARTERS",
@@ -43,7 +43,7 @@ export const aboutHistory: { heading: string; introduction: string; chapters: Ab
 			number: "01",
 			title: "Community roots",
 			paragraphs: [
-				"Ikorodu became a division in 1968 and a local government in 1976. Isiu, Odogunyan, Olorunda, Erikorodo and Agbala grew inside that older Ikorodu. Oba David Kayode Raji, Olupejobi II, the Eweye of Isiu, keeps its customs with the baales. Eweye Day is the yearly gathering in Isiu.",
+				"Ikorodu became a division in 1968 and a local government in 1976. Isiu, Odogunyan, Erikorodo, Agbala and Olorunda grew inside that older Ikorodu. Oba David Kayode Raji, Olupejobi II, the Eweye of Isiu, keeps its customs with the baales. Eweye Day is the yearly gathering in Isiu.",
 			],
 		},
 		{

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 
-import { CouncilWordmark } from "@/components/reususables/site";
+import { CouncilWordmark, SocialLinks } from "@/components/reususables/site";
 import { figmaAssets } from "@/lib/content/figma-assets";
 import { homeWards } from "@/lib/content/home";
 import { cn } from "@/lib/utils";
@@ -31,7 +31,7 @@ const governmentLinks: NavLink[] = [
 
 const wardLinks: NavLink[] = homeWards.map((ward) => ({
 	href: ward.href,
-	label: ward.name,
+	label: `${ward.code} · ${ward.name}`,
 }));
 
 const navigationLinks: NavItem[] = [
@@ -129,6 +129,7 @@ const Header = () => {
 								</Link>
 							),
 						)}
+						<SocialLinks tone="nav" />
 					</div>
 
 					<button
@@ -193,6 +194,10 @@ const Header = () => {
 									</Link>
 								),
 							)}
+							<div className="mt-2 border-t border-white/10 px-2 pb-2 pt-4">
+								<p className="px-2 text-xs font-medium uppercase tracking-[0.08em] text-white/45">Follow us</p>
+								<SocialLinks className="mt-3" tone="nav" showHandles />
+							</div>
 						</div>
 					</div>
 				) : null}

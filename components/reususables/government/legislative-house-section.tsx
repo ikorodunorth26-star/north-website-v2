@@ -1,10 +1,14 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+
 import { LocalImage } from "@/components/reususables/site";
 import { legislativeChamber, legislativeDirectory, type LegislativeMember } from "@/lib/content/legislative-house";
+import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
-const LegislativeMemberCard = ({ member }: { member: LegislativeMember }) => {
-	return (
-		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
+const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMember; profileHref?: string }) => {
+	const body = (
+		<>
 			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				<LocalImage
 					src={member.image.src}
@@ -17,12 +21,34 @@ const LegislativeMemberCard = ({ member }: { member: LegislativeMember }) => {
 			<div className="flex flex-col gap-3 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
 				<p className="text-xs font-medium uppercase tracking-[0.04em] text-council-gold">{member.role}</p>
+				{profileHref ? (
+					<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
+						{personProfileCopy.viewProfile}
+						<ArrowUpRight className="size-3.5" aria-hidden="true" />
+					</span>
+				) : null}
 			</div>
-		</article>
+		</>
 	);
+
+	if (profileHref) {
+		return (
+			<Link
+				href={profileHref}
+				className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+				{body}
+			</Link>
+		);
+	}
+
+	return <article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">{body}</article>;
 };
 
-const LegislativeHouseSection = () => {
+type LegislativeHouseSectionProps = {
+	profileHrefs?: Map<string, string>;
+};
+
+const LegislativeHouseSection = ({ profileHrefs }: LegislativeHouseSectionProps) => {
 	return (
 		<>
 			<section className="bg-[#ece8db] py-16">
@@ -52,7 +78,7 @@ const LegislativeHouseSection = () => {
 					<ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 						{legislativeDirectory.members.map((member) => (
 							<li key={member.name}>
-								<LegislativeMemberCard member={member} />
+								<LegislativeMemberCard member={member} profileHref={profileHrefs?.get(member.name)} />
 							</li>
 						))}
 					</ul>

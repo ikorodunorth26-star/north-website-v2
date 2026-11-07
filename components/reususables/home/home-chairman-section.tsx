@@ -2,6 +2,8 @@ import { homeContent } from "@/lib/content/home";
 import { figmaAssets } from "@/lib/content/figma-assets";
 import { LocalImage, StoryLink, TypewriterText } from "@/components/reususables/site";
 
+const CHAIRMAN_PROFILE_HREF = "/government/people/mayor-ameen-olawale-ibrahim-apanisile";
+
 const HomeChairmanSection = () => {
 	const { chairman } = homeContent;
 
@@ -47,7 +49,7 @@ const HomeChairmanSection = () => {
 							<p key={paragraph}>{paragraph}</p>
 						))}
 					</div>
-					<StoryLink href="/government/executive-council" className="mt-8 text-lg [&_svg]:size-5">
+					<StoryLink href={CHAIRMAN_PROFILE_HREF} className="mt-8 text-lg [&_svg]:size-5">
 						{chairman.cta}
 					</StoryLink>
 				</div>

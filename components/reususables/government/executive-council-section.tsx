@@ -3,11 +3,12 @@ import { ArrowUpRight, Mail, Phone } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { executiveDirectory, executiveOffice, executiveRelated, type ExecutiveMember } from "@/lib/content/executive-council";
+import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
-const ExecutiveMemberCard = ({ member }: { member: ExecutiveMember }) => {
-	return (
-		<article className="flex flex-col gap-6 rounded-[20px] bg-council-card p-3">
+const ExecutiveMemberCard = ({ member, profileHref }: { member: ExecutiveMember; profileHref?: string }) => {
+	const body = (
+		<>
 			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				<LocalImage
 					src={member.image.src}
@@ -20,12 +21,35 @@ const ExecutiveMemberCard = ({ member }: { member: ExecutiveMember }) => {
 			<div className="flex flex-col gap-4 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
 				<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
+				{profileHref ? (
+					<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
+						{personProfileCopy.viewProfile}
+						<ArrowUpRight className="size-3.5" aria-hidden="true" />
+					</span>
+				) : null}
 			</div>
-		</article>
+		</>
 	);
+
+	if (profileHref) {
+		return (
+			<Link
+				href={profileHref}
+				className="flex flex-col gap-6 rounded-[20px] bg-council-card p-3 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+				{body}
+			</Link>
+		);
+	}
+
+	return <article className="flex flex-col gap-6 rounded-[20px] bg-council-card p-3">{body}</article>;
 };
 
-const ExecutiveCouncilSection = () => {
+type ExecutiveCouncilSectionProps = {
+	chairmanProfileHref?: string | null;
+	profileHrefs?: Map<string, string>;
+};
+
+const ExecutiveCouncilSection = ({ chairmanProfileHref, profileHrefs }: ExecutiveCouncilSectionProps) => {
 	return (
 		<>
 			<section className="bg-[#ece8db] py-16">
@@ -68,10 +92,14 @@ const ExecutiveCouncilSection = () => {
 									</p>
 								</a>
 							</div>
-							<Link href="#chairman-brief" className="inline-flex w-fit items-center gap-2.5 rounded-[32px] bg-council-green px-[22px] py-[15px] text-sm font-semibold text-council-lime transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-								{executiveOffice.profileLabel}
-								<ArrowUpRight className="size-[18px]" aria-hidden="true" />
-							</Link>
+							{chairmanProfileHref ? (
+								<Link
+									href={chairmanProfileHref}
+									className="inline-flex w-fit items-center gap-2.5 rounded-[32px] bg-council-green px-[22px] py-[15px] text-sm font-semibold text-council-lime transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime focus-visible:ring-offset-2 focus-visible:ring-offset-white motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+									{executiveOffice.profileLabel}
+									<ArrowUpRight className="size-[18px]" aria-hidden="true" />
+								</Link>
+							) : null}
 						</div>
 					</div>
 				</div>
@@ -86,7 +114,7 @@ const ExecutiveCouncilSection = () => {
 					<ul className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 						{executiveDirectory.members.map((member) => (
 							<li key={`${member.name}-${member.role}`}>
-								<ExecutiveMemberCard member={member} />
+								<ExecutiveMemberCard member={member} profileHref={profileHrefs?.get(member.name)} />
 							</li>
 						))}
 					</ul>

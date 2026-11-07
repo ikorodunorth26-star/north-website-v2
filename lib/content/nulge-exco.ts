@@ -29,6 +29,16 @@ const pendingPortrait = (alt: string): FigmaAsset => ({
 	alt,
 });
 
+/** Ensure every NULGE display name carries the Comr. honorific. */
+export function withNulgeComradePrefix(name: string) {
+	const trimmed = name.trim();
+	if (!trimmed) return trimmed;
+	if (/^comr\.?\b/i.test(trimmed) || /^comrade\b/i.test(trimmed)) {
+		return trimmed.replace(/^(comrade|comr\.?)\s*/i, "Comr. ");
+	}
+	return `Comr. ${trimmed}`;
+}
+
 export const nulgeExcoPage = {
 	label: "Workforce",
 	title: "IKORODU NORTH NULGE EXCO",
@@ -66,95 +76,95 @@ export const nulgeDirectory = {
 		"The elected and appointed officers serving Ikorodu North NULGE for this term.",
 	officers: [
 		{
-			name: "Adebayo Femi",
+			name: "Comr. Adebayo Femi",
 			role: "Acting Chairman",
-			image: portrait("adebayo-femi.webp", "Adebayo Femi"),
+			image: portrait("adebayo-femi.webp", "Comr. Adebayo Femi"),
 		},
 		{
-			name: "Ogunlaru Jamiu",
+			name: "Comr. Ogunlaru Jamiu",
 			role: "Vice Chairman",
-			image: portrait("ogunlaru-jamiu.webp", "Ogunlaru Jamiu"),
+			image: portrait("ogunlaru-jamiu.webp", "Comr. Ogunlaru Jamiu"),
 		},
 		{
-			name: "Sanni Moshood",
+			name: "Comr. Sanni Moshood",
 			role: "Secretary",
-			image: portrait("sanni-moshood.webp", "Sanni Moshood"),
+			image: portrait("sanni-moshood.webp", "Comr. Sanni Moshood"),
 		},
 		{
-			name: "Adeniran Isiaka",
+			name: "Comr. Adeniran Isiaka",
 			role: "Treasurer",
-			image: portrait("adeniran-isiaka.webp", "Adeniran Isiaka"),
+			image: portrait("adeniran-isiaka.webp", "Comr. Adeniran Isiaka"),
 		},
 		{
-			name: "Ajisebutu Mulikat",
+			name: "Comr. Ajisebutu Mulikat",
 			role: "Woman Leader",
-			image: portrait("ajisebutu-mulikat.webp", "Ajisebutu Mulikat"),
+			image: portrait("ajisebutu-mulikat.webp", "Comr. Ajisebutu Mulikat"),
 		},
 		{
-			name: "Oyeniran Quam",
+			name: "Comr. Oyeniran Quam",
 			role: "The Young",
-			image: portrait("oyeniran-quam.webp", "Oyeniran Quam"),
+			image: portrait("oyeniran-quam.webp", "Comr. Oyeniran Quam"),
 		},
 		{
-			name: "Awobajo Hafeez",
+			name: "Comr. Awobajo Hafeez",
 			role: "Asst Secretary",
-			image: portrait("awobajo-hafeez.webp", "Awobajo Hafeez"),
+			image: portrait("awobajo-hafeez.webp", "Comr. Awobajo Hafeez"),
 		},
 		{
-			name: "Ajirotutu Ramat",
+			name: "Comr. Ajirotutu Ramat",
 			role: "Rep Budget",
-			image: portrait("ajirotutu-ramat.webp", "Ajirotutu Ramat"),
+			image: portrait("ajirotutu-ramat.webp", "Comr. Ajirotutu Ramat"),
 		},
 		{
-			name: "Omitade Muminat",
+			name: "Comr. Omitade Muminat",
 			role: "Rep Environment",
-			image: portrait("omitade-muminat.webp", "Omitade Muminat"),
+			image: portrait("omitade-muminat.webp", "Comr. Omitade Muminat"),
 		},
 		{
-			name: "Halimat Balogun",
+			name: "Comr. Halimat Balogun",
 			role: "Auditor",
-			image: pendingPortrait("Halimat Balogun"),
+			image: pendingPortrait("Comr. Halimat Balogun"),
 			portraitPending: true,
 		},
 		{
-			name: "Olatunji Babatunde",
+			name: "Comr. Olatunji Babatunde",
 			role: "Trustee",
-			image: portrait("olatunji-babatunde.webp", "Olatunji Babatunde"),
+			image: portrait("olatunji-babatunde.webp", "Comr. Olatunji Babatunde"),
 		},
 		{
-			name: "Adesoji Oluwatoyin",
+			name: "Comr. Adesoji Oluwatoyin",
 			role: "Rep Education",
-			image: pendingPortrait("Adesoji Oluwatoyin"),
+			image: pendingPortrait("Comr. Adesoji Oluwatoyin"),
 			portraitPending: true,
 		},
 		{
-			name: "Metibemu Elizabeth",
+			name: "Comr. Metibemu Elizabeth",
 			role: "Rep Finance",
-			image: pendingPortrait("Metibemu Elizabeth"),
+			image: pendingPortrait("Comr. Metibemu Elizabeth"),
 			portraitPending: true,
 		},
 		{
-			name: "Ogunfodunrin Olawale",
+			name: "Comr. Ogunfodunrin Olawale",
 			role: "Rep Agric",
-			image: portrait("ogunfodunrin-olawale.webp", "Ogunfodunrin Olawale"),
+			image: portrait("ogunfodunrin-olawale.webp", "Comr. Ogunfodunrin Olawale"),
 		},
 		{
-			name: "Aniooja Saheed",
+			name: "Comr. Aniooja Saheed",
 			role: "Rep AHR",
-			image: portrait("aniooja-saheed.webp", "Aniooja Saheed"),
+			image: portrait("aniooja-saheed.webp", "Comr. Aniooja Saheed"),
 		},
 		{
-			name: "Yassuf Olamide",
+			name: "Comr. Yassuf Olamide",
 			role: "Rep Health",
-			image: pendingPortrait("Yassuf Olamide"),
+			image: pendingPortrait("Comr. Yassuf Olamide"),
 			portraitPending: true,
 		},
 		{
-			name: "Adeniji Husenat Mopelola",
+			name: "Comr. Adeniji Husenat Mopelola",
 			role: "Marriage Registrar",
 			image: portrait(
 				"adeniji-husenat-mopelola.webp",
-				"Adeniji Husenat Mopelola",
+				"Comr. Adeniji Husenat Mopelola",
 				799,
 				1200,
 			),
@@ -177,8 +187,8 @@ export const nulgeRelated = {
 		},
 		{
 			href: "/government/departments",
-			title: "Departments",
 			description: "Find the office responsible for the services you need.",
+			title: "Departments",
 		},
 	],
 };

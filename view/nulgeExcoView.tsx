@@ -1,10 +1,11 @@
 import { NulgeExcoSection } from "@/components/reususables/government";
 import { PageIntro } from "@/components/reususables/site";
-import { resolveNulgeOfficers } from "@/lib/api/public-people";
+import { resolveNulgeOfficers, resolvePersonProfileHrefsByNames } from "@/lib/api/public-people";
 import { nulgeDirectory, nulgeExcoPage } from "@/lib/content/nulge-exco";
 
 const NulgeExcoView = async () => {
 	const officers = await resolveNulgeOfficers();
+	const profileHrefs = await resolvePersonProfileHrefsByNames(officers.map((officer) => officer.name));
 
 	return (
 		<>
@@ -17,6 +18,7 @@ const NulgeExcoView = async () => {
 				officers={officers}
 				directoryTitle={nulgeDirectory.title}
 				directoryDescription={nulgeDirectory.description}
+				profileHrefs={profileHrefs}
 			/>
 		</>
 	);

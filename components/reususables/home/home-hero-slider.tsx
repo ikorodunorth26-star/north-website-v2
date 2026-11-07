@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { MoveLeft, MoveRight } from "lucide-react";
 
 import { homeContent } from "@/lib/content/home";
@@ -10,16 +10,73 @@ import HomeEditorialSlide from "./home-editorial-slide";
 import HomeHero from "./home-hero";
 
 const slideCount = homeContent.editorialSlides.length + 1;
+const AUTO_SLIDE_MS = 10000;
 
 const HomeHeroSlider = () => {
 	const [index, setIndex] = useState(0);
+	const rootRef = useRef<HTMLDivElement>(null);
+	const pausedRef = useRef(false);
 
-	const showSlide = (next: number) => {
+	const showSlide = useCallback((next: number) => {
 		setIndex(((next % slideCount) + slideCount) % slideCount);
-	};
+	}, []);
+
+	useEffect(() => {
+		const root = rootRef.current;
+		if (!root || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+		let timer: ReturnType<typeof setInterval> | undefined;
+		let visible = true;
+
+		const stop = () => {
+			if (!timer) return;
+			clearInterval(timer);
+			timer = undefined;
+		};
+
+		const start = () => {
+			if (timer) return;
+			timer = setInterval(() => {
+				if (!visible || pausedRef.current) return;
+				setIndex((current) => (current + 1) % slideCount);
+			}, AUTO_SLIDE_MS);
+		};
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				visible = entry.isIntersecting;
+				if (visible) start();
+				else stop();
+			},
+			{ threshold: 0.35 },
+		);
+
+		const pause = () => {
+			pausedRef.current = true;
+		};
+		const resume = () => {
+			pausedRef.current = false;
+		};
+
+		observer.observe(root);
+		root.addEventListener("mouseenter", pause);
+		root.addEventListener("mouseleave", resume);
+		root.addEventListener("focusin", pause);
+		root.addEventListener("focusout", resume);
+		start();
+
+		return () => {
+			stop();
+			observer.disconnect();
+			root.removeEventListener("mouseenter", pause);
+			root.removeEventListener("mouseleave", resume);
+			root.removeEventListener("focusin", pause);
+			root.removeEventListener("focusout", resume);
+		};
+	}, []);
 
 	return (
-		<div className="relative overflow-hidden" aria-roledescription="carousel" aria-label="Homepage highlights">
+		<div ref={rootRef} className="relative overflow-hidden" aria-roledescription="carousel" aria-label="Homepage highlights">
 			<div
 				className="flex transition-transform duration-700 ease-out motion-reduce:transition-none"
 				style={{ width: `${slideCount * 100}%`, transform: `translate3d(-${(index * 100) / slideCount}%, 0, 0)` }}>

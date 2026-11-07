@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { councilFacebookUrl } from "@/lib/content/projects";
+import { councilSocialUrls } from "@/lib/content/social";
 
 export const siteName = "Ikorodu North LCDA";
 export const siteLegalName = "Ikorodu North Local Council Development Area";
@@ -203,7 +203,7 @@ export const siteJsonLd = () => ({
 					availableLanguage: ["English"],
 				},
 			],
-			sameAs: [councilFacebookUrl],
+			sameAs: councilSocialUrls,
 		},
 		{
 			"@type": "WebSite",

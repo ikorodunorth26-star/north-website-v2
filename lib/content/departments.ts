@@ -45,6 +45,8 @@ export type DepartmentHead = {
 	role: string;
 	leadLabel: string;
 	image?: FigmaAsset;
+	phone?: string;
+	phoneHref?: string;
 };
 
 export type CouncilDepartment = {
@@ -113,12 +115,19 @@ export const departmentDirectory = {
 export const departmentDetailCopy = {
 	label: "Department Directory",
 	labelHref: "/government/departments",
-	heading: "About the department",
+	heading: "Overview",
 	responsibilitiesHeading: "Key responsibilities",
 	deskLabel: "Department desk",
 	headLabel: "Head of Department",
+	hodProfileHeading: "Head of Department",
+	hodPhoneLabel: "Contact number",
+	hodViewProfile: "View full profile",
 	phoneLabel: "Phone",
 	emailLabel: "Email",
+	newsHeading: "Recent news",
+	newsEmpty: "News linked to this desk will appear here as it is published.",
+	newsCta: "Read story",
+	viewAllNews: "All news",
 	relatedTitle: "Other departments",
 	profileLabel: "View profile",
 };
@@ -384,30 +393,32 @@ export const councilDepartments: CouncilDepartment[] = [
 	},
 	{
 		slug: "tourism",
-		title: "Tourism",
-		pageTitle: "Tourism",
-		description: "Local tourism promotion, cultural attractions and visitor experience across Ikorodu North.",
+		title: "Tourism & Heritage",
+		pageTitle: "Tourism &\nHeritage",
+		description: "Local tourism promotion, cultural heritage, attractions and visitor experience across Ikorodu North.",
 		email: "tourism@ikorodunorthlcda.lg.gov.ng",
 		phone,
 		icon: "compass",
 		group: "department",
 		paragraphs: [
-			"The Tourism Department promotes Ikorodu North’s cultural attractions, visitor experience and local tourism opportunities. It works with communities and partners to spotlight places, events and heritage that strengthen the area’s identity.",
-			"The desk supports tourism planning, stakeholder engagement and programmes that help residents and visitors discover what the LCDA has to offer.",
+			"Tourism & Heritage promotes Ikorodu North’s cultural attractions, heritage, visitor experience and local tourism opportunities. It works with communities and partners to spotlight places, events and traditions that strengthen the area’s identity.",
+			"The desk supports tourism planning, heritage documentation, stakeholder engagement and programmes that help residents and visitors discover what the LCDA has to offer.",
 		],
 		responsibilities: [
-			"Promoting local tourism sites, culture and visitor attractions",
+			"Promoting local tourism sites, culture, heritage and visitor attractions",
 			"Supporting tourism events and community cultural programmes",
-			"Working with partners on tourism development initiatives",
+			"Working with partners on tourism and heritage development initiatives",
 			"Coordinating visitor information and tourism enquiries",
-			"Documenting attractions and tourism opportunities across wards",
-			"Advising leadership on tourism priorities and partnerships",
+			"Documenting attractions, heritage sites and tourism opportunities across wards",
+			"Advising leadership on tourism and heritage priorities and partnerships",
 		],
 		head: {
 			name: "Com. Olawore Elijah",
-			role: "Head of Department, Tourism",
-			leadLabel: "Headed by Tourism Dept.",
+			role: "Head of Department, Tourism & Heritage",
+			leadLabel: "Headed by Tourism & Heritage Dept.",
 			image: managementPortrait("olawore-elijah.webp", 664, 996, "Com. Olawore Elijah"),
+			phone,
+			phoneHref: departmentPhoneHref,
 		},
 	},
 	{

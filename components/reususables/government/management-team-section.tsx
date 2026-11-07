@@ -3,11 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { managementDirectory, managementOverview, managementRelated, type ManagementOfficer } from "@/lib/content/management-team";
+import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
-const ManagementOfficerCard = ({ officer }: { officer: ManagementOfficer }) => {
-	return (
-		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
+const ManagementOfficerCard = ({ officer, profileHref }: { officer: ManagementOfficer; profileHref?: string }) => {
+	const body = (
+		<>
 			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				<LocalImage
 					src={officer.image.src}
@@ -20,12 +21,34 @@ const ManagementOfficerCard = ({ officer }: { officer: ManagementOfficer }) => {
 			<div className="flex flex-col gap-4 px-3 pb-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{officer.name}</h3>
 				<p className="text-sm font-medium leading-5 text-council-gold">{officer.role}</p>
+				{profileHref ? (
+					<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
+						{personProfileCopy.viewProfile}
+						<ArrowUpRight className="size-3.5" aria-hidden="true" />
+					</span>
+				) : null}
 			</div>
-		</article>
+		</>
 	);
+
+	if (profileHref) {
+		return (
+			<Link
+				href={profileHref}
+				className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+				{body}
+			</Link>
+		);
+	}
+
+	return <article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">{body}</article>;
 };
 
-const ManagementTeamSection = () => {
+type ManagementTeamSectionProps = {
+	profileHrefs?: Map<string, string>;
+};
+
+const ManagementTeamSection = ({ profileHrefs }: ManagementTeamSectionProps) => {
 	return (
 		<>
 			<section className="bg-[#ece8db] py-16">
@@ -55,7 +78,7 @@ const ManagementTeamSection = () => {
 					<ul className="mt-7 grid grid-cols-1 gap-6 md:grid-cols-3">
 						{managementDirectory.officers.map((officer) => (
 							<li key={officer.name}>
-								<ManagementOfficerCard officer={officer} />
+								<ManagementOfficerCard officer={officer} profileHref={profileHrefs?.get(officer.name)} />
 							</li>
 						))}
 					</ul>

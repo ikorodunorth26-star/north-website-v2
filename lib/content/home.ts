@@ -28,6 +28,7 @@ export type HomeAnnouncement = {
 };
 
 export type HomeWard = {
+	code: "E1" | "E2" | "E3" | "E4" | "B3";
 	name: string;
 	tag?: string;
 	landmarks: string;
@@ -178,8 +179,10 @@ export const homeAnnouncements: HomeAnnouncement[] = [
 	},
 ];
 
+/** Home ward cards: B3 Isiu, then E1–E4. */
 export const homeWards: HomeWard[] = [
 	{
+		code: "B3",
 		name: "Isiu",
 		tag: "Council Headquarters",
 		landmarks: "Secretariat · Marriage Registry · Oba of Isiu’s palace",
@@ -187,6 +190,7 @@ export const homeWards: HomeWard[] = [
 		href: "/communities/isiu",
 	},
 	{
+		code: "E1",
 		name: "Odogunyan",
 		tag: "Industrial gateway",
 		landmarks: "Oju Emuren-Agbede Rd · 174 Battalion school · Ebuwawa Market",
@@ -194,13 +198,7 @@ export const homeWards: HomeWard[] = [
 		href: "/communities/odogunyan",
 	},
 	{
-		name: "Olorunda",
-		tag: "Residential growth",
-		landmarks: "Adamo-Araro Rd · Olorunda Primary & Secondary Schools",
-		image: figmaAssets.home.wardOlorunda,
-		href: "/communities/olorunda",
-	},
-	{
+		code: "E2",
 		name: "Erikorodo",
 		tag: "Community life",
 		landmarks: "African Bethel Primary School · Council Leader’s ward",
@@ -208,11 +206,20 @@ export const homeWards: HomeWard[] = [
 		href: "/communities/erikorodo",
 	},
 	{
+		code: "E3",
 		name: "Agbala",
 		tag: "Connected by culverts",
 		landmarks: "Apeka–Agbala culverts · High School Road (planned)",
 		image: figmaAssets.home.wardAgbala,
 		href: "/communities/agbala",
+	},
+	{
+		code: "E4",
+		name: "Olorunda",
+		tag: "Residential growth",
+		landmarks: "Adamo-Araro Rd · Olorunda Primary & Secondary Schools",
+		image: figmaAssets.home.wardOlorunda,
+		href: "/communities/olorunda",
 	},
 ];
 
@@ -222,21 +229,21 @@ export const homeTeamMembers: HomeTeamMember[] = [
 		role: "Executive Chairman",
 		image: figmaAssets.home.mayorPortrait,
 		portraitMode: "cutout",
-		href: "/government/executive-council",
+		href: "/government/people/mayor-ameen-olawale-ibrahim-apanisile",
 	},
 	{
 		name: "Hon. Mathew Aliu Adesanya",
 		role: "Vice Chairman",
 		image: figmaAssets.home.viceChairmanPortrait,
 		portraitMode: "cutout",
-		href: "/government/executive-council",
+		href: "/government/people/hon-mathew-aliu-adesanya",
 	},
 	{
 		name: "Hon Benson Titilayo Abosede",
 		role: "Leader of the House",
 		image: figmaAssets.home.leaderPortrait,
 		portraitMode: "photo",
-		href: "/government/legislative-house",
+		href: "/government/people/hon-benson-titilayo-abosede",
 	},
 	{
 		name: "Hon. Tijani Olakanmi Sheriff",
@@ -259,6 +266,9 @@ export const homeContent = {
 		headline: "Welcome to\nIkorodu North",
 		description: "Connect with your council, access essential services and discover what’s happening across our community.",
 		cta: "Learn about us",
+		ctaHref: "/about",
+		image: figmaAssets.home.heroSecretariat,
+		imageClassName: "object-cover object-[center_42%] brightness-[0.72] lg:brightness-[0.6]",
 	},
 	editorialSlides: [
 		{

@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
 
 import { LocalImage, RelatedWorkSection } from "@/components/reususables/site";
 import { getDepartmentsForWard, getNewsForWard, getProjectsForWard, type WardSlug } from "@/lib/content/relations";
-import { getWard, wardConcernTitle, wardLabels, wards, type WardProjectStatus, type WardRecord } from "@/lib/content/wards";
+import { getWard, wardConcernTitle, wardDisplayName, wardLabels, wards, type WardProjectStatus, type WardRecord } from "@/lib/content/wards";
 import { cn } from "@/lib/utils";
 
 const statusClassName: Record<WardProjectStatus, string> = {
@@ -22,7 +22,8 @@ const WardHero = ({ ward }: { ward: WardRecord }) => {
 						{wardLabels.back}
 					</Link>
 					<p className="mt-8 text-[11px] font-bold uppercase tracking-[0.16em] text-council-gold">{wardLabels.pill}</p>
-					<h1 className="mt-4 max-w-[640px] text-[42px] font-medium leading-[46px] tracking-[-0.84px] text-white md:text-[52px] md:leading-[56px] lg:text-[64px] lg:leading-[68px] lg:tracking-[-1.28px]">{ward.name} Ward</h1>
+					<p className="mt-6 text-sm font-bold uppercase tracking-[0.14em] text-council-lime">{ward.code}</p>
+					<h1 className="mt-2 max-w-[640px] text-[42px] font-medium leading-[46px] tracking-[-0.84px] text-white md:text-[52px] md:leading-[56px] lg:text-[64px] lg:leading-[68px] lg:tracking-[-1.28px]">{ward.name} Ward</h1>
 					<p className="mt-5 max-w-[560px] text-lg font-normal leading-8 text-white/90">{ward.introduction}</p>
 				</div>
 				<figure>
@@ -44,7 +45,7 @@ const WardSwitcher = ({ slug }: { slug: string }) => {
 					const current = item.slug === slug;
 					return (
 						<Link key={item.slug} href={`/communities/${item.slug}`} aria-current={current ? "page" : undefined} className={cn("inline-flex w-full items-center justify-center rounded-full px-3 py-3 text-center text-sm font-bold sm:px-4 sm:text-base focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green", current ? "bg-council-green text-white" : "bg-[#f3f0e6] text-council-green hover:bg-[#e7e2d4]")}>
-							{item.name}
+							{wardDisplayName(item)}
 						</Link>
 					);
 				})}

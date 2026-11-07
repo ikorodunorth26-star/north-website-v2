@@ -7,5 +7,6 @@ export { default as LocalImage } from "./local-image";
 export { default as PageIntro } from "./page-intro";
 export { default as RelatedWorkSection } from "./related-work-section";
 export { default as SectionHeading } from "./section-heading";
+export { default as SocialLinks } from "./social-links";
 export { default as StoryLink } from "./story-link";
 export { default as TypewriterText } from "./typewriter-text";

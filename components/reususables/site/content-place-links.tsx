@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { departmentHref, relatedWorkLabels } from "@/lib/content/relations";
 import type { CouncilDepartment } from "@/lib/content/departments";
-import type { WardRecord } from "@/lib/content/wards";
+import { wardDisplayName, type WardRecord } from "@/lib/content/wards";
 
 type ContentPlaceLinksProps = {
 	wards: WardRecord[];
@@ -23,7 +23,7 @@ const ContentPlaceLinks = ({ wards, departments }: ContentPlaceLinksProps) => {
 								<Link
 									href={`/communities/${ward.slug}`}
 									className="inline-flex rounded-full bg-council-muted px-4 py-2 text-sm font-medium text-council-green transition-colors hover:bg-council-green hover:text-white focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-									{ward.name}
+									{wardDisplayName(ward)}
 								</Link>
 							</li>
 						))}

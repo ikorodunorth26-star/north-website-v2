@@ -12,6 +12,8 @@ export type WardProject = {
 
 export type WardRecord = {
 	slug: string;
+	/** Electoral / council ward label (E1–E4, B3). */
+	code: "E1" | "E2" | "E3" | "E4" | "B3";
 	name: string;
 	image: FigmaAsset;
 	introduction: string;
@@ -25,6 +27,11 @@ export type WardRecord = {
 	newsStory?: { label: string; title: string };
 	concern?: boolean;
 };
+
+/** Display name with ward label, e.g. "E1 · Odogunyan". */
+export function wardDisplayName(ward: Pick<WardRecord, "code" | "name">) {
+	return `${ward.code} · ${ward.name}`;
+}
 
 const projectsIntro = "Project details and statuses from the published community record.";
 const newsEmptyTitle = "More local updates to come";
@@ -52,9 +59,11 @@ export const wardLabels = {
 	concernHref: "/contact",
 };
 
+/** Ward order: B3 Isiu, then E1–E4. */
 export const wards: WardRecord[] = [
 	{
 		slug: "isiu",
+		code: "B3",
 		name: "Isiu",
 		image: figmaAssets.home.wardIsiu,
 		introduction: "Isiu Town is the administrative seat of Ikorodu North LCDA. From this secretariat, Mayor Apanisile began the New Deal and renewed the Marriage Registry for residents.",
@@ -77,6 +86,7 @@ export const wards: WardRecord[] = [
 	},
 	{
 		slug: "odogunyan",
+		code: "E1",
 		name: "Odogunyan",
 		image: figmaAssets.home.wardOdogunyan,
 		introduction: "Odogunyan is the industrial gateway of Ikorodu North. Mayor Apanisile has put water into its schools and kept the road works on the Agbede corridor moving.",
@@ -122,28 +132,8 @@ export const wards: WardRecord[] = [
 		concern: true,
 	},
 	{
-		slug: "olorunda",
-		name: "Olorunda",
-		image: figmaAssets.home.wardOlorunda,
-		introduction: "Olorunda is a growing residential ward. The Adamo–Araro Road, inspected by Mayor Apanisile and reported complete in his first hundred days, now links its communities.",
-		overviewHeading: "A finished road through a growing ward.",
-		overviewParagraphs: ["Mayor Apanisile walked the Adamo–Araro Road while construction was still under way, alongside the council’s community development committee. Rep. Babajimi Benson facilitated the road. By the first hundred days the council reported it complete, serving Olorunda Primary and Secondary Schools and the homes along Adamo."],
-		overviewNote: "Population, land area and CDA counts will be published once confirmed by the Budget and Planning department.",
-		facilities: ["Adamo–Araro Road", "Olorunda Primary School", "Olorunda Secondary School"],
-		projectsEyebrow: "Project records",
-		projects: [
-			{
-				status: "Completed",
-				category: "Roads",
-				title: "Adamo–Araro Road",
-				description: "Rep. Babajimi Benson facilitated the road. Mayor Apanisile inspected it during construction, and the council reported it complete in the first hundred days.",
-				meta: "Completed November 2025",
-			},
-		],
-		concern: true,
-	},
-	{
 		slug: "erikorodo",
+		code: "E2",
 		name: "Erikorodo",
 		image: figmaAssets.home.wardErikorodo,
 		introduction: "Erikorodo is the ward of Council Leader Hon. Bose Benson Titilayo. At African Bethel Primary School, Mayor Apanisile commissioned clean water and new toilets for the pupils.",
@@ -165,6 +155,7 @@ export const wards: WardRecord[] = [
 	},
 	{
 		slug: "agbala",
+		code: "E3",
 		name: "Agbala",
 		image: figmaAssets.home.wardAgbala,
 		introduction: "Agbala is linked to Apeka by completed box culverts. In July 2026 Mayor Apanisile flagged off High School Road, the next link for residents and businesses.",
@@ -186,6 +177,28 @@ export const wards: WardRecord[] = [
 				title: "High School Road, Apeka–Agbala",
 				description: "Mayor Apanisile flagged off construction in July 2026 so residents and businesses in Apeka and Agbala can move more easily.",
 				meta: "Flagged off July 2026",
+			},
+		],
+		concern: true,
+	},
+	{
+		slug: "olorunda",
+		code: "E4",
+		name: "Olorunda",
+		image: figmaAssets.home.wardOlorunda,
+		introduction: "Olorunda is a growing residential ward. The Adamo–Araro Road, inspected by Mayor Apanisile and reported complete in his first hundred days, now links its communities.",
+		overviewHeading: "A finished road through a growing ward.",
+		overviewParagraphs: ["Mayor Apanisile walked the Adamo–Araro Road while construction was still under way, alongside the council’s community development committee. Rep. Babajimi Benson facilitated the road. By the first hundred days the council reported it complete, serving Olorunda Primary and Secondary Schools and the homes along Adamo."],
+		overviewNote: "Population, land area and CDA counts will be published once confirmed by the Budget and Planning department.",
+		facilities: ["Adamo–Araro Road", "Olorunda Primary School", "Olorunda Secondary School"],
+		projectsEyebrow: "Project records",
+		projects: [
+			{
+				status: "Completed",
+				category: "Roads",
+				title: "Adamo–Araro Road",
+				description: "Rep. Babajimi Benson facilitated the road. Mayor Apanisile inspected it during construction, and the council reported it complete in the first hundred days.",
+				meta: "Completed November 2025",
 			},
 		],
 		concern: true,

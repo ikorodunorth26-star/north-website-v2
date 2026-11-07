@@ -7,11 +7,12 @@ import {
 	nulgeRelated,
 	type NulgeOfficer,
 } from "@/lib/content/nulge-exco";
+import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
-const NulgeOfficerCard = ({ officer }: { officer: NulgeOfficer }) => {
-	return (
-		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
+const NulgeOfficerCard = ({ officer, profileHref }: { officer: NulgeOfficer; profileHref?: string }) => {
+	const body = (
+		<>
 			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				{officer.portraitPending ? (
 					<div
@@ -38,19 +39,40 @@ const NulgeOfficerCard = ({ officer }: { officer: NulgeOfficer }) => {
 					{officer.name}
 				</h3>
 				<p className="text-sm font-medium leading-5 text-council-gold">{officer.role}</p>
+				{profileHref ? (
+					<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
+						{personProfileCopy.viewProfile}
+						<ArrowUpRight className="size-3.5" aria-hidden="true" />
+					</span>
+				) : null}
 			</div>
-		</article>
+		</>
 	);
+
+	if (profileHref) {
+		return (
+			<Link
+				href={profileHref}
+				className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+			>
+				{body}
+			</Link>
+		);
+	}
+
+	return <article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">{body}</article>;
 };
 
 const NulgeExcoSection = ({
 	officers,
 	directoryTitle,
 	directoryDescription,
+	profileHrefs,
 }: {
 	officers: NulgeOfficer[];
 	directoryTitle: string;
 	directoryDescription: string;
+	profileHrefs?: Map<string, string>;
 }) => {
 	return (
 		<>
@@ -95,7 +117,7 @@ const NulgeExcoSection = ({
 					<ul className="mt-7 grid grid-cols-1 gap-6 md:grid-cols-3">
 						{officers.map((officer) => (
 							<li key={`${officer.name}-${officer.role}`}>
-								<NulgeOfficerCard officer={officer} />
+								<NulgeOfficerCard officer={officer} profileHref={profileHrefs?.get(officer.name)} />
 							</li>
 						))}
 					</ul>

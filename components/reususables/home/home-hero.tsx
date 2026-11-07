@@ -10,20 +10,11 @@ const HomeHero = () => {
 
 	return (
 		<section className="relative isolate min-h-svh overflow-hidden bg-council-green text-white lg:min-h-[800px]" aria-labelledby="home-hero-title">
-			{/* Mobile uses the second slider image; desktop keeps the welcome hero backdrop. */}
 			<LocalImage
-				src={figmaAssets.home.heroCountyComplex.src}
+				src={hero.image.src}
 				alt=""
-				className="absolute inset-0 bg-council-green lg:hidden"
-				imageClassName="object-cover object-[center_28%]"
-				sizes="100vw"
-				priority
-			/>
-			<LocalImage
-				src={figmaAssets.home.lasustechGate.src}
-				alt=""
-				className="absolute inset-0 hidden bg-council-green lg:block"
-				imageClassName="object-cover object-center brightness-[0.6]"
+				className="absolute inset-0 bg-council-green"
+				imageClassName={hero.imageClassName}
 				sizes="100vw"
 				priority
 			/>
@@ -39,16 +30,6 @@ const HomeHero = () => {
 				style={{ backgroundImage: `url(${figmaAssets.home.heroTexture.src})` }}
 			/>
 
-			<div className="pointer-events-none absolute bottom-0 right-6 hidden h-[600px] w-[440px] lg:block xl:right-[calc(50vw-612px)] xl:h-[694px] xl:w-[598px]">
-				<LocalImage
-					src={figmaAssets.home.mayorPortrait.src}
-					alt={figmaAssets.home.mayorPortrait.alt}
-					className="h-full bg-transparent"
-					imageClassName="object-cover object-top drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)]"
-					sizes="(min-width: 1024px) 598px, 285px"
-				/>
-			</div>
-
 			<div className="relative z-10 mx-auto flex min-h-svh w-full max-w-council flex-col px-5 pb-8 pt-28 md:px-10 lg:min-h-[800px] lg:pb-10 lg:pt-[116px] min-[1408px]:px-0">
 				<div className="mt-auto max-w-[360px] md:max-w-[650px] lg:max-w-[500px] xl:max-w-[650px]">
 					<TypewriterText
@@ -60,7 +41,7 @@ const HomeHero = () => {
 						{hero.description}
 					</p>
 					<Link
-						href="/about"
+						href={hero.ctaHref}
 						className="mt-8 inline-flex items-center gap-2.5 rounded-[32px] bg-council-lime px-5 py-[14px] text-[15px] font-medium leading-[21px] text-council-green transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-lime focus-visible:ring-offset-2 focus-visible:ring-offset-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
 						{hero.cta}
 						<ArrowUpRight className="size-[18px]" aria-hidden="true" />

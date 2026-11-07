@@ -1,12 +1,15 @@
 import { LegislativeHouseSection } from "@/components/reususables/government";
 import { PageIntro } from "@/components/reususables/site";
-import { legislativeHousePage } from "@/lib/content/legislative-house";
+import { resolvePersonProfileHrefsByNames } from "@/lib/api/public-people";
+import { legislativeDirectory, legislativeHousePage } from "@/lib/content/legislative-house";
 
-const LegislativeHouseView = () => {
+const LegislativeHouseView = async () => {
+	const profileHrefs = await resolvePersonProfileHrefsByNames(legislativeDirectory.members.map((member) => member.name));
+
 	return (
 		<>
 			<PageIntro label={legislativeHousePage.label} title={legislativeHousePage.title} description={legislativeHousePage.description} />
-			<LegislativeHouseSection />
+			<LegislativeHouseSection profileHrefs={profileHrefs} />
 		</>
 	);
 };

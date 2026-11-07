@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, Phone } from "lucide-react";
 
-import { CouncilWordmark, TypewriterText } from "@/components/reususables/site";
+import { CouncilWordmark, SocialLinks, TypewriterText } from "@/components/reususables/site";
 import { figmaAssets } from "@/lib/content/figma-assets";
 import { homeWards } from "@/lib/content/home";
-import { councilFacebookUrl } from "@/lib/content/projects";
 import { getCurrentYear } from "@/lib/helper";
 
 const governmentLinks = [
@@ -18,7 +17,7 @@ const governmentLinks = [
 
 const wardLinks = homeWards.map((ward) => ({
 	href: ward.href,
-	label: ward.name,
+	label: `${ward.code} · ${ward.name}`,
 }));
 
 const exploreLinks = [
@@ -72,6 +71,10 @@ const Footer = () => {
 						<p className="mt-6 max-w-[320px] text-base leading-[25.6px] text-council-footer">
 							Working together for a cleaner, safer and more prosperous Ikorodu North.
 						</p>
+						<div className="mt-6">
+							<p className="text-sm font-medium leading-5 text-council-cream">Follow us</p>
+							<SocialLinks className="mt-3" tone="footer" showHandles />
+						</div>
 					</div>
 
 					<nav aria-label="Government">
@@ -131,11 +134,6 @@ const Footer = () => {
 								<Link href="mailto:admin@ikorodunorthlcda.lg.gov.ng" className="break-all transition-colors hover:text-white">
 									admin@ikorodunorthlcda.lg.gov.ng
 								</Link>
-							</p>
-							<p>
-								<a href={councilFacebookUrl} className="transition-colors hover:text-white" rel="noopener noreferrer" target="_blank">
-									Follow us on Facebook
-								</a>
 							</p>
 							<p className="flex items-center gap-3 text-council-cream">
 								<Phone className="size-[18px] shrink-0" aria-hidden="true" />
