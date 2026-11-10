@@ -42,13 +42,13 @@ const ArticleLayout = ({ backHref, backLabel, title, meta, image, caption, child
 			</section>
 
 			<div className="relative z-10 -mt-6 md:-mt-14">
-				<div className="mx-auto w-full max-w-council px-5 md:px-10 min-[1408px]:px-0">
+				<div className="mx-auto w-full max-w-[760px] px-5 md:px-10">
 					<LocalImage
 						src={image.src}
 						alt={image.alt}
 						priority
-						className="aspect-[326/220] rounded-xl md:aspect-[1160/600] md:rounded-[20px]"
-						sizes="(min-width: 1024px) 1160px, calc(100vw - 40px)"
+						className="aspect-[3/2] rounded-xl md:rounded-[20px]"
+						sizes="(min-width: 768px) 720px, calc(100vw - 40px)"
 					/>
 					{caption ? <p className="mt-3 text-xs leading-[19px] text-council-subtle">{caption}</p> : null}
 				</div>
