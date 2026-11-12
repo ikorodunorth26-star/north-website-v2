@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { legislativeChamber, legislativeDirectory, type LegislativeMember } from "@/lib/content/legislative-house";
@@ -7,11 +6,19 @@ import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
 import PersonPhoneLink from "./person-phone-link";
+import PersonProfileChip from "./person-profile-chip";
 
 const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMember; profileHref?: string }) => {
+	const identity = (
+		<>
+			<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
+			<p className="text-xs font-medium uppercase tracking-[0.04em] text-council-gold">{member.role}</p>
+		</>
+	);
+
 	return (
-		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
-			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
+		<article className="flex h-full flex-col gap-4 rounded-[20px] bg-council-card p-3">
+			<div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-council-image">
 				{profileHref ? (
 					<Link
 						href={profileHref}
@@ -35,24 +42,15 @@ const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMem
 					/>
 				)}
 				{member.phone ? <PersonPhoneLink phone={member.phone} /> : null}
+				{profileHref ? <PersonProfileChip href={profileHref} /> : null}
 			</div>
-			<div className="flex flex-col gap-3 px-3 pb-3">
+			<div className="flex flex-col gap-2.5 px-3 pb-2">
 				{profileHref ? (
-					<Link
-						href={profileHref}
-						className="flex flex-col gap-3 rounded-md focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-						<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
-						<p className="text-xs font-medium uppercase tracking-[0.04em] text-council-gold">{member.role}</p>
-						<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
-							{personProfileCopy.viewProfile}
-							<ArrowUpRight className="size-3.5" aria-hidden="true" />
-						</span>
+					<Link href={profileHref} className="flex flex-col gap-2.5 rounded-md focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+						{identity}
 					</Link>
 				) : (
-					<>
-						<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
-						<p className="text-xs font-medium uppercase tracking-[0.04em] text-council-gold">{member.role}</p>
-					</>
+					identity
 				)}
 			</div>
 		</article>
