@@ -12,7 +12,7 @@ import PersonProfileChip from "./person-profile-chip";
 const ExecutiveMemberCard = ({ member, profileHref }: { member: ExecutiveMember; profileHref?: string }) => {
 	const identity = (
 		<>
-			<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
+			<h3 className="text-xl font-medium leading-7 text-council-green lg:text-[21px] lg:leading-7">{member.name}</h3>
 			<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
 		</>
 	);

@@ -11,7 +11,7 @@ import PersonProfileChip from "./person-profile-chip";
 const NulgeOfficerCard = ({ officer, profileHref }: { officer: NulgeOfficer; profileHref?: string }) => {
 	const identity = (
 		<>
-			<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{officer.name}</h3>
+			<h3 className="text-xl font-medium leading-7 text-council-green lg:text-[21px] lg:leading-7">{officer.name}</h3>
 			<p className="text-sm font-medium leading-5 text-council-gold">{officer.role}</p>
 		</>
 	);
