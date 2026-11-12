@@ -9,42 +9,52 @@ import { cn } from "@/lib/utils";
 import PersonPhoneLink from "./person-phone-link";
 
 const ExecutiveMemberCard = ({ member, profileHref }: { member: ExecutiveMember; profileHref?: string }) => {
-	const media = (
-		<>
-			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
-				<LocalImage
-					src={member.image.src}
-					alt={member.image.alt}
-					className="absolute inset-0"
-					imageClassName={cn("object-cover", member.portraitFocus ?? "object-[center_12%]")}
-					sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
-				/>
-			</div>
-			<div className="flex flex-col gap-4 px-3">
-				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
-				<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
-				{profileHref ? (
-					<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
-						{personProfileCopy.viewProfile}
-						<ArrowUpRight className="size-3.5" aria-hidden="true" />
-					</span>
-				) : null}
-			</div>
-		</>
-	);
-
 	return (
 		<article className="flex flex-col gap-6 rounded-[20px] bg-council-card p-3">
-			{profileHref ? (
-				<Link
-					href={profileHref}
-					className="flex flex-col gap-6 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-					{media}
-				</Link>
-			) : (
-				media
-			)}
-			{member.phone ? <PersonPhoneLink phone={member.phone} className="px-3 pb-3" /> : <div className="pb-3" />}
+			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
+				{profileHref ? (
+					<Link
+						href={profileHref}
+						aria-label={`${member.name}, ${personProfileCopy.viewProfile}`}
+						className="absolute inset-0 block focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-council-lime">
+						<LocalImage
+							src={member.image.src}
+							alt={member.image.alt}
+							className="absolute inset-0"
+							imageClassName={cn("object-cover", member.portraitFocus ?? "object-[center_12%]")}
+							sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
+						/>
+					</Link>
+				) : (
+					<LocalImage
+						src={member.image.src}
+						alt={member.image.alt}
+						className="absolute inset-0"
+						imageClassName={cn("object-cover", member.portraitFocus ?? "object-[center_12%]")}
+						sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
+					/>
+				)}
+				{member.phone ? <PersonPhoneLink phone={member.phone} /> : null}
+			</div>
+			<div className="flex flex-col gap-4 px-3 pb-3">
+				{profileHref ? (
+					<Link
+						href={profileHref}
+						className="flex flex-col gap-4 rounded-md focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+						<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
+						<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
+						<span className="inline-flex items-center gap-1.5 text-sm font-bold text-council-green">
+							{personProfileCopy.viewProfile}
+							<ArrowUpRight className="size-3.5" aria-hidden="true" />
+						</span>
+					</Link>
+				) : (
+					<>
+						<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
+						<p className="text-xs font-medium uppercase tracking-[0.06em] text-council-gold">{member.role}</p>
+					</>
+				)}
+			</div>
 		</article>
 	);
 };
