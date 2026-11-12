@@ -6,8 +6,10 @@ import { legislativeChamber, legislativeDirectory, type LegislativeMember } from
 import { personProfileCopy } from "@/lib/content/people";
 import { cn } from "@/lib/utils";
 
+import PersonPhoneLink from "./person-phone-link";
+
 const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMember; profileHref?: string }) => {
-	const body = (
+	const media = (
 		<>
 			<div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-council-image">
 				<LocalImage
@@ -18,7 +20,7 @@ const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMem
 					sizes="(min-width: 1024px) 387px, (min-width: 600px) 50vw, 100vw"
 				/>
 			</div>
-			<div className="flex flex-col gap-3 px-3 pb-3">
+			<div className="flex flex-col gap-3 px-3">
 				<h3 className="text-2xl font-medium leading-8 text-council-green lg:text-[27px]">{member.name}</h3>
 				<p className="text-xs font-medium uppercase tracking-[0.04em] text-council-gold">{member.role}</p>
 				{profileHref ? (
@@ -31,17 +33,20 @@ const LegislativeMemberCard = ({ member, profileHref }: { member: LegislativeMem
 		</>
 	);
 
-	if (profileHref) {
-		return (
-			<Link
-				href={profileHref}
-				className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
-				{body}
-			</Link>
-		);
-	}
-
-	return <article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">{body}</article>;
+	return (
+		<article className="flex h-full flex-col gap-6 rounded-[20px] bg-council-card p-3">
+			{profileHref ? (
+				<Link
+					href={profileHref}
+					className="flex flex-col gap-6 transition-transform hover:-translate-y-0.5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+					{media}
+				</Link>
+			) : (
+				media
+			)}
+			{member.phone ? <PersonPhoneLink phone={member.phone} className="mt-auto px-3 pb-3" /> : <div className="pb-3" />}
+		</article>
+	);
 };
 
 type LegislativeHouseSectionProps = {

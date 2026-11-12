@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowUpRight, Mail, Phone } from "lucide-react";
 
 import { LocalImage } from "@/components/reususables/site";
 import { departmentHref, getDepartment } from "@/lib/content/departments";
-import { personProfileCopy, type PersonProfile } from "@/lib/content/people";
+import { personPhoneHref, personProfileCopy, type PersonProfile } from "@/lib/content/people";
 
 type PersonProfileSectionProps = {
 	person: PersonProfile;
@@ -106,7 +106,7 @@ const PersonProfileSection = ({ person }: PersonProfileSectionProps) => {
 							) : null}
 							{person.phone ? (
 								<a
-									href={`tel:${person.phone.replace(/[^\d+]/g, "")}`}
+									href={personPhoneHref(person.phone)}
 									className="flex items-start gap-3 rounded-2xl bg-[#F8F7F2] p-4 transition-colors hover:bg-council-lime/30 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
 									<span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-council-lime/55 text-council-green">
 										<Phone className="size-4" aria-hidden="true" />

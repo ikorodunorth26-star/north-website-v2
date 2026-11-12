@@ -4,6 +4,8 @@ export type LegislativeMember = {
 	name: string;
 	role: string;
 	image: FigmaAsset;
+	/** Public contact number when available. */
+	phone?: string;
 	/** Tailwind object-position class for face-safe cropping. */
 	portraitFocus?: string;
 };
@@ -29,15 +31,16 @@ export const legislativeDirectory = {
 	title: "Meet your representatives.",
 	description: "Find the people representing your community in the Legislative House.",
 	members: [
-		{ name: "Hon Benson Titilayo Abosede", role: "Leader of the house, Councillor Ward E2 · Erikorodo", image: figmaAssets.government.leader },
+		{ name: "Hon Benson Titilayo Abosede", role: "Leader of the house, Councillor Ward E2 · Erikorodo", image: figmaAssets.government.leader, phone: "09035719235" },
 		{
 			name: "Hon Jimoh Idris Iliasu",
 			role: "Deputy Leader, Councillor Ward B3 · Isiu",
 			image: figmaAssets.government.deputyLeader,
 			portraitFocus: "object-[center_8%]",
+			phone: "09166785257",
 		},
-		{ name: "Hon Banjoko Babatunde Oluwaseun", role: "Majority Leader, Councillor Ward E1 · Odogunyan", image: figmaAssets.government.majorityLeader },
-		{ name: "Hon Onabajo Oluwaseyi Olugbenga", role: "Chief Whip, Councillor Ward E4 · Olorunda", image: figmaAssets.government.chiefWhip },
-		{ name: "Hon Ibrahim Risikat Abiodun", role: "Councillor Ward E3 · Agbala", image: figmaAssets.government.agbalaCouncillor },
+		{ name: "Hon Banjoko Babatunde Oluwaseun", role: "Majority Leader, Councillor Ward E1 · Odogunyan", image: figmaAssets.government.majorityLeader, phone: "08038413783" },
+		{ name: "Hon Onabajo Oluwaseyi Olugbenga", role: "Chief Whip, Councillor Ward E4 · Olorunda", image: figmaAssets.government.chiefWhip, phone: "08023882345" },
+		{ name: "Hon Ibrahim Risikat Abiodun", role: "Councillor Ward E3 · Agbala", image: figmaAssets.government.agbalaCouncillor, phone: "08067483079" },
 	] satisfies LegislativeMember[],
 };

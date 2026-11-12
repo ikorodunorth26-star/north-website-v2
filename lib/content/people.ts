@@ -39,6 +39,16 @@ export function personHref(slug: string) {
 	return `/government/people/${slug}`;
 }
 
+/** Build a `tel:` href from a displayed Nigerian phone string (supports dual numbers). */
+export function personPhoneHref(phone: string) {
+	const primary = phone.split("/")[0]?.trim() ?? phone;
+	const digits = primary.replace(/\D/g, "");
+	if (digits.length === 11 && digits.startsWith("0")) return `tel:+234${digits.slice(1)}`;
+	if (digits.startsWith("234") && digits.length >= 13) return `tel:+${digits}`;
+	if (digits.length >= 10) return `tel:+${digits}`;
+	return `tel:${digits}`;
+}
+
 const NAME_STOP_WORDS = new Set(["hon", "honourable", "mayor", "dr", "mrs", "mr", "ms", "chief", "eng", "engr", "barr", "prof"]);
 
 /** Significant name tokens for fuzzy person matching across short/long display names. */
@@ -117,6 +127,7 @@ export const staticPersonProfiles: PersonProfile[] = [
 			"In office she has focused on skills, livelihoods and community empowerment. She facilitated the SPEED UP LAGOS Anti-Poverty Squad street-to-street training programme, which graduated more than 500 residents in gele and make-up, AI graphics design, catering and tailoring at Aladiye Town Hall, Maya.",
 			"As Leader of the House she works with colleagues across the five wards to support the Executive Chairman and strengthen legislative oversight for residents of Ikorodu North.",
 		].join("\n\n"),
+		phone: "09035719235",
 		highlights: [
 			"Councillor for Ward E2 Erikorodo; elected Leader of the House in July 2025.",
 			"Facilitated SPEED UP LAGOS skills training for 500+ residents in Maya, Erikorodo.",
