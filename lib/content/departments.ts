@@ -18,9 +18,9 @@ import {
 	type LucideIcon,
 } from "lucide-react";
 
-import { contactPhones } from "./contact";
 import type { FigmaAsset } from "./figma-assets";
 import { figmaAssets } from "./figma-assets";
+import { personPhoneHref } from "./people";
 
 export type DepartmentIcon =
 	| "userRoundCog"
@@ -55,7 +55,9 @@ export type CouncilDepartment = {
 	pageTitle: string;
 	description: string;
 	email: string;
-	phone: string;
+	/** HOD direct line when available — omit if unknown. */
+	phone?: string;
+	phoneHref?: string;
 	icon: DepartmentIcon;
 	group: "department" | "unit";
 	health?: boolean;
@@ -83,14 +85,17 @@ export const departmentIcons: Record<DepartmentIcon, LucideIcon> = {
 	files: Files,
 };
 
-const phone = contactPhones[0].label;
-export const departmentPhoneHref = contactPhones[0].href;
-
 const managementPortrait = (file: string, width: number, height: number, alt: string): FigmaAsset => ({
 	src: `/images/government/management/${file}`,
 	width,
 	height,
 	alt,
+});
+
+/** Attach a verified HOD direct number to the department desk and head card. */
+const withHodPhone = (phone: string) => ({
+	phone,
+	phoneHref: personPhoneHref(phone),
 });
 
 export const departmentsPage = {
@@ -143,7 +148,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Admin &\nHuman Resources",
 		description: "Handles the council's people and processes, including recruitment, training, staff welfare, records and day-to-day administration.",
 		email: "hr@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08034040295"),
 		icon: "userRoundCog",
 		group: "department",
 		paragraphs: [
@@ -163,6 +168,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Council Manager",
 			leadLabel: "Headed by Council Manager",
 			image: managementPortrait("nairu-abayomi-samsideen.webp", 720, 1080, "Mr. Nasiru Abayomi Samsideen"),
+			...withHodPhone("08034040295"),
 		},
 	},
 	{
@@ -171,7 +177,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Finance &\nAccounts",
 		description: "Keeps the council's money accountable through revenue collection, budgeting, payroll, spending controls and financial reporting.",
 		email: "finance@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08033009463"),
 		icon: "coins",
 		group: "department",
 		paragraphs: [
@@ -191,6 +197,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Council Treasurer",
 			leadLabel: "Headed by Council Treasurer",
 			image: managementPortrait("bankole-esther-oluyemi.webp", 664, 996, "Bankole Esther Oluyemi"),
+			...withHodPhone("08033009463"),
 		},
 	},
 	{
@@ -199,7 +206,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Primary\nHealth Care",
 		description: "Brings healthcare closer to home through PHC centres, immunisation, maternal and child health, and public health campaigns.",
 		email: "phc@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08035815694"),
 		icon: "heartPulse",
 		group: "department",
 		health: true,
@@ -220,6 +227,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Medical Officer of Health",
 			leadLabel: "Headed by Health Care Dept.",
 			image: managementPortrait("wajero-kt.webp", 664, 996, "Dr. Wajero K T"),
+			...withHodPhone("08035815694"),
 		},
 	},
 	{
@@ -228,7 +236,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Education &\nLibrary Services",
 		description: "Primary education support, scholarships and library services.",
 		email: "education@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("09158412089"),
 		icon: "graduationCap",
 		group: "department",
 		paragraphs: [
@@ -248,6 +256,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Education & Library Services",
 			leadLabel: "Headed by Education & Library Services Dept.",
 			image: managementPortrait("ganiyu-abideen-maiyegun.webp", 664, 996, "Mr Ganiyu Abideen Maiyegun"),
+			...withHodPhone("09158412089"),
 		},
 	},
 	{
@@ -256,7 +265,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Planning, Budget,\nResearch & Statistics",
 		description: "Development planning, budget preparation and statistics.",
 		email: "planning@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08033306894"),
 		icon: "clipboardCheck",
 		group: "department",
 		paragraphs: [
@@ -276,6 +285,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Planning, Budget, Research & Statistics",
 			leadLabel: "Headed by Planning & Budget Dept.",
 			image: managementPortrait("ogunleye-akintope-abayomi.webp", 664, 996, "Mr Ogunleye Akintope Abayomi"),
+			...withHodPhone("08033306894"),
 		},
 	},
 	{
@@ -284,7 +294,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Environmental\nHealth Services",
 		description: "Sanitation, waste management and public health inspections.",
 		email: "environmentalhealth@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("07016503834"),
 		icon: "shieldCheck",
 		group: "department",
 		health: true,
@@ -305,6 +315,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Environmental Health Services",
 			leadLabel: "Headed by Environmental Health Dept.",
 			image: managementPortrait("ahoton-jameson-thona.webp", 664, 996, "Mr Ahoton Jameson Thona"),
+			...withHodPhone("07016503834"),
 		},
 	},
 	{
@@ -313,7 +324,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Agriculture, Rural &\nSocial Development",
 		description: "Farmer support, rural empowerment and social development.",
 		email: "agriculture@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08023531163"),
 		icon: "store",
 		group: "department",
 		paragraphs: [
@@ -333,6 +344,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Agriculture, Rural & Social Development",
 			leadLabel: "Headed by Agriculture Dept.",
 			image: managementPortrait("akiode-oluwaseyi.webp", 809, 920, "Mr. Akiode Oluwaseyi O."),
+			...withHodPhone("08023531163"),
 		},
 	},
 	{
@@ -341,7 +353,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Women Affairs &\nPoverty Alleviation",
 		description: "Women's empowerment, skills programmes and poverty reduction.",
 		email: "womenaffairs@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08024018440"),
 		icon: "userRound",
 		group: "department",
 		paragraphs: [
@@ -361,6 +373,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Women Affairs & Poverty Alleviation",
 			leadLabel: "Headed by Women Affairs Dept.",
 			image: managementPortrait("balogun-zainab-mojisola.webp", 681, 1024, "Mrs Balogun Zainab Mojisola"),
+			...withHodPhone("08024018440"),
 		},
 	},
 	{
@@ -369,7 +382,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Works &\nInfrastructure",
 		description: "Roads, drainage, public buildings and capital projects.",
 		email: "works@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("07055552240 / 07075855762"),
 		icon: "landmark",
 		group: "department",
 		paragraphs: [
@@ -389,6 +402,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Works & Infrastructure",
 			leadLabel: "Headed by Works & Infrastructure Dept.",
 			image: managementPortrait("akinsanya-sunday.webp", 664, 996, "Eng. Akinsanya Sunday"),
+			...withHodPhone("07055552240 / 07075855762"),
 		},
 	},
 	{
@@ -397,7 +411,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Tourism &\nHeritage",
 		description: "Local tourism promotion, cultural heritage, attractions and visitor experience across Ikorodu North.",
 		email: "tourism@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08023555119"),
 		icon: "compass",
 		group: "department",
 		paragraphs: [
@@ -417,8 +431,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Tourism & Heritage",
 			leadLabel: "Headed by Tourism & Heritage Dept.",
 			image: managementPortrait("olawore-elijah.webp", 664, 996, "Com. Olawore Elijah"),
-			phone,
-			phoneHref: departmentPhoneHref,
+			...withHodPhone("08023555119"),
 		},
 	},
 	{
@@ -427,7 +440,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Legislative\nUnit",
 		description: "Support for the Legislative House and its records.",
 		email: "legislative@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08034188308"),
 		icon: "bookOpen",
 		group: "unit",
 		paragraphs: [
@@ -447,6 +460,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Clerk of the House",
 			leadLabel: "Headed by Clerk of the House",
 			image: managementPortrait("awonusi-ademola.webp", 664, 996, "Awonusi Ademola A"),
+			...withHodPhone("08034188308"),
 		},
 	},
 	{
@@ -455,7 +469,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Public Affairs\nUnit",
 		description: "Public communication, media relations and community updates.",
 		email: "publicaffairs@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08033032860"),
 		icon: "messageSquare",
 		group: "unit",
 		paragraphs: [
@@ -475,6 +489,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Public Affairs",
 			leadLabel: "Headed by Public Affairs Unit",
 			image: managementPortrait("japhet-enemunhe.webp", 664, 910, "Mr Japhet O Enemunhe"),
+			...withHodPhone("08033032860"),
 		},
 	},
 	{
@@ -483,7 +498,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Internal Audit\nUnit",
 		description: "Audits of revenue and spending, and internal controls.",
 		email: "audit@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08033958484"),
 		icon: "fileCheck",
 		group: "unit",
 		paragraphs: [
@@ -503,6 +518,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "HOU Audit",
 			leadLabel: "Headed by Internal Audit Unit",
 			image: managementPortrait("shobowale-olalekan.webp", 682, 1024, "Shobowale Olalekan"),
+			...withHodPhone("08033958484"),
 		},
 	},
 	{
@@ -511,7 +527,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Legal\nUnit",
 		description: "Legal advice, contracts and regulatory compliance.",
 		email: "legal@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08026316180"),
 		icon: "fileText",
 		group: "unit",
 		paragraphs: [
@@ -531,6 +547,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of Department, Legal",
 			leadLabel: "Headed by Legal Unit",
 			image: managementPortrait("amusa-adebayo-aminat.webp", 612, 924, "Barr. Amusa Adebayo Aminat"),
+			...withHodPhone("08026316180"),
 		},
 	},
 	{
@@ -539,7 +556,6 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Procurement\nUnit",
 		description: "Public procurement, vendor registration and value for money.",
 		email: "procurement@ikorodunorthlcda.lg.gov.ng",
-		phone,
 		icon: "receiptText",
 		group: "unit",
 		paragraphs: [
@@ -566,7 +582,7 @@ export const councilDepartments: CouncilDepartment[] = [
 		pageTitle: "Information &\nCommunication Technology",
 		description: "Council systems, digital services and technical support.",
 		email: "ict@ikorodunorthlcda.lg.gov.ng",
-		phone,
+		...withHodPhone("08110479658"),
 		icon: "files",
 		group: "unit",
 		paragraphs: [
@@ -588,6 +604,7 @@ export const councilDepartments: CouncilDepartment[] = [
 			role: "Head of ICT",
 			leadLabel: "Headed by ICT Unit",
 			image: figmaAssets.government.hodIct,
+			...withHodPhone("08110479658"),
 		},
 	},
 ];

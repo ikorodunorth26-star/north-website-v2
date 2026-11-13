@@ -54,7 +54,7 @@ export const executiveDirectory = {
 		{ name: "Hon. Adeyemi Adeniran Babatunde", role: "Supervisor for Special Duties", image: figmaAssets.government.specialDuties, phone: "08168700643" },
 		{ name: "Hon. Adaramola Abimbola", role: "Supervisor for Education", image: figmaAssets.government.education, phone: "08024410449" },
 		{ name: "Hon. Olawale Ogunbela JP", role: "Supervisor for Agriculture, Rural Development, Food Security and Chieftaincy Affairs", image: figmaAssets.government.agriculture, phone: "08023270896" },
-		{ name: "Hon. Edu Hafsat", role: "Supervisor for Civic Engagement", image: figmaAssets.government.civic },
+		{ name: "Hon. Edu Hafsat", role: "Supervisor for Civic Engagement", image: figmaAssets.government.civic, phone: "08059184143" },
 		{ name: "Hon. Fakumoju Kehinde Babayemisi", role: "Supervisor for Community Development", image: figmaAssets.government.community, phone: "08086697710" },
 		{ name: "Hon. Ambali Olutusin", role: "Supervisor for Intergovernmental Affairs and Legislative Duties", image: figmaAssets.government.intergovernmental, phone: "08028962919" },
 		{ name: "Hon. Basirat Adewunmi Babatunde", role: "Supervisor for Budget and Planning", image: figmaAssets.government.budget, phone: "07034854720" },

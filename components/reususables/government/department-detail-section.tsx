@@ -7,10 +7,10 @@ import {
 	departmentDetailCopy,
 	departmentHref,
 	departmentIcons,
-	departmentPhoneHref,
 	getRelatedDepartments,
 	type CouncilDepartment,
 } from "@/lib/content/departments";
+import { personPhoneHref } from "@/lib/content/people";
 import { getNewsForDepartment, getProjectsForDepartment, getArticleHref, relatedWorkLabels } from "@/lib/content/relations";
 
 type DepartmentDetailSectionProps = {
@@ -24,7 +24,7 @@ const DepartmentDetailSection = ({ department, hodProfileHref }: DepartmentDetai
 	const linkedProjects = getProjectsForDepartment(department.slug);
 	const linkedNews = getNewsForDepartment(department.slug, 3);
 	const hodPhone = department.head.phone ?? department.phone;
-	const hodPhoneHref = department.head.phoneHref ?? departmentPhoneHref;
+	const hodPhoneHref = department.head.phoneHref ?? department.phoneHref ?? (hodPhone ? personPhoneHref(hodPhone) : undefined);
 	const Icon = departmentIcons[department.icon];
 
 	return (
@@ -61,17 +61,19 @@ const DepartmentDetailSection = ({ department, hodProfileHref }: DepartmentDetai
 							</div>
 						</div>
 						<div className="mt-6 space-y-4">
-							<div className="flex items-center gap-3">
-								<span className="inline-flex size-10 items-center justify-center rounded-full bg-council-lime/45 text-council-green">
-									<Phone className="size-4" aria-hidden="true" />
-								</span>
-								<div>
-									<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.phoneLabel}</p>
-									<a href={departmentPhoneHref} className="text-base font-medium text-council-green hover:underline focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-										{department.phone}
-									</a>
+							{hodPhone && hodPhoneHref ? (
+								<div className="flex items-center gap-3">
+									<span className="inline-flex size-10 items-center justify-center rounded-full bg-council-lime/45 text-council-green">
+										<Phone className="size-4" aria-hidden="true" />
+									</span>
+									<div>
+										<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.phoneLabel}</p>
+										<a href={hodPhoneHref} className="text-base font-medium text-council-green hover:underline focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+											{hodPhone}
+										</a>
+									</div>
 								</div>
-							</div>
+							) : null}
 							<div className="flex items-center gap-3">
 								<span className="inline-flex size-10 items-center justify-center rounded-full bg-council-lime/45 text-council-green">
 									<Mail className="size-4" aria-hidden="true" />
@@ -119,17 +121,19 @@ const DepartmentDetailSection = ({ department, hodProfileHref }: DepartmentDetai
 							<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.headLabel}</p>
 							<h3 className="mt-2 text-[28px] font-medium leading-9 text-council-green sm:text-[34px] sm:leading-10">{department.head.name}</h3>
 							<p className="mt-2 text-base font-medium leading-6 text-council-subtle sm:text-lg sm:leading-7">{department.head.role}</p>
-							<div className="mt-8 flex items-center gap-3 rounded-[20px] bg-[#F8F7F2] p-4 sm:p-5">
-								<span className="inline-flex size-12 shrink-0 items-center justify-center rounded-full bg-council-lime text-council-green">
-									<Phone className="size-5" aria-hidden="true" />
-								</span>
-								<div>
-									<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.hodPhoneLabel}</p>
-									<a href={hodPhoneHref} className="mt-1 block text-lg font-medium text-council-green hover:underline focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-										{hodPhone}
-									</a>
+							{hodPhone && hodPhoneHref ? (
+								<div className="mt-8 flex items-center gap-3 rounded-[20px] bg-[#F8F7F2] p-4 sm:p-5">
+									<span className="inline-flex size-12 shrink-0 items-center justify-center rounded-full bg-council-lime text-council-green">
+										<Phone className="size-5" aria-hidden="true" />
+									</span>
+									<div>
+										<p className="text-xs font-medium uppercase tracking-[0.08em] text-council-subtle">{departmentDetailCopy.hodPhoneLabel}</p>
+										<a href={hodPhoneHref} className="mt-1 block text-lg font-medium text-council-green hover:underline focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+											{hodPhone}
+										</a>
+									</div>
 								</div>
-							</div>
+							) : null}
 							{hodProfileHref ? (
 								<Link
 									href={hodProfileHref}

@@ -10,9 +10,9 @@ import {
 	departmentDirectory,
 	departmentHref,
 	departmentIcons,
-	departmentPhoneHref,
 	type CouncilDepartment,
 } from "@/lib/content/departments";
+import { personPhoneHref } from "@/lib/content/people";
 
 const filters = ["all", "departments", "units", "health"] as const;
 type DepartmentFilter = (typeof filters)[number];
@@ -54,11 +54,15 @@ const DepartmentCard = ({ department }: { department: CouncilDepartment }) => {
 						{department.email}
 					</a>
 				</p>
-				<p>
-					<a href={departmentPhoneHref} className="hover:text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
-						{department.phone}
-					</a>
-				</p>
+				{department.phone ? (
+					<p>
+						<a
+							href={department.phoneHref ?? personPhoneHref(department.phone)}
+							className="hover:text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
+							{department.phone}
+						</a>
+					</p>
+				) : null}
 			</div>
 			<Link href={departmentHref(department.slug)} className="mt-auto inline-flex w-fit items-center gap-2 pt-6 text-lg font-bold text-council-green focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-council-green">
 				{departmentDirectory.profileLabel}
